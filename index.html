@@ -133,6 +133,15 @@
   .alerts .msg { color: var(--pencil); font-size: 14px; white-space: pre-line; margin-top: 2px; }
   .alerts li { grid-template-columns: 1fr; }
 
+  ul.rows.feed li { grid-template-columns: 3.6em 1fr auto; align-items: baseline; }
+  .feed .when { color: var(--pencil); font-size: 14px; grid-column: 1; grid-row: 1 / span 2; }
+  .feed .what { grid-column: 2; grid-row: 1; font-weight: 600; }
+  .feed .why { grid-column: 2; grid-row: 2; color: var(--pencil); font-size: 14px; }
+  .feed .amt { grid-column: 3; }
+  .feed .skip .what { font-weight: 400; color: var(--pencil); }
+  .new { animation: flash 2.4s ease-out; }
+  @keyframes flash { from { background: #fff6c9; } to { background: transparent; } }
+  @media (prefers-reduced-motion: reduce) { .new { animation: none; } }
   .empty { font-family: var(--hand); font-size: 19px; color: var(--pencil); margin: 12px 0 0; }
 
   .rules p { font-size: 16px; }
@@ -155,6 +164,11 @@
 
   <p class="mood" id="mood"></p>
   <dl class="facts" id="facts"></dl>
+
+  <section>
+    <h2>What the bot did <small id="actCount"></small></h2>
+    <ul class="rows feed" id="activity"></ul>
+  </section>
 
   <section>
     <h2>Holding now <small id="openCount"></small></h2>
@@ -292,6 +306,27 @@ function render(w, alerts, cfg) {
       <span class="bar" title="Stop loss on the left, take profit on the right"><i style="left:${left}%;width:${width}%;background:var(--${c >= 0 ? "gain" : "loss"})"></i><b style="left:${zero}%"></b></span></li>`;
   }).join("") : `<li class="empty">Nothing yet. The bot buys on the next strong signal.</li>`;
 
+  // activity feed, newest first; highlight things that happened since the last reload
+  const act = (w.activity || []).slice(-30).reverse();
+  const seenUntil = window._seenUntil || 0;
+  const hhmm = t => {
+    const d = new Date(t * 1000), today = new Date().toDateString() === d.toDateString();
+    return today ? d.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" }) : day(t);
+  };
+  $("actCount").textContent = act.length ? `latest ${act.length}` : "";
+  $("activity").innerHTML = act.length ? act.map(a => {
+    const fresh = seenUntil && a.t > seenUntil ? " new" : "";
+    if (a.type === "buy") return `<li class="${fresh}"><span class="when">${hhmm(a.t)}</span>
+      <span class="what">Bought ${esc(a.symbol)}</span><span class="amt">${eur(a.eur)}</span>
+      <span class="why">${esc(a.signal)} signal</span></li>`;
+    if (a.type === "sell") return `<li class="${fresh}"><span class="when">${hhmm(a.t)}</span>
+      <span class="what">Sold ${esc(a.symbol)}</span><span class="amt ${cls(a.pnl)}">${a.pnl >= 0 ? "+" : ""}${a.pnl.toFixed(2)}€<span>${pct(a.pct)}</span></span>
+      <span class="why">${esc(a.reason)}</span></li>`;
+    return `<li class="skip${fresh}"><span class="when">${hhmm(a.t)}</span>
+      <span class="what">Skipped ${esc(a.symbol)}</span><span class="why">${esc(a.reason)}</span></li>`;
+  }).join("") : `<li class="empty">Quiet so far. Buys, sells and skipped trades show up here as they happen.</li>`;
+  window._seenUntil = Math.max(seenUntil, ...(w.activity || []).map(a => a.t), 1);
+
   $("closedCount").textContent = closed.length ? `${closed.length} total` : "";
   $("closed").innerHTML = closed.length ? closed.slice(-25).reverse().map(h => `
     <li><span class="sym">${esc(h.symbol)}</span>
@@ -311,7 +346,7 @@ function render(w, alerts, cfg) {
       + `holds up to ${cfg.max_open_positions} at once, and sells at +${tp}% profit, −${sl}% loss, `
       + `or after ${Math.round(cfg.max_hold_hours / 24)} days, whichever comes first.`;
   }
-  $("updated").textContent = "Last checked " + new Date().toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" })
+  $("updated").textContent = (w.updated ? `Prices from ${ago(w.updated)}. ` : "") + "Page checked " + new Date().toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" })
     + ". The bot scans every 5 minutes.";
 }
 

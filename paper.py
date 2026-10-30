@@ -36,6 +36,13 @@ def save(w):
         json.dump(w, f, indent=1)
 
 
+def _act(w, **e):
+    e["t"] = int(_now())
+    w.setdefault("activity", []).append(e)
+    del w["activity"][:-120]
+    w["changed"] = True
+
+
 def _cost_pct(cfg, kind):
     """Exchange fee plus slippage, charged on both buy and sell."""
     return cfg["fee_pct"] + (cfg["memecoin_slippage_pct"] if kind == "dex" else 0)
@@ -94,7 +101,8 @@ def _sell(w, cfg, pos, price, reason, notes):
     w["positions"].remove(pos)
     w["history"].append({**pos, "exit": price, "exit_time": _now(), "reason": reason,
                          "pnl_eur": round(pnl, 2), "pnl_pct": round(pnl / pos["paid"] * 100, 1)})
-    w["changed"] = True
+    _act(w, type="sell", symbol=pos["symbol"], signal=pos["signal"], eur=round(net, 2),
+         pnl=round(pnl, 2), pct=round(pnl / pos["paid"] * 100, 1), reason=reason)
     icon = "✅" if pnl >= 0 else "❌"
     notes.append({"title": f"📝 Paper SELL {pos['symbol']} {icon} {pnl:+.2f}€",
                   "message": f"{reason} · {pnl / pos['paid'] * 100:+.1f}% after fees\n"
@@ -122,6 +130,7 @@ def run(cfg, signals, fetch, mood=None):
             continue
         pos["last"] = price
         pos["peak"] = max(pos.get("peak", pos["entry"]), price)
+        w["changed"] = True  # keep the website's values fresh on every run
         chg = (price / pos["entry"] - 1) * 100
         held_h = (_now() - pos["time"]) / 3600
         if chg >= cfg["take_profit_pct"]:
@@ -154,7 +163,14 @@ def run(cfg, signals, fetch, mood=None):
         if not t or t["signal"] not in allowed:
             continue
         if greedy and t["signal"] in risky:
-            continue  # crowd is FOMOing, the bot sits this one out
+            # crowd is FOMOing, the bot sits this one out (logged once per coin per day)
+            today = datetime.now(TZ).strftime("%Y-%m-%d")
+            if not any(a.get("type") == "skip" and a.get("symbol") == t["symbol"] and
+                       datetime.fromtimestamp(a["t"], TZ).strftime("%Y-%m-%d") == today
+                       for a in w.get("activity", [])):
+                _act(w, type="skip", symbol=t["symbol"], signal=t["signal"],
+                     reason=f"market mood {mood.get('value')}/100, crowd too greedy")
+            continue
         if t["signal"] == "trending" and t.get("rank", 99) > cfg["trending_top_n"]:
             continue
         if any(p["id"] == t["id"] for p in w["positions"]):
@@ -168,7 +184,7 @@ def run(cfg, signals, fetch, mood=None):
         w["positions"].append({"kind": t["kind"], "id": t["id"], "chain": t.get("chain"),
                                "symbol": t["symbol"], "signal": t["signal"], "entry": t["price"],
                                "eur": eur_in, "paid": spend, "time": _now(), "last": t["price"]})
-        w["changed"] = True
+        _act(w, type="buy", symbol=t["symbol"], signal=t["signal"], eur=spend, price=t["price"])
         notes.append({"title": f"📝 Paper BUY {t['symbol']} for {spend:.0f}€",
                       "message": f"Signal: {t['signal']} · price ${t['price']:,.6g}\n"
                                  f"Auto-sells at +{cfg['take_profit_pct']}% / -{cfg['stop_loss_pct']}% "
@@ -193,6 +209,7 @@ def run(cfg, signals, fetch, mood=None):
         w["changed"] = True
 
     if w.get("changed"):
+        w["updated"] = int(_now())
         save(w)
         write_markdown(w, {p["id"]: p.get("last", p["entry"]) for p in w["positions"]})
     return notes
