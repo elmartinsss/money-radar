@@ -350,6 +350,7 @@ def send(a):
                                  headers={"Content-Type": "application/json", "User-Agent": UA})
     try:
         urllib.request.urlopen(req, timeout=15).read()
+        log(f"[ntfy] sent: {a['title']}")
         return True
     except Exception as e:
         log(f"[ntfy] send failed: {e}")
@@ -377,6 +378,11 @@ SOURCES = [("my_tokens", src_my_tokens), ("watchlist", src_watchlist),
 
 
 def main():
+    if not DRY_RUN and not NTFY_TOPIC:
+        log("ERROR: NTFY_TOPIC secret is missing or empty. Add it in repo Settings -> "
+            "Secrets and variables -> Actions (name must be exactly NTFY_TOPIC).")
+        sys.exit(1)
+    manual = os.environ.get("GITHUB_EVENT_NAME") == "workflow_dispatch"
     with open(CONFIG_FILE) as f:
         cfg = json.load(f)
     state = load_state()
@@ -398,15 +404,20 @@ def main():
             fresh.append(a)
     fresh.sort(key=lambda a: -a["priority"])
 
-    if first_run:
-        # Don't flood the phone with the backlog on the very first run.
-        for a in fresh:
-            seen[a["key"]] = NOW
-        send({"title": "✅ Money Radar is live", "priority": 3, "tags": ["satellite"],
-              "message": f"Scanning now. Skipped {len(fresh)} existing items; "
-                         f"you'll only hear about new ones from here."})
-        save_state(seen)
-        return
+    if first_run or manual:
+        # Pressing "Run workflow" always sends a status ping, so you can test it.
+        # First run also marks the backlog as seen so your phone isn't flooded.
+        if first_run:
+            for a in fresh:
+                seen[a["key"]] = NOW
+        ok = send({"title": "✅ Money Radar is live", "priority": 3, "tags": ["satellite"],
+                   "message": f"Scan worked: {len(found)} items checked, {len(fresh)} new. "
+                              f"Real alerts arrive automatically from now on."})
+        if not ok:
+            sys.exit(1)  # show a red ❌ in GitHub instead of a fake green ✓
+        if first_run:
+            save_state(seen)
+            return
 
     cap = cfg.get("max_alerts_per_run", 6)
     for a in fresh[:cap]:
