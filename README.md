@@ -1,7 +1,7 @@
 # 📡 Money Radar
 
 Scans crypto/stock news, Reddit, CoinGecko trending, DexScreener memecoins and your
-price watchlist every 15 minutes, then pings your iPhone through **ntfy**. Free.
+price watchlist every 10 minutes, then pings your iPhone through **ntfy**. Free.
 
 ## Setup (about 10 minutes)
 
