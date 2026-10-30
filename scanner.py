@@ -354,6 +354,7 @@ def send(a):
         return True
     except Exception as e:
         log(f"[ntfy] send failed: {e}")
+        print(f"::error::ntfy send failed (topic length {len(NTFY_TOPIC)}): {e}", flush=True)
         return False
 
 
@@ -379,6 +380,7 @@ SOURCES = [("my_tokens", src_my_tokens), ("watchlist", src_watchlist),
 
 def main():
     if not DRY_RUN and not NTFY_TOPIC:
+        print("::error::NTFY_TOPIC secret is missing or empty", flush=True)
         log("ERROR: NTFY_TOPIC secret is missing or empty. Add it in repo Settings -> "
             "Secrets and variables -> Actions (name must be exactly NTFY_TOPIC).")
         sys.exit(1)
