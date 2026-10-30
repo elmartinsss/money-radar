@@ -2,7 +2,7 @@ name: Money Radar
 
 on:
   schedule:
-    - cron: "*/10 * * * *"   # every 10 min (GitHub may delay runs a few minutes)
+    - cron: "*/5 * * * *"    # every 5 min (GitHub minimum) (GitHub may delay runs a few minutes)
   workflow_dispatch:          # lets you press "Run workflow" by hand
 
 permissions:
