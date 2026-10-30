@@ -152,5 +152,19 @@
   "message": "Rank #48 · -5.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 30/100 Fear 😐.",
   "click": "https://www.coingecko.com/en/coins/aave",
   "priority": 2
+ },
+ {
+  "t": 1793399538,
+  "title": "🔥 Trending #4: Solana (SOL)",
+  "message": "Rank #7 · -1.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 30/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/solana",
+  "priority": 2
+ },
+ {
+  "t": 1793399538,
+  "title": "🔥 Trending #7: Lighter (LIT)",
+  "message": "Rank #87 · -5.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 30/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/lighter",
+  "priority": 2
  }
 ]
