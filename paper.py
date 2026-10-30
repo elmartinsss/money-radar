@@ -193,8 +193,11 @@ def run(cfg, signals, fetch, mood=None, bcfg=None, rcfg=None, rejected=()):
         R.setdefault(k, v)
     hist_before = len(w["history"])
     if rcfg:
+        before = len(R["pending_checks"])
         for c in list(rejected)[:25]:
             rewards.note_rejection(R, c, c["reason"], _now())
+        if len(R["pending_checks"]) != before:
+            w["changed"] = True
         if rewards.follow_up(R, lambda cs: fetch_prices([{"kind": "dex", "id": c["id"], "chain": c["chain"]} for c in cs], fetch),
                              notes, rcfg, _now()):
             w["changed"] = True
