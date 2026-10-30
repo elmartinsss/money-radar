@@ -397,6 +397,7 @@ def main():
         if sc.get("enabled"):
             got = safe(fn, sc)
             log(f"[{name}] {len(got)} candidates")
+            print(f"::notice::{name}: {len(got)} passed filters", flush=True)
             found += got
 
     fresh, dupes = [], set()
@@ -432,6 +433,7 @@ def main():
         for a in rest:
             seen[a["key"]] = NOW
     log(f"sent {min(len(fresh), cap)} alerts, {len(rest)} bundled")
+    print(f"::notice::Checked {len(found)} items, {len(fresh)} new, sent {min(len(fresh), cap)} alerts", flush=True)
     save_state(seen)
 
 
