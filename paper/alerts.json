@@ -222,5 +222,12 @@
   "message": "Rank #30 · +12.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.",
   "click": "https://www.coingecko.com/en/coins/pepe",
   "priority": 2
+ },
+ {
+  "t": 1793402128,
+  "title": "🔥 Trending #7: Quantus (QTC)",
+  "message": "Rank #782 · -5.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 30/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/quantus",
+  "priority": 2
  }
 ]
