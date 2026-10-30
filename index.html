@@ -182,6 +182,17 @@
   .scanlog summary { cursor: pointer; }
   .scanlog details ul { margin: 8px 0 0; padding-left: 18px; columns: 2; column-gap: 20px; }
 
+  .modes, .chips { border: 0; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  .modes legend, .chips legend { width: 100%; }
+  .modes label, .chips label { cursor: pointer; }
+  .modes input, .chips input { position: absolute; opacity: 0; pointer-events: none; }
+  .modes span, .chips span {
+    display: inline-block; border: 1.5px solid var(--ink); color: var(--ink); border-radius: 999px;
+    padding: 8px 16px; font-weight: 600; font-size: 15px;
+  }
+  .modes input:checked + span, .chips input:checked + span { background: var(--ink); color: #fff; }
+  .modes input:focus-visible + span, .chips input:focus-visible + span { outline: 3px solid var(--ink); outline-offset: 3px; }
+  .countdown.big { font-size: 40px; color: var(--text); }
   .live-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; margin-top: 8px; }
   .coin { font: 800 34px/1.05 var(--sans); letter-spacing: -0.02em; }
   .countdown { font: 400 26px var(--hand); color: var(--pencil); white-space: nowrap; }
@@ -272,7 +283,14 @@
     <p class="meta">Choose an amount and a style. The bot checks live memecoins, buys the most active one that passes the safety checks, and sells it by itself. Pretend money, real prices.</p>
 
     <form id="qForm" autocomplete="off">
-      <label class="field-label" for="qAmt">Amount</label>
+      <fieldset class="modes">
+        <legend class="field-label">Mode</legend>
+        <label><input type="radio" name="mode" value="single" checked><span>One trade</span></label>
+        <label><input type="radio" name="mode" value="challenge"><span>Speed challenge</span></label>
+      </fieldset>
+      <p class="hint" id="qModeHint">The bot picks one coin and holds it until it hits your target, your stop, or the time runs out.</p>
+
+      <label class="field-label" for="qAmt" id="qAmtLabel">Amount</label>
       <div class="amt-row">
         <input id="qAmt" type="number" min="1" max="1000" step="1" value="10" inputmode="decimal" required>
         <span class="eur">€</span>
@@ -281,12 +299,26 @@
         </span>
       </div>
 
-      <fieldset class="styles">
+      <fieldset class="styles" id="qStyleSet">
         <legend class="field-label">Style</legend>
         <label><input type="radio" name="style" value="careful"><span><b>Careful</b>Sell at +10% or −5%, max 15 min</span></label>
         <label><input type="radio" name="style" value="normal" checked><span><b>Normal</b>Sell at +20% or −10%, max 30 min</span></label>
         <label><input type="radio" name="style" value="wild"><span><b>Wild</b>Sell at +50% or −25%, max 60 min</span></label>
       </fieldset>
+
+      <div id="qChalFields" hidden>
+        <fieldset class="chips">
+          <legend class="field-label">Time</legend>
+          <label><input type="radio" name="dur" value="2"><span>2 min</span></label>
+          <label><input type="radio" name="dur" value="5" checked><span>5 min</span></label>
+          <label><input type="radio" name="dur" value="10"><span>10 min</span></label>
+        </fieldset>
+        <fieldset class="styles">
+          <legend class="field-label">Risk</legend>
+          <label><input type="radio" name="risk" value="normal" checked><span><b>Normal filters</b>Same safety checks as always. Sells at +6% or −4%, up to 3 coins at once.</span></label>
+          <label><input type="radio" name="risk" value="degen"><span><b>Degen</b>Brand-new coins, tiny liquidity, already-pumped coins all allowed. Only obvious rug flags are blocked. Sells at +12% or −8%.</span></label>
+        </fieldset>
+      </div>
 
       <button type="submit" class="primary" id="qStart">Find a coin and buy</button>
       <p class="hint">Keep this page open while it trades. If your phone locks, it catches up on what happened when you come back.</p>
@@ -313,6 +345,28 @@
         <button type="button" class="primary" id="qSell">Sell now</button>
         <a id="qChartLink" target="_blank" rel="noopener">Open on DexScreener</a>
       </div>
+    </section>
+
+    <section id="qChal" hidden>
+      <div class="live-head">
+        <div>
+          <div class="coin">Speed challenge</div>
+          <div class="sub" id="qcSub"></div>
+        </div>
+        <div class="countdown big" id="qcTimer" aria-label="Time left"></div>
+      </div>
+      <div class="pnl" id="qcPnl" aria-live="polite"></div>
+      <div class="qchart" id="qcChart"></div>
+      <h2>Holding <small id="qcSlots"></small></h2>
+      <ul class="rows" id="qcHold"></ul>
+      <h2>Trades <small id="qcCount"></small></h2>
+      <ul class="rows feed" id="qcLog"></ul>
+      <div class="live-actions"><button type="button" class="primary" id="qcStop">Stop and sell everything</button></div>
+    </section>
+
+    <section>
+      <h2>Challenge results <small id="qcHistCount"></small></h2>
+      <ul class="rows" id="qcHist"></ul>
     </section>
 
     <section>
@@ -566,12 +620,21 @@ setInterval(load, 5 * 60 * 1000);
     $("qScanLog").append(li);
   }
 
-  async function rugcheck(mint) {
+  const rugCache = {};
+  async function rugcheck(mint, dangerOnly) {
+    const key = mint + (dangerOnly ? ":d" : "");
+    if (rugCache[key]) return rugCache[key];
+    const res = await rugcheckRaw(mint, dangerOnly);
+    if (!res.note.startsWith("safety check didn't")) rugCache[key] = res;
+    return res;
+  }
+  async function rugcheckRaw(mint, dangerOnly) {
     try {
       const r = await j(`https://api.rugcheck.xyz/v1/tokens/${mint}/report/summary`);
       const risks = r.risks || [];
       const danger = risks.filter(x => x.level === "danger").map(x => x.name);
       if (danger.length) return { ok: false, note: danger.join(", ") };
+      if (dangerOnly) return { ok: true, note: "degen mode: only blocks danger flags" };
       const bad = risks.filter(x => x.level === "warn" && F.rugWords.some(w => (x.name || "").toLowerCase().includes(w))).map(x => x.name);
       if (bad.length) return { ok: false, note: bad.join(", ") };
       const warns = risks.filter(x => x.level === "warn").map(x => x.name);
@@ -581,18 +644,13 @@ setInterval(load, 5 * 60 * 1000);
     }
   }
 
-  async function scan() {
-    $("qScan").hidden = false;
-    $("qScanLog").innerHTML = "";
-    skipped = [];
-    $("qScanCount").textContent = "fetching lists…";
+  async function fetchPairs() {
     const lists = await Promise.allSettled([
       j(DS + "/token-boosts/top/v1"), j(DS + "/token-boosts/latest/v1"), j(DS + "/token-profiles/latest/v1"),
     ]);
     const addrs = [...new Set(lists.flatMap(r => r.status === "fulfilled" && Array.isArray(r.value) ? r.value : [])
       .filter(t => t.chainId === "solana").map(t => t.tokenAddress))].slice(0, 90);
     if (!addrs.length) throw new Error("DexScreener didn't answer. Check your connection and try again.");
-
     const pairs = {};
     for (let i = 0; i < addrs.length; i += 30) {
       try {
@@ -603,9 +661,11 @@ setInterval(load, 5 * 60 * 1000);
         }
       } catch (e) {}
     }
-    const all = Object.values(pairs);
-    $("qScanCount").textContent = `${all.length} coins`;
+    return Object.values(pairs);
+  }
 
+  /* Returns coins that pass filter set f, best first. onSkip(name, reason) gets the rest. */
+  function filterPairs(all, f, onSkip, scoreFn) {
     const now = Date.now(), passed = [];
     for (const p of all) {
       const sym = "$" + (p.baseToken?.symbol || "?");
@@ -613,23 +673,32 @@ setInterval(load, 5 * 60 * 1000);
       const ageH = (now - (p.pairCreatedAt || now)) / 3.6e6, pc = p.priceChange || {};
       const tx1 = (p.txns?.h1?.buys || 0) + (p.txns?.h1?.sells || 0);
       let why = null;
-      if (!p.priceUsd) why = "no price";
-      else if (liq < F.minLiq) why = "too little liquidity";
-      else if (v24 < F.minVol24) why = "low volume";
-      else if (ageH < F.minAgeH) why = `too new (${ageH.toFixed(0)}h)`;
-      else if (v1 < F.minVol1h || tx1 < F.minTx1h) why = "quiet right now";
-      else if ((pc.h24 || 0) > F.maxPump24) why = `already pumped ${Math.round(pc.h24)}%`;
-      else if ((pc.h1 || 0) < -F.maxDump1h) why = `dumping ${pc.h1}% this hour`;
-      else if ((pc.m5 || 0) < -F.maxDump5m) why = "falling right now";
-      else if (v24 > liq * F.maxVolLiq) why = "fake-looking volume";
-      else if (HYPE.some(r => r.test((p.baseToken?.symbol || "") + " " + (p.baseToken?.name || "")))) why = "hype name";
-      if (why) { skip(sym, why); continue; }
-      // most active relative to its size, plus how much it's moving
-      p._score = (v1 / liq) * (1 + Math.abs(pc.h1 || 0) / 100);
+      if (!p.priceUsd || !p.pairAddress) why = "no price";
+      else if (liq < f.minLiq) why = "too little liquidity";
+      else if (v24 < f.minVol24) why = "low volume";
+      else if (ageH < f.minAgeH) why = `too new (${ageH.toFixed(0)}h)`;
+      else if (v1 < f.minVol1h || tx1 < f.minTx1h) why = "quiet right now";
+      else if ((pc.h24 || 0) > f.maxPump24) why = `already pumped ${Math.round(pc.h24)}%`;
+      else if ((pc.h1 || 0) < -f.maxDump1h) why = `dumping ${pc.h1}% this hour`;
+      else if ((pc.m5 || 0) < -f.maxDump5m) why = "falling right now";
+      else if (v24 > liq * f.maxVolLiq) why = "fake-looking volume";
+      else if (f.hype && HYPE.some(r => r.test((p.baseToken?.symbol || "") + " " + (p.baseToken?.name || "")))) why = "hype name";
+      if (why) { onSkip && onSkip(sym, why); continue; }
       p._ageH = ageH;
+      p._score = scoreFn ? scoreFn(p) : (v1 / liq) * (1 + Math.abs(pc.h1 || 0) / 100);
       passed.push(p);
     }
-    passed.sort((a, b) => b._score - a._score);
+    return passed.sort((a, b) => b._score - a._score);
+  }
+
+  async function scan() {
+    $("qScan").hidden = false;
+    $("qScanLog").innerHTML = "";
+    skipped = [];
+    $("qScanCount").textContent = "fetching lists…";
+    const all = await fetchPairs();
+    $("qScanCount").textContent = `${all.length} coins`;
+    const passed = filterPairs(all, { ...F, hype: true }, skip);
     renderSkipped();
     for (const p of passed.slice(0, 6)) {
       const sym = "$" + p.baseToken.symbol;
@@ -811,11 +880,219 @@ setInterval(load, 5 * 60 * 1000);
         <span class="sub">${esc(h.reason)}, ${eur(h.amount)} in, ${Math.max(1, Math.round((h.end - h.start) / 60000))} min</span></li>`).join("");
   }
 
+  /* ---------- speed challenge ---------- */
+  const CH = {
+    normal: { tp: 6, sl: 4, slots: 3, staleMs: 120000, rugDangerOnly: false,
+      f: { ...F, hype: true, maxDump5m: 2 } },
+    degen: { tp: 12, sl: 8, slots: 3, staleMs: 90000, rugDangerOnly: true,
+      f: { minLiq: 8000, minVol24: 15000, minAgeH: 0.25, minVol1h: 800, minTx1h: 15, maxPump24: 1e9,
+           maxDump1h: 60, maxDump5m: 10, maxVolLiq: 400, hype: false } },
+  };
+  const CH_TICK = 3000, CH_REFRESH = 45000;
+  let ch = store.get("qc_active", null), chTimer = null, chClock = null, chBusy = false, queue = [], queueAt = 0;
+
+  // short-term momentum: active relative to its size, and moving up in the last 5 minutes
+  const momentum = p => {
+    const liq = p.liquidity?.usd || 1, pc = p.priceChange || {};
+    return ((p.volume?.h1 || 0) / liq) * (1 + Math.max(0, pc.m5 || 0) / 5) * ((pc.m5 || 0) >= 0 ? 1 : 0.3);
+  };
+
+  async function refreshQueue() {
+    const all = await fetchPairs();
+    queue = filterPairs(all, CH[ch.risk].f, null, momentum);
+    queueAt = Date.now();
+    ch.seenCoins = all.length;
+  }
+
+  function chEquity() {
+    return ch.cash + ch.pos.reduce((s, p) => s + p.eurIn * (p.last / p.entry) * (1 - COST / 100), 0);
+  }
+
+  function chLog(e) { ch.log.push({ t: Date.now(), ...e }); }
+
+  function chSell(p, reason) {
+    const value = p.eurIn * (p.last / p.entry) * (1 - COST / 100), pnl = value - p.paid;
+    ch.cash += value;
+    ch.pos = ch.pos.filter(x => x !== p);
+    ch.trades.push({ sym: p.sym, pnl, pct: pnl / p.paid * 100 });
+    chLog({ type: "sell", sym: p.sym, pnl, pct: pnl / p.paid * 100, reason });
+  }
+
+  async function chFillSlots() {
+    const cfg = CH[ch.risk];
+    if (ch.pos.length >= cfg.slots || ch.cash < 0.5 || Date.now() > ch.endsAt - 15000) return;
+    if (!queue.length || Date.now() - queueAt > CH_REFRESH) await refreshQueue();
+    const held = new Set(ch.pos.map(p => p.mint));
+    while (queue.length) {
+      const c = queue.shift(), mint = c.baseToken.address;
+      if (held.has(mint) || ch.traded.includes(mint)) continue;
+      const rc = await rugcheck(mint, cfg.rugDangerOnly);
+      if (!rc.ok) { ch.traded.push(mint); chLog({ type: "skip", sym: c.baseToken.symbol, reason: "rug check: " + rc.note }); continue; }
+      const free = cfg.slots - ch.pos.length;
+      const spend = Math.round(ch.cash / free * 100) / 100;
+      const entry = parseFloat(c.priceUsd);
+      ch.cash -= spend;
+      ch.pos.push({ sym: c.baseToken.symbol, mint, pair: c.pairAddress, url: c.url, entry, last: entry,
+        paid: spend, eurIn: spend * (1 - COST / 100), t: Date.now(), peak: entry });
+      ch.traded.push(mint);
+      chLog({ type: "buy", sym: c.baseToken.symbol, eur: spend,
+        reason: `5m ${pct(c.priceChange?.m5 || 0)}, ${usd(c.volume?.h1 || 0)} traded last hour` });
+      return; // one buy per tick keeps it readable
+    }
+  }
+
+  async function chTick() {
+    if (!ch || chBusy) return;
+    chBusy = true;
+    try {
+      const cfg = CH[ch.risk];
+      if (ch.pos.length) {
+        const d = await j(`${DS}/latest/dex/pairs/solana/${ch.pos.map(p => p.pair).join(",")}`);
+        const byPair = {};
+        (d.pairs || []).forEach(x => { byPair[x.pairAddress] = parseFloat(x.priceUsd); });
+        for (const p of [...ch.pos]) {
+          const pr = byPair[p.pair];
+          if (!(pr > 0)) continue;
+          p.last = pr; p.peak = Math.max(p.peak, pr);
+          const c = (pr / p.entry - 1) * 100;
+          if (c >= cfg.tp) chSell(p, `🎯 +${c.toFixed(1)}%`);
+          else if (c <= -cfg.sl) chSell(p, `🛑 ${c.toFixed(1)}%`);
+          else if (Date.now() - p.t > cfg.staleMs && Math.abs(c) < 1.5) chSell(p, "😴 not moving, swapped out");
+        }
+      }
+      if (Date.now() >= ch.endsAt) return chFinish("⏰ Time's up");
+      await chFillSlots();
+      ch.curve.push([Date.now(), chEquity()]);
+      store.set("qc_active", ch);
+      chRender(true);
+    } catch (e) {
+      $("qcSub").textContent = "price feed hiccup, retrying…";
+    } finally { chBusy = false; }
+  }
+
+  function chFinish(reason) {
+    for (const p of [...ch.pos]) chSell(p, reason === "⏰ Time's up" ? "⏰ sold at the end" : "✋ sold when you stopped");
+    const end = ch.cash, pnl = end - ch.budget, wins = ch.trades.filter(t => t.pnl >= 0).length;
+    const best = ch.trades.slice().sort((a, b) => b.pnl - a.pnl)[0];
+    const hist = store.get("qc_history", []);
+    hist.push({ t: Date.now(), budget: ch.budget, end, pnl, pct: pnl / ch.budget * 100, trades: ch.trades.length,
+      wins, risk: ch.risk, mins: ch.mins, best: best ? `${best.sym} ${pct(best.pct)}` : null, reason });
+    store.set("qc_history", hist.slice(-30));
+    store.del("qc_active");
+    clearInterval(chTimer); clearInterval(chClock);
+    ch.done = true;
+    chRender(false);
+    $("qForm").hidden = false;
+    $("qcStop").hidden = true;
+    chRenderHistory(true);
+    ch = null;
+  }
+
+  function chRender(pulse) {
+    const cfg = CH[ch.risk], eq = chEquity(), pnl = eq - ch.budget;
+    $("qChal").hidden = false; $("qForm").hidden = true; $("qcStop").hidden = !!ch.done;
+    $("qcSub").textContent = ch.done
+      ? `Finished. ${eur(ch.budget)} became ${eur(eq)}.`
+      : `${eur(ch.budget)} budget, ${ch.risk === "degen" ? "degen" : "normal"} filters, sells at +${cfg.tp}% / −${cfg.sl}%`;
+    $("qcPnl").className = "pnl " + (pnl >= 0 ? "gain" : "loss");
+    const wins = ch.trades.filter(t => t.pnl >= 0).length;
+    $("qcPnl").innerHTML = `${pnl >= 0 ? "+" : "−"}${eur(Math.abs(pnl))}<span>Wallet ${eur(eq)} (${pct(pnl / ch.budget * 100)}). `
+      + `${ch.trades.length} trade${ch.trades.length === 1 ? "" : "s"} closed, ${wins} won. Each buy and sell costs about ${COST}%.</span>`;
+
+    // equity curve
+    const W = 640, H = 200, pl = 6, pr = 70, pt = 12, pb = 12, pts = ch.curve.length ? ch.curve : [[ch.start, ch.budget]];
+    let lo = Math.min(ch.budget * 0.97, ...pts.map(x => x[1])), hi = Math.max(ch.budget * 1.03, ...pts.map(x => x[1]));
+    const t0 = ch.start, t1 = ch.endsAt;
+    const X = ms => pl + (ms - t0) / (t1 - t0) * (W - pl - pr), Y = v => pt + (hi - v) / (hi - lo) * (H - pt - pb);
+    const d = pts.map(([ms, v], i) => (i ? "L" : "M") + X(ms).toFixed(1) + " " + Y(v).toFixed(1)).join(" ");
+    const [lx, lv] = pts[pts.length - 1];
+    $("qcChart").innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Wallet value during the challenge">
+      <line class="entry" x1="${pl}" x2="${W - pr}" y1="${Y(ch.budget)}" y2="${Y(ch.budget)}"/>
+      <text class="lbl" fill="var(--pencil)" x="${W - pr + 8}" y="${Y(ch.budget) + 5}">start</text>
+      <path class="qline" d="${d}" style="stroke:var(--${pnl >= 0 ? "gain" : "loss"})"/>
+      <circle class="${pulse ? "dot" : ""}" cx="${X(lx)}" cy="${Y(lv)}" r="5" fill="var(--${pnl >= 0 ? "gain" : "loss"})"/>
+      <text class="lbl" fill="var(--text)" x="${W - pr + 8}" y="${Math.min(H - 4, Math.max(16, Y(lv) + 5))}">${eur(lv)}</text>
+    </svg>`;
+
+    $("qcSlots").textContent = `${ch.pos.length} of ${cfg.slots}`;
+    $("qcHold").innerHTML = ch.pos.length ? ch.pos.map(p => {
+      const c = (p.last / p.entry - 1) * 100, v = p.eurIn * (p.last / p.entry) * (1 - COST / 100);
+      return `<li><span class="sym"><a href="${esc(p.url)}" target="_blank" rel="noopener" style="color:inherit">$${esc(p.sym)}</a></span>
+        <span class="amt ${c >= 0 ? "gain" : "loss"}">${pct(c)}<span>${eur(v)}</span></span>
+        <span class="sub">${eur(p.paid)} in, held ${Math.round((Date.now() - p.t) / 1000)}s</span></li>`;
+    }).join("") : `<li class="empty">${ch.done ? "Everything sold." : "Looking for the next coin…"}</li>`;
+
+    const hhmmss = t => new Date(t).toLocaleTimeString("en-GB");
+    $("qcCount").textContent = ch.trades.length ? `${ch.trades.length} closed` : "";
+    $("qcLog").innerHTML = ch.log.slice(-40).reverse().map(e => {
+      if (e.type === "buy") return `<li><span class="when">${hhmmss(e.t)}</span><span class="what">Bought $${esc(e.sym)}</span>
+        <span class="amt">${eur(e.eur)}</span><span class="why">${esc(e.reason)}</span></li>`;
+      if (e.type === "sell") return `<li><span class="when">${hhmmss(e.t)}</span><span class="what">Sold $${esc(e.sym)}</span>
+        <span class="amt ${e.pnl >= 0 ? "gain" : "loss"}">${e.pnl >= 0 ? "+" : "−"}${eur(Math.abs(e.pnl))}<span>${pct(e.pct)}</span></span>
+        <span class="why">${esc(e.reason)}</span></li>`;
+      return `<li class="skip"><span class="when">${hhmmss(e.t)}</span><span class="what">Skipped $${esc(e.sym)}</span><span class="why">${esc(e.reason)}</span></li>`;
+    }).join("") || `<li class="empty">Scanning the market…</li>`;
+  }
+
+  function chRenderHistory(flash) {
+    const hist = store.get("qc_history", []);
+    $("qcHistCount").textContent = hist.length ? `${hist.length} runs` : "";
+    $("qcHist").innerHTML = hist.length ? hist.slice().reverse().map((r, i) => `
+      <li class="${flash && i === 0 ? "new" : ""}"><span class="sym">${r.mins} min, ${r.risk === "degen" ? "degen" : "normal"}</span>
+        <span class="amt ${r.pnl >= 0 ? "gain" : "loss"}">${r.pnl >= 0 ? "+" : "−"}${eur(Math.abs(r.pnl))}<span>${pct(r.pct)}</span></span>
+        <span class="sub">${eur(r.budget)} → ${eur(r.end)}, ${r.trades} trades, ${r.wins} won${r.best ? `, best ${esc(r.best)}` : ""}</span></li>`).join("")
+      : `<li class="empty">No challenges yet. Switch the mode to Speed challenge and set a budget.</li>`;
+  }
+
+  function chStartLoops() {
+    clearInterval(chTimer); clearInterval(chClock);
+    chTick();
+    chTimer = setInterval(chTick, CH_TICK);
+    chClock = setInterval(() => {
+      if (!ch) return;
+      const left = Math.max(0, ch.endsAt - Date.now());
+      $("qcTimer").textContent = `${Math.floor(left / 60000)}:${String(Math.floor(left / 1000) % 60).padStart(2, "0")}`;
+      if (!left) chTick();
+    }, 250);
+  }
+
+  async function startChallenge(budget) {
+    const mins = +((document.querySelector('input[name="dur"]:checked') || {}).value || 5);
+    const risk = (document.querySelector('input[name="risk"]:checked') || {}).value || "normal";
+    const now = Date.now();
+    ch = { budget, cash: budget, risk, mins, start: now, endsAt: now + mins * 60000, pos: [], trades: [], traded: [],
+      log: [], curve: [[now, budget]] };
+    queue = []; queueAt = 0;
+    store.set("qc_active", ch);
+    $("qScan").hidden = true;
+    chRender(false);
+    $("qChal").scrollIntoView({ behavior: "smooth", block: "start" });
+    chStartLoops();
+  }
+
+  // mode switch
+  function applyMode() {
+    const challenge = (document.querySelector('input[name="mode"]:checked') || {}).value === "challenge";
+    $("qChalFields").hidden = !challenge;
+    $("qStyleSet").hidden = challenge;
+    $("qAmtLabel").textContent = challenge ? "Budget" : "Amount";
+    $("qStart").textContent = challenge ? "Start the challenge" : "Find a coin and buy";
+    $("qModeHint").textContent = challenge
+      ? "The bot trades as many coins as it can before the timer ends: up to 3 at once, quick profits, fast exits, then straight into the next one."
+      : "The bot picks one coin and holds it until it hits your target, your stop, or the time runs out.";
+  }
+  document.querySelectorAll('input[name="mode"]').forEach(r => r.addEventListener("change", applyMode));
+  $("qcStop").addEventListener("click", () => { if (ch && !ch.done) chFinish("✋ Stopped"); });
+
   /* ---------- wiring ---------- */
   $("qForm").addEventListener("submit", async e => {
     e.preventDefault();
     const amount = Math.round(parseFloat($("qAmt").value) * 100) / 100;
     if (!(amount >= 1 && amount <= 1000)) { $("qAmt").focus(); return; }
+    if ((document.querySelector('input[name="mode"]:checked') || {}).value === "challenge") {
+      if (ch && !ch.done) return;
+      return startChallenge(amount);
+    }
     const style = (document.querySelector('input[name="style"]:checked') || {}).value || "normal";
     $("qStart").disabled = true;
     $("qStart").textContent = "Checking coins…";
@@ -829,7 +1106,7 @@ setInterval(load, 5 * 60 * 1000);
       logLine("No trade", false, err.message);
     } finally {
       $("qStart").disabled = false;
-      $("qStart").textContent = "Find a coin and buy";
+      applyMode();
     }
   });
   $("qSell").addEventListener("click", () => {
@@ -840,7 +1117,14 @@ setInterval(load, 5 * 60 * 1000);
   document.addEventListener("visibilitychange", () => { if (!document.hidden && trade) tick(); });
 
   renderHistory(false);
+  chRenderHistory(false);
+  applyMode();
   if (trade) { renderLive(false); startLoop(); }
+  else if (ch) {
+    document.querySelector('input[name="mode"][value="challenge"]').checked = true; applyMode();
+    chRender(false); chStartLoops();
+  }
+  document.addEventListener("visibilitychange", () => { if (!document.hidden && ch) chTick(); });
 })();
 </script>
 </body>
