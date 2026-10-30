@@ -110,5 +110,33 @@
   "message": "Rank #30 · +12.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.",
   "click": "https://www.coingecko.com/en/coins/pepe",
   "priority": 2
+ },
+ {
+  "t": 1793381794,
+  "title": "📰 Capri Stock Soars as Second-Quarter Earnings Beat, Updated Guidance Signal Recovery - Yahoo Finance",
+  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: earnings beat, soars · via news.google.com",
+  "click": "https://news.google.com/rss/articles/CBMingFBVV95cUxONTNuV1I3S05XYzRPZEFodllVUmJBZlNlWG1Mb0ZNcE11Rll6ZkFDUjRUc1dfRW9KNXpqUU1EbUxPTkZYS3FiT1JHMEtCUE5wdjVCOXMyTXVzZTdjR3lhc2VIaHNTWXVTOHVidEhzZ2NmdEVZMmpZaGhfV3lXWDgxU3czU2hNX3FCeE1hUXZ2Znk3ejk1TjhnbzdLaDY0dw?oc=5",
+  "priority": 3
+ },
+ {
+  "t": 1793381794,
+  "title": "📰 Coinbase shares slide 11% despite earnings beat as Binance hack weighs on crypto stocks - Proactive financial news",
+  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: binance, earnings beat · via news.google.com",
+  "click": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPaXd2STFyLVhyLWNYT1EwNGFmU05zTnBMRXB0S0tEMi1TTGtleHdMWER1ODExVnFKdHpRVDhaT0tEZGFMV0lCcktpN1kxejV4THV2TTJYdG5ISDFtaXZBbUdzNHd5TTRmcF9Ec1RReEdxRmZOcHJMeHdNNXdPZ3NDNzBhVGIwaGJFYktlbXJzb0xKMEN6VzN5Wms5UzRGLVZrXzFLekFjYXJUbWxJVjgwY1lvNEZKTkdNRFE5SzVuck90cFE2QnZzeFcxUVhaNHJRTUQyUndTWXQ1dUV1dnZWUFFjTFlrZGh4VFR3aERR?oc=5",
+  "priority": 3
+ },
+ {
+  "t": 1793381794,
+  "title": "🔥 Trending #6: NEAR Protocol (NEAR)",
+  "message": "Rank #21 · -6.4% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 30/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/near",
+  "priority": 2
+ },
+ {
+  "t": 1793381794,
+  "title": "🔥 Trending #7: Ethena (ENA)",
+  "message": "Rank #41 · -12.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 30/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/ethena",
+  "priority": 2
  }
 ]
