@@ -26,9 +26,60 @@
  "mood": {
   "value": 30,
   "label": "Fear",
-  "t": 1793399538
+  "t": 1793402178
  },
  "learning": {},
  "pending": [],
- "updated": 1793399540
+ "updated": 1793402181,
+ "rewards": {
+  "xp": 0,
+  "level": "Lab rat",
+  "medals": [],
+  "confidence": 0.0,
+  "streak": 0,
+  "best_streak": 0,
+  "situations": {},
+  "rules": {},
+  "journal": [],
+  "pending_checks": [
+   {
+    "id": "9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump",
+    "chain": "solana",
+    "symbol": "JOB",
+    "price": 0.003415,
+    "t": 1793402181,
+    "rule": "Rising this hour",
+    "reason": "not trending up this hour"
+   },
+   {
+    "id": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
+    "chain": "solana",
+    "symbol": "GATO",
+    "price": 0.004709,
+    "t": 1793402181,
+    "rule": "Liquidity vs size",
+    "reason": "thin liquidity for its size (4.6% of market cap)"
+   },
+   {
+    "id": "8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump",
+    "chain": "solana",
+    "symbol": "GLITCH",
+    "price": 0.003732,
+    "t": 1793402181,
+    "rule": "Rising this hour",
+    "reason": "not trending up this hour"
+   },
+   {
+    "id": "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump",
+    "chain": "solana",
+    "symbol": "DESSA",
+    "price": 0.009865,
+    "t": 1793402181,
+    "rule": "Rising this hour",
+    "reason": "not trending up this hour"
+   }
+  ],
+  "total_reward": 0.0,
+  "trades": 0
+ }
 }
