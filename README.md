@@ -37,3 +37,11 @@ or switch a whole section to `"enabled": false`.
 - GitHub pauses scheduled runs in a repo after **60 days without commits**. Edit any file
   now and then to keep it going.
 - The test: `DRY_RUN=1 python scanner.py` prints alerts instead of sending them.
+
+## 📝 Paper wallet (fake €100)
+The bot "buys" €10 of each strong signal (memecoins that pass every filter, top-3 trending
+coins, and big upward moves on your watchlist) using live prices, fees and slippage.
+It sells automatically at **+30%** (take profit), **−15%** (stop loss) or after **7 days**.
+You get a ping for every buy and sell, plus a daily report at 20:00 comparing it with simply
+holding Bitcoin. Full history: **PORTFOLIO.md** in this repo. Tune it in `config.json → paper`.
+To restart from €100, delete `paper/wallet.json`.

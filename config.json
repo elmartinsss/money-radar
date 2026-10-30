@@ -110,5 +110,23 @@
     ],
     "price_move_pct_1h": 25,
     "volume_1h_usd": 1000
+  },
+  "paper": {
+    "enabled": true,
+    "start_eur": 100,
+    "eur_per_trade": 10,
+    "max_open_positions": 8,
+    "buy_on": [
+      "memecoin",
+      "trending",
+      "momentum"
+    ],
+    "trending_top_n": 3,
+    "take_profit_pct": 30,
+    "stop_loss_pct": 15,
+    "max_hold_hours": 168,
+    "fee_pct": 0.5,
+    "memecoin_slippage_pct": 2,
+    "report_hour": 20
   }
 }

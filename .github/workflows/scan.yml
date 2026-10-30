@@ -6,7 +6,7 @@ on:
   workflow_dispatch:          # lets you press "Run workflow" by hand
 
 permissions:
-  contents: read
+  contents: write   # lets the bot save the paper wallet
 
 concurrency:
   group: money-radar
@@ -34,6 +34,18 @@ jobs:
         run: python scanner.py
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+
+      - name: Save paper wallet
+        if: always()
+        run: |
+          if [ -n "$(git status --porcelain paper PORTFOLIO.md)" ]; then
+            git config user.name "money-radar-bot"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add paper PORTFOLIO.md
+            git commit -m "Paper wallet update"
+            git pull --rebase -q || true
+            git push || echo "::warning::could not save paper wallet this run"
+          fi
 
       - uses: actions/cache/save@v4
         if: always()

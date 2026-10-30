@@ -14,6 +14,7 @@ import hashlib
 import urllib.request
 import urllib.parse
 import xml.etree.ElementTree as ET
+import paper
 from email.utils import parsedate_to_datetime
 from datetime import datetime, timezone
 
@@ -191,6 +192,9 @@ def src_coingecko_trending(c):
             f"Rank #{it.get('market_cap_rank') or '?'} · {chg_s}\n"
             f"Risk: 🟡 trending = lots of people searching it. Usually late to the move.",
             f"https://www.coingecko.com/en/coins/{it.get('id')}", 2, ["fire"], today()))
+        if isinstance(d.get("price"), (int, float)) and d["price"] > 0:
+            out[-1]["trade"] = {"kind": "cg", "id": it.get("id"), "symbol": it.get("symbol"),
+                                "price": float(d["price"]), "rank": i + 1, "signal": "trending"}
     return out
 
 
@@ -269,6 +273,9 @@ def src_dexscreener(c):
                 f"Rugcheck: {note}\n"
                 f"Risk: 🔴 gambling. Passed the safety filters, but it's a paid promo and most memecoins still go to 0.",
                 p.get("url"), 3, ["frog", "warning"], today()))
+            if p.get("priceUsd"):
+                out[-1]["trade"] = {"kind": "dex", "chain": chain, "id": addr, "symbol": sym,
+                                    "price": float(p["priceUsd"]), "signal": "memecoin"}
     return out
 
 
@@ -289,6 +296,9 @@ def src_watchlist(c):
                         f"Now ${v.get('usd'):,}\nRisk: 🟢 big coin, real move. Find out WHY before doing anything.", f"https://www.coingecko.com/en/coins/{cid}",
                         4, ["chart_with_upwards_trend" if up else "chart_with_downwards_trend"],
                         f"{today()}{up}"))
+                    if up:
+                        out[-1]["trade"] = {"kind": "cg", "id": cid, "symbol": cid.upper(),
+                                            "price": float(v.get("usd")), "signal": "momentum"}
         except Exception as e:
             log(f"[watchlist] crypto failed: {e}")
     for sym in c.get("stocks") or []:
@@ -308,6 +318,9 @@ def src_watchlist(c):
                     f"https://finance.yahoo.com/quote/{sym}", 4,
                     ["chart_with_upwards_trend" if up else "chart_with_downwards_trend"],
                     f"{today()}{up}"))
+                if up:
+                    out[-1]["trade"] = {"kind": "stock", "id": sym, "symbol": sym,
+                                        "price": float(price), "signal": "momentum"}
         except Exception as e:
             log(f"[watchlist] {sym} failed: {e}")
     return out
@@ -421,6 +434,15 @@ def main():
         if first_run:
             save_state(seen)
             return
+
+    pc = cfg.get("paper", {})
+    if pc.get("enabled"):
+        try:
+            for n in paper.run(pc, fresh, fetch):
+                send(n)
+        except Exception as e:  # paper wallet must never break real alerts
+            log(f"[paper] failed: {e}")
+            print(f"::warning::paper wallet error: {e}", flush=True)
 
     cap = cfg.get("max_alerts_per_run", 6)
     for a in fresh[:cap]:
