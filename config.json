@@ -75,14 +75,18 @@
     "max_dump_1h_pct": 20,
     "max_volume_to_liquidity": 15,
     "block_rugcheck_warnings_about": [
-      "holder",
-      "lp",
-      "liquidity",
+      "lp unlocked",
+      "unlocked",
+      "top 10 holders",
+      "single holder",
+      "high ownership",
+      "high holder",
       "mutable",
       "freeze",
       "mint",
       "creator",
-      "insider"
+      "insider",
+      "low liquidity"
     ]
   },
   "watchlist": {
@@ -146,14 +150,18 @@
     "max_volume_to_liquidity": 15,
     "use_rugcheck": true,
     "block_rugcheck_warnings_about": [
-      "holder",
-      "lp",
-      "liquidity",
+      "lp unlocked",
+      "unlocked",
+      "top 10 holders",
+      "single holder",
+      "high ownership",
+      "high holder",
       "mutable",
       "freeze",
       "mint",
       "creator",
-      "insider"
+      "insider",
+      "low liquidity"
     ]
   }
 }

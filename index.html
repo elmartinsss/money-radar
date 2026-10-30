@@ -142,6 +142,67 @@
   .new { animation: flash 2.4s ease-out; }
   @keyframes flash { from { background: #fff6c9; } to { background: transparent; } }
   @media (prefers-reduced-motion: reduce) { .new { animation: none; } }
+  /* tabs: notebook divider tabs */
+  .tabs { display: flex; gap: 6px; margin: 0 0 18px; border-bottom: 2px solid var(--text); }
+  .tabs button {
+    font: 600 16px var(--sans); color: var(--pencil); background: transparent; cursor: pointer;
+    border: 2px solid transparent; border-bottom: 0; border-radius: 10px 10px 0 0;
+    padding: 9px 16px 8px; margin: 0 0 -2px;
+  }
+  .tabs button[aria-selected="true"] { color: var(--text); background: var(--paper); border-color: var(--text); }
+  .tabs button:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+
+  /* quick trade form */
+  .field-label { display: block; font-weight: 600; font-size: 15px; margin: 22px 0 8px; padding: 0; }
+  .amt-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .amt-row input {
+    font: 800 40px var(--sans); width: 4.2ch; color: var(--ink); background: transparent;
+    border: 0; border-bottom: 3px solid var(--ink); padding: 0 2px; font-variant-numeric: tabular-nums;
+  }
+  .amt-row input:focus-visible { outline: 3px solid var(--ink); outline-offset: 4px; }
+  .eur { font: 800 40px var(--sans); color: var(--ink); }
+  .presets { display: flex; gap: 6px; margin-left: 8px; }
+  .presets button { margin: 0; padding: 5px 12px; font-size: 14px; }
+  .styles { border: 0; padding: 0; margin: 0; }
+  .styles label { display: flex; gap: 12px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid var(--grid-major); cursor: pointer; }
+  .styles input { margin-top: 5px; accent-color: var(--ink); width: 18px; height: 18px; }
+  .styles b { display: block; font-weight: 600; }
+  .styles span { color: var(--pencil); font-size: 15px; }
+  .styles b { color: var(--text); font-size: 17px; }
+  button.primary {
+    background: var(--ink); color: #fff; border: 0; font-size: 17px; padding: 13px 24px; margin-top: 22px;
+  }
+  button.primary:disabled { opacity: .45; cursor: default; }
+  .hint { color: var(--pencil); font-size: 14px; margin-top: 10px; }
+
+  .scanlog li { grid-template-columns: 1fr auto; padding: 7px 0; }
+  .scanlog .ok { color: var(--gain); font-weight: 600; }
+  .scanlog .no { color: var(--pencil); font-size: 14px; text-align: right; }
+
+  .live-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; margin-top: 8px; }
+  .coin { font: 800 34px/1.05 var(--sans); letter-spacing: -0.02em; }
+  .countdown { font: 400 26px var(--hand); color: var(--pencil); white-space: nowrap; }
+  .pnl { font: 800 clamp(48px, 15vw, 72px)/1 var(--sans); letter-spacing: -0.03em; margin: 18px 0 4px; font-variant-numeric: tabular-nums; }
+  .pnl span { display: block; font-size: 15px; font-weight: 400; line-height: 1.45; letter-spacing: 0; margin-top: 10px; color: var(--pencil); max-width: 44ch; }
+  .pricebar { display: flex; justify-content: space-between; color: var(--pencil); font-size: 14px; }
+  .qchart { margin: 10px -6px 0; }
+  .qchart svg { display: block; width: 100%; height: auto; }
+  .qline { fill: none; stroke: var(--ink); stroke-width: 2.6; stroke-linejoin: round; stroke-linecap: round; }
+  .tp { stroke: var(--gain); stroke-width: 1.5; stroke-dasharray: 6 5; }
+  .sl { stroke: var(--loss); stroke-width: 1.5; stroke-dasharray: 6 5; }
+  .entry { stroke: var(--text); stroke-width: 1; opacity: .4; }
+  .lbl { font: 400 15px var(--hand); }
+  @media (prefers-reduced-motion: no-preference) {
+    .dot { animation: ping 1.2s ease-out; transform-origin: center; transform-box: fill-box; }
+    @keyframes ping { from { transform: scale(2.2); opacity: .5; } to { transform: scale(1); opacity: 1; } }
+  }
+  .dossier { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px 20px; margin: 18px 0 0; }
+  .dossier dt { color: var(--pencil); font-size: 13px; }
+  .dossier dd { margin: 0; font-weight: 600; font-size: 16px; }
+  .dossier .wide { grid-column: 1 / -1; }
+  .dossier .wide dd { font-weight: 400; font-size: 15px; }
+  .live-actions { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+  .live-actions a { color: var(--ink); font-weight: 600; margin-top: 22px; }
   .empty { font-family: var(--hand); font-size: 19px; color: var(--pencil); margin: 12px 0 0; }
 
   .rules p { font-size: 16px; }
@@ -156,6 +217,12 @@
 </head>
 <body>
 <main>
+  <nav class="tabs" role="tablist" aria-label="Sections">
+    <button type="button" role="tab" id="tabbtn-exp" aria-controls="tab-exp" aria-selected="true">Experiment</button>
+    <button type="button" role="tab" id="tabbtn-quick" aria-controls="tab-quick" aria-selected="false">Quick trade</button>
+  </nav>
+
+  <div class="tab" id="tab-exp" role="tabpanel" aria-labelledby="tabbtn-exp">
   <h1>Can the radar beat Bitcoin?</h1>
   <p class="meta" id="meta">Opening the notebook…</p>
 
@@ -195,6 +262,62 @@
     <span id="updated"></span>
     <br><button type="button" id="refresh">Refresh now</button>
   </footer>
+  </div>
+
+  <div class="tab" id="tab-quick" role="tabpanel" aria-labelledby="tabbtn-quick" hidden>
+    <h1>Quick trade</h1>
+    <p class="meta">Choose an amount and a style. The bot checks live memecoins, buys the most active one that passes the safety checks, and sells it by itself. Pretend money, real prices.</p>
+
+    <form id="qForm" autocomplete="off">
+      <label class="field-label" for="qAmt">Amount</label>
+      <div class="amt-row">
+        <input id="qAmt" type="number" min="1" max="1000" step="1" value="10" inputmode="decimal" required>
+        <span class="eur">€</span>
+        <span class="presets" id="qPresets">
+          <button type="button" data-v="5">5</button><button type="button" data-v="10">10</button><button type="button" data-v="25">25</button><button type="button" data-v="50">50</button>
+        </span>
+      </div>
+
+      <fieldset class="styles">
+        <legend class="field-label">Style</legend>
+        <label><input type="radio" name="style" value="careful"><span><b>Careful</b>Sell at +10% or −5%, max 15 min</span></label>
+        <label><input type="radio" name="style" value="normal" checked><span><b>Normal</b>Sell at +20% or −10%, max 30 min</span></label>
+        <label><input type="radio" name="style" value="wild"><span><b>Wild</b>Sell at +50% or −25%, max 60 min</span></label>
+      </fieldset>
+
+      <button type="submit" class="primary" id="qStart">Find a coin and buy</button>
+      <p class="hint">Keep this page open while it trades. If your phone locks, it catches up on what happened when you come back.</p>
+    </form>
+
+    <section id="qScan" hidden>
+      <h2>Checking coins <small id="qScanCount"></small></h2>
+      <ul class="rows scanlog" id="qScanLog"></ul>
+    </section>
+
+    <section id="qLive" hidden>
+      <div class="live-head">
+        <div>
+          <div class="coin" id="qCoin"></div>
+          <div class="sub" id="qCoinSub"></div>
+        </div>
+        <div class="countdown" id="qTimer" aria-label="Time left"></div>
+      </div>
+      <div class="pnl" id="qPnl" aria-live="polite"></div>
+      <div class="pricebar"><span id="qPrice"></span><span id="qTick"></span></div>
+      <div class="qchart" id="qChart"></div>
+      <dl class="dossier" id="qDossier"></dl>
+      <div class="live-actions">
+        <button type="button" class="primary" id="qSell">Sell now</button>
+        <a id="qChartLink" target="_blank" rel="noopener">Open on DexScreener</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Your quick trades <small id="qHistCount"></small></h2>
+      <p class="mood" id="qHistSum"></p>
+      <ul class="rows" id="qHist"></ul>
+    </section>
+  </div>
 </main>
 
 <script>
@@ -361,6 +484,340 @@ async function load() {
 $("refresh").addEventListener("click", load);
 load();
 setInterval(load, 5 * 60 * 1000);
+</script>
+<script>
+/* ---------------- tabs ---------------- */
+(function () {
+  const tabs = [["exp", "tabbtn-exp"], ["quick", "tabbtn-quick"]];
+  function show(name, push) {
+    tabs.forEach(([n, b]) => {
+      document.getElementById("tab-" + n).hidden = n !== name;
+      document.getElementById(b).setAttribute("aria-selected", String(n === name));
+    });
+    if (push) history.replaceState(null, "", name === "quick" ? "#quick" : location.pathname);
+    window.scrollTo(0, 0);
+  }
+  tabs.forEach(([n, b]) => document.getElementById(b).addEventListener("click", () => show(n, true)));
+  show(location.hash === "#quick" ? "quick" : "exp", false);
+})();
+
+/* ---------------- quick trade ---------------- */
+(function () {
+  const DS = "https://api.dexscreener.com";
+  const STYLES = {
+    careful: { tp: 10, sl: 5, min: 15, name: "Careful" },
+    normal: { tp: 20, sl: 10, min: 30, name: "Normal" },
+    wild: { tp: 50, sl: 25, min: 60, name: "Wild" },
+  };
+  const COST = 2.5;        // % per side: 0.5% fee + 2% slippage, same as the main paper bot
+  const TICK_MS = 4000;
+  const F = {              // safety filters for quick trades
+    minLiq: 40000, minVol24: 150000, minAgeH: 6, minVol1h: 5000, minTx1h: 60,
+    maxPump24: 400, maxDump1h: 15, maxDump5m: 5, maxVolLiq: 25,
+    rugWords: ["lp unlocked", "unlocked", "top 10 holders", "single holder", "high ownership", "high holder", "mutable", "freeze", "mint", "creator", "insider", "low liquidity"],
+  };
+  const HYPE = [/\bm+o{2,}n+\b/i, /to the moon/i, /\b\d{2,5}\s*x\b/i, /\bgem\b/i, /lambo/i, /next (pepe|doge|shib|bonk)/i,
+    /presale/i, /\bpump(ing)?\b/i, /moonshot/i, /guaranteed/i, /millionaire/i, /\bscam\b/i, /\brug\b/i];
+
+  const $ = id => document.getElementById(id);
+  const eur = n => (n < 0 ? "−" : "") + Math.abs(n).toLocaleString("en-IE", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + "€";
+  const pct = n => (n >= 0 ? "+" : "−") + Math.abs(n).toFixed(1) + "%";
+  const usd = n => n >= 1e6 ? "$" + (n / 1e6).toFixed(1) + "M" : n >= 1e3 ? "$" + (n / 1e3).toFixed(0) + "k" : "$" + Math.round(n);
+  const price = p => p >= 1 ? "$" + p.toFixed(3) : "$" + p.toPrecision(4);
+  const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const store = {
+    get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
+    set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} },
+    del(k) { try { localStorage.removeItem(k); } catch (e) {} },
+  };
+  async function j(url) {
+    const r = await fetch(url, { cache: "no-store" });
+    if (!r.ok) throw new Error("HTTP " + r.status);
+    return r.json();
+  }
+
+  let trade = store.get("qt_active", null);
+  let timer = null, clock = null, busy = false, inMemory = null;
+
+  /* presets */
+  $("qPresets").addEventListener("click", e => { const v = e.target.dataset.v; if (v) $("qAmt").value = v; });
+
+  /* ---------- scanning ---------- */
+  function logLine(name, ok, why) {
+    const li = document.createElement("li");
+    li.innerHTML = `<span class="${ok ? "ok" : ""}">${esc(name)}</span><span class="${ok ? "ok" : "no"}">${esc(why)}</span>`;
+    $("qScanLog").prepend(li);
+  }
+
+  async function rugcheck(mint) {
+    try {
+      const r = await j(`https://api.rugcheck.xyz/v1/tokens/${mint}/report/summary`);
+      const risks = r.risks || [];
+      const danger = risks.filter(x => x.level === "danger").map(x => x.name);
+      if (danger.length) return { ok: false, note: danger.join(", ") };
+      const bad = risks.filter(x => x.level === "warn" && F.rugWords.some(w => (x.name || "").toLowerCase().includes(w))).map(x => x.name);
+      if (bad.length) return { ok: false, note: bad.join(", ") };
+      const warns = risks.filter(x => x.level === "warn").map(x => x.name);
+      return { ok: true, note: warns.length ? "minor warnings: " + warns.join(", ") : "no red flags" };
+    } catch (e) {
+      return { ok: false, note: "safety check didn't answer, skipped to be safe" };
+    }
+  }
+
+  async function scan() {
+    $("qScan").hidden = false;
+    $("qScanLog").innerHTML = "";
+    $("qScanCount").textContent = "fetching lists…";
+    const lists = await Promise.allSettled([
+      j(DS + "/token-boosts/top/v1"), j(DS + "/token-boosts/latest/v1"), j(DS + "/token-profiles/latest/v1"),
+    ]);
+    const addrs = [...new Set(lists.flatMap(r => r.status === "fulfilled" && Array.isArray(r.value) ? r.value : [])
+      .filter(t => t.chainId === "solana").map(t => t.tokenAddress))].slice(0, 90);
+    if (!addrs.length) throw new Error("DexScreener didn't answer. Check your connection and try again.");
+
+    const pairs = {};
+    for (let i = 0; i < addrs.length; i += 30) {
+      try {
+        const res = await j(`${DS}/tokens/v1/solana/${addrs.slice(i, i + 30).join(",")}`);
+        for (const p of res || []) {
+          const a = p.baseToken?.address, l = p.liquidity?.usd || 0;
+          if (a && l >= (pairs[a]?.liquidity?.usd || 0)) pairs[a] = p;
+        }
+      } catch (e) {}
+    }
+    const all = Object.values(pairs);
+    $("qScanCount").textContent = `${all.length} coins`;
+
+    const now = Date.now(), passed = [];
+    for (const p of all) {
+      const sym = "$" + (p.baseToken?.symbol || "?");
+      const liq = p.liquidity?.usd || 0, v24 = p.volume?.h24 || 0, v1 = p.volume?.h1 || 0;
+      const ageH = (now - (p.pairCreatedAt || now)) / 3.6e6, pc = p.priceChange || {};
+      const tx1 = (p.txns?.h1?.buys || 0) + (p.txns?.h1?.sells || 0);
+      let why = null;
+      if (!p.priceUsd) why = "no price";
+      else if (liq < F.minLiq) why = "too little liquidity";
+      else if (v24 < F.minVol24) why = "low volume";
+      else if (ageH < F.minAgeH) why = `too new (${ageH.toFixed(0)}h)`;
+      else if (v1 < F.minVol1h || tx1 < F.minTx1h) why = "quiet right now";
+      else if ((pc.h24 || 0) > F.maxPump24) why = `already pumped ${Math.round(pc.h24)}%`;
+      else if ((pc.h1 || 0) < -F.maxDump1h) why = `dumping ${pc.h1}% this hour`;
+      else if ((pc.m5 || 0) < -F.maxDump5m) why = "falling right now";
+      else if (v24 > liq * F.maxVolLiq) why = "fake-looking volume";
+      else if (HYPE.some(r => r.test((p.baseToken?.symbol || "") + " " + (p.baseToken?.name || "")))) why = "hype name";
+      if (why) { logLine(sym, false, why); continue; }
+      // most active relative to its size, plus how much it's moving
+      p._score = (v1 / liq) * (1 + Math.abs(pc.h1 || 0) / 100);
+      p._ageH = ageH;
+      passed.push(p);
+    }
+    passed.sort((a, b) => b._score - a._score);
+    for (const p of passed.slice(0, 6)) {
+      const sym = "$" + p.baseToken.symbol;
+      logLine(sym, false, "running rug check…");
+      const rc = await rugcheck(p.baseToken.address);
+      $("qScanLog").firstChild.remove();
+      if (!rc.ok) { logLine(sym, false, "rug check: " + rc.note); continue; }
+      logLine(sym, true, "picked ✓");
+      p._rug = rc.note;
+      return p;
+    }
+    throw new Error(passed.length
+      ? "Coins looked active, but none passed the rug check. That's the filter doing its job. Try again in a few minutes."
+      : "Nothing passed the safety filters right now. Memecoin markets are quiet or messy. Try again in a few minutes.");
+  }
+
+  /* ---------- trading ---------- */
+  function valueNow(t, p) { return t.eurIn * (p / t.entry) * (1 - COST / 100); }
+
+  function buy(p, amount, styleKey) {
+    const s = STYLES[styleKey], now = Date.now(), entry = parseFloat(p.priceUsd), pc = p.priceChange || {};
+    trade = {
+      sym: p.baseToken.symbol, name: p.baseToken.name, mint: p.baseToken.address, pair: p.pairAddress,
+      url: p.url, entry, amount, eurIn: amount * (1 - COST / 100), tp: s.tp, sl: s.sl, style: styleKey,
+      start: now, endsAt: now + s.min * 60000, ticks: [[now, entry]], last: entry,
+      dossier: {
+        liq: p.liquidity?.usd || 0, vol24: p.volume?.h24 || 0, vol1: p.volume?.h1 || 0,
+        mc: p.marketCap || p.fdv || 0, age: p._ageH, h1: pc.h1 || 0, h24: pc.h24 || 0,
+        tx1: (p.txns?.h1?.buys || 0) + (p.txns?.h1?.sells || 0), buys1: p.txns?.h1?.buys || 0, rug: p._rug,
+      },
+    };
+    store.set("qt_active", trade);
+  }
+
+  function sell(reason, atPrice) {
+    if (!trade) return;
+    const p = atPrice ?? trade.last;
+    const value = valueNow(trade, p), pnl = value - trade.amount;
+    const hist = store.get("qt_history", []);
+    hist.push({ sym: trade.sym, amount: trade.amount, value, pnl, pct: pnl / trade.amount * 100,
+      reason, style: trade.style, start: trade.start, end: Date.now(), url: trade.url });
+    store.set("qt_history", hist.slice(-50));
+    inMemory = hist;
+    store.del("qt_active");
+    trade = null;
+    stopLoop();
+    $("qLive").hidden = true;
+    $("qForm").hidden = false;
+    renderHistory(true);
+  }
+
+  function check(p) {
+    const ch = (p / trade.entry - 1) * 100;
+    if (ch >= trade.tp) return sell(`🎯 Take profit (${pct(ch)})`, p), true;
+    if (ch <= -trade.sl) return sell(`🛑 Stop loss (${pct(ch)})`, p), true;
+    if (Date.now() >= trade.endsAt) return sell(`⏰ Time's up (${pct(ch)})`, p), true;
+    return false;
+  }
+
+  /* If the phone slept, replay 1-minute candles to see whether TP or SL was hit meanwhile. */
+  async function catchUp() {
+    const last = trade.ticks[trade.ticks.length - 1][0];
+    if (Date.now() - last < 30000) return false;
+    try {
+      const d = await j(`https://api.geckoterminal.com/api/v2/networks/solana/pools/${trade.pair}/ohlcv/minute?aggregate=1&limit=100`);
+      const candles = (d.data?.attributes?.ohlcv_list || []).map(c => ({ t: c[0] * 1000, h: +c[2], l: +c[3], c: +c[4] }))
+        .filter(c => c.t + 60000 > last).sort((a, b) => a.t - b.t);
+      const tpP = trade.entry * (1 + trade.tp / 100), slP = trade.entry * (1 - trade.sl / 100);
+      for (const c of candles) {
+        if (c.t >= trade.endsAt) { sell("⏰ Time's up (while you were away)", c.c); return true; }
+        // if a candle touched both, assume the bad one happened first
+        if (c.l <= slP) { sell("🛑 Stop loss (while you were away)", slP); return true; }
+        if (c.h >= tpP) { sell("🎯 Take profit (while you were away)", tpP); return true; }
+        trade.ticks.push([c.t, c.c]);
+      }
+    } catch (e) {}
+    return false;
+  }
+
+  async function tick() {
+    if (!trade || busy) return;
+    busy = true;
+    try {
+      if (await catchUp()) return;
+      const d = await j(`${DS}/latest/dex/pairs/solana/${trade.pair}`);
+      const p = parseFloat((d.pairs || [d.pair])[0]?.priceUsd);
+      if (p > 0) {
+        trade.last = p;
+        trade.ticks.push([Date.now(), p]);
+        if (trade.ticks.length > 1200) trade.ticks.splice(1, trade.ticks.length - 1200);
+        store.set("qt_active", trade);
+        trade._fresh = Date.now();
+        if (!check(p)) renderLive(true);
+      }
+    } catch (e) {
+      $("qTick").textContent = "price feed hiccup, retrying…";
+    } finally { busy = false; }
+  }
+
+  function startLoop() {
+    stopLoop();
+    tick();
+    timer = setInterval(tick, TICK_MS);
+    clock = setInterval(() => {
+      if (!trade) return;
+      if (Date.now() >= trade.endsAt) { tick(); return; }
+      const left = Math.max(0, trade.endsAt - Date.now()), m = Math.floor(left / 60000), s = Math.floor(left / 1000) % 60;
+      $("qTimer").textContent = `${m}:${String(s).padStart(2, "0")} left`;
+      if (trade._fresh) $("qTick").textContent = `updated ${Math.round((Date.now() - trade._fresh) / 1000)}s ago`;
+    }, 1000);
+  }
+  function stopLoop() { clearInterval(timer); clearInterval(clock); timer = clock = null; }
+
+  /* ---------- rendering ---------- */
+  function renderLive(pulse) {
+    const t = trade;
+    $("qForm").hidden = true;
+    $("qLive").hidden = false;
+    $("qCoin").textContent = "$" + t.sym;
+    $("qCoinSub").textContent = `${t.name || ""}, ${STYLES[t.style].name.toLowerCase()} style, ${eur(t.amount)} in`;
+    $("qChartLink").href = t.url || "#";
+    const v = valueNow(t, t.last), pnl = v - t.amount, ch = (t.last / t.entry - 1) * 100;
+    $("qPnl").className = "pnl " + (pnl >= 0 ? "gain" : "loss");
+    $("qPnl").innerHTML = `${pnl >= 0 ? "+" : "−"}${eur(Math.abs(pnl))}<span>Worth ${eur(v)} if sold now. Price ${pct(ch)} since buying; fees and slippage cost about ${(COST * 2).toFixed(0)}% in total.</span>`;
+    $("qPrice").textContent = `${price(t.last)} (bought at ${price(t.entry)})`;
+
+    // chart: price line with entry, take-profit and stop-loss levels
+    const W = 640, H = 260, pl = 6, pr = 92, pt = 14, pb = 14;
+    const tpP = t.entry * (1 + t.tp / 100), slP = t.entry * (1 - t.sl / 100);
+    const ps = t.ticks.map(x => x[1]);
+    const lo = Math.min(slP, ...ps), hi = Math.max(tpP, ...ps), span = hi - lo || 1;
+    // zoom to the time so far (at least 2 minutes), leaving a little room on the right
+    const t0 = t.start, t1 = t0 + Math.max(120000, (Date.now() - t0) * 1.12);
+    const X = ms => pl + (ms - t0) / (t1 - t0) * (W - pl - pr);
+    const Y = p => pt + (hi - p) / span * (H - pt - pb);
+    const d = t.ticks.map(([ms, p], i) => (i ? "L" : "M") + X(ms).toFixed(1) + " " + Y(p).toFixed(1)).join(" ");
+    const [lx, lp] = t.ticks[t.ticks.length - 1];
+    $("qChart").innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Live price since buying">
+      <line class="tp" x1="${pl}" x2="${W - pr}" y1="${Y(tpP)}" y2="${Y(tpP)}"/>
+      <text class="lbl" fill="var(--gain)" x="${W - pr + 8}" y="${Y(tpP) + 5}">sell +${t.tp}%</text>
+      <line class="entry" x1="${pl}" x2="${W - pr}" y1="${Y(t.entry)}" y2="${Y(t.entry)}"/>
+      <text class="lbl" fill="var(--pencil)" x="${W - pr + 8}" y="${Y(t.entry) + 5}">bought</text>
+      <line class="sl" x1="${pl}" x2="${W - pr}" y1="${Y(slP)}" y2="${Y(slP)}"/>
+      <text class="lbl" fill="var(--loss)" x="${W - pr + 8}" y="${Y(slP) + 5}">sell −${t.sl}%</text>
+      ${t.endsAt <= t1 ? `<line x1="${X(t.endsAt)}" x2="${X(t.endsAt)}" y1="${pt}" y2="${H - pb}" stroke="var(--pencil)" stroke-dasharray="2 5"/>` : ""}
+      <path class="qline" d="${d}"/>
+      <circle class="${pulse ? "dot" : ""}" cx="${X(lx)}" cy="${Y(lp)}" r="5" fill="var(--ink)"/>
+    </svg>`;
+
+    const D = t.dossier;
+    $("qDossier").innerHTML = `
+      <div><dt>Liquidity</dt><dd>${usd(D.liq)}</dd></div>
+      <div><dt>Volume last hour</dt><dd>${usd(D.vol1)}</dd></div>
+      <div><dt>Trades last hour</dt><dd>${D.tx1} (${D.buys1} buys)</dd></div>
+      <div><dt>Market cap</dt><dd>${usd(D.mc)}</dd></div>
+      <div><dt>Coin age</dt><dd>${D.age >= 48 ? Math.round(D.age / 24) + " days" : Math.round(D.age) + " hours"}</dd></div>
+      <div><dt>Before buying</dt><dd>${pct(D.h1)} 1h, ${pct(D.h24)} 24h</dd></div>
+      <div class="wide"><dt>Rug check</dt><dd>${esc(D.rug)}</dd></div>`;
+  }
+
+  function renderHistory(flashLast) {
+    const hist = inMemory || store.get("qt_history", []);
+    $("qHistCount").textContent = hist.length ? `${hist.length} total` : "";
+    if (!hist.length) {
+      $("qHistSum").textContent = "";
+      $("qHist").innerHTML = `<li class="empty">No quick trades yet. Pick an amount and press the button.</li>`;
+      return;
+    }
+    const total = hist.reduce((s, h) => s + h.pnl, 0), wins = hist.filter(h => h.pnl >= 0).length;
+    $("qHistSum").innerHTML = `Total: <strong class="${total >= 0 ? "gain" : "loss"}">${total >= 0 ? "+" : "−"}${eur(Math.abs(total))}</strong> from ${hist.length} trade${hist.length === 1 ? "" : "s"}, ${wins} won.`;
+    $("qHist").innerHTML = hist.slice().reverse().map((h, i) => `
+      <li class="${flashLast && i === 0 ? "new" : ""}"><span class="sym">$${esc(h.sym)}</span>
+        <span class="amt ${h.pnl >= 0 ? "gain" : "loss"}">${h.pnl >= 0 ? "+" : "−"}${eur(Math.abs(h.pnl))}<span>${pct(h.pct)}</span></span>
+        <span class="sub">${esc(h.reason)}, ${eur(h.amount)} in, ${Math.max(1, Math.round((h.end - h.start) / 60000))} min</span></li>`).join("");
+  }
+
+  /* ---------- wiring ---------- */
+  $("qForm").addEventListener("submit", async e => {
+    e.preventDefault();
+    const amount = Math.round(parseFloat($("qAmt").value) * 100) / 100;
+    if (!(amount >= 1 && amount <= 1000)) { $("qAmt").focus(); return; }
+    const style = (document.querySelector('input[name="style"]:checked') || {}).value || "normal";
+    $("qStart").disabled = true;
+    $("qStart").textContent = "Checking coins…";
+    try {
+      const p = await scan();
+      buy(p, amount, style);
+      renderLive(true);
+      startLoop();
+      $("qLive").scrollIntoView({ behavior: "smooth", block: "start" });
+    } catch (err) {
+      logLine("No trade", false, err.message);
+    } finally {
+      $("qStart").disabled = false;
+      $("qStart").textContent = "Find a coin and buy";
+    }
+  });
+  $("qSell").addEventListener("click", () => {
+    if (!trade) return;
+    const ch = (trade.last / trade.entry - 1) * 100;
+    sell(`✋ Sold by you (${pct(ch)})`);
+  });
+  document.addEventListener("visibilitychange", () => { if (!document.hidden && trade) tick(); });
+
+  renderHistory(false);
+  if (trade) { renderLive(false); startLoop(); }
+})();
 </script>
 </body>
 </html>
