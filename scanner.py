@@ -537,6 +537,7 @@ def main():
     seen = state or {}
 
     MOOD.update(get_mood())
+    print(f"::notice::Market mood: {MOOD.get('value', 'unavailable')} {MOOD.get('label', '')}", flush=True)
     found = []
     for name, fn in SOURCES:
         sc = cfg.get(name, {})

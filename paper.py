@@ -133,6 +133,8 @@ def run(cfg, signals, fetch, mood=None):
 
     # 2) Open new positions from fresh signals
     mood = mood or {}
+    if mood and (w.get("mood") or {}).get("value") != mood.get("value"):
+        w["changed"] = True
     if mood:
         w["mood"] = mood
     greedy = mood.get("value", 50) >= cfg["greed_pause_at"]
