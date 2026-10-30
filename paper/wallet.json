@@ -5,5 +5,12 @@
  "history": [],
  "started": 1793366521.920483,
  "btc_start": 77216,
- "last_report": ""
+ "last_report": "",
+ "equity": [
+  {
+   "t": 1793366862,
+   "v": 100,
+   "btc": 77267
+  }
+ ]
 }
