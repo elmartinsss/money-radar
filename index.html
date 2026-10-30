@@ -178,6 +178,9 @@
   .scanlog li { grid-template-columns: 1fr auto; padding: 7px 0; }
   .scanlog .ok { color: var(--gain); font-weight: 600; }
   .scanlog .no { color: var(--pencil); font-size: 14px; text-align: right; }
+  .scanlog .skipped { display: block; color: var(--pencil); font-size: 14px; }
+  .scanlog summary { cursor: pointer; }
+  .scanlog details ul { margin: 8px 0 0; padding-left: 18px; columns: 2; column-gap: 20px; }
 
   .live-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; margin-top: 8px; }
   .coin { font: 800 34px/1.05 var(--sans); letter-spacing: -0.02em; }
@@ -543,10 +546,24 @@ setInterval(load, 5 * 60 * 1000);
   $("qPresets").addEventListener("click", e => { const v = e.target.dataset.v; if (v) $("qAmt").value = v; });
 
   /* ---------- scanning ---------- */
+  let skipped = [];
   function logLine(name, ok, why) {
     const li = document.createElement("li");
     li.innerHTML = `<span class="${ok ? "ok" : ""}">${esc(name)}</span><span class="${ok ? "ok" : "no"}">${esc(why)}</span>`;
     $("qScanLog").prepend(li);
+  }
+  // quick filter rejects are counted, not listed one by one
+  function skip(name, why) { skipped.push([name, why]); }
+  function renderSkipped() {
+    if (!skipped.length) return;
+    const counts = {};
+    skipped.forEach(([, w]) => { const k = w.replace(/\s*\(.*\)|\s\d+%$/g, "").replace(/ -?\d+(\.\d+)?% this hour/, " this hour"); counts[k] = (counts[k] || 0) + 1; });
+    const summary = Object.entries(counts).sort((a, b) => b[1] - a[1]).map(([k, n]) => `${n} ${k}`).join(", ");
+    const li = document.createElement("li");
+    li.className = "skipped";
+    li.innerHTML = `<details><summary>${skipped.length} skipped: ${esc(summary)}</summary>
+      <ul>${skipped.map(([n, w]) => `<li>${esc(n)}, ${esc(w)}</li>`).join("")}</ul></details>`;
+    $("qScanLog").append(li);
   }
 
   async function rugcheck(mint) {
@@ -567,6 +584,7 @@ setInterval(load, 5 * 60 * 1000);
   async function scan() {
     $("qScan").hidden = false;
     $("qScanLog").innerHTML = "";
+    skipped = [];
     $("qScanCount").textContent = "fetching lists…";
     const lists = await Promise.allSettled([
       j(DS + "/token-boosts/top/v1"), j(DS + "/token-boosts/latest/v1"), j(DS + "/token-profiles/latest/v1"),
@@ -605,13 +623,14 @@ setInterval(load, 5 * 60 * 1000);
       else if ((pc.m5 || 0) < -F.maxDump5m) why = "falling right now";
       else if (v24 > liq * F.maxVolLiq) why = "fake-looking volume";
       else if (HYPE.some(r => r.test((p.baseToken?.symbol || "") + " " + (p.baseToken?.name || "")))) why = "hype name";
-      if (why) { logLine(sym, false, why); continue; }
+      if (why) { skip(sym, why); continue; }
       // most active relative to its size, plus how much it's moving
       p._score = (v1 / liq) * (1 + Math.abs(pc.h1 || 0) / 100);
       p._ageH = ageH;
       passed.push(p);
     }
     passed.sort((a, b) => b._score - a._score);
+    renderSkipped();
     for (const p of passed.slice(0, 6)) {
       const sym = "$" + p.baseToken.symbol;
       logLine(sym, false, "running rug check…");
@@ -741,7 +760,10 @@ setInterval(load, 5 * 60 * 1000);
     const W = 640, H = 260, pl = 6, pr = 92, pt = 14, pb = 14;
     const tpP = t.entry * (1 + t.tp / 100), slP = t.entry * (1 - t.sl / 100);
     const ps = t.ticks.map(x => x[1]);
-    const lo = Math.min(slP, ...ps), hi = Math.max(tpP, ...ps), span = hi - lo || 1;
+    // zoom on the real movement (at least ±3% around the buy price); sell lines show as arrows when off-screen
+    let lo = Math.min(t.entry * 0.97, ...ps), hi = Math.max(t.entry * 1.03, ...ps);
+    const padY = (hi - lo) * 0.12; lo -= padY; hi += padY;
+    const span = hi - lo;
     // zoom to the time so far (at least 2 minutes), leaving a little room on the right
     const t0 = t.start, t1 = t0 + Math.max(120000, (Date.now() - t0) * 1.12);
     const X = ms => pl + (ms - t0) / (t1 - t0) * (W - pl - pr);
@@ -749,12 +771,14 @@ setInterval(load, 5 * 60 * 1000);
     const d = t.ticks.map(([ms, p], i) => (i ? "L" : "M") + X(ms).toFixed(1) + " " + Y(p).toFixed(1)).join(" ");
     const [lx, lp] = t.ticks[t.ticks.length - 1];
     $("qChart").innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Live price since buying">
-      <line class="tp" x1="${pl}" x2="${W - pr}" y1="${Y(tpP)}" y2="${Y(tpP)}"/>
-      <text class="lbl" fill="var(--gain)" x="${W - pr + 8}" y="${Y(tpP) + 5}">sell +${t.tp}%</text>
+      ${tpP <= hi ? `<line class="tp" x1="${pl}" x2="${W - pr}" y1="${Y(tpP)}" y2="${Y(tpP)}"/>
+      <text class="lbl" fill="var(--gain)" x="${W - pr + 8}" y="${Y(tpP) + 5}">sell +${t.tp}%</text>`
+      : `<text class="lbl" fill="var(--gain)" x="${W - pr + 8}" y="${pt + 6}">↑ sell +${t.tp}%</text>`}
       <line class="entry" x1="${pl}" x2="${W - pr}" y1="${Y(t.entry)}" y2="${Y(t.entry)}"/>
       <text class="lbl" fill="var(--pencil)" x="${W - pr + 8}" y="${Y(t.entry) + 5}">bought</text>
-      <line class="sl" x1="${pl}" x2="${W - pr}" y1="${Y(slP)}" y2="${Y(slP)}"/>
-      <text class="lbl" fill="var(--loss)" x="${W - pr + 8}" y="${Y(slP) + 5}">sell −${t.sl}%</text>
+      ${slP >= lo ? `<line class="sl" x1="${pl}" x2="${W - pr}" y1="${Y(slP)}" y2="${Y(slP)}"/>
+      <text class="lbl" fill="var(--loss)" x="${W - pr + 8}" y="${Y(slP) + 5}">sell −${t.sl}%</text>`
+      : `<text class="lbl" fill="var(--loss)" x="${W - pr + 8}" y="${H - pb}">↓ sell −${t.sl}%</text>`}
       ${t.endsAt <= t1 ? `<line x1="${X(t.endsAt)}" x2="${X(t.endsAt)}" y1="${pt}" y2="${H - pb}" stroke="var(--pencil)" stroke-dasharray="2 5"/>` : ""}
       <path class="qline" d="${d}"/>
       <circle class="${pulse ? "dot" : ""}" cx="${X(lx)}" cy="${Y(lp)}" r="5" fill="var(--ink)"/>
