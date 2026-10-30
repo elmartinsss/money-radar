@@ -166,5 +166,61 @@
   "message": "Rank #87 · -5.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 30/100 Fear 😐.",
   "click": "https://www.coingecko.com/en/coins/lighter",
   "priority": 2
+ },
+ {
+  "t": 1793402071,
+  "title": "🐀 The Lab Rat is moving! +30% in 1h",
+  "message": "Vol 1h $5.0k · Liq $120.0k · MC $2.0M",
+  "click": "https://dexscreener.com/solana/GOOD",
+  "priority": 5
+ },
+ {
+  "t": 1793402071,
+  "title": "📉 Bitcoin -8.2% in 24h",
+  "message": "Now $70,000\nRisk: 🟢 big coin, real move. Find out WHY before doing anything.",
+  "click": "https://www.coingecko.com/en/coins/bitcoin",
+  "priority": 4
+ },
+ {
+  "t": 1793402071,
+  "title": "🚀 NVDA +10.0% today",
+  "message": "Now $110.00 (prev close $100.00)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
+  "click": "https://finance.yahoo.com/quote/NVDA",
+  "priority": 4
+ },
+ {
+  "t": 1793402071,
+  "title": "🚀 TSLA +10.0% today",
+  "message": "Now $110.00 (prev close $100.00)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
+  "click": "https://finance.yahoo.com/quote/TSLA",
+  "priority": 4
+ },
+ {
+  "t": 1793402071,
+  "title": "🚀 AAPL +10.0% today",
+  "message": "Now $110.00 (prev close $100.00)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
+  "click": "https://finance.yahoo.com/quote/AAPL",
+  "priority": 4
+ },
+ {
+  "t": 1793402071,
+  "title": "📰 Binance will list new token, airdrop for holders",
+  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: will list, listing, binance, airdrop · via coindesk.com",
+  "click": "https://x/1",
+  "priority": 3
+ },
+ {
+  "t": 1793402071,
+  "title": "👽 r/CryptoCurrency: Massive short squeeze DD on XYZ",
+  "message": "Risk: 🟡 crowd opinion, not facts. Check the comments for pushback.\n⬆ 900 upvotes · 💬 300 · 2h old\nMatched: squeeze",
+  "click": "https://reddit.com/r/x/a1",
+  "priority": 3
+ },
+ {
+  "t": 1793402071,
+  "title": "🔥 Trending #1: Pepe (PEPE)",
+  "message": "Rank #30 · +12.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.",
+  "click": "https://www.coingecko.com/en/coins/pepe",
+  "priority": 2
  }
 ]

@@ -6,6 +6,7 @@ No real money, no exchange account, no keys. It answers one question:
 import json
 import os
 import brain
+import rewards
 import time
 from datetime import datetime
 from zoneinfo import ZoneInfo
@@ -182,10 +183,21 @@ def _cooldown(w, bcfg):
     return None
 
 
-def run(cfg, signals, fetch, mood=None, bcfg=None):
+def run(cfg, signals, fetch, mood=None, bcfg=None, rcfg=None, rejected=()):
     """Update the wallet. Returns a list of ntfy messages to send."""
     w = load(cfg)
     notes = []
+    rcfg = rcfg or {}
+    R = w.setdefault("rewards", rewards.blank())
+    for k, v in rewards.blank().items():
+        R.setdefault(k, v)
+    hist_before = len(w["history"])
+    if rcfg:
+        for c in list(rejected)[:25]:
+            rewards.note_rejection(R, c, c["reason"], _now())
+        if rewards.follow_up(R, lambda cs: fetch_prices([{"kind": "dex", "id": c["id"], "chain": c["chain"]} for c in cs], fetch),
+                             notes, rcfg, _now()):
+            w["changed"] = True
     if w["btc_start"] is None:
         w["btc_start"] = btc_price(fetch)
         w["changed"] = True
@@ -214,6 +226,11 @@ def run(cfg, signals, fetch, mood=None, bcfg=None):
             _sell(w, cfg, pos, price, f"🛑 Stop loss ({chg:.0f}%)", notes)
         elif held_h >= cfg["max_hold_hours"]:
             _sell(w, cfg, pos, price, f"⏰ Time's up ({held_h / 24:.0f} days)", notes)
+
+    # Reward the bot for every trade that just finished
+    for h in w["history"][hist_before:]:
+        rewards.learn_trade(R, h, notes, rcfg or {"min_situation_trades": 6, "shrink_k": 10})
+        w["changed"] = True
 
     # 2) Open new positions from fresh signals
     signals = list(signals)
@@ -291,7 +308,18 @@ def run(cfg, signals, fetch, mood=None, bcfg=None):
             if up is False:
                 _skip_once(w, t["symbol"], t["signal"], "below its 50-day average (downtrend), not buying")
                 continue
+        feats = rewards.features(t, mood, _now())
+        exp = worst = None
+        if rcfg:
+            exp, worst, best, _n = rewards.expect(R, feats, rcfg)
+            if exp is not None and exp < rcfg["skip_below_pct"] and t["signal"] in risky:
+                _skip_once(w, t["symbol"], t["signal"],
+                           f"I remember losing in situations like this ({worst[1] if worst else 'similar trades'}), expecting {exp:+.1f}%")
+                continue
         mult = learn.get(t["signal"], {}).get("mult", 1.0) * (1.5 if t["signal"] == "fear_dip" else 1.0)
+        mult *= rewards.confidence_mult(R)
+        if exp is not None and exp > 3:
+            mult *= 1.1
         spend = brain.position_size(equity, w["cash"], bcfg, mult)
         if not spend:
             break
@@ -301,7 +329,8 @@ def run(cfg, signals, fetch, mood=None, bcfg=None):
         w["positions"].append({"kind": t["kind"], "id": t["id"], "chain": t.get("chain"),
                                "symbol": t["symbol"], "signal": t["signal"], "entry": t["price"],
                                "eur": eur_in, "paid": spend, "time": _now(), "last": t["price"],
-                               "liq0": t.get("liq")})
+                               "liq0": t.get("liq"), "feats": feats,
+                               "expected": None if exp is None else round(exp, 1)})
         _act(w, type="buy", symbol=t["symbol"], signal=t["signal"], eur=spend, price=t["price"])
         notes.append({"title": f"📝 Paper BUY {t['symbol']} for {spend:.2f}€",
                       "message": f"Signal: {t['signal']} · price ${t['price']:,.6g}\n"

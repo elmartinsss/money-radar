@@ -226,6 +226,16 @@
   .ev.strong { color: var(--gain); } .ev.some { color: var(--ink); } .ev.weak { color: var(--pencil); }
   .facts-list li { grid-template-columns: 1fr; font-size: 15px; }
   .facts-list a { color: var(--ink); font-size: 13px; }
+  /* report card */
+  .card { margin-top: 28px; padding: 18px 20px 20px; border: 2px solid var(--text); border-radius: 14px; background: color-mix(in srgb, var(--paper) 70%, white); }
+  .card .lvl { font: 800 30px/1.1 var(--sans); letter-spacing: -0.02em; }
+  .card .lvlsub { color: var(--pencil); font-size: 15px; margin-top: 4px; }
+  .xpbar { height: 10px; border-radius: 5px; background: var(--grid); margin: 14px 0 6px; overflow: hidden; }
+  .xpbar i { display: block; height: 100%; background: var(--ink); border-radius: 5px; }
+  .medals { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+  .medal { font-size: 14px; border: 1.5px solid var(--text); border-radius: 999px; padding: 5px 12px; background: var(--paper); }
+  .medal.locked { opacity: .35; border-style: dashed; }
+  .lesson { font: 400 17px/1.35 var(--hand); color: var(--ink); grid-column: 1 / -1; }
   .empty { font-family: var(--hand); font-size: 19px; color: var(--pencil); margin: 12px 0 0; }
 
   .rules p { font-size: 16px; }
@@ -294,6 +304,25 @@
     <p class="meta">Research on rug pulls, memecoins, day trading and long-term investing, turned into rules the bot can measure. Each rule shows how strong the evidence behind it is.</p>
 
     <p class="verdict">The honest headline: no study shows a reliable edge in fast memecoin trading. The evidence is strongest on what to avoid, so most of the brain is about saying no.</p>
+
+    <section class="card" id="rCard" aria-live="polite"></section>
+
+    <section>
+      <h2>Its journal <small>what each trade taught it</small></h2>
+      <ul class="rows" id="rJournal"></ul>
+    </section>
+
+    <section>
+      <h2>Situations it learned</h2>
+      <p class="mood">Every finished trade is a reward: its profit or loss after costs. The bot remembers the situation it bought in, and after enough examples it avoids situations that keep losing.</p>
+      <ul class="rows" id="rSits"></ul>
+    </section>
+
+    <section>
+      <h2>Rule scoreboard <small>a day after saying no</small></h2>
+      <p class="mood">When a rule blocks a coin, the bot checks it 24 hours later. A crash of 40% or more counts as a good save. A rise of 50% or more counts as a miss.</p>
+      <ul class="rows" id="rRules"></ul>
+    </section>
 
     <section>
       <h2>What it learned from its own trades</h2>
@@ -1270,6 +1299,7 @@ setInterval(load, 5 * 60 * 1000);
     for (const base of ["", "https://raw.githubusercontent.com/elmartinsss/money-radar/main/"]) {
       try { const r = await fetch(base + "paper/wallet.json?t=" + Date.now(), { cache: "no-store" }); if (r.ok) { w = await r.json(); break; } } catch (e) {}
     }
+    renderRewards((w && w.rewards) || null);
     const L = (w && w.learning) || {};
     const names = { memecoin: "Memecoins", fomo: "FOMO crowd", trending: "Trending coins", momentum: "Big up-moves", fear_dip: "Fear dips" };
     const rows = Object.entries(L);
@@ -1279,6 +1309,56 @@ setInterval(load, 5 * 60 * 1000);
         <span class="sub">${s.n} trades, ${s.win_rate}% won. ${esc(s.status.charAt(0).toUpperCase() + s.status.slice(1))}</span></li>`).join("")
       : `<li class="empty">No finished trades yet. This fills in as the paper wallet trades.</li>`;
   }
+  function renderRewards(R) {
+    const LV = [[0, "Lab rat"], [50, "Paper trader"], [150, "Chart reader"], [300, "Rug dodger"], [500, "Risk manager"],
+      [800, "Strategist"], [1200, "Market veteran"], [1800, "Legend of the lab"]];
+    const ALL = [["first_win", "First win"], ["big_win", "Let it run"], ["streak5", "Hot streak"], ["escape", "Great escape"],
+      ["first_save", "Good call"], ["ten_saves", "Rug dodger"], ["fifty", "Battle-tested"]];
+    R = R || { xp: 0, level: "Lab rat", medals: [], confidence: 0, trades: 0, journal: [], situations: {}, rules: {}, best_streak: 0 };
+    const i = LV.findIndex(([need]) => need > R.xp), next = i === -1 ? null : LV[i];
+    const prev = i === -1 ? LV[LV.length - 1][0] : LV[i - 1][0];
+    const pctTo = next ? Math.round((R.xp - prev) / (next[0] - prev) * 100) : 100;
+    const c = R.confidence || 0, feel = c > 4 ? "confident 😎" : c < -4 ? "shaken 😟" : "focused 🧐";
+    const got = new Set((R.medals || []).map(m => m.key));
+    document.getElementById("rCard").innerHTML = `
+      <div class="lvl">${esc(R.level)}</div>
+      <div class="lvlsub">${Math.round(R.xp)} XP · feeling ${feel} · ${R.trades} trades learned from · best streak ${R.best_streak || 0}</div>
+      <div class="xpbar" title="Progress to the next level"><i style="width:${pctTo}%"></i></div>
+      <div class="lvlsub">${next ? `${next[0] - Math.round(R.xp)} XP to ${esc(next[1])}. Wins earn 10 XP plus the profit %, losses 2 XP for the lesson, good saves 5 XP.` : "Top level reached."}</div>
+      <div class="medals">${ALL.map(([k, t]) => {
+        const m = (R.medals || []).find(x => x.key === k);
+        return `<span class="medal ${got.has(k) ? "" : "locked"}" title="${esc(m ? m.why : "Not earned yet")}">🏅 ${esc(t)}</span>`;
+      }).join("")}</div>`;
+
+    const J = (R.journal || []).slice(-6).reverse();
+    document.getElementById("rJournal").innerHTML = J.length ? J.map(e => `
+      <li><span class="sym">$${esc(e.symbol)}</span>
+        <span class="amt ${e.reward >= 0 ? "gain" : "loss"}">${e.reward >= 0 ? "+" : ""}${e.reward}%<span>reward</span></span>
+        <span class="sub">${esc(e.reason)}</span>
+        <span class="lesson">“${esc(e.lesson)}”</span></li>`).join("")
+      : `<li class="empty">Empty for now. After its first finished trade, the bot writes down what it learned.</li>`;
+
+    const g = R.trades ? R.total_reward / R.trades : 0;
+    const sits = Object.entries(R.situations || {}).filter(([k, s]) => s.n >= 3 && !k.startsWith("signal="))
+      .map(([k, s]) => ({ k, n: s.n, avg: s.sum / s.n, shr: (s.sum + 10 * g) / (s.n + 10) }))
+      .sort((a, b) => a.shr - b.shr);
+    const pick = sits.length > 8 ? [...sits.slice(0, 4), ...sits.slice(-4)] : sits;
+    document.getElementById("rSits").innerHTML = pick.length ? pick.map(s => {
+      const [k, v] = s.k.split("=");
+      const verdict = s.n < 6 ? "still collecting examples" : s.shr < g - 2 ? "avoids this now" : s.shr > g + 2 ? "likes this" : "no strong opinion";
+      return `<li><span class="sym">${esc(k)}: ${esc(v)}</span>
+        <span class="amt ${s.avg >= 0 ? "gain" : "loss"}">${s.avg >= 0 ? "+" : ""}${s.avg.toFixed(1)}%<span>avg reward</span></span>
+        <span class="sub">${s.n} trades, ${verdict}</span></li>`;
+    }).join("") : `<li class="empty">Needs a few finished trades first.</li>`;
+
+    const rules = Object.entries(R.rules || {}).sort((a, b) => (b[1].saves - b[1].missed) - (a[1].saves - a[1].missed));
+    document.getElementById("rRules").innerHTML = rules.length ? rules.map(([name, r]) => `
+      <li><span class="sym">${esc(name)}</span>
+        <span class="amt">${r.saves} 🛡️ / ${r.missed} 🚀<span>saves / misses</span></span>
+        <span class="sub">${esc((r.examples || []).slice(-3).join(", ")) || `${r.neutral} rejected coins did nothing special`}</span></li>`).join("")
+      : `<li class="empty">The first results arrive 24 hours after the bot starts rejecting coins.</li>`;
+  }
+
   learnings();
 })();
 </script>

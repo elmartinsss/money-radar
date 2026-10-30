@@ -53,3 +53,10 @@ To restart from €100, delete `paper/wallet.json`.
   as the repo secret `BITQUERY_TOKEN`; without it this source simply stays off.
 - **Market mood:** the Crypto Fear & Greed index (0 = panic, 100 = FOMO). At 75+ the paper bot
   skips memecoins and trending coins; at 20 or below it buys a little Bitcoin on the dip.
+
+## 🏅 Rewards and learning
+Every finished paper trade is a reward (its profit or loss after costs). The bot remembers the
+situation it bought in (signal, market mood, coin age, liquidity, momentum, time of day) and,
+after 15+ trades, skips situations that keep losing. A day after rejecting a coin it checks
+whether the coin crashed (good save) or flew (miss), so each rule gets a scoreboard.
+XP, levels, medals, confidence and a journal show up on the Brain tab. Code: `rewards.py`.

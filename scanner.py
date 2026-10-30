@@ -254,6 +254,25 @@ def mood_line():
     return f"\nMarket mood: {v}/100 {MOOD['label']} {icon}.{warn}"
 
 
+REJECTED = []
+
+
+def _reject(chain, addr, p, why):
+    """Remember rejected coins; tomorrow the bot checks whether rejecting them was smart."""
+    if p.get("priceUsd"):
+        REJECTED.append({"id": addr, "chain": chain, "symbol": p["baseToken"].get("symbol", "?"),
+                         "price": float(p["priceUsd"]), "reason": why})
+
+
+def trade_ctx(p):
+    """The situation a memecoin was bought in, for reward learning."""
+    tx = (p.get("txns") or {}).get("h1") or {}
+    age_h = (NOW * 1000 - (p.get("pairCreatedAt") or NOW * 1000)) / 3.6e6
+    return {"liq": (p.get("liquidity") or {}).get("usd"), "age_h": round(age_h, 1),
+            "h1": (p.get("priceChange") or {}).get("h1"),
+            "ratio": round((tx.get("buys") or 0) / (tx.get("sells") or 1), 2)}
+
+
 def memecoin_check(chain, addr, p, c, tag):
     """All memecoin safety filters in one place. Returns (ok, note)."""
     liq = (p.get("liquidity") or {}).get("usd") or 0
@@ -283,12 +302,14 @@ def memecoin_check(chain, addr, p, c, tag):
             why = reason
     if why:
         log(f"[{tag}] skipped {sym}: {why}")
+        _reject(chain, addr, p, why)
         return False, why
     note = "rugcheck skipped"
     if c.get("use_rugcheck") and chain == "solana":
         ok, note = rugcheck_ok(addr, c["block_rugcheck_warnings_about"])
         if not ok:
             log(f"[{tag}] dropped {sym}: {note}")
+            _reject(chain, addr, p, note)
             return False, note
     return True, note
 
@@ -324,7 +345,7 @@ def src_dexscreener(c):
             if p.get("priceUsd"):
                 out[-1]["trade"] = {"kind": "dex", "chain": chain, "id": addr, "symbol": sym,
                                     "price": float(p["priceUsd"]), "signal": "memecoin",
-                                    "liq": (p.get("liquidity") or {}).get("usd")}
+                                    "liq": (p.get("liquidity") or {}).get("usd"), "ctx": trade_ctx(p)}
     return out
 
 
@@ -398,7 +419,7 @@ def src_fomo(c):
         if p.get("priceUsd"):
             out[-1]["trade"] = {"kind": "dex", "chain": "solana", "id": addr, "symbol": sym,
                                 "price": float(p["priceUsd"]), "signal": "fomo",
-                                "liq": (p.get("liquidity") or {}).get("usd")}
+                                "liq": (p.get("liquidity") or {}).get("usd"), "ctx": trade_ctx(p)}
     return out
 
 
@@ -584,7 +605,7 @@ def main():
     pc = cfg.get("paper", {})
     if pc.get("enabled"):
         try:
-            for n in paper.run(pc, fresh, fetch, MOOD, BRAIN_CFG):
+            for n in paper.run(pc, fresh, fetch, MOOD, BRAIN_CFG, cfg.get("rewards"), REJECTED):
                 send(n)
         except Exception as e:  # paper wallet must never break real alerts
             log(f"[paper] failed: {e}")
