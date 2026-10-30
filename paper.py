@@ -5,6 +5,7 @@ No real money, no exchange account, no keys. It answers one question:
 """
 import json
 import os
+import brain
 import time
 from datetime import datetime
 from zoneinfo import ZoneInfo
@@ -93,15 +94,32 @@ def btc_price(fetch):
         return None
 
 
+def _sell_half(w, cfg, pos, price, notes):
+    """Take half the profit off the table, let the rest run with a trailing stop."""
+    half = pos["eur"] / 2
+    net = half * price / pos["entry"] * (1 - _cost_pct(cfg, pos["kind"]) / 100)
+    pos["eur"] -= half
+    pos["realized"] = pos.get("realized", 0) + net
+    pos["halved"] = True
+    w["cash"] += net
+    _act(w, type="sell", symbol=pos["symbol"], signal=pos["signal"], eur=round(net, 2),
+         pnl=round(net - pos["paid"] / 2, 2), pct=round((net / (pos["paid"] / 2) - 1) * 100, 1),
+         reason="💰 Sold half at profit, rest rides with a trailing stop")
+    notes.append({"title": f"📝 Paper: sold half of {pos['symbol']}",
+                  "message": f"+{(price / pos['entry'] - 1) * 100:.0f}% · locked in {net:.2f}€, rest rides with a trailing stop",
+                  "priority": 2, "tags": ["memo"]})
+
+
 def _sell(w, cfg, pos, price, reason, notes):
     gross = value(pos, price)
     net = gross * (1 - _cost_pct(cfg, pos["kind"]) / 100)
-    pnl = net - pos["paid"]
+    pnl = net + pos.get("realized", 0) - pos["paid"]
+    net_total = net + pos.get("realized", 0)
     w["cash"] += net
     w["positions"].remove(pos)
     w["history"].append({**pos, "exit": price, "exit_time": _now(), "reason": reason,
                          "pnl_eur": round(pnl, 2), "pnl_pct": round(pnl / pos["paid"] * 100, 1)})
-    _act(w, type="sell", symbol=pos["symbol"], signal=pos["signal"], eur=round(net, 2),
+    _act(w, type="sell", symbol=pos["symbol"], signal=pos["signal"], eur=round(net_total, 2),
          pnl=round(pnl, 2), pct=round(pnl / pos["paid"] * 100, 1), reason=reason)
     icon = "✅" if pnl >= 0 else "❌"
     notes.append({"title": f"📝 Paper SELL {pos['symbol']} {icon} {pnl:+.2f}€",
@@ -114,7 +132,57 @@ def total(w, prices):
     return w["cash"] + sum(value(p, prices.get(p["id"], p.get("last", p["entry"]))) for p in w["positions"])
 
 
-def run(cfg, signals, fetch, mood=None):
+RISKY = {"memecoin", "fomo", "trending"}
+
+
+def _trend_ok(w, t, fetch):
+    """Research rule: only buy big coins and stocks while price is above their 50-day average."""
+    today = datetime.fromtimestamp(_now(), TZ).strftime("%Y-%m-%d")
+    cache = w.setdefault("trend", {})
+    hit = cache.get(t["id"])
+    if hit and hit.get("day") == today:
+        return hit["up"]
+    up = None
+    try:
+        if t["kind"] == "cg":
+            d = fetch(f"https://api.coingecko.com/api/v3/coins/{t['id']}/market_chart?vs_currency=usd&days=70&interval=daily")
+            closes = [p[1] for p in d.get("prices", [])]
+        else:
+            d = fetch(f"https://query1.finance.yahoo.com/v8/finance/chart/{t['id']}?range=6mo&interval=1d")
+            closes = [c for c in d["chart"]["result"][0]["indicators"]["quote"][0]["close"] if c]
+        up = brain.trend_up(closes, 50)
+    except Exception:
+        up = None
+    cache[t["id"]] = {"day": today, "up": up}
+    return up
+
+
+def _skip_once(w, symbol, signal, reason):
+    today = datetime.fromtimestamp(_now(), TZ).strftime("%Y-%m-%d")
+    if not any(a.get("type") == "skip" and a.get("symbol") == symbol and a.get("reason") == reason and
+               datetime.fromtimestamp(a["t"], TZ).strftime("%Y-%m-%d") == today for a in w.get("activity", [])):
+        _act(w, type="skip", symbol=symbol, signal=signal, reason=reason)
+
+
+def _cooldown(w, bcfg):
+    """Circuit breaker: after 3 losses in a row today, or a bad day, stop risky buys until tomorrow."""
+    today = datetime.fromtimestamp(_now(), TZ).strftime("%Y-%m-%d")
+    todays = [h for h in w["history"] if datetime.fromtimestamp(h["exit_time"], TZ).strftime("%Y-%m-%d") == today]
+    streak = 0
+    for h in reversed(todays):
+        if h["pnl_eur"] < 0:
+            streak += 1
+        else:
+            break
+    day_pnl = sum(h["pnl_eur"] for h in todays)
+    if streak >= bcfg["max_losses_in_a_row"]:
+        return f"{streak} losses in a row today, cooling down until tomorrow"
+    if day_pnl <= -total(w, {}) * bcfg["max_daily_loss_pct"] / 100:
+        return f"down {day_pnl:.2f}€ today, cooling down until tomorrow"
+    return None
+
+
+def run(cfg, signals, fetch, mood=None, bcfg=None):
     """Update the wallet. Returns a list of ntfy messages to send."""
     w = load(cfg)
     notes = []
@@ -133,23 +201,50 @@ def run(cfg, signals, fetch, mood=None):
         w["changed"] = True  # keep the website's values fresh on every run
         chg = (price / pos["entry"] - 1) * 100
         held_h = (_now() - pos["time"]) / 3600
-        if chg >= cfg["take_profit_pct"]:
-            _sell(w, cfg, pos, price, f"🎯 Take profit (+{chg:.0f}%)", notes)
+        peak_chg = (pos["peak"] / pos["entry"] - 1) * 100
+        trail_hit = peak_chg >= cfg["trail_after_pct"] and price <= pos["peak"] * (1 - cfg["trail_pct"] / 100)
+        if chg >= cfg["take_profit_pct"] and not pos.get("halved"):
+            _sell_half(w, cfg, pos, price, notes)
+        elif pos["kind"] == "dex" and pos.get("liq0") and prices.get(("liq", pos["id"])) \
+                and prices[("liq", pos["id"])] < pos["liq0"] * 0.7:
+            _sell(w, cfg, pos, price, f"🚨 Liquidity pulled ({(prices[('liq', pos['id'])] / pos['liq0'] - 1) * 100:.0f}%), emergency exit", notes)
+        elif trail_hit:
+            _sell(w, cfg, pos, price, f"📉 Trailing stop ({chg:+.0f}%, peak was +{peak_chg:.0f}%)", notes)
         elif chg <= -cfg["stop_loss_pct"]:
             _sell(w, cfg, pos, price, f"🛑 Stop loss ({chg:.0f}%)", notes)
         elif held_h >= cfg["max_hold_hours"]:
             _sell(w, cfg, pos, price, f"⏰ Time's up ({held_h / 24:.0f} days)", notes)
 
     # 2) Open new positions from fresh signals
+    signals = list(signals)
     mood = mood or {}
     if mood and (w.get("mood") or {}).get("value") != mood.get("value"):
         w["changed"] = True
     if mood:
         w["mood"] = mood
     greedy = mood.get("value", 50) >= cfg["greed_pause_at"]
-    risky = {"memecoin", "fomo", "trending"}
+    risky = RISKY
     allowed = set(cfg["buy_on"])
-    signals = list(signals)
+    bcfg = {**cfg, **(bcfg or {})}
+    learn = brain.learning(w["history"], bcfg)
+    if learn != w.get("learning"):
+        w["learning"] = learn
+        w["changed"] = True
+    cool = _cooldown(w, bcfg)
+    equity = total(w, {})
+    # stocks: research says big up-days often partly reverse, so wait a day before buying
+    pend = w.setdefault("pending", [])
+    for pnd in list(pend):
+        age_h = (_now() - pnd["seen"]) / 3600
+        if age_h > 72:
+            pend.remove(pnd)
+            w["changed"] = True
+        elif age_h >= 20:
+            pend.remove(pnd)
+            w["changed"] = True
+            pr = fetch_prices([pnd], fetch).get(pnd["id"])
+            if pr:
+                signals.append({"trade": {**pnd, "price": pr, "waited": True}})
     # Extreme fear: buy the dip on Bitcoin (once a week at most)
     if mood.get("value", 50) <= cfg["fear_dip_at"] and "fear_dip" in allowed:
         recent = [h for h in w["history"] if h["signal"] == "fear_dip" and _now() - h["time"] < 7 * 86400]
@@ -164,7 +259,7 @@ def run(cfg, signals, fetch, mood=None):
             continue
         if greedy and t["signal"] in risky:
             # crowd is FOMOing, the bot sits this one out (logged once per coin per day)
-            today = datetime.now(TZ).strftime("%Y-%m-%d")
+            today = datetime.fromtimestamp(_now(), TZ).strftime("%Y-%m-%d")
             if not any(a.get("type") == "skip" and a.get("symbol") == t["symbol"] and
                        datetime.fromtimestamp(a["t"], TZ).strftime("%Y-%m-%d") == today
                        for a in w.get("activity", [])):
@@ -175,20 +270,43 @@ def run(cfg, signals, fetch, mood=None):
             continue
         if any(p["id"] == t["id"] for p in w["positions"]):
             continue
-        if len(w["positions"]) >= cfg["max_open_positions"] or w["cash"] < cfg["eur_per_trade"]:
+        if len(w["positions"]) >= cfg["max_open_positions"]:
             break
-        spend = cfg["eur_per_trade"]
+        if t["signal"] in risky:
+            if cool:
+                _skip_once(w, t["symbol"], t["signal"], cool)
+                continue
+            risky_now = sum(p["paid"] for p in w["positions"] if p["signal"] in risky)
+            if risky_now >= equity * bcfg["max_risky_share_pct"] / 100:
+                _skip_once(w, t["symbol"], t["signal"], f"already {risky_now:.0f}€ in risky coins (limit {bcfg['max_risky_share_pct']}%)")
+                continue
+        if t["signal"] in ("momentum", "fear_dip"):
+            if t["kind"] == "stock" and not t.get("waited"):
+                if not any(p["id"] == t["id"] for p in pend):
+                    pend.append({k: t[k] for k in ("kind", "id", "symbol", "signal")} | {"seen": _now()})
+                    _act(w, type="skip", symbol=t["symbol"], signal=t["signal"],
+                         reason="big up-day: waiting a day, stocks often pull back after a jump")
+                continue
+            up = _trend_ok(w, t, fetch)
+            if up is False:
+                _skip_once(w, t["symbol"], t["signal"], "below its 50-day average (downtrend), not buying")
+                continue
+        mult = learn.get(t["signal"], {}).get("mult", 1.0) * (1.5 if t["signal"] == "fear_dip" else 1.0)
+        spend = brain.position_size(equity, w["cash"], bcfg, mult)
+        if not spend:
+            break
         w["cash"] -= spend
         # Buy costs are taken off the position up front
         eur_in = spend * (1 - _cost_pct(cfg, t["kind"]) / 100)
         w["positions"].append({"kind": t["kind"], "id": t["id"], "chain": t.get("chain"),
                                "symbol": t["symbol"], "signal": t["signal"], "entry": t["price"],
-                               "eur": eur_in, "paid": spend, "time": _now(), "last": t["price"]})
+                               "eur": eur_in, "paid": spend, "time": _now(), "last": t["price"],
+                               "liq0": t.get("liq")})
         _act(w, type="buy", symbol=t["symbol"], signal=t["signal"], eur=spend, price=t["price"])
-        notes.append({"title": f"📝 Paper BUY {t['symbol']} for {spend:.0f}€",
+        notes.append({"title": f"📝 Paper BUY {t['symbol']} for {spend:.2f}€",
                       "message": f"Signal: {t['signal']} · price ${t['price']:,.6g}\n"
-                                 f"Auto-sells at +{cfg['take_profit_pct']}% / -{cfg['stop_loss_pct']}% "
-                                 f"or after {cfg['max_hold_hours'] // 24} days. Fake money.",
+                                 f"Sells half at +{cfg['take_profit_pct']}%, trails the rest, stop -{cfg['stop_loss_pct']}%, "
+                                 f"max {cfg['max_hold_hours'] // 24} days. Fake money.",
                       "priority": 2, "tags": ["memo"]})
 
     # 3) Hourly snapshot for the website chart (wallet vs just holding BTC)

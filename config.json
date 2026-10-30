@@ -135,7 +135,9 @@
     "memecoin_slippage_pct": 2,
     "report_hour": 20,
     "greed_pause_at": 75,
-    "fear_dip_at": 20
+    "fear_dip_at": 20,
+    "trail_after_pct": 20,
+    "trail_pct": 15
   },
   "fomo": {
     "enabled": true,
@@ -163,5 +165,26 @@
       "insider",
       "low liquidity"
     ]
+  },
+  "brain": {
+    "max_top10_pct": 30,
+    "max_single_holder_pct": 10,
+    "max_insider_pct": 10,
+    "min_holders": 150,
+    "min_lp_locked_pct": 95,
+    "max_creator_pct": 5,
+    "max_m5_pump_pct": 25,
+    "max_h1_pump_pct": 100,
+    "min_liq_to_mcap": 0.05,
+    "min_buy_sell_ratio": 0.9,
+    "max_buy_sell_ratio": 4,
+    "risk_per_trade_pct": 1,
+    "max_position_pct": 10,
+    "min_trade_eur": 1,
+    "max_losses_in_a_row": 3,
+    "max_daily_loss_pct": 3,
+    "max_risky_share_pct": 50,
+    "min_trades_to_learn": 30,
+    "shrink_prior_trades": 20
   }
 }

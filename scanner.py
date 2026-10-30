@@ -15,6 +15,7 @@ import urllib.request
 import urllib.parse
 import xml.etree.ElementTree as ET
 import paper
+import brain
 from email.utils import parsedate_to_datetime
 from datetime import datetime, timezone
 
@@ -198,20 +199,24 @@ def src_coingecko_trending(c):
     return out
 
 
+BRAIN_CFG = {}
+
+
 def rugcheck_ok(mint, strict_words):
+    """Full RugCheck report run through the brain's rug rules (holders, insiders, LP lock, taxes...)."""
     try:
-        r = fetch(f"https://api.rugcheck.xyz/v1/tokens/{mint}/report/summary")
+        r = fetch(f"https://api.rugcheck.xyz/v1/tokens/{mint}/report")
     except Exception as e:
         log(f"[rugcheck] {mint[:8]} failed: {e}")
         return False, "rugcheck unavailable"
-    dangers = [x.get("name") for x in r.get("risks", []) if x.get("level") == "danger"]
-    if dangers:
-        return False, ", ".join(dangers)
+    ok, note, _ = brain.deep_rugcheck(r, BRAIN_CFG)
+    if not ok:
+        return False, note
     warns = [x.get("name") for x in r.get("risks", []) if x.get("level") == "warn"]
     bad = [w for w in warns if any(k in (w or "").lower() for k in strict_words)]
     if bad:
         return False, ", ".join(bad)
-    return True, ("warnings: " + ", ".join(warns)) if warns else "no major flags"
+    return True, note
 
 
 def dex_pairs(chain, addresses):
@@ -272,6 +277,10 @@ def memecoin_check(chain, addr, p, c, tag):
         why = "volume way bigger than liquidity (often bots/wash trading)"
     elif is_hype(f"{sym} {name}"):
         why = "hype name"
+    else:
+        ok_entry, reason, _ = brain.entry_check(p, BRAIN_CFG)
+        if not ok_entry:
+            why = reason
     if why:
         log(f"[{tag}] skipped {sym}: {why}")
         return False, why
@@ -314,7 +323,8 @@ def src_dexscreener(c):
                 p.get("url"), 3, ["frog", "warning"], today()))
             if p.get("priceUsd"):
                 out[-1]["trade"] = {"kind": "dex", "chain": chain, "id": addr, "symbol": sym,
-                                    "price": float(p["priceUsd"]), "signal": "memecoin"}
+                                    "price": float(p["priceUsd"]), "signal": "memecoin",
+                                    "liq": (p.get("liquidity") or {}).get("usd")}
     return out
 
 
@@ -387,7 +397,8 @@ def src_fomo(c):
             p.get("url"), 3, ["eyes", "warning"], today()))
         if p.get("priceUsd"):
             out[-1]["trade"] = {"kind": "dex", "chain": "solana", "id": addr, "symbol": sym,
-                                "price": float(p["priceUsd"]), "signal": "fomo"}
+                                "price": float(p["priceUsd"]), "signal": "fomo",
+                                "liq": (p.get("liquidity") or {}).get("usd")}
     return out
 
 
@@ -536,6 +547,7 @@ def main():
     first_run = state is None
     seen = state or {}
 
+    BRAIN_CFG.update(cfg.get("brain", {}))
     MOOD.update(get_mood())
     print(f"::notice::Market mood: {MOOD.get('value', 'unavailable')} {MOOD.get('label', '')}", flush=True)
     found = []
@@ -572,7 +584,7 @@ def main():
     pc = cfg.get("paper", {})
     if pc.get("enabled"):
         try:
-            for n in paper.run(pc, fresh, fetch, MOOD):
+            for n in paper.run(pc, fresh, fetch, MOOD, BRAIN_CFG):
                 send(n)
         except Exception as e:  # paper wallet must never break real alerts
             log(f"[paper] failed: {e}")

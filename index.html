@@ -147,7 +147,7 @@
   .tabs button {
     font: 600 16px var(--sans); color: var(--pencil); background: transparent; cursor: pointer;
     border: 2px solid transparent; border-bottom: 0; border-radius: 10px 10px 0 0;
-    padding: 9px 16px 8px; margin: 0 0 -2px;
+    padding: 9px 13px 8px; margin: 0 0 -2px; white-space: nowrap;
   }
   .tabs button[aria-selected="true"] { color: var(--text); background: var(--paper); border-color: var(--text); }
   .tabs button:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
@@ -217,6 +217,15 @@
   .dossier .wide dd { font-weight: 400; font-size: 15px; }
   .live-actions { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
   .live-actions a { color: var(--ink); font-weight: 600; margin-top: 22px; }
+  /* brain tab */
+  .rulegroup h2 { margin-top: 40px; }
+  .rulegroup li { grid-template-columns: 1fr auto; }
+  .rule { font-weight: 600; font-size: 16px; grid-column: 1; }
+  .why2 { color: var(--pencil); font-size: 14px; grid-column: 1; }
+  .ev { grid-column: 2; grid-row: 1 / span 2; align-self: start; font: 400 15px var(--hand); white-space: nowrap; padding-top: 2px; }
+  .ev.strong { color: var(--gain); } .ev.some { color: var(--ink); } .ev.weak { color: var(--pencil); }
+  .facts-list li { grid-template-columns: 1fr; font-size: 15px; }
+  .facts-list a { color: var(--ink); font-size: 13px; }
   .empty { font-family: var(--hand); font-size: 19px; color: var(--pencil); margin: 12px 0 0; }
 
   .rules p { font-size: 16px; }
@@ -234,6 +243,7 @@
   <nav class="tabs" role="tablist" aria-label="Sections">
     <button type="button" role="tab" id="tabbtn-exp" aria-controls="tab-exp" aria-selected="true">Experiment</button>
     <button type="button" role="tab" id="tabbtn-quick" aria-controls="tab-quick" aria-selected="false">Quick trade</button>
+    <button type="button" role="tab" id="tabbtn-brain" aria-controls="tab-brain" aria-selected="false">Brain</button>
   </nav>
 
   <div class="tab" id="tab-exp" role="tabpanel" aria-labelledby="tabbtn-exp">
@@ -276,6 +286,27 @@
     <span id="updated"></span>
     <br><button type="button" id="refresh">Refresh now</button>
   </footer>
+  </div>
+
+
+  <div class="tab" id="tab-brain" role="tabpanel" aria-labelledby="tabbtn-brain" hidden>
+    <h1>What the bot knows</h1>
+    <p class="meta">Research on rug pulls, memecoins, day trading and long-term investing, turned into rules the bot can measure. Each rule shows how strong the evidence behind it is.</p>
+
+    <p class="verdict">The honest headline: no study shows a reliable edge in fast memecoin trading. The evidence is strongest on what to avoid, so most of the brain is about saying no.</p>
+
+    <section>
+      <h2>What it learned from its own trades</h2>
+      <p class="mood">After 30 finished trades of one kind, the bot starts adjusting how much it bets on that kind. Results are pulled toward the average first, so a few lucky trades can't fool it.</p>
+      <ul class="rows" id="bLearn"></ul>
+    </section>
+
+    <div id="bRules"></div>
+
+    <section>
+      <h2>Facts that shaped it</h2>
+      <ul class="rows facts-list" id="bFacts"></ul>
+    </section>
   </div>
 
   <div class="tab" id="tab-quick" role="tabpanel" aria-labelledby="tabbtn-quick" hidden>
@@ -545,17 +576,17 @@ setInterval(load, 5 * 60 * 1000);
 <script>
 /* ---------------- tabs ---------------- */
 (function () {
-  const tabs = [["exp", "tabbtn-exp"], ["quick", "tabbtn-quick"]];
+  const tabs = [["exp", "tabbtn-exp"], ["quick", "tabbtn-quick"], ["brain", "tabbtn-brain"]];
   function show(name, push) {
     tabs.forEach(([n, b]) => {
       document.getElementById("tab-" + n).hidden = n !== name;
       document.getElementById(b).setAttribute("aria-selected", String(n === name));
     });
-    if (push) history.replaceState(null, "", name === "quick" ? "#quick" : location.pathname);
+    if (push) history.replaceState(null, "", name === "exp" ? location.pathname : "#" + name);
     window.scrollTo(0, 0);
   }
   tabs.forEach(([n, b]) => document.getElementById(b).addEventListener("click", () => show(n, true)));
-  show(location.hash === "#quick" ? "quick" : "exp", false);
+  show(["#quick", "#brain"].includes(location.hash) ? location.hash.slice(1) : "exp", false);
 })();
 
 /* ---------------- quick trade ---------------- */
@@ -628,20 +659,61 @@ setInterval(load, 5 * 60 * 1000);
     if (!res.note.startsWith("safety check didn't")) rugCache[key] = res;
     return res;
   }
+  /* Deep rug check: same rules as the bot's brain (brain.py). Degen mode keeps only the hard ones. */
+  const RB = { top10: 30, single: 10, insider: 10, holders: 150, lpLocked: 95, creator: 5 };
   async function rugcheckRaw(mint, dangerOnly) {
-    try {
-      const r = await j(`https://api.rugcheck.xyz/v1/tokens/${mint}/report/summary`);
-      const risks = r.risks || [];
-      const danger = risks.filter(x => x.level === "danger").map(x => x.name);
-      if (danger.length) return { ok: false, note: danger.join(", ") };
-      if (dangerOnly) return { ok: true, note: "degen mode: only blocks danger flags" };
-      const bad = risks.filter(x => x.level === "warn" && F.rugWords.some(w => (x.name || "").toLowerCase().includes(w))).map(x => x.name);
-      if (bad.length) return { ok: false, note: bad.join(", ") };
-      const warns = risks.filter(x => x.level === "warn").map(x => x.name);
-      return { ok: true, note: warns.length ? "minor warnings: " + warns.join(", ") : "no red flags" };
-    } catch (e) {
-      return { ok: false, note: "safety check didn't answer, skipped to be safe" };
-    }
+    let r;
+    try { r = await j(`https://api.rugcheck.xyz/v1/tokens/${mint}/report`); }
+    catch (e) { return { ok: false, note: "safety check didn't answer, skipped to be safe" }; }
+    const no = note => ({ ok: false, note });
+    if (r.rugged) return no("already marked as rugged");
+    if (r.mintAuthority) return no("creator can still print new coins");
+    if (r.freezeAuthority) return no("creator can freeze your coins");
+    if ((r.transferFee?.pct || 0) > 0) return no(`hidden ${r.transferFee.pct}% transfer tax`);
+    const ext = r.token_extensions || {};
+    for (const k of ["permanentDelegate", "transferHook", "nonTransferable"]) if (ext[k]) return no(`dangerous token setting (${k})`);
+    const danger = (r.risks || []).filter(x => x.level === "danger").map(x => x.name);
+    if (danger.length) return no(danger.join(", "));
+    if (dangerOnly) return { ok: true, note: "degen mode: only the hard rug flags are blocked" };
+
+    const pools = new Set();
+    (r.markets || []).forEach(m => {
+      ["pubkey", "liquidityA", "liquidityB"].forEach(k => m[k] && pools.add(m[k]));
+      ["liquidityAAccount", "liquidityBAccount"].forEach(k => m[k]?.owner && pools.add(m[k].owner));
+    });
+    const holders = (r.topHolders || []).filter(x => !pools.has(x.address) && !pools.has(x.owner));
+    const top10 = holders.slice(0, 10).reduce((s, x) => s + (x.pct || 0), 0);
+    const biggest = Math.max(0, ...holders.map(x => x.pct || 0));
+    const insiders = holders.filter(x => x.insider).reduce((s, x) => s + (x.pct || 0), 0);
+    if (top10 > RB.top10) return no(`top 10 wallets hold ${top10.toFixed(0)}%`);
+    if (biggest > RB.single) return no(`one wallet holds ${biggest.toFixed(0)}%`);
+    if (insiders > RB.insider) return no(`insider wallets hold ${insiders.toFixed(0)}%`);
+    if ((r.graphInsidersDetected || 0) > 0 && insiders > RB.insider / 2) return no(`linked insider wallets hold ${insiders.toFixed(0)}%`);
+    if (r.totalHolders && r.totalHolders < RB.holders) return no(`only ${r.totalHolders} holders`);
+    const locks = (r.markets || []).filter(m => !String(m.marketType || "").toLowerCase().includes("dlmm")).map(m => m.lp?.lpLockedPct || 0);
+    const lp = locks.length ? Math.max(...locks) : null;
+    if (lp != null && lp < RB.lpLocked) return no(`only ${lp.toFixed(0)}% of the trading pool is locked`);
+    const supply = +(r.token?.supply || 0), creator = +(r.creatorBalance || 0);
+    if (supply && creator / supply * 100 > RB.creator) return no(`creator still holds ${(creator / supply * 100).toFixed(0)}%`);
+    const warns = (r.risks || []).filter(x => x.level === "warn" && F.rugWords.some(w => (x.name || "").toLowerCase().includes(w))).map(x => x.name);
+    if (warns.length) return no(warns.join(", "));
+    return { ok: true, note: `top 10 hold ${top10.toFixed(0)}%, ${r.totalHolders || "?"} holders${lp != null ? `, pool ${lp.toFixed(0)}% locked` : ""}` };
+  }
+
+  /* Entry rules from the research (brain.py entry_check). Used by normal filters only. */
+  function entryCheck(p) {
+    const liq = p.liquidity?.usd || 0, mc = p.marketCap || p.fdv || 0, pc = p.priceChange || {}, v = p.volume || {};
+    const b = p.txns?.h1?.buys || 0, s = p.txns?.h1?.sells || 0, m5 = pc.m5 || 0, h1 = pc.h1 || 0;
+    if (m5 > 25 || h1 > 100) return `chasing a pump (${pct(m5)} 5m)`;
+    if (h1 <= 0) return "not trending up this hour";
+    if (mc && liq / mc < 0.05) return "thin liquidity for its size";
+    const avg5 = (v.h1 || 0) / 12;
+    if (avg5 && (v.m5 || 0) >= 3 * avg5 && Math.abs(m5) < 1) return "volume spike, flat price (wash trading)";
+    if (liq < 50000 && b + s && (v.h1 || 0) / (b + s) > 1000) return "few huge trades (fake volume)";
+    const ratio = s ? b / s : 9;
+    if (ratio < 0.9) return "more sellers than buyers";
+    if (ratio > 4) return "one-sided buying (bots?)";
+    return null;
   }
 
   async function fetchPairs() {
@@ -683,6 +755,7 @@ setInterval(load, 5 * 60 * 1000);
       else if ((pc.m5 || 0) < -f.maxDump5m) why = "falling right now";
       else if (v24 > liq * f.maxVolLiq) why = "fake-looking volume";
       else if (f.hype && HYPE.some(r => r.test((p.baseToken?.symbol || "") + " " + (p.baseToken?.name || "")))) why = "hype name";
+      else if (f.brain) why = entryCheck(p);
       if (why) { onSkip && onSkip(sym, why); continue; }
       p._ageH = ageH;
       p._score = scoreFn ? scoreFn(p) : (v1 / liq) * (1 + Math.abs(pc.h1 || 0) / 100);
@@ -698,7 +771,7 @@ setInterval(load, 5 * 60 * 1000);
     $("qScanCount").textContent = "fetching lists…";
     const all = await fetchPairs();
     $("qScanCount").textContent = `${all.length} coins`;
-    const passed = filterPairs(all, { ...F, hype: true }, skip);
+    const passed = filterPairs(all, { ...F, hype: true, brain: true }, skip);
     renderSkipped();
     for (const p of passed.slice(0, 6)) {
       const sym = "$" + p.baseToken.symbol;
@@ -883,7 +956,7 @@ setInterval(load, 5 * 60 * 1000);
   /* ---------- speed challenge ---------- */
   const CH = {
     normal: { tp: 6, sl: 4, slots: 3, staleMs: 120000, rugDangerOnly: false,
-      f: { ...F, hype: true, maxDump5m: 2 } },
+      f: { ...F, hype: true, brain: true, maxDump5m: 2 } },
     degen: { tp: 12, sl: 8, slots: 3, staleMs: 90000, rugDangerOnly: true,
       f: { minLiq: 8000, minVol24: 15000, minAgeH: 0.25, minVol1h: 800, minTx1h: 15, maxPump24: 1e9,
            maxDump1h: 60, maxDump5m: 10, maxVolLiq: 400, hype: false } },
@@ -1125,6 +1198,88 @@ setInterval(load, 5 * 60 * 1000);
     chRender(false); chStartLoops();
   }
   document.addEventListener("visibilitychange", () => { if (!document.hidden && ch) chTick(); });
+})();
+</script>
+<script>
+/* ---------------- brain tab ---------------- */
+(function () {
+  const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const S = "strong", M = "some", W = "weak";
+  const GROUPS = [
+    ["Rug-pull checks", "Run on every memecoin before it can be bought.", [
+      ["Creator can't print or freeze coins", "Mint or freeze authority still switched on means unlimited new coins, or your coins frozen so you can't sell.", S],
+      ["No hidden taxes or transfer tricks", "Token settings like transfer fees, transfer hooks or a permanent delegate can block selling or take coins from your wallet.", S],
+      ["Top 10 wallets hold 30% or less, no single wallet over 10%", "In 82.8% of manipulated meme coins the top 10 held a median 87%. Trading pools are left out of the count.", M],
+      ["Insiders and linked wallets hold under 10%", "Bundles of linked wallets buying at launch and dumping together are the main pump.fun rug method.", M],
+      ["At least 150 holders", "Confirmed rugs had a median of 9 holders, legit tokens tens of thousands.", M],
+      ["95%+ of the trading pool locked or burned", "Unlocked liquidity lets the dev pull the money out. Skipped for Meteora DLMM pools, which have no lockable pool token.", S],
+      ["Creator holds 5% or less", "A dev still sitting on a big bag can slowly dump it on buyers (a soft rug).", M],
+      ["Emergency exit if liquidity drops 30%", "Liquidity being pulled is the classic rug. The bot checks on every run and gets out.", M],
+    ]],
+    ["Memecoin entry rules", "What a coin must look like at the moment of buying.", [
+      ["Don't chase pumps", "Skips coins up 25%+ in 5 minutes or 100%+ in an hour. Pumped coins later fall a median 56%.", M],
+      ["Price must be rising this hour", "Light momentum only. Momentum has some support in crypto, chasing doesn't.", M],
+      ["Liquidity at least 5% of market cap", "A big market cap on a tiny pool is a known manipulation sign, and you'd pay a lot of slippage.", M],
+      ["Reject volume spikes with a flat price", "Wash trading shows huge volume jumps while the price barely moves.", M],
+      ["Reject few huge trades on small pools", "A handful of big trades bouncing back and forth fakes activity.", M],
+      ["Buyers vs sellers between 0.9x and 4x", "Very one-sided buying usually means bots or bundled wallets.", W],
+      ["Paid boosts and influencer calls aren't buy signals", "Boosts are paid ads. Influencer picks gained 1.8% on day one, then fell 6.5% by day 30.", M],
+    ]],
+    ["Risk and exits", "How much to bet and when to get out.", [
+      ["Risk about 1% of the wallet per trade", "The bet is sized so hitting the stop loses about 1% of the wallet, and never more than 10% goes into one coin.", M],
+      ["Sell half at +30%, trail the rest", "Locks in profit, then a trailing stop 15% below the peak lets winners run but protects gains.", W],
+      ["Hard stop at −15%", "Memecoin dumps are fast and deep. Stops help most when prices trend.", M],
+      ["Stop for the day after 3 losses or −3%", "Losing traders tend to keep trading. The circuit breaker forces a break.", W],
+      ["Max 50% of the wallet in risky coins", "Memecoins, FOMO and trending coins together are capped so one bad day can't wipe out the wallet.", M],
+      ["Every trade costs about 5% round trip", "Fees and slippage are charged in full, so paper results aren't flattering. A memecoin must rise about 5% just to break even.", S],
+    ]],
+    ["Long-term rules", "For Bitcoin, Ethereum, Solana and stocks.", [
+      ["Only buy big coins above their 50-day average", "A 50-day trend filter on Bitcoin had a Sharpe of 1.9 vs 1.3 for plain holding (Grayscale, 2012–2023).", M],
+      ["Wait a day after a stock jumps 7%+", "Stocks often partly reverse the week after a big move. The bot waits a day, then buys only if the trend is up.", W],
+      ["Buy the dip only in extreme fear, 1.5x size", "Fear & Greed extremes gave a small edge in some backtests, nothing rigorous, so it only adjusts size.", W],
+      ["Expect 75–85% crashes", "Every Bitcoin cycle peak was followed by a 75%+ drop. Position limits are built around surviving that.", S],
+    ]],
+    ["How it learns", "Rules for learning from its own paper trades without fooling itself.", [
+      ["Wait for 30 trades before adjusting", "With few trades, luck dominates. At 100 trades a win rate is still only accurate to about ±10 points.", S],
+      ["Pull results toward the average", "Each signal's result is blended with the overall average (worth 20 trades), so streaks don't over-excite it.", S],
+      ["Bet more only on clear evidence", "Sizes go up only when a signal's result is statistically strong (t-score 2 or more, 3 for a bigger step).", S],
+      ["Losers get smaller, then benched", "A losing signal drops to half size. If it keeps losing over 50 trades, it's benched to tiny test trades.", M],
+    ]],
+  ];
+  const FACTS = [
+    ["98.6% of 7M+ pump.fun tokens were flagged as rug pulls or pump-and-dumps; only 1.4% kept even $1k of liquidity.", "https://beincrypto.com/pump-fun-tokens-scams-solidus-labs-report/"],
+    ["Only 0.63% of 655,770 pump.fun tokens graduated in September 2025, and 92% of active ones had a crash-sized drop.", "https://arxiv.org/pdf/2602.14860"],
+    ["Median rug on Solana DEXs lasted about 17 minutes.", "https://arxiv.org/html/2603.24625v1"],
+    ["Of 707 meme coins that rose 100%+, 82.8% showed manipulation. Pumps of +144% were followed by −56% dumps.", "https://arxiv.org/html/2507.01963v2"],
+    ["About 27% of 4.2M pump.fun wallets were profitable over 6 months; fewer than 0.01% made $1M.", "https://crypto.news/over-60-pump-fun-traders-saw-losses-less-than-0-01-made-over-1m/"],
+    ["97% of Brazilian day traders who kept going for 300+ days lost money.", "https://quantpedia.com/retail-day-trading-is-an-uphill-battle/"],
+    ["The most active US traders earned 11.4% a year vs 17.9% for the market.", "https://ideas.repec.org/a/bla/jfinan/v55y2000i2p773-806.html"],
+    ["About 14,000 of 24,000 tokens listed on CoinGecko since 2014 are dead.", "https://crypto.news/over-50-of-tokens-listed-on-coingecko-since-2014-have-died-data-shows/"],
+    ["A 50-day moving-average rule on Bitcoin: Sharpe 1.9 vs 1.3 for buy and hold.", "https://research.grayscale.com/reports/the-trend-is-your-friend-managing-bitcoins-volatility-with-momentum-signals"],
+  ];
+  const label = { strong: "strong evidence", some: "some evidence", weak: "weak evidence" };
+  document.getElementById("bRules").innerHTML = GROUPS.map(([title, sub, rules]) => `
+    <section class="rulegroup"><h2>${esc(title)}</h2><p class="mood">${esc(sub)}</p>
+      <ul class="rows">${rules.map(([r, why, ev]) => `<li><span class="rule">${esc(r)}</span>
+        <span class="ev ${ev}">${label[ev]}</span><span class="why2">${esc(why)}</span></li>`).join("")}</ul></section>`).join("");
+  document.getElementById("bFacts").innerHTML = FACTS.map(([f, u]) =>
+    `<li>${esc(f)} <a href="${esc(u)}" target="_blank" rel="noopener">source</a></li>`).join("");
+
+  async function learnings() {
+    let w = null;
+    for (const base of ["", "https://raw.githubusercontent.com/elmartinsss/money-radar/main/"]) {
+      try { const r = await fetch(base + "paper/wallet.json?t=" + Date.now(), { cache: "no-store" }); if (r.ok) { w = await r.json(); break; } } catch (e) {}
+    }
+    const L = (w && w.learning) || {};
+    const names = { memecoin: "Memecoins", fomo: "FOMO crowd", trending: "Trending coins", momentum: "Big up-moves", fear_dip: "Fear dips" };
+    const rows = Object.entries(L);
+    document.getElementById("bLearn").innerHTML = rows.length ? rows.map(([k, s]) => `
+      <li><span class="sym">${esc(names[k] || k)}</span>
+        <span class="amt ${s.avg_pct >= 0 ? "gain" : "loss"}">${s.avg_pct >= 0 ? "+" : ""}${s.avg_pct}%<span>avg per trade</span></span>
+        <span class="sub">${s.n} trades, ${s.win_rate}% won. ${esc(s.status.charAt(0).toUpperCase() + s.status.slice(1))}</span></li>`).join("")
+      : `<li class="empty">No finished trades yet. This fills in as the paper wallet trades.</li>`;
+  }
+  learnings();
 })();
 </script>
 </body>
