@@ -45,3 +45,11 @@ It sells automatically at **+30%** (take profit), **−15%** (stop loss) or afte
 You get a ping for every buy and sell, plus a daily report at 20:00 comparing it with simply
 holding Bitcoin. Full history: **PORTFOLIO.md** in this repo. Tune it in `config.json → paper`.
 To restart from €100, delete `paper/wallet.json`.
+
+## 👀 FOMO crowd + market mood
+- **FOMO crowd:** once an hour the bot checks which Solana memecoins FOMO-app users are buying
+  most (read from the blockchain through Bitquery, since FOMO has no public API). Coins with 25+
+  buyers still have to pass all memecoin safety filters. Needs a free Bitquery access token saved
+  as the repo secret `BITQUERY_TOKEN`; without it this source simply stays off.
+- **Market mood:** the Crypto Fear & Greed index (0 = panic, 100 = FOMO). At 75+ the paper bot
+  skips memecoins and trending coins; at 20 or below it buys a little Bitcoin on the dip.

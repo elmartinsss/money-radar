@@ -190,7 +190,7 @@ def src_coingecko_trending(c):
             "cg", it.get("id"),
             f"🔥 Trending #{i + 1}: {it.get('name')} ({it.get('symbol')})",
             f"Rank #{it.get('market_cap_rank') or '?'} · {chg_s}\n"
-            f"Risk: 🟡 trending = lots of people searching it. Usually late to the move.",
+            f"Risk: 🟡 trending = lots of people searching it. Usually late to the move." + mood_line(),
             f"https://www.coingecko.com/en/coins/{it.get('id')}", 2, ["fire"], today()))
         if isinstance(d.get("price"), (int, float)) and d["price"] > 0:
             out[-1]["trade"] = {"kind": "cg", "id": it.get("id"), "symbol": it.get("symbol"),
@@ -227,6 +227,72 @@ def dex_pairs(chain, addresses):
     return best
 
 
+MOOD = {}
+
+
+def get_mood():
+    """Crypto Fear & Greed index: 0 = panic, 100 = everyone FOMOing in."""
+    try:
+        d = fetch("https://api.alternative.me/fng/?limit=1")["data"][0]
+        return {"value": int(d["value"]), "label": d["value_classification"], "t": int(NOW)}
+    except Exception as e:
+        log(f"[mood] failed: {e}")
+        return {}
+
+
+def mood_line():
+    if not MOOD:
+        return ""
+    v = MOOD["value"]
+    icon = "🥶" if v <= 25 else "🔥" if v >= 75 else "😐"
+    warn = " Crowd is greedy, tops often form here." if v >= 75 else ""
+    return f"\nMarket mood: {v}/100 {MOOD['label']} {icon}.{warn}"
+
+
+def memecoin_check(chain, addr, p, c, tag):
+    """All memecoin safety filters in one place. Returns (ok, note)."""
+    liq = (p.get("liquidity") or {}).get("usd") or 0
+    vol = (p.get("volume") or {}).get("h24") or 0
+    age_h = (NOW * 1000 - (p.get("pairCreatedAt") or NOW * 1000)) / 3.6e6
+    pc = p.get("priceChange") or {}
+    sym = p["baseToken"].get("symbol", "?")
+    name = p["baseToken"].get("name", "")
+    why = None
+    if liq < c["min_liquidity_usd"]:
+        why = "low liquidity"
+    elif vol < c["min_volume_24h_usd"]:
+        why = "low volume"
+    elif age_h < c["min_age_hours"]:
+        why = f"too new ({age_h:.0f}h)"
+    elif (pc.get("h24") or 0) > c["max_pump_24h_pct"]:
+        why = f"already pumped {pc.get('h24')}% (you'd be buying from early holders)"
+    elif (pc.get("h1") or 0) < -c["max_dump_1h_pct"]:
+        why = f"dumping {pc.get('h1')}% this hour"
+    elif vol > liq * c["max_volume_to_liquidity"]:
+        why = "volume way bigger than liquidity (often bots/wash trading)"
+    elif is_hype(f"{sym} {name}"):
+        why = "hype name"
+    if why:
+        log(f"[{tag}] skipped {sym}: {why}")
+        return False, why
+    note = "rugcheck skipped"
+    if c.get("use_rugcheck") and chain == "solana":
+        ok, note = rugcheck_ok(addr, c["block_rugcheck_warnings_about"])
+        if not ok:
+            log(f"[{tag}] dropped {sym}: {note}")
+            return False, note
+    return True, note
+
+
+def memecoin_stats(p):
+    liq = (p.get("liquidity") or {}).get("usd") or 0
+    vol = (p.get("volume") or {}).get("h24") or 0
+    age_h = (NOW * 1000 - (p.get("pairCreatedAt") or NOW * 1000)) / 3.6e6
+    pc = p.get("priceChange") or {}
+    return (f"Liq {money(liq)} · Vol24h {money(vol)} · MC {money(p.get('marketCap') or p.get('fdv'))}\n"
+            f"1h {pc.get('h1', 0):+}% · 24h {pc.get('h24', 0):+}% · age {age_h:.0f}h")
+
+
 def src_dexscreener(c):
     boosts = fetch("https://api.dexscreener.com/token-boosts/top/v1") or []
     out = []
@@ -235,47 +301,93 @@ def src_dexscreener(c):
         if not addrs:
             continue
         for addr, p in dex_pairs(chain, addrs).items():
-            liq = (p.get("liquidity") or {}).get("usd") or 0
-            vol = (p.get("volume") or {}).get("h24") or 0
-            age_h = (NOW * 1000 - (p.get("pairCreatedAt") or NOW * 1000)) / 3.6e6
-            pc = p.get("priceChange") or {}
-            sym = p["baseToken"].get("symbol", "?")
-            name = p["baseToken"].get("name", "")
-            why = None
-            if liq < c["min_liquidity_usd"]:
-                why = "low liquidity"
-            elif vol < c["min_volume_24h_usd"]:
-                why = "low volume"
-            elif age_h < c["min_age_hours"]:
-                why = f"too new ({age_h:.0f}h)"
-            elif (pc.get("h24") or 0) > c["max_pump_24h_pct"]:
-                why = f"already pumped {pc.get('h24')}% (you'd be buying from early holders)"
-            elif (pc.get("h1") or 0) < -c["max_dump_1h_pct"]:
-                why = f"dumping {pc.get('h1')}% this hour"
-            elif vol > liq * c["max_volume_to_liquidity"]:
-                why = "volume way bigger than liquidity (often bots/wash trading)"
-            elif is_hype(f"{sym} {name}"):
-                why = "hype name"
-            if why:
-                log(f"[dex] skipped {sym}: {why}")
+            ok, note = memecoin_check(chain, addr, p, c, "dex")
+            if not ok:
                 continue
-            note = "rugcheck skipped"
-            if c.get("use_rugcheck") and chain == "solana":
-                ok, note = rugcheck_ok(addr, c["block_rugcheck_warnings_about"])
-                if not ok:
-                    log(f"[dex] dropped {p['baseToken'].get('symbol')}: {note}")
-                    continue
+            sym = p["baseToken"].get("symbol", "?")
             out.append(alert(
                 "dex", addr,
                 f"🐸 Memecoin with real volume: ${sym}",
-                f"Liq {money(liq)} · Vol24h {money(vol)} · MC {money(p.get('marketCap') or p.get('fdv'))}\n"
-                f"1h {pc.get('h1', 0):+}% · 24h {pc.get('h24', 0):+}% · age {age_h:.0f}h\n"
-                f"Rugcheck: {note}\n"
-                f"Risk: 🔴 gambling. Passed the safety filters, but it's a paid promo and most memecoins still go to 0.",
+                f"{memecoin_stats(p)}\nRugcheck: {note}\n"
+                f"Risk: 🔴 gambling. Passed the safety filters, but it's a paid promo and most memecoins still go to 0."
+                + mood_line(),
                 p.get("url"), 3, ["frog", "warning"], today()))
             if p.get("priceUsd"):
                 out[-1]["trade"] = {"kind": "dex", "chain": chain, "id": addr, "symbol": sym,
                                     "price": float(p["priceUsd"]), "signal": "memecoin"}
+    return out
+
+
+FOMO_SIGNER = "AgmLJBMDCqWynYnQiPCuj9ewsNNsBJXyzoUhD9LJzN51"  # signs every FOMO app trade (per Bitquery)
+FOMO_QUERY = """query {
+  Solana {
+    DEXTradeByTokens(
+      limit: {count: 25}
+      orderBy: {descendingByField: "buyers"}
+      where: {Transaction: {Signer: {is: "%s"}}, Trade: {Dex: {ProtocolName: {is: "dflow"}},
+        Side: {Type: {is: buy}}, Currency: {MintAddress: {notIn: [
+          "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v", "So11111111111111111111111111111111111111112",
+          "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB"]}}},
+        Block: {Time: {since_relative: {hours_ago: %d}}}}
+    ) {
+      Trade { Currency { Symbol Name MintAddress } }
+      buys: count(distinct: Transaction_Signature)
+      buyers: count(distinct: Trade_Account_Owner)
+    }
+  }
+}"""
+FOMO_STAMP = os.path.join(HERE, "state", "fomo_last.txt")
+
+
+def src_fomo(c):
+    """What FOMO app users are piling into, read from the Solana blockchain via Bitquery."""
+    token = os.environ.get("BITQUERY_TOKEN", "")
+    if not token:
+        log("[fomo] no BITQUERY_TOKEN secret, skipping")
+        return []
+    try:
+        last = float(open(FOMO_STAMP).read())
+    except Exception:
+        last = 0
+    if NOW - last < c["every_minutes"] * 60:
+        return []  # saves Bitquery's free points
+    os.makedirs(os.path.dirname(FOMO_STAMP), exist_ok=True)
+    open(FOMO_STAMP, "w").write(str(NOW))
+    body = json.dumps({"query": FOMO_QUERY % (FOMO_SIGNER, c["lookback_hours"])}).encode()
+    req = urllib.request.Request("https://streaming.bitquery.io/graphql", data=body, headers={
+        "Content-Type": "application/json", "Authorization": f"Bearer {token}", "User-Agent": UA})
+    with urllib.request.urlopen(req, timeout=40) as r:
+        data = json.loads(r.read())
+    if data.get("errors"):
+        raise RuntimeError(str(data["errors"])[:200])
+    rows = data["data"]["Solana"]["DEXTradeByTokens"]
+    crowd = {}
+    for row in rows:
+        mint = row["Trade"]["Currency"]["MintAddress"]
+        buyers = int(row.get("buyers") or 0)
+        if buyers >= c["min_buyers"]:
+            crowd[mint] = (buyers, int(row.get("buys") or 0))
+    log(f"[fomo] {len(rows)} tokens bought, {len(crowd)} with {c['min_buyers']}+ buyers")
+    if not crowd:
+        return []
+    out = []
+    for addr, p in dex_pairs("solana", list(crowd)).items():
+        ok, note = memecoin_check("solana", addr, p, c, "fomo")
+        if not ok:
+            continue
+        sym = p["baseToken"].get("symbol", "?")
+        buyers, buys = crowd[addr]
+        out.append(alert(
+            "fomo", addr,
+            f"👀 FOMO crowd is buying ${sym}",
+            f"{buyers} FOMO users bought in the last {c['lookback_hours']}h ({buys} buys)\n"
+            f"{memecoin_stats(p)}\nRugcheck: {note}\n"
+            f"Risk: 🔴 the crowd is already in. Passed the safety filters, but you'd be late by definition."
+            + mood_line(),
+            p.get("url"), 3, ["eyes", "warning"], today()))
+        if p.get("priceUsd"):
+            out[-1]["trade"] = {"kind": "dex", "chain": "solana", "id": addr, "symbol": sym,
+                                "price": float(p["priceUsd"]), "signal": "fomo"}
     return out
 
 
@@ -407,7 +519,7 @@ def save_state(seen):
 
 
 SOURCES = [("my_tokens", src_my_tokens), ("watchlist", src_watchlist),
-           ("dexscreener", src_dexscreener), ("news", src_news),
+           ("dexscreener", src_dexscreener), ("fomo", src_fomo), ("news", src_news),
            ("reddit", src_reddit), ("coingecko_trending", src_coingecko_trending)]
 
 
@@ -424,6 +536,7 @@ def main():
     first_run = state is None
     seen = state or {}
 
+    MOOD.update(get_mood())
     found = []
     for name, fn in SOURCES:
         sc = cfg.get(name, {})
@@ -458,7 +571,7 @@ def main():
     pc = cfg.get("paper", {})
     if pc.get("enabled"):
         try:
-            for n in paper.run(pc, fresh, fetch):
+            for n in paper.run(pc, fresh, fetch, MOOD):
                 send(n)
         except Exception as e:  # paper wallet must never break real alerts
             log(f"[paper] failed: {e}")

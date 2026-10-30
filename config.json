@@ -118,8 +118,10 @@
     "max_open_positions": 8,
     "buy_on": [
       "memecoin",
+      "fomo",
       "trending",
-      "momentum"
+      "momentum",
+      "fear_dip"
     ],
     "trending_top_n": 3,
     "take_profit_pct": 30,
@@ -127,6 +129,31 @@
     "max_hold_hours": 168,
     "fee_pct": 0.5,
     "memecoin_slippage_pct": 2,
-    "report_hour": 20
+    "report_hour": 20,
+    "greed_pause_at": 75,
+    "fear_dip_at": 20
+  },
+  "fomo": {
+    "enabled": true,
+    "every_minutes": 60,
+    "lookback_hours": 1,
+    "min_buyers": 25,
+    "min_liquidity_usd": 150000,
+    "min_volume_24h_usd": 300000,
+    "min_age_hours": 24,
+    "max_pump_24h_pct": 150,
+    "max_dump_1h_pct": 20,
+    "max_volume_to_liquidity": 15,
+    "use_rugcheck": true,
+    "block_rugcheck_warnings_about": [
+      "holder",
+      "lp",
+      "liquidity",
+      "mutable",
+      "freeze",
+      "mint",
+      "creator",
+      "insider"
+    ]
   }
 }

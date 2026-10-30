@@ -106,7 +106,7 @@ def total(w, prices):
     return w["cash"] + sum(value(p, prices.get(p["id"], p.get("last", p["entry"]))) for p in w["positions"])
 
 
-def run(cfg, signals, fetch):
+def run(cfg, signals, fetch, mood=None):
     """Update the wallet. Returns a list of ntfy messages to send."""
     w = load(cfg)
     notes = []
@@ -132,11 +132,27 @@ def run(cfg, signals, fetch):
             _sell(w, cfg, pos, price, f"⏰ Time's up ({held_h / 24:.0f} days)", notes)
 
     # 2) Open new positions from fresh signals
+    mood = mood or {}
+    if mood:
+        w["mood"] = mood
+    greedy = mood.get("value", 50) >= cfg["greed_pause_at"]
+    risky = {"memecoin", "fomo", "trending"}
     allowed = set(cfg["buy_on"])
+    signals = list(signals)
+    # Extreme fear: buy the dip on Bitcoin (once a week at most)
+    if mood.get("value", 50) <= cfg["fear_dip_at"] and "fear_dip" in allowed:
+        recent = [h for h in w["history"] if h["signal"] == "fear_dip" and _now() - h["time"] < 7 * 86400]
+        if not recent:
+            b = btc_price(fetch)
+            if b:
+                signals.insert(0, {"trade": {"kind": "cg", "id": "bitcoin", "symbol": "BTC",
+                                             "price": b, "signal": "fear_dip"}})
     for s in signals:
         t = s.get("trade")
         if not t or t["signal"] not in allowed:
             continue
+        if greedy and t["signal"] in risky:
+            continue  # crowd is FOMOing, the bot sits this one out
         if t["signal"] == "trending" and t.get("rank", 99) > cfg["trending_top_n"]:
             continue
         if any(p["id"] == t["id"] for p in w["positions"]):
@@ -201,6 +217,8 @@ def report_note(w, prices, btc_now):
         best = max(closed, key=lambda h: h["pnl_pct"])
         worst = min(closed, key=lambda h: h["pnl_pct"])
         lines.append(f"Best: {best['symbol']} {best['pnl_pct']:+.0f}% · Worst: {worst['symbol']} {worst['pnl_pct']:+.0f}%")
+    if w.get("mood"):
+        lines.append(f"Market mood: {w['mood']['value']}/100 {w['mood']['label']}")
     return {"title": "📊 Paper wallet daily report", "message": "\n".join(lines),
             "priority": 3, "tags": ["bar_chart"]}
 

@@ -34,6 +34,7 @@ jobs:
         run: python scanner.py
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          BITQUERY_TOKEN: ${{ secrets.BITQUERY_TOKEN }}
 
       - name: Save paper wallet
         if: always()

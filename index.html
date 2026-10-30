@@ -96,6 +96,8 @@
     margin: 14px 0 0;
     max-width: 30ch;
   }
+  .mood { margin: 14px 0 0; color: var(--pencil); font-size: 15px; max-width: 46ch; }
+  .mood strong { color: var(--text); font-weight: 600; }
   .gain { color: var(--gain); }
   .loss { color: var(--loss); }
 
@@ -151,6 +153,7 @@
   <div class="chart" id="chart" aria-label="Wallet value over time compared with holding Bitcoin"></div>
   <p class="verdict" id="verdict"></p>
 
+  <p class="mood" id="mood"></p>
   <dl class="facts" id="facts"></dl>
 
   <section>
@@ -262,6 +265,13 @@ function render(w, alerts, cfg) {
     $("verdict").innerHTML = `Wallet: <span class="${cls(change)}">${eur(total)} (${pct(change)})</span>`;
   }
 
+  if (w.mood && w.mood.value != null) {
+    const v = w.mood.value, greedy = v >= (cfg?.greed_pause_at ?? 75), fearful = v <= (cfg?.fear_dip_at ?? 20);
+    $("mood").innerHTML = `Market mood: <strong>${v}/100, ${esc(w.mood.label).toLowerCase()}</strong>. `
+      + (greedy ? "The crowd is FOMOing, so the bot skips memecoins and trending coins until it cools down."
+        : fearful ? "People are panicking, so the bot may buy a little Bitcoin on the dip."
+        : "Normal conditions, the bot trades every signal type.");
+  }
   const closed = w.history || [];
   const wins = closed.filter(h => h.pnl_eur >= 0).length;
   $("facts").innerHTML = `
