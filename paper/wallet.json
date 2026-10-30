@@ -5,7 +5,7 @@
  "history": [],
  "started": 1793366521.920483,
  "btc_start": 77216,
- "last_report": "",
+ "last_report": "2026-10-30",
  "equity": [
   {
    "t": 1793366862,
@@ -21,9 +21,9 @@
  "mood": {
   "value": 30,
   "label": "Fear",
-  "t": 1793381794
+  "t": 1793384343
  },
  "learning": {},
  "pending": [],
- "updated": 1793381797
+ "updated": 1793384346
 }

@@ -138,5 +138,19 @@
   "message": "Rank #41 · -12.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 30/100 Fear 😐.",
   "click": "https://www.coingecko.com/en/coins/ethena",
   "priority": 2
+ },
+ {
+  "t": 1793384343,
+  "title": "📰 Methanex (MEOH) Stock Pops As Earnings Beat Fuels Buyback - Timothy Sykes",
+  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: earnings beat, buyback · via news.google.com",
+  "click": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNQWNpRE5PMExSblJFZXFEbnM0UWFOM0xDb3BiSzN0VmpLUHNfSU5BdXc1NnZQY1FXbS1KNjFaZ0JBNWNKaU9mdE5Rc2EtZGZEV3JPSGFqclZ5VEE5ZHlrUjV2dExac2pQX3c0S3hWeC1yWmJ3V3hIQ1pvNUplYnJ0VTF3?oc=5",
+  "priority": 3
+ },
+ {
+  "t": 1793384343,
+  "title": "🔥 Trending #6: Aave (AAVE)",
+  "message": "Rank #48 · -5.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 30/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/aave",
+  "priority": 2
  }
 ]
