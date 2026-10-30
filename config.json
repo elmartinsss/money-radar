@@ -1,0 +1,114 @@
+{
+  "max_alerts_per_run": 6,
+  "news": {
+    "enabled": true,
+    "feeds": [
+      "https://www.coindesk.com/arc/outboundfeeds/rss/",
+      "https://cointelegraph.com/rss",
+      "https://decrypt.co/feed",
+      "https://news.google.com/rss/search?q=crypto+listing+OR+airdrop+OR+%22will+list%22&hl=en-US&gl=US&ceid=US:en",
+      "https://news.google.com/rss/search?q=stock+%22short+squeeze%22+OR+%22earnings+beat%22+OR+%22FDA+approval%22&hl=en-US&gl=US&ceid=US:en"
+    ],
+    "keywords": [
+      "will list",
+      "lists",
+      "listing",
+      "binance",
+      "coinbase adds",
+      "coinbase will",
+      "airdrop",
+      "etf approval",
+      "approved",
+      "short squeeze",
+      "earnings beat",
+      "fda approval",
+      "partnership",
+      "acquisition",
+      "buyback",
+      "surges",
+      "soars"
+    ],
+    "min_keyword_hits": 2,
+    "max_age_hours": 6,
+    "extra_blocked_words": []
+  },
+  "reddit": {
+    "enabled": true,
+    "subreddits": [
+      "CryptoCurrency",
+      "solana",
+      "stocks",
+      "wallstreetbets",
+      "investing"
+    ],
+    "min_upvotes": 400,
+    "max_age_hours": 8,
+    "keywords": [
+      "listing",
+      "airdrop",
+      "squeeze",
+      "earnings",
+      "announces",
+      "approved",
+      "sec",
+      "etf",
+      "acquisition",
+      "partnership"
+    ],
+    "min_upvote_ratio": 0.8,
+    "extra_blocked_words": []
+  },
+  "coingecko_trending": {
+    "enabled": true,
+    "top_n": 7
+  },
+  "dexscreener": {
+    "enabled": true,
+    "chains": [
+      "solana"
+    ],
+    "min_liquidity_usd": 150000,
+    "min_volume_24h_usd": 300000,
+    "min_age_hours": 72,
+    "use_rugcheck": true,
+    "max_pump_24h_pct": 150,
+    "max_dump_1h_pct": 20,
+    "max_volume_to_liquidity": 15,
+    "block_rugcheck_warnings_about": [
+      "holder",
+      "lp",
+      "liquidity",
+      "mutable",
+      "freeze",
+      "mint",
+      "creator",
+      "insider"
+    ]
+  },
+  "watchlist": {
+    "enabled": true,
+    "crypto_coingecko_ids": [
+      "bitcoin",
+      "ethereum",
+      "solana"
+    ],
+    "stocks": [
+      "NVDA",
+      "TSLA",
+      "AAPL"
+    ],
+    "move_threshold_pct": 7
+  },
+  "my_tokens": {
+    "enabled": false,
+    "tokens": [
+      {
+        "name": "The Lab Rat",
+        "chain": "solana",
+        "address": "PASTE_YOUR_MINT_ADDRESS_HERE"
+      }
+    ],
+    "price_move_pct_1h": 25,
+    "volume_1h_usd": 1000
+  }
+}

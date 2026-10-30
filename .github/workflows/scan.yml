@@ -1,0 +1,42 @@
+name: Money Radar
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"   # every 15 min (GitHub may delay runs a few minutes)
+  workflow_dispatch:          # lets you press "Run workflow" by hand
+
+permissions:
+  contents: read
+
+concurrency:
+  group: money-radar
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Remembers what was already sent, so you never get the same alert twice
+      - uses: actions/cache/restore@v4
+        with:
+          path: state
+          key: radar-state-${{ github.run_id }}
+          restore-keys: radar-state-
+
+      - name: Scan and notify
+        run: python scanner.py
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+
+      - uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: state
+          key: radar-state-${{ github.run_id }}
