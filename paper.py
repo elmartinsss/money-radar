@@ -157,7 +157,15 @@ def run(cfg, signals, fetch):
                                  f"or after {cfg['max_hold_hours'] // 24} days. Fake money.",
                       "priority": 2, "tags": ["memo"]})
 
-    # 3) Daily report
+    # 3) Hourly snapshot for the website chart (wallet vs just holding BTC)
+    snaps = w.setdefault("equity", [])
+    if not snaps or _now() - snaps[-1]["t"] >= 55 * 60:
+        b = btc_price(fetch)
+        snaps.append({"t": int(_now()), "v": round(total(w, {}), 2), "btc": b})
+        del snaps[:-2000]
+        w["changed"] = True
+
+    # 4) Daily report
     local = datetime.now(TZ)
     day = local.strftime("%Y-%m-%d")
     if local.hour >= cfg["report_hour"] and w.get("last_report") != day:

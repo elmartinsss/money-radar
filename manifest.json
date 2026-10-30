@@ -1,0 +1,9 @@
+{
+  "name": "Money Radar",
+  "short_name": "Radar",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#e9eef3",
+  "theme_color": "#e9eef3",
+  "icons": [{ "src": "icon.png", "sizes": "512x512", "type": "image/png" }]
+}

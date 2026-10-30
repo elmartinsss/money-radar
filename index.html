@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Money Radar · Lab notebook</title>
+<meta name="theme-color" content="#e9eef3">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Radar">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="apple-touch-icon" href="icon.png">
+<link rel="manifest" href="manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #e9eef3;
+    --grid: #d3dde7;
+    --grid-major: #bfcddb;
+    --ink: #1d3b8b;
+    --pencil: #6b7380;
+    --text: #1f2530;
+    --gain: #17744a;
+    --loss: #c2342b;
+    --margin: #e7a1a1;
+    --hand: "Kalam", "Comic Sans MS", cursive;
+    --sans: "Bricolage Grotesque", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    color: var(--text);
+    font: 400 17px/1.5 var(--sans);
+    font-variant-numeric: tabular-nums;
+    background-color: var(--paper);
+    background-image:
+      linear-gradient(var(--grid-major) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid-major) 1px, transparent 1px),
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size: 120px 120px, 120px 120px, 24px 24px, 24px 24px;
+    min-height: 100vh;
+  }
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: max(28px, env(safe-area-inset-top)) 22px 64px 34px;
+    position: relative;
+  }
+  /* the red margin line of a notebook page */
+  main::before {
+    content: "";
+    position: absolute; top: 0; bottom: 0; left: 18px;
+    border-left: 2px solid var(--margin);
+    opacity: .7;
+  }
+  h1 {
+    font-weight: 800;
+    font-size: clamp(34px, 8vw, 52px);
+    line-height: 1.02;
+    letter-spacing: -0.025em;
+    margin: 8px 0 10px;
+    max-width: 14ch;
+  }
+  .meta { color: var(--pencil); margin: 0 0 22px; font-size: 15px; }
+  h2 {
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: -0.01em;
+    margin: 46px 0 6px;
+  }
+  h2 small { font-weight: 400; color: var(--pencil); font-size: 15px; margin-left: 6px; }
+  p { margin: 0 0 12px; max-width: 62ch; }
+
+  /* chart */
+  .chart { position: relative; margin: 6px -6px 0; }
+  .chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+  .line-bot { fill: none; stroke: var(--ink); stroke-width: 3.2; stroke-linecap: round; stroke-linejoin: round; }
+  .line-btc { fill: none; stroke: var(--pencil); stroke-width: 2; stroke-dasharray: 2 6; stroke-linecap: round; }
+  .start-line { stroke: var(--text); stroke-width: 1; opacity: .35; }
+  .hand { font-family: var(--hand); }
+  .label-bot { fill: var(--ink); font-size: 22px; font-weight: 700; }
+  .label-btc { fill: var(--pencil); font-size: 17px; }
+  .axis { fill: var(--pencil); font-size: 12px; font-family: var(--sans); }
+  @media (prefers-reduced-motion: no-preference) {
+    .draw { stroke-dasharray: var(--len); stroke-dashoffset: var(--len); animation: draw 1.6s ease-out forwards; }
+    @keyframes draw { to { stroke-dashoffset: 0; } }
+  }
+
+  .verdict {
+    font-family: var(--hand);
+    font-size: 23px;
+    line-height: 1.35;
+    margin: 14px 0 0;
+    max-width: 30ch;
+  }
+  .gain { color: var(--gain); }
+  .loss { color: var(--loss); }
+
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: start;
+    gap: 4px 34px;
+    margin: 26px 0 0;
+  }
+  .facts dt { color: var(--pencil); font-size: 14px; }
+  .facts dd { margin: 0; font-weight: 600; font-size: 22px; }
+
+  /* lists */
+  ul.rows { list-style: none; margin: 10px 0 0; padding: 0; }
+  ul.rows li {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 2px 14px;
+    padding: 11px 0;
+    border-bottom: 1px solid var(--grid-major);
+  }
+  .sym { font-weight: 600; font-size: 18px; grid-column: 1; grid-row: 1; }
+  .sub { color: var(--pencil); font-size: 14px; grid-column: 1; }
+  .amt { grid-column: 2; grid-row: 1 / span 2; text-align: right; font-weight: 600; font-size: 18px; align-self: center; }
+  .amt span { display: block; font-weight: 400; font-size: 14px; }
+  .bar { grid-column: 1 / -1; height: 4px; background: var(--grid); border-radius: 2px; position: relative; margin-top: 6px; }
+  .bar i { position: absolute; top: 0; bottom: 0; border-radius: 2px; }
+  .bar b { position: absolute; top: -3px; bottom: -3px; left: 33.3%; width: 1px; background: var(--text); opacity: .4; }
+
+  .alerts a { color: inherit; text-decoration: none; display: block; }
+  .alerts a:focus-visible, button:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; border-radius: 4px; }
+  .alerts .msg { color: var(--pencil); font-size: 14px; white-space: pre-line; margin-top: 2px; }
+  .alerts li { grid-template-columns: 1fr; }
+
+  .empty { font-family: var(--hand); font-size: 19px; color: var(--pencil); margin: 12px 0 0; }
+
+  .rules p { font-size: 16px; }
+  footer { margin-top: 52px; color: var(--pencil); font-size: 14px; }
+  button {
+    font: 600 15px var(--sans); color: var(--ink); background: transparent;
+    border: 1.5px solid var(--ink); border-radius: 999px; padding: 7px 16px; cursor: pointer;
+    margin-top: 10px;
+  }
+  .error { color: var(--loss); font-family: var(--hand); font-size: 19px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Can the radar beat Bitcoin?</h1>
+  <p class="meta" id="meta">Opening the notebook…</p>
+
+  <div class="chart" id="chart" aria-label="Wallet value over time compared with holding Bitcoin"></div>
+  <p class="verdict" id="verdict"></p>
+
+  <dl class="facts" id="facts"></dl>
+
+  <section>
+    <h2>Holding now <small id="openCount"></small></h2>
+    <ul class="rows" id="open"></ul>
+  </section>
+
+  <section>
+    <h2>Finished trades <small id="closedCount"></small></h2>
+    <ul class="rows" id="closed"></ul>
+  </section>
+
+  <section class="alerts">
+    <h2>Radar log <small>latest alerts</small></h2>
+    <ul class="rows" id="alerts"></ul>
+  </section>
+
+  <section class="rules">
+    <h2>How the experiment works</h2>
+    <p id="rules"></p>
+    <p>All money here is pretend. Prices are real, and fees and slippage are charged like a real exchange would.</p>
+  </section>
+
+  <footer>
+    <span id="updated"></span>
+    <br><button type="button" id="refresh">Refresh now</button>
+  </footer>
+</main>
+
+<script>
+const RAW = "https://raw.githubusercontent.com/elmartinsss/money-radar/main/";
+const $ = id => document.getElementById(id);
+const eur = n => n.toLocaleString("en-IE", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + "€";
+const pct = n => (n >= 0 ? "+" : "") + n.toFixed(1) + "%";
+const cls = n => n >= 0 ? "gain" : "loss";
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const ago = t => {
+  const m = Math.round((Date.now() / 1000 - t) / 60);
+  if (m < 60) return m <= 1 ? "just now" : m + " min ago";
+  const h = Math.round(m / 60);
+  return h < 48 ? h + " h ago" : Math.round(h / 24) + " days ago";
+};
+const day = t => new Date(t * 1000).toLocaleDateString("en-GB", { day: "numeric", month: "short" });
+
+async function getJSON(path) {
+  // Same-site copy first (GitHub Pages), raw GitHub as a fallback.
+  for (const base of ["", RAW]) {
+    try {
+      const r = await fetch(base + path + "?t=" + Date.now(), { cache: "no-store" });
+      if (r.ok) return await r.json();
+    } catch (e) {}
+  }
+  return null;
+}
+
+function chart(w) {
+  const snaps = (w.equity || []).filter(s => s.v != null);
+  const W = 640, H = 300, padL = 8, padR = 120, padT = 20, padB = 28;
+  if (snaps.length < 2) {
+    $("chart").innerHTML = `<svg viewBox="0 0 ${W} 120" role="img"><line class="start-line" x1="0" x2="${W - padR}" y1="60" y2="60"/>
+      <text class="hand label-bot" x="${W - padR + 10}" y="66">${eur(w.start_eur)}</text></svg>
+      <p class="empty">The line starts drawing after the first hour of data.</p>`;
+    return null;
+  }
+  const btc0 = (snaps.find(s => s.btc) || {}).btc;
+  const bot = snaps.map(s => s.v);
+  const hold = snaps.map(s => (btc0 && s.btc) ? w.start_eur * s.btc / btc0 : null);
+  const all = bot.concat(hold.filter(v => v != null), [w.start_eur]);
+  let lo = Math.min(...all), hi = Math.max(...all);
+  const pad = Math.max((hi - lo) * 0.15, 1); lo -= pad; hi += pad;
+  const t0 = snaps[0].t, t1 = snaps[snaps.length - 1].t;
+  const x = t => padL + (t - t0) / Math.max(1, t1 - t0) * (W - padL - padR);
+  const y = v => padT + (hi - v) / (hi - lo) * (H - padT - padB);
+  const path = vals => vals.map((v, i) => v == null ? null : [x(snaps[i].t), y(v)])
+    .filter(Boolean).map((p, i) => (i ? "L" : "M") + p[0].toFixed(1) + " " + p[1].toFixed(1)).join(" ");
+  const lastBot = bot[bot.length - 1], lastHold = [...hold].reverse().find(v => v != null);
+  let yb = y(lastBot) + 7, yh = lastHold != null ? y(lastHold) + 6 : null;
+  if (yh != null && Math.abs(yb - yh) < 26) { if (yb < yh) { yb -= 13; yh += 13; } else { yb += 13; yh -= 13; } }
+  $("chart").innerHTML = `
+    <svg viewBox="0 0 ${W} ${H}" role="img">
+      <line class="start-line" x1="${padL}" x2="${W - padR}" y1="${y(w.start_eur)}" y2="${y(w.start_eur)}"/>
+      <text class="axis" x="${W - padR}" y="${y(w.start_eur) + 15}" text-anchor="end">start ${eur(w.start_eur)}</text>
+      ${lastHold != null ? `<path class="line-btc" d="${path(hold)}"/>` : ""}
+      <path class="line-bot draw" id="botLine" d="${path(bot)}"/>
+      <text class="hand label-bot" x="${W - padR + 10}" y="${yb}">${eur(lastBot)}</text>
+      ${lastHold != null ? `<text class="hand label-btc" x="${W - padR + 10}" y="${yh}">BTC holder<tspan x="${W - padR + 10}" dy="18">${eur(lastHold)}</tspan></text>` : ""}
+      <text class="axis" x="${padL}" y="${H - 6}">${day(t0)}</text>
+      <text class="axis" x="${W - padR}" y="${H - 6}" text-anchor="end">${day(t1)}</text>
+    </svg>`;
+  const line = $("botLine");
+  if (line) line.style.setProperty("--len", line.getTotalLength());
+  return lastHold;
+}
+
+function render(w, alerts, cfg) {
+  const valueOf = p => p.eur * (p.last ?? p.entry) / p.entry;
+  const total = w.cash + w.positions.reduce((s, p) => s + valueOf(p), 0);
+  const change = (total / w.start_eur - 1) * 100;
+  const days = Math.max(1, Math.round((Date.now() / 1000 - w.started) / 86400));
+  $("meta").textContent = `A pretend ${w.start_eur.toFixed(0)}€ wallet that trades the radar's signals. Day ${days}.`;
+
+  const hold = chart(w);
+  if (hold != null) {
+    const diff = change - (hold / w.start_eur - 1) * 100;
+    $("verdict").innerHTML = diff >= 0
+      ? `So far the bot is <span class="gain">ahead of Bitcoin by ${diff.toFixed(1)} points</span>.`
+      : `So far just holding Bitcoin wins, <span class="loss">by ${(-diff).toFixed(1)} points</span>.`;
+  } else {
+    $("verdict").innerHTML = `Wallet: <span class="${cls(change)}">${eur(total)} (${pct(change)})</span>`;
+  }
+
+  const closed = w.history || [];
+  const wins = closed.filter(h => h.pnl_eur >= 0).length;
+  $("facts").innerHTML = `
+    <div><dt>Wallet</dt><dd class="${cls(change)}">${pct(change)}</dd></div>
+    <div><dt>Cash left</dt><dd>${eur(w.cash)}</dd></div>
+    <div><dt>Wins</dt><dd>${closed.length ? wins + " of " + closed.length : "none yet"}</dd></div>`;
+
+  // open positions, bar runs from stop loss (left) to take profit (right)
+  const sl = cfg?.stop_loss_pct ?? 15, tp = cfg?.take_profit_pct ?? 30;
+  $("openCount").textContent = w.positions.length ? `${w.positions.length} positions` : "";
+  $("open").innerHTML = w.positions.length ? w.positions.map(p => {
+    const v = valueOf(p), c = (v / p.paid - 1) * 100;
+    const pos = Math.min(100, Math.max(0, (c + sl) / (sl + tp) * 100)), zero = sl / (sl + tp) * 100;
+    const left = Math.min(pos, zero), width = Math.abs(pos - zero);
+    return `<li><span class="sym">${esc(p.symbol)}</span>
+      <span class="amt ${cls(c)}">${pct(c)}<span>${eur(v)}</span></span>
+      <span class="sub">${esc(p.signal)} signal, bought ${ago(p.time)}</span>
+      <span class="bar" title="Stop loss on the left, take profit on the right"><i style="left:${left}%;width:${width}%;background:var(--${c >= 0 ? "gain" : "loss"})"></i><b style="left:${zero}%"></b></span></li>`;
+  }).join("") : `<li class="empty">Nothing yet. The bot buys on the next strong signal.</li>`;
+
+  $("closedCount").textContent = closed.length ? `${closed.length} total` : "";
+  $("closed").innerHTML = closed.length ? closed.slice(-25).reverse().map(h => `
+    <li><span class="sym">${esc(h.symbol)}</span>
+      <span class="amt ${cls(h.pnl_eur)}">${h.pnl_eur >= 0 ? "+" : ""}${h.pnl_eur.toFixed(2)}€<span>${pct(h.pnl_pct)}</span></span>
+      <span class="sub">${esc(h.reason)}, ${day(h.exit_time)}</span></li>`).join("")
+    : `<li class="empty">No finished trades yet. Each one closes at +${tp}%, −${sl}% or after ${Math.round((cfg?.max_hold_hours ?? 168) / 24)} days.</li>`;
+
+  $("alerts").innerHTML = alerts && alerts.length ? alerts.slice(-20).reverse().map(a => `
+    <li>${a.click ? `<a href="${esc(a.click)}" target="_blank" rel="noopener">` : "<div>"}
+      <span class="sym">${esc(a.title)}</span>
+      <div class="msg">${esc(a.message)}</div>
+      <div class="sub">${ago(a.t)}</div>${a.click ? "</a>" : "</div>"}</li>`).join("")
+    : `<li class="empty">No alerts logged yet. New ones appear here as they reach your phone.</li>`;
+
+  if (cfg) {
+    $("rules").textContent = `It spends ${cfg.eur_per_trade}€ on each strong signal (${cfg.buy_on.join(", ")}), `
+      + `holds up to ${cfg.max_open_positions} at once, and sells at +${tp}% profit, −${sl}% loss, `
+      + `or after ${Math.round(cfg.max_hold_hours / 24)} days, whichever comes first.`;
+  }
+  $("updated").textContent = "Last checked " + new Date().toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" })
+    + ". The bot scans every 5 minutes.";
+}
+
+async function load() {
+  const [w, alerts, config] = await Promise.all([getJSON("paper/wallet.json"), getJSON("paper/alerts.json"), getJSON("config.json")]);
+  if (!w) {
+    $("meta").innerHTML = `<span class="error">Couldn't load the wallet. Check your connection, then tap Refresh now.</span>`;
+    return;
+  }
+  render(w, alerts, config && config.paper);
+}
+$("refresh").addEventListener("click", load);
+load();
+setInterval(load, 5 * 60 * 1000);
+</script>
+</body>
+</html>

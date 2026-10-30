@@ -371,6 +371,26 @@ def send(a):
         return False
 
 
+ALERTS_FILE = os.path.join(HERE, "paper", "alerts.json")
+
+
+def log_alerts(items):
+    """Keep the last 60 alerts so the website can show them."""
+    if not items:
+        return
+    try:
+        with open(ALERTS_FILE) as f:
+            old = json.load(f)
+    except Exception:
+        old = []
+    for a in items:
+        old.append({"t": int(NOW), "title": a["title"], "message": a["message"],
+                    "click": a.get("click"), "priority": a["priority"]})
+    os.makedirs(os.path.dirname(ALERTS_FILE), exist_ok=True)
+    with open(ALERTS_FILE, "w") as f:
+        json.dump(old[-60:], f, ensure_ascii=False, indent=1)
+
+
 def load_state():
     try:
         with open(STATE_FILE) as f:
@@ -445,15 +465,19 @@ def main():
             print(f"::warning::paper wallet error: {e}", flush=True)
 
     cap = cfg.get("max_alerts_per_run", 6)
+    sent = []
     for a in fresh[:cap]:
         if send(a):
             seen[a["key"]] = NOW
+            sent.append(a)
     rest = fresh[cap:]
     if rest:
         send({"title": f"➕ {len(rest)} more signals", "priority": 2, "tags": ["inbox_tray"],
               "message": "\n".join("• " + r["title"] for r in rest[:15])})
         for a in rest:
             seen[a["key"]] = NOW
+        sent += rest
+    log_alerts(sent)
     log(f"sent {min(len(fresh), cap)} alerts, {len(rest)} bundled")
     print(f"::notice::Checked {len(found)} items, {len(fresh)} new, sent {min(len(fresh), cap)} alerts", flush=True)
     save_state(seen)
