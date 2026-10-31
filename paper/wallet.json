@@ -1,7 +1,65 @@
 {
  "start_eur": 100,
- "cash": 100,
- "positions": [],
+ "cash": 79.99,
+ "positions": [
+  {
+   "kind": "cg",
+   "id": "hyperliquid",
+   "chain": null,
+   "symbol": "HYPE",
+   "signal": "trending",
+   "entry": 89.11729225990345,
+   "eur": 6.6366499999999995,
+   "paid": 6.67,
+   "time": 1793411216.5230997,
+   "last": 89.11729225990345,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "night (UTC 0-6)"
+   },
+   "expected": null
+  },
+  {
+   "kind": "cg",
+   "id": "monad",
+   "chain": null,
+   "symbol": "MON",
+   "signal": "trending",
+   "entry": 0.019699756522304095,
+   "eur": 6.6366499999999995,
+   "paid": 6.67,
+   "time": 1793411216.5231392,
+   "last": 0.019699756522304095,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "night (UTC 0-6)"
+   },
+   "expected": null
+  },
+  {
+   "kind": "cg",
+   "id": "kinetiq",
+   "chain": null,
+   "symbol": "KNTQ",
+   "signal": "trending",
+   "entry": 0.5038968344856262,
+   "eur": 6.6366499999999995,
+   "paid": 6.67,
+   "time": 1793411216.5231552,
+   "last": 0.5038968344856262,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "night (UTC 0-6)"
+   },
+   "expected": null
+  }
+ ],
  "history": [],
  "started": 1793366521.920483,
  "btc_start": 77216,
@@ -21,16 +79,21 @@
    "t": 1793399540,
    "v": 100,
    "btc": 76777
+  },
+  {
+   "t": 1793411216,
+   "v": 99.9,
+   "btc": 77364
   }
  ],
  "mood": {
   "value": 30,
   "label": "Fear",
-  "t": 1793402178
+  "t": 1793411213
  },
  "learning": {},
  "pending": [],
- "updated": 1793402181,
+ "updated": 1793411216,
  "rewards": {
   "xp": 0,
   "level": "Lab rat",
@@ -81,5 +144,31 @@
   ],
   "total_reward": 0.0,
   "trades": 0
- }
+ },
+ "activity": [
+  {
+   "type": "buy",
+   "symbol": "HYPE",
+   "signal": "trending",
+   "eur": 6.67,
+   "price": 89.11729225990345,
+   "t": 1793411216
+  },
+  {
+   "type": "buy",
+   "symbol": "MON",
+   "signal": "trending",
+   "eur": 6.67,
+   "price": 0.019699756522304095,
+   "t": 1793411216
+  },
+  {
+   "type": "buy",
+   "symbol": "KNTQ",
+   "signal": "trending",
+   "eur": 6.67,
+   "price": 0.5038968344856262,
+   "t": 1793411216
+  }
+ ]
 }

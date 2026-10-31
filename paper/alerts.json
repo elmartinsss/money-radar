@@ -229,5 +229,54 @@
   "message": "Rank #782 · -5.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 30/100 Fear 😐.",
   "click": "https://www.coingecko.com/en/coins/quantus",
   "priority": 2
+ },
+ {
+  "t": 1793411213,
+  "title": "🔥 Trending #1: Hyperliquid (HYPE)",
+  "message": "Rank #11 · -0.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 30/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/hyperliquid",
+  "priority": 2
+ },
+ {
+  "t": 1793411213,
+  "title": "🔥 Trending #2: Monad (MON)",
+  "message": "Rank #153 · +4.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 30/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/monad",
+  "priority": 2
+ },
+ {
+  "t": 1793411213,
+  "title": "🔥 Trending #3: Kinetiq (KNTQ)",
+  "message": "Rank #197 · +10.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 30/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/kinetiq",
+  "priority": 2
+ },
+ {
+  "t": 1793411213,
+  "title": "🔥 Trending #4: Pudgy Penguins (PENGU)",
+  "message": "Rank #112 · +7.4% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 30/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/pudgy-penguins",
+  "priority": 2
+ },
+ {
+  "t": 1793411213,
+  "title": "🔥 Trending #5: NEAR Protocol (NEAR)",
+  "message": "Rank #21 · +8.4% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 30/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/near",
+  "priority": 2
+ },
+ {
+  "t": 1793411213,
+  "title": "🔥 Trending #6: Lighter (LIT)",
+  "message": "Rank #87 · +1.4% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 30/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/lighter",
+  "priority": 2
+ },
+ {
+  "t": 1793411213,
+  "title": "🔥 Trending #7: Pearl (PEARL)",
+  "message": "Rank #99 · -2.4% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 30/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/pearl-2",
+  "priority": 2
  }
 ]
