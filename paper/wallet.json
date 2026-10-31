@@ -1,6 +1,6 @@
 {
  "start_eur": 100,
- "cash": 79.99,
+ "cash": 66.67,
  "positions": [
   {
    "kind": "cg",
@@ -12,14 +12,15 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5230997,
-   "last": 89.11729225990345,
+   "last": 88.26,
    "liq0": null,
    "feats": {
     "signal": "trending",
     "mood": "fear",
     "time": "night (UTC 0-6)"
    },
-   "expected": null
+   "expected": null,
+   "peak": 89.11729225990345
   },
   {
    "kind": "cg",
@@ -31,14 +32,15 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231392,
-   "last": 0.019699756522304095,
+   "last": 0.01924151,
    "liq0": null,
    "feats": {
     "signal": "trending",
     "mood": "fear",
     "time": "night (UTC 0-6)"
    },
-   "expected": null
+   "expected": null,
+   "peak": 0.019699756522304095
   },
   {
    "kind": "cg",
@@ -50,12 +52,51 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231552,
-   "last": 0.5038968344856262,
+   "last": 0.516932,
    "liq0": null,
    "feats": {
     "signal": "trending",
     "mood": "fear",
     "time": "night (UTC 0-6)"
+   },
+   "expected": null,
+   "peak": 0.516932
+  },
+  {
+   "kind": "cg",
+   "id": "infinity-ground",
+   "chain": null,
+   "symbol": "AIN",
+   "signal": "trending",
+   "entry": 0.26679200094708666,
+   "eur": 6.6267000000000005,
+   "paid": 6.66,
+   "time": 1793432124.4192672,
+   "last": 0.26679200094708666,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "morning (UTC 6-12)"
+   },
+   "expected": null
+  },
+  {
+   "kind": "cg",
+   "id": "quack-ai",
+   "chain": null,
+   "symbol": "Q",
+   "signal": "trending",
+   "entry": 0.032506800875529776,
+   "eur": 6.6267000000000005,
+   "paid": 6.66,
+   "time": 1793432124.419297,
+   "last": 0.032506800875529776,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "morning (UTC 6-12)"
    },
    "expected": null
   }
@@ -84,16 +125,21 @@
    "t": 1793411216,
    "v": 99.9,
    "btc": 77364
+  },
+  {
+   "t": 1793432124,
+   "v": 99.79,
+   "btc": 77336
   }
  ],
  "mood": {
   "value": 30,
   "label": "Fear",
-  "t": 1793411213
+  "t": 1793432121
  },
  "learning": {},
  "pending": [],
- "updated": 1793411216,
+ "updated": 1793432124,
  "rewards": {
   "xp": 0,
   "level": "Lab rat",
@@ -169,6 +215,22 @@
    "eur": 6.67,
    "price": 0.5038968344856262,
    "t": 1793411216
+  },
+  {
+   "type": "buy",
+   "symbol": "AIN",
+   "signal": "trending",
+   "eur": 6.66,
+   "price": 0.26679200094708666,
+   "t": 1793432124
+  },
+  {
+   "type": "buy",
+   "symbol": "Q",
+   "signal": "trending",
+   "eur": 6.66,
+   "price": 0.032506800875529776,
+   "t": 1793432124
   }
  ]
 }

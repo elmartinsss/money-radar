@@ -278,5 +278,40 @@
   "message": "Rank #99 · -2.4% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 30/100 Fear 😐.",
   "click": "https://www.coingecko.com/en/coins/pearl-2",
   "priority": 2
+ },
+ {
+  "t": 1793432121,
+  "title": "🔥 Trending #1: Infinity Ground (AIN)",
+  "message": "Rank #448 · +61.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 30/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/infinity-ground",
+  "priority": 2
+ },
+ {
+  "t": 1793432121,
+  "title": "🔥 Trending #3: Quack AI (Q)",
+  "message": "Rank #200 · -45.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 30/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/quack-ai",
+  "priority": 2
+ },
+ {
+  "t": 1793432121,
+  "title": "🔥 Trending #4: Bitcoin (BTC)",
+  "message": "Rank #1 · -1.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 30/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/bitcoin",
+  "priority": 2
+ },
+ {
+  "t": 1793432121,
+  "title": "🔥 Trending #5: Sui (SUI)",
+  "message": "Rank #30 · +1.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 30/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/sui",
+  "priority": 2
+ },
+ {
+  "t": 1793432121,
+  "title": "🔥 Trending #6: Canton (CC)",
+  "message": "Rank #28 · +0.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 30/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/canton-network",
+  "priority": 2
  }
 ]
