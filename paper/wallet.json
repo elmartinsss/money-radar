@@ -12,7 +12,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5230997,
-   "last": 88.03,
+   "last": 88.08,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -32,7 +32,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231392,
-   "last": 0.01929378,
+   "last": 0.01931266,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +52,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231552,
-   "last": 0.547839,
+   "last": 0.562705,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -60,7 +60,7 @@
     "time": "night (UTC 0-6)"
    },
    "expected": null,
-   "peak": 0.547839
+   "peak": 0.562705
   },
   {
    "kind": "cg",
@@ -72,7 +72,7 @@
    "eur": 6.6267000000000005,
    "paid": 6.66,
    "time": 1793432124.419297,
-   "last": 0.03322141,
+   "last": 0.03225284,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -92,7 +92,7 @@
    "eur": 6.0098,
    "paid": 6.04,
    "time": 1793454795.759786,
-   "last": 0.02351325,
+   "last": 0.02405982,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -100,7 +100,7 @@
     "time": "afternoon (UTC 12-18)"
    },
    "expected": null,
-   "peak": 0.02351325
+   "peak": 0.02405982
   },
   {
    "kind": "cg",
@@ -112,7 +112,7 @@
    "eur": 6.0098,
    "paid": 6.04,
    "time": 1793454795.7598138,
-   "last": 0.01767679,
+   "last": 0.02068871,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -120,7 +120,7 @@
     "time": "afternoon (UTC 12-18)"
    },
    "expected": null,
-   "peak": 0.01767679
+   "peak": 0.02068871
   }
  ],
  "history": [
@@ -188,12 +188,17 @@
    "t": 1793470699,
    "v": 100.76,
    "btc": 77622
+  },
+  {
+   "t": 1793483137,
+   "v": 102.06,
+   "btc": 77432
   }
  ],
  "mood": {
   "value": 30,
   "label": "Fear",
-  "t": 1793470697
+  "t": 1793483134
  },
  "learning": {
   "trending": {
@@ -208,7 +213,7 @@
   }
  },
  "pending": [],
- "updated": 1793470699,
+ "updated": 1793483137,
  "rewards": {
   "xp": 2,
   "level": "Lab rat",
