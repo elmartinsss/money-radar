@@ -1,6 +1,6 @@
 {
  "start_eur": 100,
- "cash": 66.67,
+ "cash": 60.1473964711298,
  "positions": [
   {
    "kind": "cg",
@@ -12,7 +12,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5230997,
-   "last": 88.26,
+   "last": 87.4,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -32,7 +32,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231392,
-   "last": 0.01924151,
+   "last": 0.01920117,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +52,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231552,
-   "last": 0.516932,
+   "last": 0.53061,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -60,26 +60,7 @@
     "time": "night (UTC 0-6)"
    },
    "expected": null,
-   "peak": 0.516932
-  },
-  {
-   "kind": "cg",
-   "id": "infinity-ground",
-   "chain": null,
-   "symbol": "AIN",
-   "signal": "trending",
-   "entry": 0.26679200094708666,
-   "eur": 6.6267000000000005,
-   "paid": 6.66,
-   "time": 1793432124.4192672,
-   "last": 0.26679200094708666,
-   "liq0": null,
-   "feats": {
-    "signal": "trending",
-    "mood": "fear",
-    "time": "morning (UTC 6-12)"
-   },
-   "expected": null
+   "peak": 0.53061
   },
   {
    "kind": "cg",
@@ -91,17 +72,82 @@
    "eur": 6.6267000000000005,
    "paid": 6.66,
    "time": 1793432124.419297,
-   "last": 0.032506800875529776,
+   "last": 0.03273544,
    "liq0": null,
    "feats": {
     "signal": "trending",
     "mood": "fear",
     "time": "morning (UTC 6-12)"
    },
+   "expected": null,
+   "peak": 0.03273544
+  },
+  {
+   "kind": "cg",
+   "id": "super-inu-3",
+   "chain": null,
+   "symbol": "SI",
+   "signal": "trending",
+   "entry": 0.020446493152168992,
+   "eur": 6.0098,
+   "paid": 6.04,
+   "time": 1793454795.759786,
+   "last": 0.020446493152168992,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "afternoon (UTC 12-18)"
+   },
+   "expected": null
+  },
+  {
+   "kind": "cg",
+   "id": "super-pepe",
+   "chain": null,
+   "symbol": "SP",
+   "signal": "trending",
+   "entry": 0.015956101568220322,
+   "eur": 6.0098,
+   "paid": 6.04,
+   "time": 1793454795.7598138,
+   "last": 0.015956101568220322,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "afternoon (UTC 12-18)"
+   },
    "expected": null
   }
  ],
- "history": [],
+ "history": [
+  {
+   "kind": "cg",
+   "id": "infinity-ground",
+   "chain": null,
+   "symbol": "AIN",
+   "signal": "trending",
+   "entry": 0.26679200094708666,
+   "eur": 6.6267000000000005,
+   "paid": 6.66,
+   "time": 1793432124.4192672,
+   "last": 0.224866,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "morning (UTC 6-12)"
+   },
+   "expected": null,
+   "peak": 0.26679200094708666,
+   "exit": 0.224866,
+   "exit_time": 1793454795.7596114,
+   "reason": "\ud83d\uded1 Stop loss (-16%)",
+   "pnl_eur": -1.1,
+   "pnl_pct": -16.6
+  }
+ ],
  "started": 1793366521.920483,
  "btc_start": 77216,
  "last_report": "2026-10-30",
@@ -130,26 +176,72 @@
    "t": 1793432124,
    "v": 99.79,
    "btc": 77336
+  },
+  {
+   "t": 1793454795,
+   "v": 98.81,
+   "btc": 77505
   }
  ],
  "mood": {
   "value": 30,
   "label": "Fear",
-  "t": 1793432121
+  "t": 1793454792
  },
- "learning": {},
+ "learning": {
+  "trending": {
+   "n": 1,
+   "wins": 0,
+   "win_rate": 0,
+   "avg_pct": -16.6,
+   "shrunk_pct": -16.6,
+   "t": 0,
+   "mult": 1.0,
+   "status": "still learning (1/30 trades)"
+  }
+ },
  "pending": [],
- "updated": 1793432124,
+ "updated": 1793454795,
  "rewards": {
-  "xp": 0,
+  "xp": 2,
   "level": "Lab rat",
   "medals": [],
-  "confidence": 0.0,
+  "confidence": -3.32,
   "streak": 0,
   "best_streak": 0,
-  "situations": {},
+  "situations": {
+   "signal=trending": {
+    "n": 1,
+    "sum": -16.6,
+    "sq": 275.56000000000006
+   },
+   "mood=fear": {
+    "n": 1,
+    "sum": -16.6,
+    "sq": 275.56000000000006
+   },
+   "time=morning (UTC 6-12)": {
+    "n": 1,
+    "sum": -16.6,
+    "sq": 275.56000000000006
+   }
+  },
   "rules": {},
-  "journal": [],
+  "journal": [
+   {
+    "t": 1793454795,
+    "symbol": "AIN",
+    "signal": "trending",
+    "reward": -16.6,
+    "reason": "\ud83d\uded1 Stop loss (-16%)",
+    "lesson": "A loss inside the rules. Small losses are the price of finding winners.",
+    "situation": {
+     "signal": "trending",
+     "mood": "fear",
+     "time": "morning (UTC 6-12)"
+    }
+   }
+  ],
   "pending_checks": [
    {
     "id": "9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump",
@@ -188,8 +280,8 @@
     "reason": "not trending up this hour"
    }
   ],
-  "total_reward": 0.0,
-  "trades": 0
+  "total_reward": -16.6,
+  "trades": 1
  },
  "activity": [
   {
@@ -231,6 +323,32 @@
    "eur": 6.66,
    "price": 0.032506800875529776,
    "t": 1793432124
+  },
+  {
+   "type": "sell",
+   "symbol": "AIN",
+   "signal": "trending",
+   "eur": 5.56,
+   "pnl": -1.1,
+   "pct": -16.6,
+   "reason": "\ud83d\uded1 Stop loss (-16%)",
+   "t": 1793454795
+  },
+  {
+   "type": "buy",
+   "symbol": "SI",
+   "signal": "trending",
+   "eur": 6.04,
+   "price": 0.020446493152168992,
+   "t": 1793454795
+  },
+  {
+   "type": "buy",
+   "symbol": "SP",
+   "signal": "trending",
+   "eur": 6.04,
+   "price": 0.015956101568220322,
+   "t": 1793454795
   }
  ]
 }

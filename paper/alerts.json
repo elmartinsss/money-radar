@@ -313,5 +313,26 @@
   "message": "Rank #28 · +0.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 30/100 Fear 😐.",
   "click": "https://www.coingecko.com/en/coins/canton-network",
   "priority": 2
+ },
+ {
+  "t": 1793454792,
+  "title": "🔥 Trending #1: Super Inu (SI)",
+  "message": "Rank #815 · +56.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 30/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/super-inu-3",
+  "priority": 2
+ },
+ {
+  "t": 1793454792,
+  "title": "🔥 Trending #2: Super Pepe (SP)",
+  "message": "Rank #955 · -15.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 30/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/super-pepe",
+  "priority": 2
+ },
+ {
+  "t": 1793454792,
+  "title": "🔥 Trending #4: Lisk (LSK)",
+  "message": "Rank #361 · +46.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 30/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/lisk",
+  "priority": 2
  }
 ]
