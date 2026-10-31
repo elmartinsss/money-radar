@@ -12,7 +12,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5230997,
-   "last": 87.4,
+   "last": 88.03,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -32,7 +32,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231392,
-   "last": 0.01920117,
+   "last": 0.01929378,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +52,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231552,
-   "last": 0.53061,
+   "last": 0.547839,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -60,7 +60,7 @@
     "time": "night (UTC 0-6)"
    },
    "expected": null,
-   "peak": 0.53061
+   "peak": 0.547839
   },
   {
    "kind": "cg",
@@ -72,7 +72,7 @@
    "eur": 6.6267000000000005,
    "paid": 6.66,
    "time": 1793432124.419297,
-   "last": 0.03273544,
+   "last": 0.03322141,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -80,7 +80,7 @@
     "time": "morning (UTC 6-12)"
    },
    "expected": null,
-   "peak": 0.03273544
+   "peak": 0.03322141
   },
   {
    "kind": "cg",
@@ -92,14 +92,15 @@
    "eur": 6.0098,
    "paid": 6.04,
    "time": 1793454795.759786,
-   "last": 0.020446493152168992,
+   "last": 0.02351325,
    "liq0": null,
    "feats": {
     "signal": "trending",
     "mood": "fear",
     "time": "afternoon (UTC 12-18)"
    },
-   "expected": null
+   "expected": null,
+   "peak": 0.02351325
   },
   {
    "kind": "cg",
@@ -111,14 +112,15 @@
    "eur": 6.0098,
    "paid": 6.04,
    "time": 1793454795.7598138,
-   "last": 0.015956101568220322,
+   "last": 0.01767679,
    "liq0": null,
    "feats": {
     "signal": "trending",
     "mood": "fear",
     "time": "afternoon (UTC 12-18)"
    },
-   "expected": null
+   "expected": null,
+   "peak": 0.01767679
   }
  ],
  "history": [
@@ -150,7 +152,7 @@
  ],
  "started": 1793366521.920483,
  "btc_start": 77216,
- "last_report": "2026-10-30",
+ "last_report": "2026-10-31",
  "equity": [
   {
    "t": 1793366862,
@@ -181,12 +183,17 @@
    "t": 1793454795,
    "v": 98.81,
    "btc": 77505
+  },
+  {
+   "t": 1793470699,
+   "v": 100.76,
+   "btc": 77622
   }
  ],
  "mood": {
   "value": 30,
   "label": "Fear",
-  "t": 1793454792
+  "t": 1793470697
  },
  "learning": {
   "trending": {
@@ -201,7 +208,7 @@
   }
  },
  "pending": [],
- "updated": 1793454795,
+ "updated": 1793470699,
  "rewards": {
   "xp": 2,
   "level": "Lab rat",
@@ -278,6 +285,15 @@
     "t": 1793402181,
     "rule": "Rising this hour",
     "reason": "not trending up this hour"
+   },
+   {
+    "id": "DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump",
+    "chain": "solana",
+    "symbol": "AgenC",
+    "price": 0.00101,
+    "t": 1793470699,
+    "rule": "Minimum age",
+    "reason": "too new (24h)"
    }
   ],
   "total_reward": -16.6,
