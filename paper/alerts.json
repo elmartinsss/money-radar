@@ -1,34 +1,6 @@
 [
  {
   "t": 1793367390,
-  "title": "🚀 TSLA +10.0% today",
-  "message": "Now $110.00 (prev close $100.00)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
-  "click": "https://finance.yahoo.com/quote/TSLA",
-  "priority": 4
- },
- {
-  "t": 1793367390,
-  "title": "🚀 AAPL +10.0% today",
-  "message": "Now $110.00 (prev close $100.00)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
-  "click": "https://finance.yahoo.com/quote/AAPL",
-  "priority": 4
- },
- {
-  "t": 1793367390,
-  "title": "📰 Binance will list new token, airdrop for holders",
-  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: will list, listing, binance, airdrop · via coindesk.com",
-  "click": "https://x/1",
-  "priority": 3
- },
- {
-  "t": 1793367390,
-  "title": "👽 r/CryptoCurrency: Massive short squeeze DD on XYZ",
-  "message": "Risk: 🟡 crowd opinion, not facts. Check the comments for pushback.\n⬆ 900 upvotes · 💬 300 · 2h old\nMatched: squeeze",
-  "click": "https://reddit.com/r/x/a1",
-  "priority": 3
- },
- {
-  "t": 1793367390,
   "title": "🔥 Trending #1: Pepe (PEPE)",
   "message": "Rank #30 · +12.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.",
   "click": "https://www.coingecko.com/en/coins/pepe",
@@ -417,6 +389,34 @@
   "title": "🔥 Trending #7: NEAR Protocol (NEAR)",
   "message": "Rank #21 · -5.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
   "click": "https://www.coingecko.com/en/coins/near",
+  "priority": 2
+ },
+ {
+  "t": 1793572125,
+  "title": "📰 Crypto Price Prediction: Pepeto Awaits Its Binance Listing as Bitcoin Needs $79,107 to Confirm a Bounce - openPR.com",
+  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: listing, binance · via news.google.com",
+  "click": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOMzZhVVNZY3RJeWtUS2RSMXAxQ1kteUs3VUQ2OF82XzN4UjJJb1ljQnhlTWxwZVhVOTJpcUp0QWNLZ1ZjWkxuNG9NWWprNkp4cm80TTlLcjhNWm9LazJ0U1dpbThNUUJwRjk5c3BBc05aVk1fRXBkVnhkdGYySFA2V2xuVGNhT1poQnBHRDRUd1NVaWNjd29Pbmd0Uk4?oc=5",
+  "priority": 3
+ },
+ {
+  "t": 1793572125,
+  "title": "🔥 Trending #1: AudaCity (DACITYCOIN)",
+  "message": "Rank #915 · +0.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/audacity-2",
+  "priority": 2
+ },
+ {
+  "t": 1793572125,
+  "title": "🔥 Trending #6: Aerodrome Finance (AERO)",
+  "message": "Rank #105 · -3.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/aerodrome-finance",
+  "priority": 2
+ },
+ {
+  "t": 1793572125,
+  "title": "🔥 Trending #7: Aave (AAVE)",
+  "message": "Rank #45 · -0.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/aave",
   "priority": 2
  }
 ]

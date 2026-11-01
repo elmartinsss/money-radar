@@ -1,6 +1,6 @@
 {
  "start_eur": 100,
- "cash": 59.16367294842494,
+ "cash": 53.51367294842494,
  "positions": [
   {
    "kind": "cg",
@@ -12,7 +12,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5230997,
-   "last": 87.71,
+   "last": 86.94,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -32,7 +32,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231392,
-   "last": 0.01912987,
+   "last": 0.01898405,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +52,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231552,
-   "last": 0.560538,
+   "last": 0.531055,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -72,7 +72,7 @@
    "eur": 6.6267000000000005,
    "paid": 6.66,
    "time": 1793432124.419297,
-   "last": 0.02929447,
+   "last": 0.03071238,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -92,7 +92,7 @@
    "eur": 6.0098,
    "paid": 6.04,
    "time": 1793454795.759786,
-   "last": 0.02233879,
+   "last": 0.02048786,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -112,7 +112,7 @@
    "eur": 6.23865,
    "paid": 6.27,
    "time": 1793492936.4059505,
-   "last": 22.99,
+   "last": 22.8,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -121,6 +121,25 @@
    },
    "expected": null,
    "peak": 23.611519302331068
+  },
+  {
+   "kind": "cg",
+   "id": "audacity-2",
+   "chain": null,
+   "symbol": "DACITYCOIN",
+   "signal": "trending",
+   "entry": 0.018059180187037484,
+   "eur": 5.6217500000000005,
+   "paid": 5.65,
+   "time": 1793572128.7733526,
+   "last": 0.018059180187037484,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "evening (UTC 18-24)"
+   },
+   "expected": null
   }
  ],
  "history": [
@@ -240,12 +259,17 @@
    "t": 1793558717,
    "v": 98.14,
    "btc": 77919
+  },
+  {
+   "t": 1793572128,
+   "v": 97.31,
+   "btc": 77620
   }
  ],
  "mood": {
   "value": 34,
   "label": "Fear",
-  "t": 1793558714
+  "t": 1793572125
  },
  "learning": {
   "trending": {
@@ -260,7 +284,7 @@
   }
  },
  "pending": [],
- "updated": 1793558717,
+ "updated": 1793572128,
  "rewards": {
   "xp": 9,
   "level": "Lab rat",
@@ -511,6 +535,14 @@
    "pct": -12.5,
    "reason": "\ud83d\udcc9 Trailing stop (-74%, peak was +51%)",
    "t": 1793515546
+  },
+  {
+   "type": "buy",
+   "symbol": "DACITYCOIN",
+   "signal": "trending",
+   "eur": 5.65,
+   "price": 0.018059180187037484,
+   "t": 1793572128
   }
  ]
 }
