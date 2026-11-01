@@ -1,20 +1,6 @@
 [
  {
   "t": 1793367390,
-  "title": "📉 Bitcoin -8.2% in 24h",
-  "message": "Now $70,000\nRisk: 🟢 big coin, real move. Find out WHY before doing anything.",
-  "click": "https://www.coingecko.com/en/coins/bitcoin",
-  "priority": 4
- },
- {
-  "t": 1793367390,
-  "title": "🚀 NVDA +10.0% today",
-  "message": "Now $110.00 (prev close $100.00)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
-  "click": "https://finance.yahoo.com/quote/NVDA",
-  "priority": 4
- },
- {
-  "t": 1793367390,
   "title": "🚀 TSLA +10.0% today",
   "message": "Now $110.00 (prev close $100.00)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
   "click": "https://finance.yahoo.com/quote/TSLA",
@@ -417,6 +403,20 @@
   "title": "🔥 Trending #7: Hyperliquid (HYPE)",
   "message": "Rank #11 · +0.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
   "click": "https://www.coingecko.com/en/coins/hyperliquid",
+  "priority": 2
+ },
+ {
+  "t": 1793558714,
+  "title": "📰 Crypto Bull Run: Fear Index Hits 30 as XRP, Solana Stall and Pepeto Eyes Binance Listing - TechBullion",
+  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: listing, binance · via news.google.com",
+  "click": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNdjgwNnJnem1wNkJQSkZPel9lRHlfOHFEVml1UzRkM21uMzNsR3EzVUxaLVYtb1dmUGhrWHJvTTJjNjVjRUJyVlNiZEpYVHhvb0JyV2xZOTdUTDVpRDloOXVaZ2dtRkkwX2RGYmh4b2JqdE42cl9HSnNqc09QZUdvbUlHS2R2X25KR3YtbkJ1QS1LMktCMXVhTnIyc1p4WXRETF9EMGVFTEllbFdWN2lRQg?oc=5",
+  "priority": 3
+ },
+ {
+  "t": 1793558714,
+  "title": "🔥 Trending #7: NEAR Protocol (NEAR)",
+  "message": "Rank #21 · -5.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/near",
   "priority": 2
  }
 ]
