@@ -383,5 +383,33 @@
   "message": "Rank #83 · +13.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
   "click": "https://www.coingecko.com/en/coins/lighter",
   "priority": 2
+ },
+ {
+  "t": 1793515544,
+  "title": "🔥 Trending #4: Beam (BEAM)",
+  "message": "Rank #138 · +18.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/beam-2",
+  "priority": 2
+ },
+ {
+  "t": 1793515544,
+  "title": "🔥 Trending #5: Plasma (XPL)",
+  "message": "Rank #123 · -9.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/plasma",
+  "priority": 2
+ },
+ {
+  "t": 1793515544,
+  "title": "🔥 Trending #6: Infinity Ground (AIN)",
+  "message": "Rank #448 · -0.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/infinity-ground",
+  "priority": 2
+ },
+ {
+  "t": 1793515544,
+  "title": "🔥 Trending #7: Pearl (PEARL)",
+  "message": "Rank #99 · -1.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/pearl-2",
+  "priority": 2
  }
 ]

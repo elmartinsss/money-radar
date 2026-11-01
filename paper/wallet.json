@@ -1,6 +1,6 @@
 {
  "start_eur": 100,
- "cash": 58.388744350191274,
+ "cash": 59.16367294842494,
  "positions": [
   {
    "kind": "cg",
@@ -12,7 +12,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5230997,
-   "last": 88.03,
+   "last": 87.62,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -32,7 +32,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231392,
-   "last": 0.01920466,
+   "last": 0.01961809,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +52,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231552,
-   "last": 0.573154,
+   "last": 0.524642,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -72,7 +72,7 @@
    "eur": 6.6267000000000005,
    "paid": 6.66,
    "time": 1793432124.419297,
-   "last": 0.03143927,
+   "last": 0.02995331,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -92,7 +92,7 @@
    "eur": 6.0098,
    "paid": 6.04,
    "time": 1793454795.759786,
-   "last": 0.02153937,
+   "last": 0.0178038,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -104,28 +104,6 @@
   },
   {
    "kind": "cg",
-   "id": "super-pepe",
-   "chain": null,
-   "symbol": "SP",
-   "signal": "trending",
-   "entry": 0.015956101568220322,
-   "eur": 3.0049,
-   "paid": 6.04,
-   "time": 1793454795.7598138,
-   "last": 0.02407576,
-   "liq0": null,
-   "feats": {
-    "signal": "trending",
-    "mood": "fear",
-    "time": "afternoon (UTC 12-18)"
-   },
-   "expected": null,
-   "peak": 0.02407576,
-   "realized": 4.511347879061462,
-   "halved": true
-  },
-  {
-   "kind": "cg",
    "id": "venice-token",
    "chain": null,
    "symbol": "VVV",
@@ -134,14 +112,15 @@
    "eur": 6.23865,
    "paid": 6.27,
    "time": 1793492936.4059505,
-   "last": 23.611519302331068,
+   "last": 23.3,
    "liq0": null,
    "feats": {
     "signal": "trending",
     "mood": "fear",
     "time": "night (UTC 0-6)"
    },
-   "expected": null
+   "expected": null,
+   "peak": 23.611519302331068
   }
  ],
  "history": [
@@ -169,6 +148,33 @@
    "reason": "\ud83d\uded1 Stop loss (-16%)",
    "pnl_eur": -1.1,
    "pnl_pct": -16.6
+  },
+  {
+   "kind": "cg",
+   "id": "super-pepe",
+   "chain": null,
+   "symbol": "SP",
+   "signal": "trending",
+   "entry": 0.015956101568220322,
+   "eur": 3.0049,
+   "paid": 6.04,
+   "time": 1793454795.7598138,
+   "last": 0.00413557,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "afternoon (UTC 12-18)"
+   },
+   "expected": null,
+   "peak": 0.02407576,
+   "realized": 4.511347879061462,
+   "halved": true,
+   "exit": 0.00413557,
+   "exit_time": 1793515546.2047403,
+   "reason": "\ud83d\udcc9 Trailing stop (-74%, peak was +51%)",
+   "pnl_eur": -0.75,
+   "pnl_pct": -12.5
   }
  ],
  "started": 1793366521.920483,
@@ -219,49 +225,59 @@
    "t": 1793492936,
    "v": 102.48,
    "btc": 77506
+  },
+  {
+   "t": 1793515546,
+   "v": 96.7,
+   "btc": 77827
   }
  ],
  "mood": {
   "value": 34,
   "label": "Fear",
-  "t": 1793492932
+  "t": 1793515544
  },
  "learning": {
   "trending": {
-   "n": 1,
+   "n": 2,
    "wins": 0,
    "win_rate": 0,
-   "avg_pct": -16.6,
-   "shrunk_pct": -16.6,
-   "t": 0,
+   "avg_pct": -14.6,
+   "shrunk_pct": -14.6,
+   "t": -7.1,
    "mult": 1.0,
-   "status": "still learning (1/30 trades)"
+   "status": "still learning (2/30 trades)"
   }
  },
  "pending": [],
- "updated": 1793492936,
+ "updated": 1793515546,
  "rewards": {
-  "xp": 2,
+  "xp": 4,
   "level": "Lab rat",
   "medals": [],
-  "confidence": -3.32,
+  "confidence": -5.16,
   "streak": 0,
   "best_streak": 0,
   "situations": {
    "signal=trending": {
-    "n": 1,
-    "sum": -16.6,
-    "sq": 275.56000000000006
+    "n": 2,
+    "sum": -29.1,
+    "sq": 431.81000000000006
    },
    "mood=fear": {
-    "n": 1,
-    "sum": -16.6,
-    "sq": 275.56000000000006
+    "n": 2,
+    "sum": -29.1,
+    "sq": 431.81000000000006
    },
    "time=morning (UTC 6-12)": {
     "n": 1,
     "sum": -16.6,
     "sq": 275.56000000000006
+   },
+   "time=afternoon (UTC 12-18)": {
+    "n": 1,
+    "sum": -12.5,
+    "sq": 156.25
    }
   },
   "rules": {
@@ -293,6 +309,19 @@
      "mood": "fear",
      "time": "morning (UTC 6-12)"
     }
+   },
+   {
+    "t": 1793515546,
+    "symbol": "SP",
+    "signal": "trending",
+    "reward": -12.5,
+    "reason": "\ud83d\udcc9 Trailing stop (-74%, peak was +51%)",
+    "lesson": "A loss inside the rules. Small losses are the price of finding winners.",
+    "situation": {
+     "signal": "trending",
+     "mood": "fear",
+     "time": "afternoon (UTC 12-18)"
+    }
    }
   ],
   "pending_checks": [
@@ -322,10 +351,37 @@
     "t": 1793492936,
     "rule": "Minimum age",
     "reason": "too new (5h)"
+   },
+   {
+    "id": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
+    "chain": "solana",
+    "symbol": "GATO",
+    "price": 0.006164,
+    "t": 1793515546,
+    "rule": "Rising this hour",
+    "reason": "not trending up this hour"
+   },
+   {
+    "id": "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump",
+    "chain": "solana",
+    "symbol": "DESSA",
+    "price": 0.02911,
+    "t": 1793515546,
+    "rule": "Rising this hour",
+    "reason": "not trending up this hour"
+   },
+   {
+    "id": "8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump",
+    "chain": "solana",
+    "symbol": "GLITCH",
+    "price": 0.003309,
+    "t": 1793515546,
+    "rule": "Rising this hour",
+    "reason": "not trending up this hour"
    }
   ],
-  "total_reward": -16.6,
-  "trades": 1
+  "total_reward": -29.1,
+  "trades": 2
  },
  "activity": [
   {
@@ -411,6 +467,16 @@
    "eur": 6.27,
    "price": 23.611519302331068,
    "t": 1793492936
+  },
+  {
+   "type": "sell",
+   "symbol": "SP",
+   "signal": "trending",
+   "eur": 5.29,
+   "pnl": -0.75,
+   "pct": -12.5,
+   "reason": "\ud83d\udcc9 Trailing stop (-74%, peak was +51%)",
+   "t": 1793515546
   }
  ]
 }
