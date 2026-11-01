@@ -334,5 +334,54 @@
   "message": "Rank #361 · +46.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 30/100 Fear 😐.",
   "click": "https://www.coingecko.com/en/coins/lisk",
   "priority": 2
+ },
+ {
+  "t": 1793492932,
+  "title": "🔥 Trending #1: Super Pepe (SP)",
+  "message": "Rank #750 · +16.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/super-pepe",
+  "priority": 2
+ },
+ {
+  "t": 1793492932,
+  "title": "🔥 Trending #2: Kinetiq (KNTQ)",
+  "message": "Rank #185 · +15.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/kinetiq",
+  "priority": 2
+ },
+ {
+  "t": 1793492932,
+  "title": "🔥 Trending #3: Venice Token (VVV)",
+  "message": "Rank #69 · +3.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/venice-token",
+  "priority": 2
+ },
+ {
+  "t": 1793492932,
+  "title": "🔥 Trending #4: Pons (PONS)",
+  "message": "Rank #200 · -1.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/pons",
+  "priority": 2
+ },
+ {
+  "t": 1793492932,
+  "title": "🔥 Trending #5: Bitcoin (BTC)",
+  "message": "Rank #1 · +0.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/bitcoin",
+  "priority": 2
+ },
+ {
+  "t": 1793492932,
+  "title": "🔥 Trending #6: Pudgy Penguins (PENGU)",
+  "message": "Rank #113 · -2.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/pudgy-penguins",
+  "priority": 2
+ },
+ {
+  "t": 1793492932,
+  "title": "🔥 Trending #7: Lighter (LIT)",
+  "message": "Rank #83 · +13.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/lighter",
+  "priority": 2
  }
 ]
