@@ -12,7 +12,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5230997,
-   "last": 87.62,
+   "last": 88.03,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -32,7 +32,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231392,
-   "last": 0.01961809,
+   "last": 0.01957109,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +52,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231552,
-   "last": 0.524642,
+   "last": 0.567608,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -72,7 +72,7 @@
    "eur": 6.6267000000000005,
    "paid": 6.66,
    "time": 1793432124.419297,
-   "last": 0.02995331,
+   "last": 0.02975131,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -92,7 +92,7 @@
    "eur": 6.0098,
    "paid": 6.04,
    "time": 1793454795.759786,
-   "last": 0.0178038,
+   "last": 0.0182163,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -112,7 +112,7 @@
    "eur": 6.23865,
    "paid": 6.27,
    "time": 1793492936.4059505,
-   "last": 23.3,
+   "last": 23.19,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -230,12 +230,17 @@
    "t": 1793515546,
    "v": 96.7,
    "btc": 77827
+  },
+  {
+   "t": 1793541138,
+   "v": 97.33,
+   "btc": 77877
   }
  ],
  "mood": {
   "value": 34,
   "label": "Fear",
-  "t": 1793515544
+  "t": 1793541136
  },
  "learning": {
   "trending": {
@@ -250,7 +255,7 @@
   }
  },
  "pending": [],
- "updated": 1793515546,
+ "updated": 1793541138,
  "rewards": {
   "xp": 4,
   "level": "Lab rat",

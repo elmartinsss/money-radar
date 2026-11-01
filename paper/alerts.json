@@ -1,13 +1,6 @@
 [
  {
   "t": 1793367390,
-  "title": "🐀 The Lab Rat is moving! +30% in 1h",
-  "message": "Vol 1h $5.0k · Liq $120.0k · MC $2.0M",
-  "click": "https://dexscreener.com/solana/GOOD",
-  "priority": 5
- },
- {
-  "t": 1793367390,
   "title": "📉 Bitcoin -8.2% in 24h",
   "message": "Now $70,000\nRisk: 🟢 big coin, real move. Find out WHY before doing anything.",
   "click": "https://www.coingecko.com/en/coins/bitcoin",
@@ -410,6 +403,20 @@
   "title": "🔥 Trending #7: Pearl (PEARL)",
   "message": "Rank #99 · -1.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
   "click": "https://www.coingecko.com/en/coins/pearl-2",
+  "priority": 2
+ },
+ {
+  "t": 1793541136,
+  "title": "🔥 Trending #2: Super Inu (SI)",
+  "message": "Rank #906 · -11.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/super-inu-3",
+  "priority": 2
+ },
+ {
+  "t": 1793541136,
+  "title": "🔥 Trending #7: Hyperliquid (HYPE)",
+  "message": "Rank #11 · +0.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/hyperliquid",
   "priority": 2
  }
 ]
