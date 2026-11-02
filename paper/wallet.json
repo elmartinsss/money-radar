@@ -1,6 +1,6 @@
 {
  "start_eur": 100,
- "cash": 47.89367294842494,
+ "cash": 46.77331082815555,
  "positions": [
   {
    "kind": "cg",
@@ -12,7 +12,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5230997,
-   "last": 88.03,
+   "last": 86.09,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -32,7 +32,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231392,
-   "last": 0.01910253,
+   "last": 0.01867479,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +52,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231552,
-   "last": 0.527159,
+   "last": 0.490044,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -72,7 +72,7 @@
    "eur": 6.6267000000000005,
    "paid": 6.66,
    "time": 1793432124.419297,
-   "last": 0.03048449,
+   "last": 0.02897154,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -84,26 +84,6 @@
   },
   {
    "kind": "cg",
-   "id": "super-inu-3",
-   "chain": null,
-   "symbol": "SI",
-   "signal": "trending",
-   "entry": 0.020446493152168992,
-   "eur": 6.0098,
-   "paid": 6.04,
-   "time": 1793454795.759786,
-   "last": 0.01846905,
-   "liq0": null,
-   "feats": {
-    "signal": "trending",
-    "mood": "fear",
-    "time": "afternoon (UTC 12-18)"
-   },
-   "expected": null,
-   "peak": 0.02405982
-  },
-  {
-   "kind": "cg",
    "id": "venice-token",
    "chain": null,
    "symbol": "VVV",
@@ -112,7 +92,7 @@
    "eur": 6.23865,
    "paid": 6.27,
    "time": 1793492936.4059505,
-   "last": 22.95,
+   "last": 22.41,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -132,7 +112,7 @@
    "eur": 5.6217500000000005,
    "paid": 5.65,
    "time": 1793572128.7733526,
-   "last": 0.01805108,
+   "last": 0.02074626,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -140,7 +120,7 @@
     "time": "evening (UTC 18-24)"
    },
    "expected": null,
-   "peak": 0.018059180187037484
+   "peak": 0.02074626
   },
   {
    "kind": "cg",
@@ -152,12 +132,32 @@
    "eur": 5.5919,
    "paid": 5.62,
    "time": 1793584007.35454,
-   "last": 0.007301040700116832,
+   "last": 0.00718478,
    "liq0": null,
    "feats": {
     "signal": "trending",
     "mood": "fear",
     "time": "night (UTC 0-6)"
+   },
+   "expected": null,
+   "peak": 0.007301040700116832
+  },
+  {
+   "kind": "cg",
+   "id": "bitcoin",
+   "chain": null,
+   "symbol": "BTC",
+   "signal": "trending",
+   "entry": 78080.49125602424,
+   "eur": 4.6964,
+   "paid": 4.72,
+   "time": 1793607999.2227337,
+   "last": 78080.49125602424,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "morning (UTC 6-12)"
    },
    "expected": null
   }
@@ -214,6 +214,31 @@
    "reason": "\ud83d\udcc9 Trailing stop (-74%, peak was +51%)",
    "pnl_eur": -0.75,
    "pnl_pct": -12.5
+  },
+  {
+   "kind": "cg",
+   "id": "super-inu-3",
+   "chain": null,
+   "symbol": "SI",
+   "signal": "trending",
+   "entry": 0.020446493152168992,
+   "eur": 6.0098,
+   "paid": 6.04,
+   "time": 1793454795.759786,
+   "last": 0.0123082,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "afternoon (UTC 12-18)"
+   },
+   "expected": null,
+   "peak": 0.02405982,
+   "exit": 0.0123082,
+   "exit_time": 1793607999.2225332,
+   "reason": "\ud83d\uded1 Stop loss (-40%)",
+   "pnl_eur": -2.44,
+   "pnl_pct": -40.4
   }
  ],
  "started": 1793366521.920483,
@@ -289,29 +314,34 @@
    "t": 1793584007,
    "v": 96.75,
    "btc": 78482
+  },
+  {
+   "t": 1793607999,
+   "v": 94.41,
+   "btc": 78046
   }
  ],
  "mood": {
   "value": 37,
   "label": "Fear",
-  "t": 1793584003
+  "t": 1793607997
  },
  "learning": {
   "trending": {
-   "n": 2,
+   "n": 3,
    "wins": 0,
    "win_rate": 0,
-   "avg_pct": -14.6,
-   "shrunk_pct": -14.6,
-   "t": -7.1,
+   "avg_pct": -23.2,
+   "shrunk_pct": -23.2,
+   "t": -2.66,
    "mult": 1.0,
-   "status": "still learning (2/30 trades)"
+   "status": "still learning (3/30 trades)"
   }
  },
  "pending": [],
- "updated": 1793584007,
+ "updated": 1793607999,
  "rewards": {
-  "xp": 14,
+  "xp": 21,
   "level": "Lab rat",
   "medals": [
    {
@@ -321,19 +351,19 @@
     "t": 1793558716
    }
   ],
-  "confidence": -5.16,
+  "confidence": -12.21,
   "streak": 0,
   "best_streak": 0,
   "situations": {
    "signal=trending": {
-    "n": 2,
-    "sum": -29.1,
-    "sq": 431.81000000000006
+    "n": 3,
+    "sum": -69.5,
+    "sq": 2063.97
    },
    "mood=fear": {
-    "n": 2,
-    "sum": -29.1,
-    "sq": 431.81000000000006
+    "n": 3,
+    "sum": -69.5,
+    "sq": 2063.97
    },
    "time=morning (UTC 6-12)": {
     "n": 1,
@@ -341,18 +371,19 @@
     "sq": 275.56000000000006
    },
    "time=afternoon (UTC 12-18)": {
-    "n": 1,
-    "sum": -12.5,
-    "sq": 156.25
+    "n": 2,
+    "sum": -52.9,
+    "sq": 1788.4099999999999
    }
   },
   "rules": {
    "Rising this hour": {
-    "saves": 0,
+    "saves": 1,
     "missed": 1,
-    "neutral": 2,
+    "neutral": 4,
     "examples": [
-     "$DESSA +139% (missed)"
+     "$DESSA +139% (missed)",
+     "$DESSA -51% (saved)"
     ]
    },
    "Liquidity vs size": {
@@ -397,36 +428,22 @@
      "mood": "fear",
      "time": "afternoon (UTC 12-18)"
     }
+   },
+   {
+    "t": 1793607999,
+    "symbol": "SI",
+    "signal": "trending",
+    "reward": -40.4,
+    "reason": "\ud83d\uded1 Stop loss (-40%)",
+    "lesson": "A loss inside the rules. Small losses are the price of finding winners.",
+    "situation": {
+     "signal": "trending",
+     "mood": "fear",
+     "time": "afternoon (UTC 12-18)"
+    }
    }
   ],
   "pending_checks": [
-   {
-    "id": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
-    "chain": "solana",
-    "symbol": "GATO",
-    "price": 0.006164,
-    "t": 1793515546,
-    "rule": "Rising this hour",
-    "reason": "not trending up this hour"
-   },
-   {
-    "id": "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump",
-    "chain": "solana",
-    "symbol": "DESSA",
-    "price": 0.02911,
-    "t": 1793515546,
-    "rule": "Rising this hour",
-    "reason": "not trending up this hour"
-   },
-   {
-    "id": "8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump",
-    "chain": "solana",
-    "symbol": "GLITCH",
-    "price": 0.003309,
-    "t": 1793515546,
-    "rule": "Rising this hour",
-    "reason": "not trending up this hour"
-   },
    {
     "id": "3kRQDKPGqMWwBdGjiVPpPqVzFsnYG5PDqvrVz1D2pump",
     "chain": "solana",
@@ -453,10 +470,19 @@
     "t": 1793584007,
     "rule": "Minimum holders",
     "reason": "already pumped 265% (you'd be buying from early holders)"
+   },
+   {
+    "id": "8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump",
+    "chain": "solana",
+    "symbol": "ANAKIN",
+    "price": 0.003953,
+    "t": 1793607999,
+    "rule": "Minimum age",
+    "reason": "too new (10h)"
    }
   ],
-  "total_reward": -29.1,
-  "trades": 2
+  "total_reward": -69.5,
+  "trades": 3
  },
  "activity": [
   {
@@ -568,6 +594,24 @@
    "eur": 5.62,
    "price": 0.007301040700116832,
    "t": 1793584007
+  },
+  {
+   "type": "sell",
+   "symbol": "SI",
+   "signal": "trending",
+   "eur": 3.6,
+   "pnl": -2.44,
+   "pct": -40.4,
+   "reason": "\ud83d\uded1 Stop loss (-40%)",
+   "t": 1793607999
+  },
+  {
+   "type": "buy",
+   "symbol": "BTC",
+   "signal": "trending",
+   "eur": 4.72,
+   "price": 78080.49125602424,
+   "t": 1793607999
   }
  ]
 }

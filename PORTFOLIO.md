@@ -1,27 +1,28 @@
 # 📝 Paper wallet (fake money)
 
-Started 2026-10-30 with **100€** · now **96.75€ (-3.3%)** · cash 47.89€
+Started 2026-10-30 with **100€** · now **94.41€ (-5.6%)** · cash 46.77€
 
-Closed trades: 2 · wins: 0
+Closed trades: 3 · wins: 0
 
-_Updated 2026-11-02 03:46 Vilnius time._
+_Updated 2026-11-02 10:26 Vilnius time._
 
 ## Open positions
 
 | Coin | Signal | Bought | Value now | Change |
 |---|---|---|---|---|
-| HYPE | trending | 6.67€ | 6.56€ | -1.7% |
-| MON | trending | 6.67€ | 6.44€ | -3.5% |
-| KNTQ | trending | 6.67€ | 6.94€ | +4.1% |
-| Q | trending | 6.66€ | 6.21€ | -6.7% |
-| SI | trending | 6.04€ | 5.43€ | -10.1% |
-| VVV | trending | 6.27€ | 6.06€ | -3.3% |
-| DACITYCOIN | trending | 5.65€ | 5.62€ | -0.5% |
-| PENGU | trending | 5.62€ | 5.59€ | -0.5% |
+| HYPE | trending | 6.67€ | 6.41€ | -3.9% |
+| MON | trending | 6.67€ | 6.29€ | -5.7% |
+| KNTQ | trending | 6.67€ | 6.45€ | -3.2% |
+| Q | trending | 6.66€ | 5.91€ | -11.3% |
+| VVV | trending | 6.27€ | 5.92€ | -5.6% |
+| DACITYCOIN | trending | 5.65€ | 6.46€ | +14.3% |
+| PENGU | trending | 5.62€ | 5.50€ | -2.1% |
+| BTC | trending | 4.72€ | 4.70€ | -0.5% |
 
 ## Last 30 closed trades
 
 | Coin | Signal | Result | Why |
 |---|---|---|---|
+| SI | trending | -2.44€ (-40.4%) | 🛑 Stop loss (-40%) |
 | SP | trending | -0.75€ (-12.5%) | 📉 Trailing stop (-74%, peak was +51%) |
 | AIN | trending | -1.10€ (-16.6%) | 🛑 Stop loss (-16%) |
