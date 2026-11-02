@@ -1,61 +1,5 @@
 [
  {
-  "t": 1793367390,
-  "title": "🔥 Trending #1: Pepe (PEPE)",
-  "message": "Rank #30 · +12.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.",
-  "click": "https://www.coingecko.com/en/coins/pepe",
-  "priority": 2
- },
- {
-  "t": 1793381645,
-  "title": "🐀 The Lab Rat is moving! +30% in 1h",
-  "message": "Vol 1h $5.0k · Liq $120.0k · MC $2.0M",
-  "click": "https://dexscreener.com/solana/GOOD",
-  "priority": 5
- },
- {
-  "t": 1793381645,
-  "title": "📉 Bitcoin -8.2% in 24h",
-  "message": "Now $70,000\nRisk: 🟢 big coin, real move. Find out WHY before doing anything.",
-  "click": "https://www.coingecko.com/en/coins/bitcoin",
-  "priority": 4
- },
- {
-  "t": 1793381645,
-  "title": "🚀 NVDA +10.0% today",
-  "message": "Now $110.00 (prev close $100.00)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
-  "click": "https://finance.yahoo.com/quote/NVDA",
-  "priority": 4
- },
- {
-  "t": 1793381645,
-  "title": "🚀 TSLA +10.0% today",
-  "message": "Now $110.00 (prev close $100.00)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
-  "click": "https://finance.yahoo.com/quote/TSLA",
-  "priority": 4
- },
- {
-  "t": 1793381645,
-  "title": "🚀 AAPL +10.0% today",
-  "message": "Now $110.00 (prev close $100.00)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
-  "click": "https://finance.yahoo.com/quote/AAPL",
-  "priority": 4
- },
- {
-  "t": 1793381645,
-  "title": "📰 Binance will list new token, airdrop for holders",
-  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: will list, listing, binance, airdrop · via coindesk.com",
-  "click": "https://x/1",
-  "priority": 3
- },
- {
-  "t": 1793381645,
-  "title": "👽 r/CryptoCurrency: Massive short squeeze DD on XYZ",
-  "message": "Risk: 🟡 crowd opinion, not facts. Check the comments for pushback.\n⬆ 900 upvotes · 💬 300 · 2h old\nMatched: squeeze",
-  "click": "https://reddit.com/r/x/a1",
-  "priority": 3
- },
- {
   "t": 1793381645,
   "title": "🔥 Trending #1: Pepe (PEPE)",
   "message": "Rank #30 · +12.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.",
@@ -417,6 +361,62 @@
   "title": "🔥 Trending #7: Aave (AAVE)",
   "message": "Rank #45 · -0.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
   "click": "https://www.coingecko.com/en/coins/aave",
+  "priority": 2
+ },
+ {
+  "t": 1793584003,
+  "title": "📰 Mohawk Shares In Focus After Earnings Beat And $500 Million Buyback - Simply Wall St",
+  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: earnings beat, buyback · via news.google.com",
+  "click": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPMDgxR3hIZWtiZ0g1MmZWelA2RHBjM3Y5NWctMXdFMy04aUdFVlpCa2hZejRMVFR1WVdiaXhnT2J1WlNoSHdmV1h4Nlg2OVNvVE9QUjBYSDZTM0FKSEphM2F1LVlMdTNVVVMxSC01YzlsMXktcWVvd3hVckVGa1NaNDk0MHlMVHIzcjBNZERqMElqbjBZWmc0ODRTOC04RjhYcGg0NGRCX0dfRWwzMUUxenlPeDZxS2QyWmxTcTgxTTQ4WWp2OWR2ZlJLNnVfTlNZeGxaR19DdnMyUdIB3wFBVV95cUxQYm1EQjd5czhFaWZTV05xLXJKSi1sX0dJT0RmUUVBMFI4QTNCOENLemUwNDNiZ2RwblFvaVNiRFlRMU8zX25jT3JZVzZBb3hQQnBlamctX2JCUDB3LTQ1RC1qQ0RXTGF4QmtQYlBsT0dmMjQ4b2NUU3VuR1lhYkUwMF8tRk9SNThqOEk3NExzeWhfUmpwWlFpek1EclBNYmlFc2VUenY2YzRwVDFBay1JdnhhcE1SYkhTOUNzTDBoeW8tbzBza1RNdmtEck42bjdmeXg0VlBRcUxFa3JqVzlV?oc=5",
+  "priority": 3
+ },
+ {
+  "t": 1793584003,
+  "title": "🔥 Trending #1: Pudgy Penguins (PENGU)",
+  "message": "Rank #114 · +0.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 37/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/pudgy-penguins",
+  "priority": 2
+ },
+ {
+  "t": 1793584003,
+  "title": "🔥 Trending #2: Lighter (LIT)",
+  "message": "Rank #83 · +0.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 37/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/lighter",
+  "priority": 2
+ },
+ {
+  "t": 1793584003,
+  "title": "🔥 Trending #3: Monad (MON)",
+  "message": "Rank #155 · -1.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 37/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/monad",
+  "priority": 2
+ },
+ {
+  "t": 1793584003,
+  "title": "🔥 Trending #4: Pearl (PEARL)",
+  "message": "Rank #99 · +5.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 37/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/pearl-2",
+  "priority": 2
+ },
+ {
+  "t": 1793584003,
+  "title": "🔥 Trending #5: Kinetiq (KNTQ)",
+  "message": "Rank #191 · -8.4% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 37/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/kinetiq",
+  "priority": 2
+ },
+ {
+  "t": 1793584003,
+  "title": "🔥 Trending #6: Quant (QNT)",
+  "message": "Rank #35 · +0.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 37/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/quant-network",
+  "priority": 2
+ },
+ {
+  "t": 1793584003,
+  "title": "🔥 Trending #7: AudaCity (DACITYCOIN)",
+  "message": "Rank #914 · +0.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 37/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/audacity-2",
   "priority": 2
  }
 ]

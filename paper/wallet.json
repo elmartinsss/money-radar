@@ -1,6 +1,6 @@
 {
  "start_eur": 100,
- "cash": 53.51367294842494,
+ "cash": 47.89367294842494,
  "positions": [
   {
    "kind": "cg",
@@ -12,7 +12,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5230997,
-   "last": 86.94,
+   "last": 88.03,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -32,7 +32,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231392,
-   "last": 0.01898405,
+   "last": 0.01910253,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +52,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231552,
-   "last": 0.531055,
+   "last": 0.527159,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -72,7 +72,7 @@
    "eur": 6.6267000000000005,
    "paid": 6.66,
    "time": 1793432124.419297,
-   "last": 0.03071238,
+   "last": 0.03048449,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -92,7 +92,7 @@
    "eur": 6.0098,
    "paid": 6.04,
    "time": 1793454795.759786,
-   "last": 0.02048786,
+   "last": 0.01846905,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -112,7 +112,7 @@
    "eur": 6.23865,
    "paid": 6.27,
    "time": 1793492936.4059505,
-   "last": 22.8,
+   "last": 22.95,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -132,12 +132,32 @@
    "eur": 5.6217500000000005,
    "paid": 5.65,
    "time": 1793572128.7733526,
-   "last": 0.018059180187037484,
+   "last": 0.01805108,
    "liq0": null,
    "feats": {
     "signal": "trending",
     "mood": "fear",
     "time": "evening (UTC 18-24)"
+   },
+   "expected": null,
+   "peak": 0.018059180187037484
+  },
+  {
+   "kind": "cg",
+   "id": "pudgy-penguins",
+   "chain": null,
+   "symbol": "PENGU",
+   "signal": "trending",
+   "entry": 0.007301040700116832,
+   "eur": 5.5919,
+   "paid": 5.62,
+   "time": 1793584007.35454,
+   "last": 0.007301040700116832,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "night (UTC 0-6)"
    },
    "expected": null
   }
@@ -264,12 +284,17 @@
    "t": 1793572128,
    "v": 97.31,
    "btc": 77620
+  },
+  {
+   "t": 1793584007,
+   "v": 96.75,
+   "btc": 78482
   }
  ],
  "mood": {
-  "value": 34,
+  "value": 37,
   "label": "Fear",
-  "t": 1793572125
+  "t": 1793584003
  },
  "learning": {
   "trending": {
@@ -284,9 +309,9 @@
   }
  },
  "pending": [],
- "updated": 1793572128,
+ "updated": 1793584007,
  "rewards": {
-  "xp": 9,
+  "xp": 14,
   "level": "Lab rat",
   "medals": [
    {
@@ -333,15 +358,16 @@
    "Liquidity vs size": {
     "saves": 0,
     "missed": 0,
-    "neutral": 1,
+    "neutral": 2,
     "examples": []
    },
    "Minimum age": {
-    "saves": 1,
+    "saves": 2,
     "missed": 0,
     "neutral": 0,
     "examples": [
-     "$AgenC -100% (saved)"
+     "$AgenC -100% (saved)",
+     "$PAWCAT -100% (saved)"
     ]
    }
   },
@@ -374,24 +400,6 @@
    }
   ],
   "pending_checks": [
-   {
-    "id": "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump",
-    "chain": "solana",
-    "symbol": "Dacity",
-    "price": 0.00867,
-    "t": 1793492936,
-    "rule": "Liquidity vs size",
-    "reason": "thin liquidity for its size (4.6% of market cap)"
-   },
-   {
-    "id": "762ZqBCd5m2q3QJ5UPkFL5rqdEUeygNkfTZrpGEZpump",
-    "chain": "solana",
-    "symbol": "PAWCAT",
-    "price": 0.003763,
-    "t": 1793492936,
-    "rule": "Minimum age",
-    "reason": "too new (5h)"
-   },
    {
     "id": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
     "chain": "solana",
@@ -436,6 +444,15 @@
     "t": 1793558716,
     "rule": "No chasing pumps",
     "reason": "chasing a pump (+7% 5m, +149% 1h)"
+   },
+   {
+    "id": "ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump",
+    "chain": "solana",
+    "symbol": "Anakin",
+    "price": 0.003318,
+    "t": 1793584007,
+    "rule": "Minimum holders",
+    "reason": "already pumped 265% (you'd be buying from early holders)"
    }
   ],
   "total_reward": -29.1,
@@ -543,6 +560,14 @@
    "eur": 5.65,
    "price": 0.018059180187037484,
    "t": 1793572128
+  },
+  {
+   "type": "buy",
+   "symbol": "PENGU",
+   "signal": "trending",
+   "eur": 5.62,
+   "price": 0.007301040700116832,
+   "t": 1793584007
   }
  ]
 }
