@@ -1,6 +1,6 @@
 {
  "start_eur": 100,
- "cash": 46.77331082815555,
+ "cash": 52.05155328440214,
  "positions": [
   {
    "kind": "cg",
@@ -12,7 +12,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5230997,
-   "last": 86.09,
+   "last": 83.68,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -32,7 +32,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231392,
-   "last": 0.01867479,
+   "last": 0.01787474,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +52,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231552,
-   "last": 0.490044,
+   "last": 0.471219,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -64,26 +64,6 @@
   },
   {
    "kind": "cg",
-   "id": "quack-ai",
-   "chain": null,
-   "symbol": "Q",
-   "signal": "trending",
-   "entry": 0.032506800875529776,
-   "eur": 6.6267000000000005,
-   "paid": 6.66,
-   "time": 1793432124.419297,
-   "last": 0.02897154,
-   "liq0": null,
-   "feats": {
-    "signal": "trending",
-    "mood": "fear",
-    "time": "morning (UTC 6-12)"
-   },
-   "expected": null,
-   "peak": 0.03322141
-  },
-  {
-   "kind": "cg",
    "id": "venice-token",
    "chain": null,
    "symbol": "VVV",
@@ -92,7 +72,7 @@
    "eur": 6.23865,
    "paid": 6.27,
    "time": 1793492936.4059505,
-   "last": 22.41,
+   "last": 21.2,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -112,7 +92,7 @@
    "eur": 5.6217500000000005,
    "paid": 5.65,
    "time": 1793572128.7733526,
-   "last": 0.02074626,
+   "last": 0.02296564,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -120,7 +100,7 @@
     "time": "evening (UTC 18-24)"
    },
    "expected": null,
-   "peak": 0.02074626
+   "peak": 0.02296564
   },
   {
    "kind": "cg",
@@ -132,7 +112,7 @@
    "eur": 5.5919,
    "paid": 5.62,
    "time": 1793584007.35454,
-   "last": 0.00718478,
+   "last": 0.00698785,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -152,14 +132,15 @@
    "eur": 4.6964,
    "paid": 4.72,
    "time": 1793607999.2227337,
-   "last": 78080.49125602424,
+   "last": 76881,
    "liq0": null,
    "feats": {
     "signal": "trending",
     "mood": "fear",
     "time": "morning (UTC 6-12)"
    },
-   "expected": null
+   "expected": null,
+   "peak": 78080.49125602424
   }
  ],
  "history": [
@@ -239,11 +220,36 @@
    "reason": "\ud83d\uded1 Stop loss (-40%)",
    "pnl_eur": -2.44,
    "pnl_pct": -40.4
+  },
+  {
+   "kind": "cg",
+   "id": "quack-ai",
+   "chain": null,
+   "symbol": "Q",
+   "signal": "trending",
+   "entry": 0.032506800875529776,
+   "eur": 6.6267000000000005,
+   "paid": 6.66,
+   "time": 1793432124.419297,
+   "last": 0.02602215,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "morning (UTC 6-12)"
+   },
+   "expected": null,
+   "peak": 0.03322141,
+   "exit": 0.02602215,
+   "exit_time": 1793645230.741,
+   "reason": "\ud83d\uded1 Stop loss (-20%)",
+   "pnl_eur": -1.38,
+   "pnl_pct": -20.7
   }
  ],
  "started": 1793366521.920483,
  "btc_start": 77216,
- "last_report": "2026-11-01",
+ "last_report": "2026-11-02",
  "equity": [
   {
    "t": 1793366862,
@@ -319,29 +325,34 @@
    "t": 1793607999,
    "v": 94.41,
    "btc": 78046
+  },
+  {
+   "t": 1793645230,
+   "v": 93.24,
+   "btc": 76854
   }
  ],
  "mood": {
   "value": 37,
   "label": "Fear",
-  "t": 1793607997
+  "t": 1793645228
  },
  "learning": {
   "trending": {
-   "n": 3,
+   "n": 4,
    "wins": 0,
    "win_rate": 0,
-   "avg_pct": -23.2,
-   "shrunk_pct": -23.2,
-   "t": -2.66,
+   "avg_pct": -22.6,
+   "shrunk_pct": -22.6,
+   "t": -3.65,
    "mult": 1.0,
-   "status": "still learning (3/30 trades)"
+   "status": "still learning (4/30 trades)"
   }
  },
  "pending": [],
- "updated": 1793607999,
+ "updated": 1793645230,
  "rewards": {
-  "xp": 21,
+  "xp": 28,
   "level": "Lab rat",
   "medals": [
    {
@@ -351,24 +362,24 @@
     "t": 1793558716
    }
   ],
-  "confidence": -12.21,
+  "confidence": -13.91,
   "streak": 0,
   "best_streak": 0,
   "situations": {
    "signal=trending": {
-    "n": 3,
-    "sum": -69.5,
-    "sq": 2063.97
+    "n": 4,
+    "sum": -90.2,
+    "sq": 2492.4599999999996
    },
    "mood=fear": {
-    "n": 3,
-    "sum": -69.5,
-    "sq": 2063.97
+    "n": 4,
+    "sum": -90.2,
+    "sq": 2492.4599999999996
    },
    "time=morning (UTC 6-12)": {
-    "n": 1,
-    "sum": -16.6,
-    "sq": 275.56000000000006
+    "n": 2,
+    "sum": -37.3,
+    "sq": 704.05
    },
    "time=afternoon (UTC 12-18)": {
     "n": 2,
@@ -393,13 +404,20 @@
     "examples": []
    },
    "Minimum age": {
-    "saves": 2,
+    "saves": 3,
     "missed": 0,
     "neutral": 0,
     "examples": [
      "$AgenC -100% (saved)",
-     "$PAWCAT -100% (saved)"
+     "$PAWCAT -100% (saved)",
+     "$tipr -100% (saved)"
     ]
+   },
+   "No chasing pumps": {
+    "saves": 0,
+    "missed": 0,
+    "neutral": 1,
+    "examples": []
    }
   },
   "journal": [
@@ -441,27 +459,22 @@
      "mood": "fear",
      "time": "afternoon (UTC 12-18)"
     }
+   },
+   {
+    "t": 1793645230,
+    "symbol": "Q",
+    "signal": "trending",
+    "reward": -20.7,
+    "reason": "\ud83d\uded1 Stop loss (-20%)",
+    "lesson": "A loss inside the rules. Small losses are the price of finding winners.",
+    "situation": {
+     "signal": "trending",
+     "mood": "fear",
+     "time": "morning (UTC 6-12)"
+    }
    }
   ],
   "pending_checks": [
-   {
-    "id": "3kRQDKPGqMWwBdGjiVPpPqVzFsnYG5PDqvrVz1D2pump",
-    "chain": "solana",
-    "symbol": "tipr",
-    "price": 0.00111,
-    "t": 1793558716,
-    "rule": "Minimum age",
-    "reason": "too new (15h)"
-   },
-   {
-    "id": "EJAxERvKU4kEVXn3NarjvRtgaMaJyP9ZuMeKA7JJpump",
-    "chain": "solana",
-    "symbol": "CHOO",
-    "price": 0.00244,
-    "t": 1793558716,
-    "rule": "No chasing pumps",
-    "reason": "chasing a pump (+7% 5m, +149% 1h)"
-   },
    {
     "id": "ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump",
     "chain": "solana",
@@ -479,10 +492,37 @@
     "t": 1793607999,
     "rule": "Minimum age",
     "reason": "too new (10h)"
+   },
+   {
+    "id": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
+    "chain": "solana",
+    "symbol": "GATO",
+    "price": 0.01101,
+    "t": 1793645230,
+    "rule": "Rising this hour",
+    "reason": "not trending up this hour"
+   },
+   {
+    "id": "8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump",
+    "chain": "solana",
+    "symbol": "GLITCH",
+    "price": 0.003365,
+    "t": 1793645230,
+    "rule": "Buyers vs sellers",
+    "reason": "more sellers than buyers (0.3x)"
+   },
+   {
+    "id": "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump",
+    "chain": "solana",
+    "symbol": "DESSA",
+    "price": 0.01288,
+    "t": 1793645230,
+    "rule": "Liquidity vs size",
+    "reason": "thin liquidity for its size (2.6% of market cap)"
    }
   ],
-  "total_reward": -69.5,
-  "trades": 3
+  "total_reward": -90.2,
+  "trades": 4
  },
  "activity": [
   {
@@ -612,6 +652,23 @@
    "eur": 4.72,
    "price": 78080.49125602424,
    "t": 1793607999
+  },
+  {
+   "type": "sell",
+   "symbol": "Q",
+   "signal": "trending",
+   "eur": 5.28,
+   "pnl": -1.38,
+   "pct": -20.7,
+   "reason": "\ud83d\uded1 Stop loss (-20%)",
+   "t": 1793645230
+  },
+  {
+   "type": "skip",
+   "symbol": "SI",
+   "signal": "trending",
+   "reason": "down -3.82\u20ac today, cooling down until tomorrow",
+   "t": 1793645230
   }
  ]
 }
