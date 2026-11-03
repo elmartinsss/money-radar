@@ -12,7 +12,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5230997,
-   "last": 84.39,
+   "last": 83.48,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -32,7 +32,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231392,
-   "last": 0.01759047,
+   "last": 0.01688426,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +52,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231552,
-   "last": 0.441499,
+   "last": 0.440934,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -72,7 +72,7 @@
    "eur": 6.23865,
    "paid": 6.27,
    "time": 1793492936.4059505,
-   "last": 21.74,
+   "last": 21.05,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -92,7 +92,7 @@
    "eur": 5.6217500000000005,
    "paid": 5.65,
    "time": 1793572128.7733526,
-   "last": 0.01964247,
+   "last": 0.01979517,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -112,7 +112,7 @@
    "eur": 5.5919,
    "paid": 5.62,
    "time": 1793584007.35454,
-   "last": 0.00699233,
+   "last": 0.00684637,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -132,7 +132,7 @@
    "eur": 4.6964,
    "paid": 4.72,
    "time": 1793607999.2227337,
-   "last": 77158,
+   "last": 76683,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -152,14 +152,15 @@
    "eur": 4.577,
    "paid": 4.6,
    "time": 1793668917.1320481,
-   "last": 193.83522770650964,
+   "last": 193.69,
    "liq0": null,
    "feats": {
     "signal": "trending",
     "mood": "fear",
     "time": "night (UTC 0-6)"
    },
-   "expected": null
+   "expected": null,
+   "peak": 193.83522770650964
   }
  ],
  "history": [
@@ -354,12 +355,17 @@
    "t": 1793668917,
    "v": 91.91,
    "btc": 77163
+  },
+  {
+   "t": 1793693909,
+   "v": 91.32,
+   "btc": 76694
   }
  ],
  "mood": {
   "value": 26,
   "label": "Fear",
-  "t": 1793668914
+  "t": 1793693907
  },
  "learning": {
   "trending": {
@@ -374,9 +380,9 @@
   }
  },
  "pending": [],
- "updated": 1793668917,
+ "updated": 1793693909,
  "rewards": {
-  "xp": 28,
+  "xp": 33,
   "level": "Lab rat",
   "medals": [
    {
@@ -442,6 +448,14 @@
     "missed": 0,
     "neutral": 1,
     "examples": []
+   },
+   "Minimum holders": {
+    "saves": 1,
+    "missed": 0,
+    "neutral": 0,
+    "examples": [
+     "$Anakin -62% (saved)"
+    ]
    }
   },
   "journal": [
@@ -500,15 +514,6 @@
   ],
   "pending_checks": [
    {
-    "id": "ExxzYBTt3jwU5MUxuw2F4toYbTLdFwThSjyaCn6Xpump",
-    "chain": "solana",
-    "symbol": "Anakin",
-    "price": 0.003318,
-    "t": 1793584007,
-    "rule": "Minimum holders",
-    "reason": "already pumped 265% (you'd be buying from early holders)"
-   },
-   {
     "id": "8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump",
     "chain": "solana",
     "symbol": "ANAKIN",
@@ -561,6 +566,15 @@
     "t": 1793668917,
     "rule": "Minimum age",
     "reason": "too new (10h)"
+   },
+   {
+    "id": "8oUGdPdyxVaCSJSZpcVZuxqoyiZAmc2Z22FsDRZ3pump",
+    "chain": "solana",
+    "symbol": "Wanted",
+    "price": 0.001414,
+    "t": 1793693908,
+    "rule": "Minimum age",
+    "reason": "too new (7h)"
    }
   ],
   "total_reward": -90.2,
