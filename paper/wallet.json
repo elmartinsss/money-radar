@@ -1,6 +1,6 @@
 {
  "start_eur": 100,
- "cash": 52.05155328440214,
+ "cash": 47.45155328440214,
  "positions": [
   {
    "kind": "cg",
@@ -12,7 +12,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5230997,
-   "last": 83.68,
+   "last": 84.39,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -32,7 +32,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231392,
-   "last": 0.01787474,
+   "last": 0.01759047,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +52,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231552,
-   "last": 0.471219,
+   "last": 0.441499,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -72,7 +72,7 @@
    "eur": 6.23865,
    "paid": 6.27,
    "time": 1793492936.4059505,
-   "last": 21.2,
+   "last": 21.74,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -92,7 +92,7 @@
    "eur": 5.6217500000000005,
    "paid": 5.65,
    "time": 1793572128.7733526,
-   "last": 0.02296564,
+   "last": 0.01964247,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -112,7 +112,7 @@
    "eur": 5.5919,
    "paid": 5.62,
    "time": 1793584007.35454,
-   "last": 0.00698785,
+   "last": 0.00699233,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -132,7 +132,7 @@
    "eur": 4.6964,
    "paid": 4.72,
    "time": 1793607999.2227337,
-   "last": 76881,
+   "last": 77158,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -141,6 +141,25 @@
    },
    "expected": null,
    "peak": 78080.49125602424
+  },
+  {
+   "kind": "cg",
+   "id": "quant-network",
+   "chain": null,
+   "symbol": "QNT",
+   "signal": "trending",
+   "entry": 193.83522770650964,
+   "eur": 4.577,
+   "paid": 4.6,
+   "time": 1793668917.1320481,
+   "last": 193.83522770650964,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "night (UTC 0-6)"
+   },
+   "expected": null
   }
  ],
  "history": [
@@ -330,12 +349,17 @@
    "t": 1793645230,
    "v": 93.24,
    "btc": 76854
+  },
+  {
+   "t": 1793668917,
+   "v": 91.91,
+   "btc": 77163
   }
  ],
  "mood": {
-  "value": 37,
+  "value": 26,
   "label": "Fear",
-  "t": 1793645228
+  "t": 1793668914
  },
  "learning": {
   "trending": {
@@ -350,7 +374,7 @@
   }
  },
  "pending": [],
- "updated": 1793645230,
+ "updated": 1793668917,
  "rewards": {
   "xp": 28,
   "level": "Lab rat",
@@ -519,6 +543,24 @@
     "t": 1793645230,
     "rule": "Liquidity vs size",
     "reason": "thin liquidity for its size (2.6% of market cap)"
+   },
+   {
+    "id": "FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win",
+    "chain": "solana",
+    "symbol": "1WIN",
+    "price": 0.0756,
+    "t": 1793668917,
+    "rule": "Minimum age",
+    "reason": "too new (4h)"
+   },
+   {
+    "id": "CHtXwJ3qa2ozS9vQkxhR3MmNwkoUqkh3icGXgZPepump",
+    "chain": "solana",
+    "symbol": "FEAR",
+    "price": 0.0142,
+    "t": 1793668917,
+    "rule": "Minimum age",
+    "reason": "too new (10h)"
    }
   ],
   "total_reward": -90.2,
@@ -669,6 +711,14 @@
    "signal": "trending",
    "reason": "down -3.82\u20ac today, cooling down until tomorrow",
    "t": 1793645230
+  },
+  {
+   "type": "buy",
+   "symbol": "QNT",
+   "signal": "trending",
+   "eur": 4.6,
+   "price": 193.83522770650964,
+   "t": 1793668917
   }
  ]
 }
