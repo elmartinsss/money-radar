@@ -1,6 +1,6 @@
 {
  "start_eur": 100,
- "cash": 47.45155328440214,
+ "cash": 48.268605556436455,
  "positions": [
   {
    "kind": "cg",
@@ -12,7 +12,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5230997,
-   "last": 86.22,
+   "last": 85.86,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -32,7 +32,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231392,
-   "last": 0.01765573,
+   "last": 0.01814409,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +52,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231552,
-   "last": 0.490043,
+   "last": 0.512496,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -72,7 +72,7 @@
    "eur": 6.23865,
    "paid": 6.27,
    "time": 1793492936.4059505,
-   "last": 22.04,
+   "last": 22.76,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -84,26 +84,6 @@
   },
   {
    "kind": "cg",
-   "id": "audacity-2",
-   "chain": null,
-   "symbol": "DACITYCOIN",
-   "signal": "trending",
-   "entry": 0.018059180187037484,
-   "eur": 5.6217500000000005,
-   "paid": 5.65,
-   "time": 1793572128.7733526,
-   "last": 0.0220035,
-   "liq0": null,
-   "feats": {
-    "signal": "trending",
-    "mood": "fear",
-    "time": "evening (UTC 18-24)"
-   },
-   "expected": null,
-   "peak": 0.02296564
-  },
-  {
-   "kind": "cg",
    "id": "pudgy-penguins",
    "chain": null,
    "symbol": "PENGU",
@@ -112,7 +92,7 @@
    "eur": 5.5919,
    "paid": 5.62,
    "time": 1793584007.35454,
-   "last": 0.00699075,
+   "last": 0.00709861,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -132,7 +112,7 @@
    "eur": 4.6964,
    "paid": 4.72,
    "time": 1793607999.2227337,
-   "last": 77390,
+   "last": 77833,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -152,7 +132,7 @@
    "eur": 4.577,
    "paid": 4.6,
    "time": 1793668917.1320481,
-   "last": 194.31,
+   "last": 193.06,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -161,6 +141,25 @@
    },
    "expected": null,
    "peak": 194.31
+  },
+  {
+   "kind": "cg",
+   "id": "snowmoon",
+   "chain": null,
+   "symbol": "SNOWMOON",
+   "signal": "trending",
+   "entry": 0.02143005850764426,
+   "eur": 4.6168,
+   "paid": 4.64,
+   "time": 1793742803.8725996,
+   "last": 0.02143005850764426,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "evening (UTC 18-24)"
+   },
+   "expected": null
   }
  ],
  "history": [
@@ -265,11 +264,36 @@
    "reason": "\ud83d\uded1 Stop loss (-20%)",
    "pnl_eur": -1.38,
    "pnl_pct": -20.7
+  },
+  {
+   "kind": "cg",
+   "id": "audacity-2",
+   "chain": null,
+   "symbol": "DACITYCOIN",
+   "signal": "trending",
+   "entry": 0.018059180187037484,
+   "eur": 5.6217500000000005,
+   "paid": 5.65,
+   "time": 1793572128.7733526,
+   "last": 0.0176182,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "evening (UTC 18-24)"
+   },
+   "expected": null,
+   "peak": 0.02296564,
+   "exit": 0.0176182,
+   "exit_time": 1793742803.8723667,
+   "reason": "\ud83d\udcc9 Trailing stop (-2%, peak was +27%)",
+   "pnl_eur": -0.19,
+   "pnl_pct": -3.4
   }
  ],
  "started": 1793366521.920483,
  "btc_start": 77216,
- "last_report": "2026-11-02",
+ "last_report": "2026-11-03",
  "equity": [
   {
    "t": 1793366862,
@@ -365,29 +389,34 @@
    "t": 1793722986,
    "v": 93.55,
    "btc": 77439
+  },
+  {
+   "t": 1793742803,
+   "v": 92.83,
+   "btc": 77835
   }
  ],
  "mood": {
   "value": 26,
   "label": "Fear",
-  "t": 1793722983
+  "t": 1793742801
  },
  "learning": {
   "trending": {
-   "n": 4,
+   "n": 5,
    "wins": 0,
    "win_rate": 0,
-   "avg_pct": -22.6,
-   "shrunk_pct": -22.6,
-   "t": -3.65,
+   "avg_pct": -18.7,
+   "shrunk_pct": -18.7,
+   "t": -3.05,
    "mult": 1.0,
-   "status": "still learning (4/30 trades)"
+   "status": "still learning (5/30 trades)"
   }
  },
  "pending": [],
- "updated": 1793722986,
+ "updated": 1793742803,
  "rewards": {
-  "xp": 38,
+  "xp": 40,
   "level": "Lab rat",
   "medals": [
    {
@@ -397,19 +426,19 @@
     "t": 1793558716
    }
   ],
-  "confidence": -13.91,
+  "confidence": -11.81,
   "streak": 0,
   "best_streak": 0,
   "situations": {
    "signal=trending": {
-    "n": 4,
-    "sum": -90.2,
-    "sq": 2492.4599999999996
+    "n": 5,
+    "sum": -93.60000000000001,
+    "sq": 2504.0199999999995
    },
    "mood=fear": {
-    "n": 4,
-    "sum": -90.2,
-    "sq": 2492.4599999999996
+    "n": 5,
+    "sum": -93.60000000000001,
+    "sq": 2504.0199999999995
    },
    "time=morning (UTC 6-12)": {
     "n": 2,
@@ -420,13 +449,18 @@
     "n": 2,
     "sum": -52.9,
     "sq": 1788.4099999999999
+   },
+   "time=evening (UTC 18-24)": {
+    "n": 1,
+    "sum": -3.4,
+    "sq": 11.559999999999999
    }
   },
   "rules": {
    "Rising this hour": {
     "saves": 1,
     "missed": 1,
-    "neutral": 4,
+    "neutral": 5,
     "examples": [
      "$DESSA +139% (missed)",
      "$DESSA -51% (saved)"
@@ -435,7 +469,7 @@
    "Liquidity vs size": {
     "saves": 0,
     "missed": 0,
-    "neutral": 2,
+    "neutral": 3,
     "examples": []
    },
    "Minimum age": {
@@ -462,6 +496,12 @@
     "examples": [
      "$Anakin -62% (saved)"
     ]
+   },
+   "Buyers vs sellers": {
+    "saves": 0,
+    "missed": 0,
+    "neutral": 1,
+    "examples": []
    }
   },
   "journal": [
@@ -516,36 +556,22 @@
      "mood": "fear",
      "time": "morning (UTC 6-12)"
     }
+   },
+   {
+    "t": 1793742803,
+    "symbol": "DACITYCOIN",
+    "signal": "trending",
+    "reward": -3.4,
+    "reason": "\ud83d\udcc9 Trailing stop (-2%, peak was +27%)",
+    "lesson": "A loss inside the rules. Small losses are the price of finding winners.",
+    "situation": {
+     "signal": "trending",
+     "mood": "fear",
+     "time": "evening (UTC 18-24)"
+    }
    }
   ],
   "pending_checks": [
-   {
-    "id": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
-    "chain": "solana",
-    "symbol": "GATO",
-    "price": 0.01101,
-    "t": 1793645230,
-    "rule": "Rising this hour",
-    "reason": "not trending up this hour"
-   },
-   {
-    "id": "8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump",
-    "chain": "solana",
-    "symbol": "GLITCH",
-    "price": 0.003365,
-    "t": 1793645230,
-    "rule": "Buyers vs sellers",
-    "reason": "more sellers than buyers (0.3x)"
-   },
-   {
-    "id": "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump",
-    "chain": "solana",
-    "symbol": "DESSA",
-    "price": 0.01288,
-    "t": 1793645230,
-    "rule": "Liquidity vs size",
-    "reason": "thin liquidity for its size (2.6% of market cap)"
-   },
    {
     "id": "FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win",
     "chain": "solana",
@@ -583,8 +609,8 @@
     "reason": "not trending up this hour"
    }
   ],
-  "total_reward": -90.2,
-  "trades": 4
+  "total_reward": -93.60000000000001,
+  "trades": 5
  },
  "activity": [
   {
@@ -739,6 +765,24 @@
    "eur": 4.6,
    "price": 193.83522770650964,
    "t": 1793668917
+  },
+  {
+   "type": "sell",
+   "symbol": "DACITYCOIN",
+   "signal": "trending",
+   "eur": 5.46,
+   "pnl": -0.19,
+   "pct": -3.4,
+   "reason": "\ud83d\udcc9 Trailing stop (-2%, peak was +27%)",
+   "t": 1793742803
+  },
+  {
+   "type": "buy",
+   "symbol": "SNOWMOON",
+   "signal": "trending",
+   "eur": 4.64,
+   "price": 0.02143005850764426,
+   "t": 1793742803
   }
  ]
 }

@@ -1,19 +1,5 @@
 [
  {
-  "t": 1793432121,
-  "title": "🔥 Trending #5: Sui (SUI)",
-  "message": "Rank #30 · +1.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 30/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/sui",
-  "priority": 2
- },
- {
-  "t": 1793432121,
-  "title": "🔥 Trending #6: Canton (CC)",
-  "message": "Rank #28 · +0.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 30/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/canton-network",
-  "priority": 2
- },
- {
   "t": 1793454792,
   "title": "🔥 Trending #1: Super Inu (SI)",
   "message": "Rank #815 · +56.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 30/100 Fear 😐.",
@@ -417,6 +403,20 @@
   "title": "🔥 Trending #6: Pudgy Penguins (PENGU)",
   "message": "Rank #113 · -1.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 26/100 Fear 😐.",
   "click": "https://www.coingecko.com/en/coins/pudgy-penguins",
+  "priority": 2
+ },
+ {
+  "t": 1793742801,
+  "title": "🔥 Trending #2: SNOWMOON (SNOWMOON)",
+  "message": "Rank #812 · +787.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 26/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/snowmoon",
+  "priority": 2
+ },
+ {
+  "t": 1793742801,
+  "title": "🔥 Trending #5: Monero (XMR)",
+  "message": "Rank #12 · +3.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 26/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/monero",
   "priority": 2
  }
 ]
