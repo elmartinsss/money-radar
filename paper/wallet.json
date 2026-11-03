@@ -12,7 +12,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5230997,
-   "last": 83.48,
+   "last": 86.22,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -32,7 +32,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231392,
-   "last": 0.01688426,
+   "last": 0.01765573,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +52,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231552,
-   "last": 0.440934,
+   "last": 0.490043,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -72,7 +72,7 @@
    "eur": 6.23865,
    "paid": 6.27,
    "time": 1793492936.4059505,
-   "last": 21.05,
+   "last": 22.04,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -92,7 +92,7 @@
    "eur": 5.6217500000000005,
    "paid": 5.65,
    "time": 1793572128.7733526,
-   "last": 0.01979517,
+   "last": 0.0220035,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -112,7 +112,7 @@
    "eur": 5.5919,
    "paid": 5.62,
    "time": 1793584007.35454,
-   "last": 0.00684637,
+   "last": 0.00699075,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -132,7 +132,7 @@
    "eur": 4.6964,
    "paid": 4.72,
    "time": 1793607999.2227337,
-   "last": 76683,
+   "last": 77390,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -152,7 +152,7 @@
    "eur": 4.577,
    "paid": 4.6,
    "time": 1793668917.1320481,
-   "last": 193.69,
+   "last": 194.31,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -160,7 +160,7 @@
     "time": "night (UTC 0-6)"
    },
    "expected": null,
-   "peak": 193.83522770650964
+   "peak": 194.31
   }
  ],
  "history": [
@@ -360,12 +360,17 @@
    "t": 1793693909,
    "v": 91.32,
    "btc": 76694
+  },
+  {
+   "t": 1793722986,
+   "v": 93.55,
+   "btc": 77439
   }
  ],
  "mood": {
   "value": 26,
   "label": "Fear",
-  "t": 1793693907
+  "t": 1793722983
  },
  "learning": {
   "trending": {
@@ -380,9 +385,9 @@
   }
  },
  "pending": [],
- "updated": 1793693909,
+ "updated": 1793722986,
  "rewards": {
-  "xp": 33,
+  "xp": 38,
   "level": "Lab rat",
   "medals": [
    {
@@ -434,13 +439,14 @@
     "examples": []
    },
    "Minimum age": {
-    "saves": 3,
+    "saves": 4,
     "missed": 0,
     "neutral": 0,
     "examples": [
      "$AgenC -100% (saved)",
      "$PAWCAT -100% (saved)",
-     "$tipr -100% (saved)"
+     "$tipr -100% (saved)",
+     "$ANAKIN -100% (saved)"
     ]
    },
    "No chasing pumps": {
@@ -514,15 +520,6 @@
   ],
   "pending_checks": [
    {
-    "id": "8s4bNqEztH1JP7mkU747uMr7AckCQdiV47FDqYnDpump",
-    "chain": "solana",
-    "symbol": "ANAKIN",
-    "price": 0.003953,
-    "t": 1793607999,
-    "rule": "Minimum age",
-    "reason": "too new (10h)"
-   },
-   {
     "id": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
     "chain": "solana",
     "symbol": "GATO",
@@ -575,6 +572,15 @@
     "t": 1793693908,
     "rule": "Minimum age",
     "reason": "too new (7h)"
+   },
+   {
+    "id": "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump",
+    "chain": "solana",
+    "symbol": "Dacity",
+    "price": 0.007004,
+    "t": 1793722986,
+    "rule": "Rising this hour",
+    "reason": "not trending up this hour"
    }
   ],
   "total_reward": -90.2,
