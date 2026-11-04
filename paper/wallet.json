@@ -1,6 +1,6 @@
 {
  "start_eur": 100,
- "cash": 45.926705844803315,
+ "cash": 48.89213467972204,
  "positions": [
   {
    "kind": "cg",
@@ -12,7 +12,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5230997,
-   "last": 86.59,
+   "last": 85.1,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -32,7 +32,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231392,
-   "last": 0.01894162,
+   "last": 0.01840659,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +52,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231552,
-   "last": 0.500705,
+   "last": 0.500608,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -72,7 +72,7 @@
    "eur": 6.23865,
    "paid": 6.27,
    "time": 1793492936.4059505,
-   "last": 24.46,
+   "last": 23.1,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -92,7 +92,7 @@
    "eur": 5.5919,
    "paid": 5.62,
    "time": 1793584007.35454,
-   "last": 0.00737728,
+   "last": 0.00739092,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -100,7 +100,7 @@
     "time": "night (UTC 0-6)"
    },
    "expected": null,
-   "peak": 0.00737728
+   "peak": 0.00739092
   },
   {
    "kind": "cg",
@@ -112,7 +112,7 @@
    "eur": 4.6964,
    "paid": 4.72,
    "time": 1793607999.2227337,
-   "last": 78353,
+   "last": 80341,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -120,7 +120,7 @@
     "time": "morning (UTC 6-12)"
    },
    "expected": null,
-   "peak": 78353
+   "peak": 80341
   },
   {
    "kind": "cg",
@@ -132,7 +132,7 @@
    "eur": 4.577,
    "paid": 4.6,
    "time": 1793668917.1320481,
-   "last": 194.38,
+   "last": 201.65,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -140,7 +140,7 @@
     "time": "night (UTC 0-6)"
    },
    "expected": null,
-   "peak": 194.38
+   "peak": 201.65
   },
   {
    "kind": "cg",
@@ -149,10 +149,10 @@
    "symbol": "DACITYCOIN",
    "signal": "trending",
    "entry": 0.015294177143235357,
-   "eur": 4.4376999999999995,
+   "eur": 2.2188499999999998,
    "paid": 4.46,
    "time": 1793757502.0015354,
-   "last": 0.01866738,
+   "last": 0.02054294,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -160,7 +160,9 @@
     "time": "night (UTC 0-6)"
    },
    "expected": null,
-   "peak": 0.01866738
+   "peak": 0.02054294,
+   "realized": 2.9654288349187237,
+   "halved": true
   }
  ],
  "history": [
@@ -430,12 +432,17 @@
    "t": 1793782782,
    "v": 92.18,
    "btc": 78396
+  },
+  {
+   "t": 1793812066,
+   "v": 92.36,
+   "btc": 80364
   }
  ],
  "mood": {
   "value": 34,
   "label": "Fear",
-  "t": 1793782780
+  "t": 1793812064
  },
  "learning": {
   "trending": {
@@ -450,7 +457,7 @@
   }
  },
  "pending": [],
- "updated": 1793782782,
+ "updated": 1793812066,
  "rewards": {
   "xp": 52,
   "level": "Paper trader",
@@ -496,7 +503,7 @@
    "Rising this hour": {
     "saves": 1,
     "missed": 1,
-    "neutral": 5,
+    "neutral": 6,
     "examples": [
      "$DESSA +139% (missed)",
      "$DESSA -51% (saved)"
@@ -623,15 +630,6 @@
   ],
   "pending_checks": [
    {
-    "id": "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump",
-    "chain": "solana",
-    "symbol": "Dacity",
-    "price": 0.007004,
-    "t": 1793722986,
-    "rule": "Rising this hour",
-    "reason": "not trending up this hour"
-   },
-   {
     "id": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
     "chain": "solana",
     "symbol": "GATO",
@@ -648,6 +646,15 @@
     "t": 1793757501,
     "rule": "Liquidity vs size",
     "reason": "thin liquidity for its size (3.1% of market cap)"
+   },
+   {
+    "id": "9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump",
+    "chain": "solana",
+    "symbol": "JOB",
+    "price": 0.003376,
+    "t": 1793812066,
+    "rule": "Buyers vs sellers",
+    "reason": "more sellers than buyers (0.9x)"
    }
   ],
   "total_reward": -148.0,
@@ -842,6 +849,16 @@
    "eur": 4.46,
    "price": 0.015294177143235357,
    "t": 1793757502
+  },
+  {
+   "type": "sell",
+   "symbol": "DACITYCOIN",
+   "signal": "trending",
+   "eur": 2.97,
+   "pnl": 0.74,
+   "pct": 33.0,
+   "reason": "\ud83d\udcb0 Sold half at profit, rest rides with a trailing stop",
+   "t": 1793812066
   }
  ]
 }

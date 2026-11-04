@@ -1,23 +1,23 @@
 # 📝 Paper wallet (fake money)
 
-Started 2026-10-30 with **100€** · now **92.18€ (-7.8%)** · cash 45.93€
+Started 2026-10-30 with **100€** · now **92.36€ (-7.6%)** · cash 48.89€
 
 Closed trades: 6 · wins: 0
 
-_Updated 2026-11-04 10:59 Vilnius time._
+_Updated 2026-11-04 19:07 Vilnius time._
 
 ## Open positions
 
 | Coin | Signal | Bought | Value now | Change |
 |---|---|---|---|---|
-| HYPE | trending | 6.67€ | 6.45€ | -3.3% |
-| MON | trending | 6.67€ | 6.38€ | -4.3% |
+| HYPE | trending | 6.67€ | 6.34€ | -5.0% |
+| MON | trending | 6.67€ | 6.20€ | -7.0% |
 | KNTQ | trending | 6.67€ | 6.59€ | -1.1% |
-| VVV | trending | 6.27€ | 6.46€ | +3.1% |
-| PENGU | trending | 5.62€ | 5.65€ | +0.5% |
-| BTC | trending | 4.72€ | 4.71€ | -0.2% |
-| QNT | trending | 4.60€ | 4.59€ | -0.2% |
-| DACITYCOIN | trending | 4.46€ | 5.42€ | +21.4% |
+| VVV | trending | 6.27€ | 6.10€ | -2.7% |
+| PENGU | trending | 5.62€ | 5.66€ | +0.7% |
+| BTC | trending | 4.72€ | 4.83€ | +2.4% |
+| QNT | trending | 4.60€ | 4.76€ | +3.5% |
+| DACITYCOIN | trending | 4.46€ | 2.98€ | -33.2% |
 
 ## Last 30 closed trades
 
