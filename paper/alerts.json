@@ -1,40 +1,5 @@
 [
  {
-  "t": 1793492932,
-  "title": "🔥 Trending #7: Lighter (LIT)",
-  "message": "Rank #83 · +13.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/lighter",
-  "priority": 2
- },
- {
-  "t": 1793515544,
-  "title": "🔥 Trending #4: Beam (BEAM)",
-  "message": "Rank #138 · +18.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/beam-2",
-  "priority": 2
- },
- {
-  "t": 1793515544,
-  "title": "🔥 Trending #5: Plasma (XPL)",
-  "message": "Rank #123 · -9.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/plasma",
-  "priority": 2
- },
- {
-  "t": 1793515544,
-  "title": "🔥 Trending #6: Infinity Ground (AIN)",
-  "message": "Rank #448 · -0.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/infinity-ground",
-  "priority": 2
- },
- {
-  "t": 1793515544,
-  "title": "🔥 Trending #7: Pearl (PEARL)",
-  "message": "Rank #99 · -1.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/pearl-2",
-  "priority": 2
- },
- {
   "t": 1793541136,
   "title": "🔥 Trending #2: Super Inu (SI)",
   "message": "Rank #906 · -11.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
@@ -417,6 +382,41 @@
   "title": "🔥 Trending #7: Sui (SUI)",
   "message": "Rank #30 · +0.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
   "click": "https://www.coingecko.com/en/coins/sui",
+  "priority": 2
+ },
+ {
+  "t": 1793782780,
+  "title": "📰 Coinbase adds CARDS to listing roadmap, token rises 4% - Cryptonews.net",
+  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: listing, coinbase adds · via news.google.com",
+  "click": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5yWmpSX0pzajRFWHZraTVyMWNlS1hjS0NqSkNxNDRkMUlUYTRoZGdDaU5PQmZuLTNxZ1dNeERkV3VYMm11Z1I2ZXhQYWpSVEpiYWpZN0x6X1laUQ?oc=5",
+  "priority": 3
+ },
+ {
+  "t": 1793782780,
+  "title": "🔥 Trending #3: Pepe (PEPE)",
+  "message": "Rank #45 · +8.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/pepe",
+  "priority": 2
+ },
+ {
+  "t": 1793782780,
+  "title": "🔥 Trending #5: Zcash (ZEC)",
+  "message": "Rank #10 · +14.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/zcash",
+  "priority": 2
+ },
+ {
+  "t": 1793782780,
+  "title": "🔥 Trending #6: Uniswap (UNI)",
+  "message": "Rank #22 · +5.4% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/uniswap",
+  "priority": 2
+ },
+ {
+  "t": 1793782780,
+  "title": "🔥 Trending #7: Lighter (LIT)",
+  "message": "Rank #81 · +8.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/lighter",
   "priority": 2
  }
 ]

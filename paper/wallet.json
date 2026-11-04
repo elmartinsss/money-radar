@@ -12,7 +12,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5230997,
-   "last": 82.68,
+   "last": 86.59,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -32,7 +32,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231392,
-   "last": 0.01767221,
+   "last": 0.01894162,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +52,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231552,
-   "last": 0.488436,
+   "last": 0.500705,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -72,7 +72,7 @@
    "eur": 6.23865,
    "paid": 6.27,
    "time": 1793492936.4059505,
-   "last": 21.96,
+   "last": 24.46,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -80,7 +80,7 @@
     "time": "night (UTC 0-6)"
    },
    "expected": null,
-   "peak": 23.611519302331068
+   "peak": 24.46
   },
   {
    "kind": "cg",
@@ -92,7 +92,7 @@
    "eur": 5.5919,
    "paid": 5.62,
    "time": 1793584007.35454,
-   "last": 0.00696386,
+   "last": 0.00737728,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -100,7 +100,7 @@
     "time": "night (UTC 0-6)"
    },
    "expected": null,
-   "peak": 0.007301040700116832
+   "peak": 0.00737728
   },
   {
    "kind": "cg",
@@ -112,7 +112,7 @@
    "eur": 4.6964,
    "paid": 4.72,
    "time": 1793607999.2227337,
-   "last": 76938,
+   "last": 78353,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -120,7 +120,7 @@
     "time": "morning (UTC 6-12)"
    },
    "expected": null,
-   "peak": 78080.49125602424
+   "peak": 78353
   },
   {
    "kind": "cg",
@@ -132,7 +132,7 @@
    "eur": 4.577,
    "paid": 4.6,
    "time": 1793668917.1320481,
-   "last": 190.19,
+   "last": 194.38,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -140,7 +140,7 @@
     "time": "night (UTC 0-6)"
    },
    "expected": null,
-   "peak": 194.31
+   "peak": 194.38
   },
   {
    "kind": "cg",
@@ -152,14 +152,15 @@
    "eur": 4.4376999999999995,
    "paid": 4.46,
    "time": 1793757502.0015354,
-   "last": 0.015294177143235357,
+   "last": 0.01866738,
    "liq0": null,
    "feats": {
     "signal": "trending",
     "mood": "fear",
     "time": "night (UTC 0-6)"
    },
-   "expected": null
+   "expected": null,
+   "peak": 0.01866738
   }
  ],
  "history": [
@@ -424,12 +425,17 @@
    "t": 1793757502,
    "v": 89.16,
    "btc": 76938
+  },
+  {
+   "t": 1793782782,
+   "v": 92.18,
+   "btc": 78396
   }
  ],
  "mood": {
   "value": 34,
   "label": "Fear",
-  "t": 1793757498
+  "t": 1793782780
  },
  "learning": {
   "trending": {
@@ -444,10 +450,10 @@
   }
  },
  "pending": [],
- "updated": 1793757502,
+ "updated": 1793782782,
  "rewards": {
-  "xp": 47,
-  "level": "Lab rat",
+  "xp": 52,
+  "level": "Paper trader",
   "medals": [
    {
     "key": "first_save",
@@ -503,15 +509,15 @@
     "examples": []
    },
    "Minimum age": {
-    "saves": 5,
+    "saves": 6,
     "missed": 0,
     "neutral": 1,
     "examples": [
-     "$AgenC -100% (saved)",
      "$PAWCAT -100% (saved)",
      "$tipr -100% (saved)",
      "$ANAKIN -100% (saved)",
-     "$FEAR -100% (saved)"
+     "$FEAR -100% (saved)",
+     "$Wanted -100% (saved)"
     ]
    },
    "No chasing pumps": {
@@ -616,15 +622,6 @@
    }
   ],
   "pending_checks": [
-   {
-    "id": "8oUGdPdyxVaCSJSZpcVZuxqoyiZAmc2Z22FsDRZ3pump",
-    "chain": "solana",
-    "symbol": "Wanted",
-    "price": 0.001414,
-    "t": 1793693908,
-    "rule": "Minimum age",
-    "reason": "too new (7h)"
-   },
    {
     "id": "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump",
     "chain": "solana",
