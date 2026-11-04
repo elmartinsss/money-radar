@@ -1,6 +1,6 @@
 {
  "start_eur": 100,
- "cash": 48.268605556436455,
+ "cash": 45.926705844803315,
  "positions": [
   {
    "kind": "cg",
@@ -12,7 +12,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5230997,
-   "last": 85.86,
+   "last": 82.68,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -32,7 +32,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231392,
-   "last": 0.01814409,
+   "last": 0.01767221,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +52,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231552,
-   "last": 0.512496,
+   "last": 0.488436,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -72,7 +72,7 @@
    "eur": 6.23865,
    "paid": 6.27,
    "time": 1793492936.4059505,
-   "last": 22.76,
+   "last": 21.96,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -92,7 +92,7 @@
    "eur": 5.5919,
    "paid": 5.62,
    "time": 1793584007.35454,
-   "last": 0.00709861,
+   "last": 0.00696386,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -112,7 +112,7 @@
    "eur": 4.6964,
    "paid": 4.72,
    "time": 1793607999.2227337,
-   "last": 77833,
+   "last": 76938,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -132,7 +132,7 @@
    "eur": 4.577,
    "paid": 4.6,
    "time": 1793668917.1320481,
-   "last": 193.06,
+   "last": 190.19,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -144,20 +144,20 @@
   },
   {
    "kind": "cg",
-   "id": "snowmoon",
+   "id": "audacity-2",
    "chain": null,
-   "symbol": "SNOWMOON",
+   "symbol": "DACITYCOIN",
    "signal": "trending",
-   "entry": 0.02143005850764426,
-   "eur": 4.6168,
-   "paid": 4.64,
-   "time": 1793742803.8725996,
-   "last": 0.02143005850764426,
+   "entry": 0.015294177143235357,
+   "eur": 4.4376999999999995,
+   "paid": 4.46,
+   "time": 1793757502.0015354,
+   "last": 0.015294177143235357,
    "liq0": null,
    "feats": {
     "signal": "trending",
     "mood": "fear",
-    "time": "evening (UTC 18-24)"
+    "time": "night (UTC 0-6)"
    },
    "expected": null
   }
@@ -289,6 +289,31 @@
    "reason": "\ud83d\udcc9 Trailing stop (-2%, peak was +27%)",
    "pnl_eur": -0.19,
    "pnl_pct": -3.4
+  },
+  {
+   "kind": "cg",
+   "id": "snowmoon",
+   "chain": null,
+   "symbol": "SNOWMOON",
+   "signal": "trending",
+   "entry": 0.02143005850764426,
+   "eur": 4.6168,
+   "paid": 4.64,
+   "time": 1793742803.8725996,
+   "last": 0.00988111,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "evening (UTC 18-24)"
+   },
+   "expected": null,
+   "peak": 0.02143005850764426,
+   "exit": 0.00988111,
+   "exit_time": 1793757502.0013247,
+   "reason": "\ud83d\uded1 Stop loss (-54%)",
+   "pnl_eur": -2.52,
+   "pnl_pct": -54.4
   }
  ],
  "started": 1793366521.920483,
@@ -394,29 +419,34 @@
    "t": 1793742803,
    "v": 92.83,
    "btc": 77835
+  },
+  {
+   "t": 1793757502,
+   "v": 89.16,
+   "btc": 76938
   }
  ],
  "mood": {
-  "value": 26,
+  "value": 34,
   "label": "Fear",
-  "t": 1793742801
+  "t": 1793757498
  },
  "learning": {
   "trending": {
-   "n": 5,
+   "n": 6,
    "wins": 0,
    "win_rate": 0,
-   "avg_pct": -18.7,
-   "shrunk_pct": -18.7,
-   "t": -3.05,
+   "avg_pct": -24.7,
+   "shrunk_pct": -24.7,
+   "t": -3.17,
    "mult": 1.0,
-   "status": "still learning (5/30 trades)"
+   "status": "still learning (6/30 trades)"
   }
  },
  "pending": [],
- "updated": 1793742803,
+ "updated": 1793757502,
  "rewards": {
-  "xp": 40,
+  "xp": 47,
   "level": "Lab rat",
   "medals": [
    {
@@ -426,19 +456,19 @@
     "t": 1793558716
    }
   ],
-  "confidence": -11.81,
+  "confidence": -20.33,
   "streak": 0,
   "best_streak": 0,
   "situations": {
    "signal=trending": {
-    "n": 5,
-    "sum": -93.60000000000001,
-    "sq": 2504.0199999999995
+    "n": 6,
+    "sum": -148.0,
+    "sq": 5463.379999999999
    },
    "mood=fear": {
-    "n": 5,
-    "sum": -93.60000000000001,
-    "sq": 2504.0199999999995
+    "n": 6,
+    "sum": -148.0,
+    "sq": 5463.379999999999
    },
    "time=morning (UTC 6-12)": {
     "n": 2,
@@ -451,9 +481,9 @@
     "sq": 1788.4099999999999
    },
    "time=evening (UTC 18-24)": {
-    "n": 1,
-    "sum": -3.4,
-    "sq": 11.559999999999999
+    "n": 2,
+    "sum": -57.8,
+    "sq": 2970.9199999999996
    }
   },
   "rules": {
@@ -473,14 +503,15 @@
     "examples": []
    },
    "Minimum age": {
-    "saves": 4,
+    "saves": 5,
     "missed": 0,
-    "neutral": 0,
+    "neutral": 1,
     "examples": [
      "$AgenC -100% (saved)",
      "$PAWCAT -100% (saved)",
      "$tipr -100% (saved)",
-     "$ANAKIN -100% (saved)"
+     "$ANAKIN -100% (saved)",
+     "$FEAR -100% (saved)"
     ]
    },
    "No chasing pumps": {
@@ -569,27 +600,22 @@
      "mood": "fear",
      "time": "evening (UTC 18-24)"
     }
+   },
+   {
+    "t": 1793757502,
+    "symbol": "SNOWMOON",
+    "signal": "trending",
+    "reward": -54.4,
+    "reason": "\ud83d\uded1 Stop loss (-54%)",
+    "lesson": "A loss inside the rules. Small losses are the price of finding winners.",
+    "situation": {
+     "signal": "trending",
+     "mood": "fear",
+     "time": "evening (UTC 18-24)"
+    }
    }
   ],
   "pending_checks": [
-   {
-    "id": "FjPKUGnF5zBpdEv18gT8FJCtxh3MKrFkoeYekgYr1win",
-    "chain": "solana",
-    "symbol": "1WIN",
-    "price": 0.0756,
-    "t": 1793668917,
-    "rule": "Minimum age",
-    "reason": "too new (4h)"
-   },
-   {
-    "id": "CHtXwJ3qa2ozS9vQkxhR3MmNwkoUqkh3icGXgZPepump",
-    "chain": "solana",
-    "symbol": "FEAR",
-    "price": 0.0142,
-    "t": 1793668917,
-    "rule": "Minimum age",
-    "reason": "too new (10h)"
-   },
    {
     "id": "8oUGdPdyxVaCSJSZpcVZuxqoyiZAmc2Z22FsDRZ3pump",
     "chain": "solana",
@@ -607,10 +633,28 @@
     "t": 1793722986,
     "rule": "Rising this hour",
     "reason": "not trending up this hour"
+   },
+   {
+    "id": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
+    "chain": "solana",
+    "symbol": "GATO",
+    "price": 0.01156,
+    "t": 1793757501,
+    "rule": "Liquidity vs size",
+    "reason": "thin liquidity for its size (3.1% of market cap)"
+   },
+   {
+    "id": "C5xph2yL6gMdxmuLGxJBkGpmuDFfyi5fqkBNhvL6pump",
+    "chain": "solana",
+    "symbol": "BTC",
+    "price": 0.01479,
+    "t": 1793757501,
+    "rule": "Liquidity vs size",
+    "reason": "thin liquidity for its size (3.1% of market cap)"
    }
   ],
-  "total_reward": -93.60000000000001,
-  "trades": 5
+  "total_reward": -148.0,
+  "trades": 6
  },
  "activity": [
   {
@@ -783,6 +827,24 @@
    "eur": 4.64,
    "price": 0.02143005850764426,
    "t": 1793742803
+  },
+  {
+   "type": "sell",
+   "symbol": "SNOWMOON",
+   "signal": "trending",
+   "eur": 2.12,
+   "pnl": -2.52,
+   "pct": -54.4,
+   "reason": "\ud83d\uded1 Stop loss (-54%)",
+   "t": 1793757502
+  },
+  {
+   "type": "buy",
+   "symbol": "DACITYCOIN",
+   "signal": "trending",
+   "eur": 4.46,
+   "price": 0.015294177143235357,
+   "t": 1793757502
   }
  ]
 }
