@@ -1,6 +1,6 @@
 {
  "start_eur": 100,
- "cash": 46.239748246808986,
+ "cash": 51.32429232896145,
  "positions": [
   {
    "kind": "cg",
@@ -12,7 +12,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5230997,
-   "last": 83.24,
+   "last": 77.76,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -32,7 +32,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231392,
-   "last": 0.01809003,
+   "last": 0.01676443,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -44,26 +44,6 @@
   },
   {
    "kind": "cg",
-   "id": "kinetiq",
-   "chain": null,
-   "symbol": "KNTQ",
-   "signal": "trending",
-   "entry": 0.5038968344856262,
-   "eur": 6.6366499999999995,
-   "paid": 6.67,
-   "time": 1793411216.5231552,
-   "last": 0.460585,
-   "liq0": null,
-   "feats": {
-    "signal": "trending",
-    "mood": "fear",
-    "time": "night (UTC 0-6)"
-   },
-   "expected": null,
-   "peak": 0.573154
-  },
-  {
-   "kind": "cg",
    "id": "venice-token",
    "chain": null,
    "symbol": "VVV",
@@ -72,7 +52,7 @@
    "eur": 6.23865,
    "paid": 6.27,
    "time": 1793492936.4059505,
-   "last": 21.55,
+   "last": 20.58,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -92,7 +72,7 @@
    "eur": 5.5919,
    "paid": 5.62,
    "time": 1793584007.35454,
-   "last": 0.00722028,
+   "last": 0.00639554,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -112,7 +92,7 @@
    "eur": 4.6964,
    "paid": 4.72,
    "time": 1793607999.2227337,
-   "last": 80337,
+   "last": 75817,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -132,7 +112,7 @@
    "eur": 4.577,
    "paid": 4.6,
    "time": 1793668917.1320481,
-   "last": 204.92,
+   "last": 189.5,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -152,7 +132,7 @@
    "eur": 4.4974,
    "paid": 4.52,
    "time": 1793846970.374277,
-   "last": 1.27,
+   "last": 1.12,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -342,11 +322,36 @@
    "reason": "\ud83d\udcc9 Trailing stop (-15%, peak was +64%)",
    "pnl_eur": 0.37,
    "pnl_pct": 8.4
+  },
+  {
+   "kind": "cg",
+   "id": "kinetiq",
+   "chain": null,
+   "symbol": "KNTQ",
+   "signal": "trending",
+   "entry": 0.5038968344856262,
+   "eur": 6.6366499999999995,
+   "paid": 6.67,
+   "time": 1793411216.5231552,
+   "last": 0.387991,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "night (UTC 0-6)"
+   },
+   "expected": null,
+   "peak": 0.573154,
+   "exit": 0.387991,
+   "exit_time": 1793901639.159304,
+   "reason": "\ud83d\uded1 Stop loss (-23%)",
+   "pnl_eur": -1.59,
+   "pnl_pct": -23.8
   }
  ],
  "started": 1793366521.920483,
  "btc_start": 77216,
- "last_report": "2026-11-03",
+ "last_report": "2026-11-05",
  "equity": [
   {
    "t": 1793366862,
@@ -477,29 +482,34 @@
    "t": 1793873166,
    "v": 90.0,
    "btc": 80322
+  },
+  {
+   "t": 1793901639,
+   "v": 86.1,
+   "btc": 75829
   }
  ],
  "mood": {
   "value": 50,
   "label": "Neutral",
-  "t": 1793873164
+  "t": 1793901635
  },
  "learning": {
   "trending": {
-   "n": 7,
+   "n": 8,
    "wins": 1,
-   "win_rate": 14,
-   "avg_pct": -19.9,
-   "shrunk_pct": -19.9,
-   "t": -2.46,
+   "win_rate": 12,
+   "avg_pct": -20.4,
+   "shrunk_pct": -20.4,
+   "t": -2.91,
    "mult": 1.0,
-   "status": "still learning (7/30 trades)"
+   "status": "still learning (8/30 trades)"
   }
  },
  "pending": [],
- "updated": 1793873166,
+ "updated": 1793901639,
  "rewards": {
-  "xp": 70.4,
+  "xp": 72.4,
   "level": "Paper trader",
   "medals": [
    {
@@ -515,19 +525,19 @@
     "t": 1793846970
    }
   ],
-  "confidence": -14.58,
-  "streak": 1,
+  "confidence": -16.42,
+  "streak": 0,
   "best_streak": 1,
   "situations": {
    "signal=trending": {
-    "n": 7,
-    "sum": -139.6,
-    "sq": 5533.94
+    "n": 8,
+    "sum": -163.4,
+    "sq": 6100.379999999999
    },
    "mood=fear": {
-    "n": 7,
-    "sum": -139.6,
-    "sq": 5533.94
+    "n": 8,
+    "sum": -163.4,
+    "sq": 6100.379999999999
    },
    "time=morning (UTC 6-12)": {
     "n": 2,
@@ -545,9 +555,9 @@
     "sq": 2970.9199999999996
    },
    "time=night (UTC 0-6)": {
-    "n": 1,
-    "sum": 8.4,
-    "sq": 70.56
+    "n": 2,
+    "sum": -15.4,
+    "sq": 637.0
    }
   },
   "rules": {
@@ -595,7 +605,7 @@
    "Buyers vs sellers": {
     "saves": 0,
     "missed": 0,
-    "neutral": 1,
+    "neutral": 2,
     "examples": []
    }
   },
@@ -690,18 +700,22 @@
      "mood": "fear",
      "time": "night (UTC 0-6)"
     }
+   },
+   {
+    "t": 1793901639,
+    "symbol": "KNTQ",
+    "signal": "trending",
+    "reward": -23.8,
+    "reason": "\ud83d\uded1 Stop loss (-23%)",
+    "lesson": "A loss inside the rules. Small losses are the price of finding winners.",
+    "situation": {
+     "signal": "trending",
+     "mood": "fear",
+     "time": "night (UTC 0-6)"
+    }
    }
   ],
   "pending_checks": [
-   {
-    "id": "9Pq7aLAbhDG2tTnS22cm6kuysZVcZpLFE368HWuypump",
-    "chain": "solana",
-    "symbol": "JOB",
-    "price": 0.003376,
-    "t": 1793812066,
-    "rule": "Buyers vs sellers",
-    "reason": "more sellers than buyers (0.9x)"
-   },
    {
     "id": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
     "chain": "solana",
@@ -719,10 +733,19 @@
     "t": 1793873166,
     "rule": "Liquidity vs size",
     "reason": "thin liquidity for its size (2.0% of market cap)"
+   },
+   {
+    "id": "8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump",
+    "chain": "solana",
+    "symbol": "GLITCH",
+    "price": 0.003098,
+    "t": 1793901638,
+    "rule": "Buyers vs sellers",
+    "reason": "more sellers than buyers (0.3x)"
    }
   ],
-  "total_reward": -139.6,
-  "trades": 7
+  "total_reward": -163.4,
+  "trades": 8
  },
  "activity": [
   {
@@ -948,6 +971,16 @@
    "eur": 4.52,
    "price": 1.2689272354278742,
    "t": 1793846970
+  },
+  {
+   "type": "sell",
+   "symbol": "KNTQ",
+   "signal": "trending",
+   "eur": 5.08,
+   "pnl": -1.59,
+   "pct": -23.8,
+   "reason": "\ud83d\uded1 Stop loss (-23%)",
+   "t": 1793901639
   }
  ],
  "trend": {
