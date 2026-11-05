@@ -1,33 +1,5 @@
 [
  {
-  "t": 1793607997,
-  "title": "🔥 Trending #1: Bitcoin (BTC)",
-  "message": "Rank #1 · +0.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 37/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/bitcoin",
-  "priority": 2
- },
- {
-  "t": 1793607997,
-  "title": "🔥 Trending #6: Ethereum (ETH)",
-  "message": "Rank #2 · +0.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 37/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/ethereum",
-  "priority": 2
- },
- {
-  "t": 1793607997,
-  "title": "🔥 Trending #7: Ethena (ENA)",
-  "message": "Rank #42 · -4.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 37/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/ethena",
-  "priority": 2
- },
- {
-  "t": 1793645228,
-  "title": "📰 tZERO Plans Public Listing Through FG Imperii Acquisition - The Crypto Times",
-  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: listing, acquisition · via news.google.com",
-  "click": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOUmZKRDFPQl9NaWtnRzd1eFVpZ2o2dGtPRmJxbkNkTk8yUkp5MmpETzMxYVVCR29HRHZ4WGhnMEVBdUZ2SWhWaGx1bHZuNm56eEs5a0o3WExGNlVkbVBxdjRaQzBxdXMwYUFTalNOS20yNUJtNndEUnBGYUlkTWNNcDZneV95VjF2clVnc3NTcU0xa2ZiYmc0VzFWcGU?oc=5",
-  "priority": 3
- },
- {
   "t": 1793645228,
   "title": "🔥 Trending #1: Super Inu (SI)",
   "message": "Rank #864 · -6.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 37/100 Fear 😐.",
@@ -417,6 +389,34 @@
   "title": "🔥 Trending #7: Monad (MON)",
   "message": "Rank #165 · +4.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 50/100 Neutral 😐.",
   "click": "https://www.coingecko.com/en/coins/monad",
+  "priority": 2
+ },
+ {
+  "t": 1793873164,
+  "title": "🔥 Trending #3: Injective (INJ)",
+  "message": "Rank #83 · +8.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 50/100 Neutral 😐.",
+  "click": "https://www.coingecko.com/en/coins/injective-protocol",
+  "priority": 2
+ },
+ {
+  "t": 1793873164,
+  "title": "🔥 Trending #4: Pearl (PEARL)",
+  "message": "Rank #94 · +16.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 50/100 Neutral 😐.",
+  "click": "https://www.coingecko.com/en/coins/pearl-2",
+  "priority": 2
+ },
+ {
+  "t": 1793873164,
+  "title": "🔥 Trending #6: Lighter (LIT)",
+  "message": "Rank #82 · +2.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 50/100 Neutral 😐.",
+  "click": "https://www.coingecko.com/en/coins/lighter",
+  "priority": 2
+ },
+ {
+  "t": 1793873164,
+  "title": "🔥 Trending #7: Zcash (ZEC)",
+  "message": "Rank #10 · +2.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 50/100 Neutral 😐.",
+  "click": "https://www.coingecko.com/en/coins/zcash",
   "priority": 2
  }
 ]
