@@ -1,28 +1,29 @@
 # 📝 Paper wallet (fake money)
 
-Started 2026-10-30 with **100€** · now **92.28€ (-7.7%)** · cash 48.89€
+Started 2026-10-30 with **100€** · now **90.32€ (-9.7%)** · cash 46.24€
 
-Closed trades: 6 · wins: 0
+Closed trades: 7 · wins: 1
 
-_Updated 2026-11-05 00:38 Vilnius time._
+_Updated 2026-11-05 04:49 Vilnius time._
 
 ## Open positions
 
 | Coin | Signal | Bought | Value now | Change |
 |---|---|---|---|---|
-| HYPE | trending | 6.67€ | 6.24€ | -6.4% |
-| MON | trending | 6.67€ | 6.16€ | -7.7% |
-| KNTQ | trending | 6.67€ | 6.09€ | -8.7% |
-| VVV | trending | 6.27€ | 5.94€ | -5.3% |
-| PENGU | trending | 5.62€ | 5.66€ | +0.7% |
-| BTC | trending | 4.72€ | 4.86€ | +2.9% |
-| QNT | trending | 4.60€ | 4.82€ | +4.8% |
-| DACITYCOIN | trending | 4.46€ | 3.63€ | -18.6% |
+| HYPE | trending | 6.67€ | 6.29€ | -5.6% |
+| MON | trending | 6.67€ | 6.15€ | -7.8% |
+| KNTQ | trending | 6.67€ | 6.15€ | -7.8% |
+| VVV | trending | 6.27€ | 5.69€ | -9.2% |
+| PENGU | trending | 5.62€ | 5.63€ | +0.2% |
+| BTC | trending | 4.72€ | 4.85€ | +2.8% |
+| QNT | trending | 4.60€ | 4.82€ | +4.7% |
+| TRUMP | trending | 4.52€ | 4.50€ | -0.5% |
 
 ## Last 30 closed trades
 
 | Coin | Signal | Result | Why |
 |---|---|---|---|
+| DACITYCOIN | trending | +0.37€ (+8.4%) | 📉 Trailing stop (-15%, peak was +64%) |
 | SNOWMOON | trending | -2.52€ (-54.4%) | 🛑 Stop loss (-54%) |
 | DACITYCOIN | trending | -0.19€ (-3.4%) | 📉 Trailing stop (-2%, peak was +27%) |
 | Q | trending | -1.38€ (-20.7%) | 🛑 Stop loss (-20%) |
