@@ -12,7 +12,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5230997,
-   "last": 77.76,
+   "last": 76.92,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -32,7 +32,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231392,
-   "last": 0.01676443,
+   "last": 0.01686556,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +52,7 @@
    "eur": 6.23865,
    "paid": 6.27,
    "time": 1793492936.4059505,
-   "last": 20.58,
+   "last": 20.88,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -72,7 +72,7 @@
    "eur": 5.5919,
    "paid": 5.62,
    "time": 1793584007.35454,
-   "last": 0.00639554,
+   "last": 0.00643414,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -92,7 +92,7 @@
    "eur": 4.6964,
    "paid": 4.72,
    "time": 1793607999.2227337,
-   "last": 75817,
+   "last": 75862,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -112,7 +112,7 @@
    "eur": 4.577,
    "paid": 4.6,
    "time": 1793668917.1320481,
-   "last": 189.5,
+   "last": 189.4,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -132,7 +132,7 @@
    "eur": 4.4974,
    "paid": 4.52,
    "time": 1793846970.374277,
-   "last": 1.12,
+   "last": 1.18,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -487,12 +487,17 @@
    "t": 1793901639,
    "v": 86.1,
    "btc": 75829
+  },
+  {
+   "t": 1793921703,
+   "v": 86.4,
+   "btc": 75850
   }
  ],
  "mood": {
   "value": 50,
   "label": "Neutral",
-  "t": 1793901635
+  "t": 1793921701
  },
  "learning": {
   "trending": {
@@ -507,7 +512,7 @@
   }
  },
  "pending": [],
- "updated": 1793901639,
+ "updated": 1793921703,
  "rewards": {
   "xp": 72.4,
   "level": "Paper trader",

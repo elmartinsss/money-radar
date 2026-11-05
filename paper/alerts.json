@@ -1,13 +1,6 @@
 [
  {
   "t": 1793668914,
-  "title": "🔥 Trending #1: Monad (MON)",
-  "message": "Rank #160 · -7.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 26/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/monad",
-  "priority": 2
- },
- {
-  "t": 1793668914,
   "title": "🔥 Trending #2: Bitcoin (BTC)",
   "message": "Rank #1 · -1.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 26/100 Fear 😐.",
   "click": "https://www.coingecko.com/en/coins/bitcoin",
@@ -417,6 +410,13 @@
   "title": "🔥 Trending #7: Sui (SUI)",
   "message": "Rank #30 · -9.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 50/100 Neutral 😐.",
   "click": "https://www.coingecko.com/en/coins/sui",
+  "priority": 2
+ },
+ {
+  "t": 1793921701,
+  "title": "🔥 Trending #5: Solana (SOL)",
+  "message": "Rank #7 · -6.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 50/100 Neutral 😐.",
+  "click": "https://www.coingecko.com/en/coins/solana",
   "priority": 2
  }
 ]
