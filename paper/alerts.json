@@ -1,26 +1,5 @@
 [
  {
-  "t": 1793722983,
-  "title": "🔥 Trending #2: Super Inu (SI)",
-  "message": "Rank #889 · -4.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 26/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/super-inu-3",
-  "priority": 2
- },
- {
-  "t": 1793722983,
-  "title": "🔥 Trending #6: Pudgy Penguins (PENGU)",
-  "message": "Rank #113 · -1.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 26/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/pudgy-penguins",
-  "priority": 2
- },
- {
-  "t": 1793742801,
-  "title": "🔥 Trending #2: SNOWMOON (SNOWMOON)",
-  "message": "Rank #812 · +787.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 26/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/snowmoon",
-  "priority": 2
- },
- {
   "t": 1793742801,
   "title": "🔥 Trending #5: Monero (XMR)",
   "message": "Rank #12 · +3.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 26/100 Fear 😐.",
@@ -417,6 +396,27 @@
   "title": "🔥 Trending #7: Hyperliquid (HYPE)",
   "message": "Rank #11 · -4.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
   "click": "https://www.coingecko.com/en/coins/hyperliquid",
+  "priority": 2
+ },
+ {
+  "t": 1793989644,
+  "title": "🔥 Trending #2: Reboot (REBOOT)",
+  "message": "Rank #918 · +9.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/reboot-2",
+  "priority": 2
+ },
+ {
+  "t": 1793989644,
+  "title": "🔥 Trending #6: Pepe (PEPE)",
+  "message": "Rank #44 · +5.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/pepe",
+  "priority": 2
+ },
+ {
+  "t": 1793989644,
+  "title": "🔥 Trending #7: Aerodrome Finance (AERO)",
+  "message": "Rank #172 · +0.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/aerodrome-finance",
   "priority": 2
  }
 ]

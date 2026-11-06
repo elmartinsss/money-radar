@@ -12,7 +12,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5230997,
-   "last": 78.31,
+   "last": 78.29,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -32,7 +32,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231392,
-   "last": 0.01728143,
+   "last": 0.01723402,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +52,7 @@
    "eur": 6.23865,
    "paid": 6.27,
    "time": 1793492936.4059505,
-   "last": 20.98,
+   "last": 20.86,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -72,7 +72,7 @@
    "eur": 5.5919,
    "paid": 5.62,
    "time": 1793584007.35454,
-   "last": 0.00670988,
+   "last": 0.00660138,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -92,7 +92,7 @@
    "eur": 4.6964,
    "paid": 4.72,
    "time": 1793607999.2227337,
-   "last": 76021,
+   "last": 75725,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -112,7 +112,7 @@
    "eur": 4.577,
    "paid": 4.6,
    "time": 1793668917.1320481,
-   "last": 188.93,
+   "last": 193.72,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -132,7 +132,7 @@
    "eur": 4.4974,
    "paid": 4.52,
    "time": 1793846970.374277,
-   "last": 1.22,
+   "last": 1.21,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -152,7 +152,7 @@
    "eur": 4.30835,
    "paid": 4.33,
    "time": 1793936407.6101458,
-   "last": 3.73,
+   "last": 3.74,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -160,7 +160,7 @@
     "time": "night (UTC 0-6)"
    },
    "expected": null,
-   "peak": 3.73
+   "peak": 3.74
   }
  ],
  "history": [
@@ -371,7 +371,7 @@
  ],
  "started": 1793366521.920483,
  "btc_start": 77216,
- "last_report": "2026-11-05",
+ "last_report": "2026-11-06",
  "equity": [
   {
    "t": 1793366862,
@@ -522,12 +522,17 @@
    "t": 1793964847,
    "v": 87.06,
    "btc": 76028
+  },
+  {
+   "t": 1793989648,
+   "v": 87.0,
+   "btc": 75730
   }
  ],
  "mood": {
   "value": 28,
   "label": "Fear",
-  "t": 1793964844
+  "t": 1793989644
  },
  "learning": {
   "trending": {
@@ -542,7 +547,7 @@
   }
  },
  "pending": [],
- "updated": 1793964847,
+ "updated": 1793989648,
  "rewards": {
   "xp": 72.4,
   "level": "Paper trader",
@@ -640,7 +645,7 @@
    "Buyers vs sellers": {
     "saves": 0,
     "missed": 0,
-    "neutral": 2,
+    "neutral": 3,
     "examples": []
    }
   },
@@ -752,15 +757,6 @@
   ],
   "pending_checks": [
    {
-    "id": "8Xg89xT8Ve34sKiYqYuMs46mycREsCA2F362UscRpump",
-    "chain": "solana",
-    "symbol": "GLITCH",
-    "price": 0.003098,
-    "t": 1793901638,
-    "rule": "Buyers vs sellers",
-    "reason": "more sellers than buyers (0.3x)"
-   },
-   {
     "id": "8UQdy5sHMVWUWSHeA5B3ZuuAVNumjSLPXdf19MXcpump",
     "chain": "solana",
     "symbol": "COGE",
@@ -768,6 +764,24 @@
     "t": 1793964847,
     "rule": "Minimum age",
     "reason": "too new (16h)"
+   },
+   {
+    "id": "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump",
+    "chain": "solana",
+    "symbol": "DESSA",
+    "price": 0.02563,
+    "t": 1793989648,
+    "rule": "Liquidity vs size",
+    "reason": "thin liquidity for its size (1.9% of market cap)"
+   },
+   {
+    "id": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
+    "chain": "solana",
+    "symbol": "GATO",
+    "price": 0.01201,
+    "t": 1793989648,
+    "rule": "Liquidity vs size",
+    "reason": "thin liquidity for its size (3.1% of market cap)"
    }
   ],
   "total_reward": -163.4,
