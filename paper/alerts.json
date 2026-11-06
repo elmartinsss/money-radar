@@ -1,33 +1,5 @@
 [
  {
-  "t": 1793693907,
-  "title": "🔥 Trending #7: Sui (SUI)",
-  "message": "Rank #30 · -3.4% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 26/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/sui",
-  "priority": 2
- },
- {
-  "t": 1793722983,
-  "title": "📰 Dynatrace Earnings Beat. Acquisition Impacts Profit Outlook. Shares Fall. - Investor's Business Daily",
-  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: earnings beat, acquisition · via news.google.com",
-  "click": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOT3FWbklfR2xERFluNWJqbjJGSmF1TXYybTJvbVlGSWpjaXVoZmFlcVREX3o4RjJkNDRaM1hnTjNkN3FsSWVMMU51cXJOQkZJSVJibFRsM3FTUGFTakVlOWxHS2lHRVFMbGp6d1l6d1hsQmRSY1ZFZ2F0VTluMG14NllIeEcxSmJWZnNfUExReXBlUDhBZThr?oc=5",
-  "priority": 3
- },
- {
-  "t": 1793722983,
-  "title": "📰 Louisiana-Pacific stock surges 5% on third quarter earnings beat - Investing.com",
-  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: earnings beat, surges · via news.google.com",
-  "click": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOMXJHa2dzWlk2MlVoWXBkLURCM0JrZ0EySEtBZHM5QmlIR1Q2NjhNbnhGaWN3UWx3bjJISWdKTUJ2cXNoTF9BQjZCWkFVVUwwVEJFNzhlNGpCSXo1V2JIUTcxTEV1aUNqT1FIbWNwQXZHUlVZY0t4YllvZXh2SGgxbm1kZ3Fkem5JbW5hUDE3ZjM1R3ZHX2Y5TWRkTnIwQ0dOM1c0YzJwVThPTmlHLUpoMTI2NjEzZw?oc=5",
-  "priority": 3
- },
- {
-  "t": 1793722983,
-  "title": "🔥 Trending #1: Super Pepe (SP)",
-  "message": "Rank #907 · +1089.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 26/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/super-pepe",
-  "priority": 2
- },
- {
   "t": 1793722983,
   "title": "🔥 Trending #2: Super Inu (SI)",
   "message": "Rank #889 · -4.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 26/100 Fear 😐.",
@@ -417,6 +389,34 @@
   "title": "🔥 Trending #7: Solana (SOL)",
   "message": "Rank #7 · -7.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
   "click": "https://www.coingecko.com/en/coins/solana",
+  "priority": 2
+ },
+ {
+  "t": 1793964844,
+  "title": "🔥 Trending #1: DENIM (DENIM)",
+  "message": "Rank #879 · +63.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/denim",
+  "priority": 2
+ },
+ {
+  "t": 1793964844,
+  "title": "🔥 Trending #3: Sui (SUI)",
+  "message": "Rank #30 · -6.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/sui",
+  "priority": 2
+ },
+ {
+  "t": 1793964844,
+  "title": "🔥 Trending #4: Pump.fun (PUMP)",
+  "message": "Rank #52 · -8.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/pump-fun",
+  "priority": 2
+ },
+ {
+  "t": 1793964844,
+  "title": "🔥 Trending #7: Hyperliquid (HYPE)",
+  "message": "Rank #11 · -4.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/hyperliquid",
   "priority": 2
  }
 ]
