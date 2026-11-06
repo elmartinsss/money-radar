@@ -1,89 +1,5 @@
 [
  {
-  "t": 1793668914,
-  "title": "🔥 Trending #2: Bitcoin (BTC)",
-  "message": "Rank #1 · -1.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 26/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/bitcoin",
-  "priority": 2
- },
- {
-  "t": 1793668914,
-  "title": "🔥 Trending #3: Quant (QNT)",
-  "message": "Rank #35 · -4.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 26/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/quant-network",
-  "priority": 2
- },
- {
-  "t": 1793668914,
-  "title": "🔥 Trending #4: Hyperliquid (HYPE)",
-  "message": "Rank #10 · -4.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 26/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/hyperliquid",
-  "priority": 2
- },
- {
-  "t": 1793668914,
-  "title": "🔥 Trending #5: Solana (SOL)",
-  "message": "Rank #7 · -2.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 26/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/solana",
-  "priority": 2
- },
- {
-  "t": 1793668914,
-  "title": "🔥 Trending #6: Lighter (LIT)",
-  "message": "Rank #82 · -1.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 26/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/lighter",
-  "priority": 2
- },
- {
-  "t": 1793668914,
-  "title": "🔥 Trending #7: AudaCity (DACITYCOIN)",
-  "message": "Rank #832 · +7.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 26/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/audacity-2",
-  "priority": 2
- },
- {
-  "t": 1793693907,
-  "title": "📰 Best Crypto to Invest In: Franklin Backs Bitcoin as Buyers Eye Pepeto’s Binance Listing - TechBullion",
-  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: listing, binance · via news.google.com",
-  "click": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQb0gtZmotWHhzM1Y3UzZkdGxqQzRMYV82UU5vNFFFdVlhRGJiSDhRekM5aU0tZkRSeGQ0NEljSUpka2xJYnF4N0VzbU02UmN3Ny1EUVdWeTBodHZNVDRhN0tFLVE0d3VTcWxjZ0x0dFp6QWZMc2I5eFd0eWZPakZIbXYyLWRHNF96U2JnaW94V2puU0RIdDBiZG51UDA4Ty1LWHExUklyRWlGc2ZuOThJ?oc=5",
-  "priority": 3
- },
- {
-  "t": 1793693907,
-  "title": "🔥 Trending #2: Aave (AAVE)",
-  "message": "Rank #47 · -5.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 26/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/aave",
-  "priority": 2
- },
- {
-  "t": 1793693907,
-  "title": "🔥 Trending #3: Pearl (PEARL)",
-  "message": "Rank #103 · -9.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 26/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/pearl-2",
-  "priority": 2
- },
- {
-  "t": 1793693907,
-  "title": "🔥 Trending #4: NEAR Protocol (NEAR)",
-  "message": "Rank #21 · -8.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 26/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/near",
-  "priority": 2
- },
- {
-  "t": 1793693907,
-  "title": "🔥 Trending #5: Zcash (ZEC)",
-  "message": "Rank #11 · -10.4% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 26/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/zcash",
-  "priority": 2
- },
- {
-  "t": 1793693907,
-  "title": "🔥 Trending #6: Ethereum (ETH)",
-  "message": "Rank #2 · -1.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 26/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/ethereum",
-  "priority": 2
- },
- {
   "t": 1793693907,
   "title": "🔥 Trending #7: Sui (SUI)",
   "message": "Rank #30 · -3.4% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 26/100 Fear 😐.",
@@ -416,6 +332,90 @@
   "t": 1793921701,
   "title": "🔥 Trending #5: Solana (SOL)",
   "message": "Rank #7 · -6.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 50/100 Neutral 😐.",
+  "click": "https://www.coingecko.com/en/coins/solana",
+  "priority": 2
+ },
+ {
+  "t": 1793936402,
+  "title": "📉 Ethereum -8.3% in 24h",
+  "message": "Now $2,229.4\nRisk: 🟢 big coin, real move. Find out WHY before doing anything.",
+  "click": "https://www.coingecko.com/en/coins/ethereum",
+  "priority": 4
+ },
+ {
+  "t": 1793936402,
+  "title": "📉 Solana -7.4% in 24h",
+  "message": "Now $89.76\nRisk: 🟢 big coin, real move. Find out WHY before doing anything.",
+  "click": "https://www.coingecko.com/en/coins/solana",
+  "priority": 4
+ },
+ {
+  "t": 1793936402,
+  "title": "📉 NVDA -9.3% today",
+  "message": "Now $181.60 (prev close $200.13)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
+  "click": "https://finance.yahoo.com/quote/NVDA",
+  "priority": 4
+ },
+ {
+  "t": 1793936402,
+  "title": "📉 TSLA -10.8% today",
+  "message": "Now $343.69 (prev close $385.19)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
+  "click": "https://finance.yahoo.com/quote/TSLA",
+  "priority": 4
+ },
+ {
+  "t": 1793936402,
+  "title": "📰 Lumine Group Stock Earnings Beat Raises Questions About Acquisition Led Growth - Simply Wall St",
+  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: earnings beat, acquisition · via news.google.com",
+  "click": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxORDUwcmxqX2NEMk92cnhvQjdGUThpUEwzSEI2WWRRRjZKQTl5MFdnUkNmaElNYk9JS21WVUZyUGJuUHVTQUE3cE1JYUc1eUV2OERaQnZnSG9JVGpKWlJLX2pnYmNEYmlhN1VSTGJzSTItdXhTWnJFOEhhQk13eEJPeFdvdmNraTE4OVlINms1ZmNCQmtXd241WDU0Rlc5bDE4VWh4MkxLQnJLckdVNW0wUEkzRUc5Y3JlakZ6bTNjSURPbkhlN2puMVBxNDU5dHk50gHWAUFVX3lxTE1FaUR0RmlYc0x0LVpiTmYtUHlzcE5yOHZwdExLWXc0YTZUTGZDNnVLNUNNNmZXcHpRWm9Tb2otYlF1ZldZM0NJUXlENy1JLU1adnBCQVpXTmFOaGZ1a0MxUi1SOFZtel9TQjBzNTBNc0Z2UGJIWnRXbXo2TnJfOEMwS0xJMkktakdhSVludWJwUUZwZWVWLXBoY3BxX3ZHektpNndkZ0E2SmtsQ3lYWm5RcThmclRjd3lKMWhiR2ZBcGg2dVV3NElpN1l2WmMxa1BLMl9fLXc?oc=5",
+  "priority": 3
+ },
+ {
+  "t": 1793936402,
+  "title": "🔥 Trending #1: Bitcoin (BTC)",
+  "message": "Rank #1 · -6.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/bitcoin",
+  "priority": 2
+ },
+ {
+  "t": 1793936402,
+  "title": "🔥 Trending #2: Pudgy Penguins (PENGU)",
+  "message": "Rank #113 · -10.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/pudgy-penguins",
+  "priority": 2
+ },
+ {
+  "t": 1793936402,
+  "title": "🔥 Trending #3: NEAR Protocol (NEAR)",
+  "message": "Rank #21 · -9.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/near",
+  "priority": 2
+ },
+ {
+  "t": 1793936402,
+  "title": "🔥 Trending #4: Lighter (LIT)",
+  "message": "Rank #78 · +0.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/lighter",
+  "priority": 2
+ },
+ {
+  "t": 1793936402,
+  "title": "🔥 Trending #5: Pearl (PEARL)",
+  "message": "Rank #94 · +0.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/pearl-2",
+  "priority": 2
+ },
+ {
+  "t": 1793936402,
+  "title": "🔥 Trending #6: Ethereum (ETH)",
+  "message": "Rank #2 · -8.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/ethereum",
+  "priority": 2
+ },
+ {
+  "t": 1793936402,
+  "title": "🔥 Trending #7: Solana (SOL)",
+  "message": "Rank #7 · -7.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
   "click": "https://www.coingecko.com/en/coins/solana",
   "priority": 2
  }

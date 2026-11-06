@@ -1,6 +1,6 @@
 {
  "start_eur": 100,
- "cash": 51.32429232896145,
+ "cash": 46.99429232896145,
  "positions": [
   {
    "kind": "cg",
@@ -12,7 +12,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5230997,
-   "last": 76.92,
+   "last": 77.3,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -32,7 +32,7 @@
    "eur": 6.6366499999999995,
    "paid": 6.67,
    "time": 1793411216.5231392,
-   "last": 0.01686556,
+   "last": 0.01703834,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +52,7 @@
    "eur": 6.23865,
    "paid": 6.27,
    "time": 1793492936.4059505,
-   "last": 20.88,
+   "last": 20.45,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -72,7 +72,7 @@
    "eur": 5.5919,
    "paid": 5.62,
    "time": 1793584007.35454,
-   "last": 0.00643414,
+   "last": 0.00660614,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -92,7 +92,7 @@
    "eur": 4.6964,
    "paid": 4.72,
    "time": 1793607999.2227337,
-   "last": 75862,
+   "last": 75787,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -112,7 +112,7 @@
    "eur": 4.577,
    "paid": 4.6,
    "time": 1793668917.1320481,
-   "last": 189.4,
+   "last": 189.25,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -132,7 +132,7 @@
    "eur": 4.4974,
    "paid": 4.52,
    "time": 1793846970.374277,
-   "last": 1.18,
+   "last": 1.21,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -141,6 +141,25 @@
    },
    "expected": null,
    "peak": 1.27
+  },
+  {
+   "kind": "cg",
+   "id": "near",
+   "chain": null,
+   "symbol": "NEAR",
+   "signal": "trending",
+   "entry": 3.677892584464572,
+   "eur": 4.30835,
+   "paid": 4.33,
+   "time": 1793936407.6101458,
+   "last": 3.677892584464572,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "night (UTC 0-6)"
+   },
+   "expected": null
   }
  ],
  "history": [
@@ -492,12 +511,17 @@
    "t": 1793921703,
    "v": 86.4,
    "btc": 75850
+  },
+  {
+   "t": 1793936407,
+   "v": 86.58,
+   "btc": 75787
   }
  ],
  "mood": {
-  "value": 50,
-  "label": "Neutral",
-  "t": 1793921701
+  "value": 28,
+  "label": "Fear",
+  "t": 1793936402
  },
  "learning": {
   "trending": {
@@ -512,7 +536,7 @@
   }
  },
  "pending": [],
- "updated": 1793921703,
+ "updated": 1793936407,
  "rewards": {
   "xp": 72.4,
   "level": "Paper trader",
@@ -986,6 +1010,14 @@
    "pct": -23.8,
    "reason": "\ud83d\uded1 Stop loss (-23%)",
    "t": 1793901639
+  },
+  {
+   "type": "buy",
+   "symbol": "NEAR",
+   "signal": "trending",
+   "eur": 4.33,
+   "price": 3.677892584464572,
+   "t": 1793936407
   }
  ],
  "trend": {
