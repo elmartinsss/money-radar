@@ -1,19 +1,5 @@
 [
  {
-  "t": 1793742801,
-  "title": "🔥 Trending #5: Monero (XMR)",
-  "message": "Rank #12 · +3.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 26/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/monero",
-  "priority": 2
- },
- {
-  "t": 1793757498,
-  "title": "📰 Block surges 8% on earnings beat and raised guidance - Yahoo Finance",
-  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: earnings beat, surges · via news.google.com",
-  "click": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNYWJQS29VOWtHX1A1QzROREJKRmpJMjRpUk90bGV6eTBhTUNuTm4tTjZxNzJKb3RPM0VDY1dvV1lqWUllRDZvVTZvRDhCQ1ItX2xxcl9Fa1JtcGZJTm1EdE5ZY1FqWkp5bmRXdV9kUlV2Y3RNMXJyd1QtNlVnOWpxTU9QaDk4Q2QwSFA2bGk4bnlFVExyR29MSw?oc=5",
-  "priority": 3
- },
- {
   "t": 1793757498,
   "title": "📰 Herbalife (HLF) Stock Surges As Q3 Earnings Beat Eases Debt Fears - Simply Wall St",
   "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: earnings beat, surges · via news.google.com",
@@ -417,6 +403,20 @@
   "title": "🔥 Trending #7: Aerodrome Finance (AERO)",
   "message": "Rank #172 · +0.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
   "click": "https://www.coingecko.com/en/coins/aerodrome-finance",
+  "priority": 2
+ },
+ {
+  "t": 1794007651,
+  "title": "🔥 Trending #6: Kinetiq (KNTQ)",
+  "message": "Rank #197 · +19.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/kinetiq",
+  "priority": 2
+ },
+ {
+  "t": 1794007651,
+  "title": "🔥 Trending #7: XRP (XRP)",
+  "message": "Rank #5 · -2.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/ripple",
   "priority": 2
  }
 ]
