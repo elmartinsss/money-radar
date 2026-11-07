@@ -1,19 +1,5 @@
 [
  {
-  "t": 1793831888,
-  "title": "🔥 Trending #6: Solana (SOL)",
-  "message": "Rank #7 · +2.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/solana",
-  "priority": 2
- },
- {
-  "t": 1793846966,
-  "title": "🚀 Ethereum +7.9% in 24h",
-  "message": "Now $2,430.75\nRisk: 🟢 big coin, real move. Find out WHY before doing anything.",
-  "click": "https://www.coingecko.com/en/coins/ethereum",
-  "priority": 4
- },
- {
   "t": 1793846966,
   "title": "📰 AppLovin Stock Surges As Earnings Beat Provides Much-Needed Boost - Investor's Business Daily",
   "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: earnings beat, surges · via news.google.com",
@@ -417,6 +403,20 @@
   "title": "🔥 Trending #7: Monad (MON)",
   "message": "Rank #165 · -3.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 25/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/monad",
+  "priority": 2
+ },
+ {
+  "t": 1794095607,
+  "title": "🔥 Trending #4: STONK (STONK)",
+  "message": "Rank #412 · -32.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 25/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/stonk-3",
+  "priority": 2
+ },
+ {
+  "t": 1794095607,
+  "title": "🔥 Trending #5: Aerodrome Finance (AERO)",
+  "message": "Rank #169 · +1.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 25/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/aerodrome-finance",
   "priority": 2
  }
 ]
