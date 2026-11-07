@@ -1,47 +1,7 @@
 {
  "start_eur": 100,
- "cash": 46.99429232896145,
+ "cash": 49.87471601164204,
  "positions": [
-  {
-   "kind": "cg",
-   "id": "hyperliquid",
-   "chain": null,
-   "symbol": "HYPE",
-   "signal": "trending",
-   "entry": 89.11729225990345,
-   "eur": 6.6366499999999995,
-   "paid": 6.67,
-   "time": 1793411216.5230997,
-   "last": 78.49,
-   "liq0": null,
-   "feats": {
-    "signal": "trending",
-    "mood": "fear",
-    "time": "night (UTC 0-6)"
-   },
-   "expected": null,
-   "peak": 89.11729225990345
-  },
-  {
-   "kind": "cg",
-   "id": "monad",
-   "chain": null,
-   "symbol": "MON",
-   "signal": "trending",
-   "entry": 0.019699756522304095,
-   "eur": 6.6366499999999995,
-   "paid": 6.67,
-   "time": 1793411216.5231392,
-   "last": 0.01696721,
-   "liq0": null,
-   "feats": {
-    "signal": "trending",
-    "mood": "fear",
-    "time": "night (UTC 0-6)"
-   },
-   "expected": null,
-   "peak": 0.019699756522304095
-  },
   {
    "kind": "cg",
    "id": "venice-token",
@@ -52,7 +12,7 @@
    "eur": 6.23865,
    "paid": 6.27,
    "time": 1793492936.4059505,
-   "last": 20.77,
+   "last": 21.0,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -72,7 +32,7 @@
    "eur": 5.5919,
    "paid": 5.62,
    "time": 1793584007.35454,
-   "last": 0.00654546,
+   "last": 0.00651978,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -92,7 +52,7 @@
    "eur": 4.6964,
    "paid": 4.72,
    "time": 1793607999.2227337,
-   "last": 75858,
+   "last": 76027,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -112,7 +72,7 @@
    "eur": 4.577,
    "paid": 4.6,
    "time": 1793668917.1320481,
-   "last": 192.89,
+   "last": 193.42,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -132,7 +92,7 @@
    "eur": 4.4974,
    "paid": 4.52,
    "time": 1793846970.374277,
-   "last": 1.21,
+   "last": 1.2,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -152,7 +112,7 @@
    "eur": 4.30835,
    "paid": 4.33,
    "time": 1793936407.6101458,
-   "last": 3.7,
+   "last": 3.76,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -160,7 +120,45 @@
     "time": "night (UTC 0-6)"
    },
    "expected": null,
-   "peak": 3.74
+   "peak": 3.76
+  },
+  {
+   "kind": "cg",
+   "id": "coge-coin-2",
+   "chain": null,
+   "symbol": "COGE",
+   "signal": "trending",
+   "entry": 0.016360633574066644,
+   "eur": 4.32825,
+   "paid": 4.35,
+   "time": 1794020880.8056474,
+   "last": 0.016360633574066644,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "night (UTC 0-6)"
+   },
+   "expected": null
+  },
+  {
+   "kind": "cg",
+   "id": "pearl-2",
+   "chain": null,
+   "symbol": "PEARL",
+   "signal": "trending",
+   "entry": 1.7731439729701093,
+   "eur": 4.32825,
+   "paid": 4.35,
+   "time": 1794020880.8056674,
+   "last": 1.7731439729701093,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "night (UTC 0-6)"
+   },
+   "expected": null
   }
  ],
  "history": [
@@ -367,6 +365,56 @@
    "reason": "\ud83d\uded1 Stop loss (-23%)",
    "pnl_eur": -1.59,
    "pnl_pct": -23.8
+  },
+  {
+   "kind": "cg",
+   "id": "hyperliquid",
+   "chain": null,
+   "symbol": "HYPE",
+   "signal": "trending",
+   "entry": 89.11729225990345,
+   "eur": 6.6366499999999995,
+   "paid": 6.67,
+   "time": 1793411216.5230997,
+   "last": 79.56,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "night (UTC 0-6)"
+   },
+   "expected": null,
+   "peak": 89.11729225990345,
+   "exit": 79.56,
+   "exit_time": 1794020880.8054698,
+   "reason": "\u23f0 Time's up (7 days)",
+   "pnl_eur": -0.77,
+   "pnl_pct": -11.6
+  },
+  {
+   "kind": "cg",
+   "id": "monad",
+   "chain": null,
+   "symbol": "MON",
+   "signal": "trending",
+   "entry": 0.019699756522304095,
+   "eur": 6.6366499999999995,
+   "paid": 6.67,
+   "time": 1793411216.5231392,
+   "last": 0.01696016,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "night (UTC 0-6)"
+   },
+   "expected": null,
+   "peak": 0.019699756522304095,
+   "exit": 0.01696016,
+   "exit_time": 1794020880.8054974,
+   "reason": "\u23f0 Time's up (7 days)",
+   "pnl_eur": -0.98,
+   "pnl_pct": -14.8
   }
  ],
  "started": 1793366521.920483,
@@ -532,29 +580,34 @@
    "t": 1794007653,
    "v": 86.8,
    "btc": 75863
+  },
+  {
+   "t": 1794020880,
+   "v": 86.87,
+   "btc": 76028
   }
  ],
  "mood": {
-  "value": 28,
-  "label": "Fear",
-  "t": 1794007651
+  "value": 25,
+  "label": "Extreme Fear",
+  "t": 1794020877
  },
  "learning": {
   "trending": {
-   "n": 8,
+   "n": 10,
    "wins": 1,
-   "win_rate": 12,
-   "avg_pct": -20.4,
-   "shrunk_pct": -20.4,
-   "t": -2.91,
+   "win_rate": 10,
+   "avg_pct": -19.0,
+   "shrunk_pct": -19.0,
+   "t": -3.37,
    "mult": 1.0,
-   "status": "still learning (8/30 trades)"
+   "status": "still learning (10/30 trades)"
   }
  },
  "pending": [],
- "updated": 1794007653,
+ "updated": 1794020880,
  "rewards": {
-  "xp": 72.4,
+  "xp": 76.4,
   "level": "Paper trader",
   "medals": [
    {
@@ -570,19 +623,19 @@
     "t": 1793846970
    }
   ],
-  "confidence": -16.42,
+  "confidence": -15.33,
   "streak": 0,
   "best_streak": 1,
   "situations": {
    "signal=trending": {
-    "n": 8,
-    "sum": -163.4,
-    "sq": 6100.379999999999
+    "n": 10,
+    "sum": -189.8,
+    "sq": 6453.98
    },
    "mood=fear": {
-    "n": 8,
-    "sum": -163.4,
-    "sq": 6100.379999999999
+    "n": 10,
+    "sum": -189.8,
+    "sq": 6453.98
    },
    "time=morning (UTC 6-12)": {
     "n": 2,
@@ -600,9 +653,9 @@
     "sq": 2970.9199999999996
    },
    "time=night (UTC 0-6)": {
-    "n": 2,
-    "sum": -15.4,
-    "sq": 637.0
+    "n": 4,
+    "sum": -41.8,
+    "sq": 990.5999999999999
    }
   },
   "rules": {
@@ -758,6 +811,32 @@
      "mood": "fear",
      "time": "night (UTC 0-6)"
     }
+   },
+   {
+    "t": 1794020880,
+    "symbol": "HYPE",
+    "signal": "trending",
+    "reward": -11.6,
+    "reason": "\u23f0 Time's up (7 days)",
+    "lesson": "A loss inside the rules. Small losses are the price of finding winners.",
+    "situation": {
+     "signal": "trending",
+     "mood": "fear",
+     "time": "night (UTC 0-6)"
+    }
+   },
+   {
+    "t": 1794020880,
+    "symbol": "MON",
+    "signal": "trending",
+    "reward": -14.8,
+    "reason": "\u23f0 Time's up (7 days)",
+    "lesson": "A loss inside the rules. Small losses are the price of finding winners.",
+    "situation": {
+     "signal": "trending",
+     "mood": "fear",
+     "time": "night (UTC 0-6)"
+    }
    }
   ],
   "pending_checks": [
@@ -787,10 +866,19 @@
     "t": 1793989648,
     "rule": "Liquidity vs size",
     "reason": "thin liquidity for its size (3.1% of market cap)"
+   },
+   {
+    "id": "DKtofLM6bhb54GQy5YFSWQjQmGiZqAkjzkQJ1LTopump",
+    "chain": "solana",
+    "symbol": "HODL",
+    "price": 0.003781,
+    "t": 1794020880,
+    "rule": "Minimum age",
+    "reason": "too new (4h)"
    }
   ],
-  "total_reward": -163.4,
-  "trades": 8
+  "total_reward": -189.8,
+  "trades": 10
  },
  "activity": [
   {
@@ -1034,6 +1122,42 @@
    "eur": 4.33,
    "price": 3.677892584464572,
    "t": 1793936407
+  },
+  {
+   "type": "sell",
+   "symbol": "HYPE",
+   "signal": "trending",
+   "eur": 5.9,
+   "pnl": -0.77,
+   "pct": -11.6,
+   "reason": "\u23f0 Time's up (7 days)",
+   "t": 1794020880
+  },
+  {
+   "type": "sell",
+   "symbol": "MON",
+   "signal": "trending",
+   "eur": 5.69,
+   "pnl": -0.98,
+   "pct": -14.8,
+   "reason": "\u23f0 Time's up (7 days)",
+   "t": 1794020880
+  },
+  {
+   "type": "buy",
+   "symbol": "COGE",
+   "signal": "trending",
+   "eur": 4.35,
+   "price": 0.016360633574066644,
+   "t": 1794020880
+  },
+  {
+   "type": "buy",
+   "symbol": "PEARL",
+   "signal": "trending",
+   "eur": 4.35,
+   "price": 1.7731439729701093,
+   "t": 1794020880
   }
  ],
  "trend": {
