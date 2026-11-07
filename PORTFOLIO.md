@@ -1,22 +1,22 @@
 # 📝 Paper wallet (fake money)
 
-Started 2026-10-30 with **100€** · now **84.90€ (-15.1%)** · cash 52.52€
+Started 2026-10-30 with **100€** · now **84.80€ (-15.2%)** · cash 52.52€
 
 Closed trades: 11 · wins: 1
 
-_Updated 2026-11-07 18:29 Vilnius time._
+_Updated 2026-11-07 22:27 Vilnius time._
 
 ## Open positions
 
 | Coin | Signal | Bought | Value now | Change |
 |---|---|---|---|---|
-| VVV | trending | 6.27€ | 5.37€ | -14.3% |
-| PENGU | trending | 5.62€ | 4.91€ | -12.7% |
+| VVV | trending | 6.27€ | 5.40€ | -13.9% |
+| PENGU | trending | 5.62€ | 4.89€ | -12.9% |
 | BTC | trending | 4.72€ | 4.55€ | -3.5% |
-| QNT | trending | 4.60€ | 4.68€ | +1.7% |
-| TRUMP | trending | 4.52€ | 4.22€ | -6.7% |
-| NEAR | trending | 4.33€ | 4.29€ | -1.0% |
-| PEARL | trending | 4.35€ | 4.37€ | +0.4% |
+| QNT | trending | 4.60€ | 4.66€ | +1.4% |
+| TRUMP | trending | 4.52€ | 4.18€ | -7.5% |
+| NEAR | trending | 4.33€ | 4.26€ | -1.5% |
+| PEARL | trending | 4.35€ | 4.32€ | -0.7% |
 
 ## Last 30 closed trades
 
