@@ -12,7 +12,7 @@
    "eur": 6.23865,
    "paid": 6.27,
    "time": 1793492936.4059505,
-   "last": 21.0,
+   "last": 20.67,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -32,7 +32,7 @@
    "eur": 5.5919,
    "paid": 5.62,
    "time": 1793584007.35454,
-   "last": 0.00651978,
+   "last": 0.00649244,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +52,7 @@
    "eur": 4.6964,
    "paid": 4.72,
    "time": 1793607999.2227337,
-   "last": 76027,
+   "last": 76010,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -72,7 +72,7 @@
    "eur": 4.577,
    "paid": 4.6,
    "time": 1793668917.1320481,
-   "last": 193.42,
+   "last": 197.57,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -92,7 +92,7 @@
    "eur": 4.4974,
    "paid": 4.52,
    "time": 1793846970.374277,
-   "last": 1.2,
+   "last": 1.18,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -112,7 +112,7 @@
    "eur": 4.30835,
    "paid": 4.33,
    "time": 1793936407.6101458,
-   "last": 3.76,
+   "last": 3.71,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -132,14 +132,15 @@
    "eur": 4.32825,
    "paid": 4.35,
    "time": 1794020880.8056474,
-   "last": 0.016360633574066644,
+   "last": 0.01796898,
    "liq0": null,
    "feats": {
     "signal": "trending",
     "mood": "fear",
     "time": "night (UTC 0-6)"
    },
-   "expected": null
+   "expected": null,
+   "peak": 0.01796898
   },
   {
    "kind": "cg",
@@ -151,14 +152,15 @@
    "eur": 4.32825,
    "paid": 4.35,
    "time": 1794020880.8056674,
-   "last": 1.7731439729701093,
+   "last": 1.77,
    "liq0": null,
    "feats": {
     "signal": "trending",
     "mood": "fear",
     "time": "night (UTC 0-6)"
    },
-   "expected": null
+   "expected": null,
+   "peak": 1.7731439729701093
   }
  ],
  "history": [
@@ -585,12 +587,17 @@
    "t": 1794020880,
    "v": 86.87,
    "btc": 76028
+  },
+  {
+   "t": 1794046259,
+   "v": 87.15,
+   "btc": 76006
   }
  ],
  "mood": {
   "value": 25,
   "label": "Extreme Fear",
-  "t": 1794020877
+  "t": 1794046256
  },
  "learning": {
   "trending": {
@@ -605,7 +612,7 @@
   }
  },
  "pending": [],
- "updated": 1794020880,
+ "updated": 1794046259,
  "rewards": {
   "xp": 76.4,
   "level": "Paper trader",

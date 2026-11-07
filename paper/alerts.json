@@ -1,33 +1,5 @@
 [
  {
-  "t": 1793757498,
-  "title": "🔥 Trending #7: Sui (SUI)",
-  "message": "Rank #30 · +0.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/sui",
-  "priority": 2
- },
- {
-  "t": 1793782780,
-  "title": "📰 Coinbase adds CARDS to listing roadmap, token rises 4% - Cryptonews.net",
-  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: listing, coinbase adds · via news.google.com",
-  "click": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5yWmpSX0pzajRFWHZraTVyMWNlS1hjS0NqSkNxNDRkMUlUYTRoZGdDaU5PQmZuLTNxZ1dNeERkV3VYMm11Z1I2ZXhQYWpSVEpiYWpZN0x6X1laUQ?oc=5",
-  "priority": 3
- },
- {
-  "t": 1793782780,
-  "title": "🔥 Trending #3: Pepe (PEPE)",
-  "message": "Rank #45 · +8.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/pepe",
-  "priority": 2
- },
- {
-  "t": 1793782780,
-  "title": "🔥 Trending #5: Zcash (ZEC)",
-  "message": "Rank #10 · +14.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/zcash",
-  "priority": 2
- },
- {
   "t": 1793782780,
   "title": "🔥 Trending #6: Uniswap (UNI)",
   "message": "Rank #22 · +5.4% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 34/100 Fear 😐.",
@@ -417,6 +389,34 @@
   "title": "🔥 Trending #7: Zcash (ZEC)",
   "message": "Rank #10 · +2.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 25/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/zcash",
+  "priority": 2
+ },
+ {
+  "t": 1794046256,
+  "title": "📰 Globus Medical Stock Earnings Beat Meets Lower Revenue Outlook and Bigger Buyback - Simply Wall St",
+  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: earnings beat, buyback · via news.google.com",
+  "click": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQcTJTem5nRW5hNUpKUUstVVJwa19nMml5bUYxbGh1YXFRc3YtLVlDZ1haeks0MkFTRTcybkFYT3pMV3lRUVI4OGd6LUk3eHk3NWIxaDRldXVyR3ZvektkQkhzNzNzXy1GOUljVkhrc3lFUFZKX0Q2Q1huMldhdFR6OGU0NWFuYUgyV1p5T2YtM3pZUHllemd0VVFubWdNZVpWUDRiT1hCWlFaaVRaVHlqbHN3OHd1UGRsYjJtSXVVc0NkM1BiQVF4Z245UUtOUdIB0wFBVV95cUxQOUNGU3h3UThXSU1HTlB6OEZHTnlpYzVrV2hWUVpJVnBUdzY1cU5HU29QOE5SMmRQZjZSUWFiR0JZdFZOU0h1RFJkS1g2X1FMenhrSW95MHp0SnFOcW55YmxvZzlGOENFeU1pc25NOGJmWFU5MmYxSXREbkFNZmNWUm13T0V1Y29sdW44Z3o5RnVla3pGMzRjMUp1TXk1VDlxUFU0SGdMcEpleGNFVTVsRkxSel9VY2pveGFYcExrRWFMMG9oeGVjUVJ2TXJXLXd6OXJN?oc=5",
+  "priority": 3
+ },
+ {
+  "t": 1794046256,
+  "title": "🔥 Trending #1: Dacity Coin (DACITY)",
+  "message": "Rank #957 · +111.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 25/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/dacity-coin-4",
+  "priority": 2
+ },
+ {
+  "t": 1794046256,
+  "title": "🔥 Trending #2: Harmony (ONE)",
+  "message": "Rank #640 · +57.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 25/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/harmony",
+  "priority": 2
+ },
+ {
+  "t": 1794046256,
+  "title": "🔥 Trending #5: NEAR Protocol (NEAR)",
+  "message": "Rank #21 · -0.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 25/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/near",
   "priority": 2
  }
 ]
