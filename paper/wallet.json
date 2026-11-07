@@ -1,6 +1,6 @@
 {
  "start_eur": 100,
- "cash": 49.87471601164204,
+ "cash": 52.51872923970817,
  "positions": [
   {
    "kind": "cg",
@@ -12,7 +12,7 @@
    "eur": 6.23865,
    "paid": 6.27,
    "time": 1793492936.4059505,
-   "last": 20.67,
+   "last": 20.33,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -32,7 +32,7 @@
    "eur": 5.5919,
    "paid": 5.62,
    "time": 1793584007.35454,
-   "last": 0.00649244,
+   "last": 0.00640636,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +52,7 @@
    "eur": 4.6964,
    "paid": 4.72,
    "time": 1793607999.2227337,
-   "last": 76010,
+   "last": 75728,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -72,7 +72,7 @@
    "eur": 4.577,
    "paid": 4.6,
    "time": 1793668917.1320481,
-   "last": 197.57,
+   "last": 198.11,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -92,7 +92,7 @@
    "eur": 4.4974,
    "paid": 4.52,
    "time": 1793846970.374277,
-   "last": 1.18,
+   "last": 1.19,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -112,7 +112,7 @@
    "eur": 4.30835,
    "paid": 4.33,
    "time": 1793936407.6101458,
-   "last": 3.71,
+   "last": 3.66,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -124,26 +124,6 @@
   },
   {
    "kind": "cg",
-   "id": "coge-coin-2",
-   "chain": null,
-   "symbol": "COGE",
-   "signal": "trending",
-   "entry": 0.016360633574066644,
-   "eur": 4.32825,
-   "paid": 4.35,
-   "time": 1794020880.8056474,
-   "last": 0.01796898,
-   "liq0": null,
-   "feats": {
-    "signal": "trending",
-    "mood": "fear",
-    "time": "night (UTC 0-6)"
-   },
-   "expected": null,
-   "peak": 0.01796898
-  },
-  {
-   "kind": "cg",
    "id": "pearl-2",
    "chain": null,
    "symbol": "PEARL",
@@ -152,7 +132,7 @@
    "eur": 4.32825,
    "paid": 4.35,
    "time": 1794020880.8056674,
-   "last": 1.77,
+   "last": 1.79,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -160,7 +140,7 @@
     "time": "night (UTC 0-6)"
    },
    "expected": null,
-   "peak": 1.7731439729701093
+   "peak": 1.79
   }
  ],
  "history": [
@@ -417,6 +397,31 @@
    "reason": "\u23f0 Time's up (7 days)",
    "pnl_eur": -0.98,
    "pnl_pct": -14.8
+  },
+  {
+   "kind": "cg",
+   "id": "coge-coin-2",
+   "chain": null,
+   "symbol": "COGE",
+   "signal": "trending",
+   "entry": 0.016360633574066644,
+   "eur": 4.32825,
+   "paid": 4.35,
+   "time": 1794020880.8056474,
+   "last": 0.0100445,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "night (UTC 0-6)"
+   },
+   "expected": null,
+   "peak": 0.01796898,
+   "exit": 0.0100445,
+   "exit_time": 1794068970.7216282,
+   "reason": "\ud83d\uded1 Stop loss (-39%)",
+   "pnl_eur": -1.71,
+   "pnl_pct": -39.2
   }
  ],
  "started": 1793366521.920483,
@@ -592,29 +597,34 @@
    "t": 1794046259,
    "v": 87.15,
    "btc": 76006
+  },
+  {
+   "t": 1794068970,
+   "v": 84.9,
+   "btc": 75728
   }
  ],
  "mood": {
   "value": 25,
   "label": "Extreme Fear",
-  "t": 1794046256
+  "t": 1794068968
  },
  "learning": {
   "trending": {
-   "n": 10,
+   "n": 11,
    "wins": 1,
-   "win_rate": 10,
-   "avg_pct": -19.0,
-   "shrunk_pct": -19.0,
-   "t": -3.37,
+   "win_rate": 9,
+   "avg_pct": -20.8,
+   "shrunk_pct": -20.8,
+   "t": -3.85,
    "mult": 1.0,
-   "status": "still learning (10/30 trades)"
+   "status": "still learning (11/30 trades)"
   }
  },
  "pending": [],
- "updated": 1794046259,
+ "updated": 1794068970,
  "rewards": {
-  "xp": 76.4,
+  "xp": 78.4,
   "level": "Paper trader",
   "medals": [
    {
@@ -630,19 +640,19 @@
     "t": 1793846970
    }
   ],
-  "confidence": -15.33,
+  "confidence": -20.1,
   "streak": 0,
   "best_streak": 1,
   "situations": {
    "signal=trending": {
-    "n": 10,
-    "sum": -189.8,
-    "sq": 6453.98
+    "n": 11,
+    "sum": -229.0,
+    "sq": 7990.62
    },
    "mood=fear": {
-    "n": 10,
-    "sum": -189.8,
-    "sq": 6453.98
+    "n": 11,
+    "sum": -229.0,
+    "sq": 7990.62
    },
    "time=morning (UTC 6-12)": {
     "n": 2,
@@ -660,9 +670,9 @@
     "sq": 2970.9199999999996
    },
    "time=night (UTC 0-6)": {
-    "n": 4,
-    "sum": -41.8,
-    "sq": 990.5999999999999
+    "n": 5,
+    "sum": -81.0,
+    "sq": 2527.2400000000002
    }
   },
   "rules": {
@@ -683,14 +693,14 @@
    },
    "Minimum age": {
     "saves": 6,
-    "missed": 0,
+    "missed": 1,
     "neutral": 1,
     "examples": [
-     "$PAWCAT -100% (saved)",
      "$tipr -100% (saved)",
      "$ANAKIN -100% (saved)",
      "$FEAR -100% (saved)",
-     "$Wanted -100% (saved)"
+     "$Wanted -100% (saved)",
+     "$COGE +201% (missed)"
     ]
    },
    "No chasing pumps": {
@@ -844,18 +854,22 @@
      "mood": "fear",
      "time": "night (UTC 0-6)"
     }
+   },
+   {
+    "t": 1794068970,
+    "symbol": "COGE",
+    "signal": "trending",
+    "reward": -39.2,
+    "reason": "\ud83d\uded1 Stop loss (-39%)",
+    "lesson": "A loss inside the rules. Small losses are the price of finding winners.",
+    "situation": {
+     "signal": "trending",
+     "mood": "fear",
+     "time": "night (UTC 0-6)"
+    }
    }
   ],
   "pending_checks": [
-   {
-    "id": "8UQdy5sHMVWUWSHeA5B3ZuuAVNumjSLPXdf19MXcpump",
-    "chain": "solana",
-    "symbol": "COGE",
-    "price": 0.003433,
-    "t": 1793964847,
-    "rule": "Minimum age",
-    "reason": "too new (16h)"
-   },
    {
     "id": "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump",
     "chain": "solana",
@@ -884,8 +898,8 @@
     "reason": "too new (4h)"
    }
   ],
-  "total_reward": -189.8,
-  "trades": 10
+  "total_reward": -229.0,
+  "trades": 11
  },
  "activity": [
   {
@@ -1165,6 +1179,30 @@
    "eur": 4.35,
    "price": 1.7731439729701093,
    "t": 1794020880
+  },
+  {
+   "type": "sell",
+   "symbol": "COGE",
+   "signal": "trending",
+   "eur": 2.64,
+   "pnl": -1.71,
+   "pct": -39.2,
+   "reason": "\ud83d\uded1 Stop loss (-39%)",
+   "t": 1794068970
+  },
+  {
+   "type": "skip",
+   "symbol": "REBOOT",
+   "signal": "trending",
+   "reason": "3 losses in a row today, cooling down until tomorrow",
+   "t": 1794068970
+  },
+  {
+   "type": "skip",
+   "symbol": "KNTQ",
+   "signal": "trending",
+   "reason": "3 losses in a row today, cooling down until tomorrow",
+   "t": 1794068970
   }
  ],
  "trend": {
