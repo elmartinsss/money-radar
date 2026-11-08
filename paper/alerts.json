@@ -1,40 +1,5 @@
 [
  {
-  "t": 1793873164,
-  "title": "🔥 Trending #3: Injective (INJ)",
-  "message": "Rank #83 · +8.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 50/100 Neutral 😐.",
-  "click": "https://www.coingecko.com/en/coins/injective-protocol",
-  "priority": 2
- },
- {
-  "t": 1793873164,
-  "title": "🔥 Trending #4: Pearl (PEARL)",
-  "message": "Rank #94 · +16.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 50/100 Neutral 😐.",
-  "click": "https://www.coingecko.com/en/coins/pearl-2",
-  "priority": 2
- },
- {
-  "t": 1793873164,
-  "title": "🔥 Trending #6: Lighter (LIT)",
-  "message": "Rank #82 · +2.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 50/100 Neutral 😐.",
-  "click": "https://www.coingecko.com/en/coins/lighter",
-  "priority": 2
- },
- {
-  "t": 1793873164,
-  "title": "🔥 Trending #7: Zcash (ZEC)",
-  "message": "Rank #10 · +2.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 50/100 Neutral 😐.",
-  "click": "https://www.coingecko.com/en/coins/zcash",
-  "priority": 2
- },
- {
-  "t": 1793901635,
-  "title": "📉 Ethereum -7.1% in 24h",
-  "message": "Now $2,251.37\nRisk: 🟢 big coin, real move. Find out WHY before doing anything.",
-  "click": "https://www.coingecko.com/en/coins/ethereum",
-  "priority": 4
- },
- {
   "t": 1793901635,
   "title": "📉 NVDA -9.0% today",
   "message": "Now $182.18 (prev close $200.13)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
@@ -417,6 +382,41 @@
   "title": "🔥 Trending #7: Kinetiq (KNTQ)",
   "message": "Rank #198 · -0.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
   "click": "https://www.coingecko.com/en/coins/kinetiq",
+  "priority": 2
+ },
+ {
+  "t": 1794138823,
+  "title": "🔥 Trending #1: WASTED (WASTED)",
+  "message": "Rank #779 · +54.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/wasted-2",
+  "priority": 2
+ },
+ {
+  "t": 1794138823,
+  "title": "🔥 Trending #2: Dacity Coin (DACITY)",
+  "message": "Rank #861 · +12.4% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/dacity-coin-4",
+  "priority": 2
+ },
+ {
+  "t": 1794138823,
+  "title": "🔥 Trending #3: Janction (JCT)",
+  "message": "Rank #257 · +229.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/janction",
+  "priority": 2
+ },
+ {
+  "t": 1794138823,
+  "title": "🔥 Trending #5: Pearl (PEARL)",
+  "message": "Rank #88 · -0.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/pearl-2",
+  "priority": 2
+ },
+ {
+  "t": 1794138823,
+  "title": "🔥 Trending #7: Hyperliquid (HYPE)",
+  "message": "Rank #11 · -1.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/hyperliquid",
   "priority": 2
  }
 ]

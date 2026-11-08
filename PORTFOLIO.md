@@ -1,23 +1,23 @@
 # 📝 Paper wallet (fake money)
 
-Started 2026-10-30 with **100€** · now **84.60€ (-15.4%)** · cash 49.38€
+Started 2026-10-30 with **100€** · now **85.03€ (-15.0%)** · cash 49.38€
 
 Closed trades: 12 · wins: 1
 
-_Updated 2026-11-08 07:03 Vilnius time._
+_Updated 2026-11-08 13:53 Vilnius time._
 
 ## Open positions
 
 | Coin | Signal | Bought | Value now | Change |
 |---|---|---|---|---|
-| PENGU | trending | 5.62€ | 4.84€ | -13.9% |
-| BTC | trending | 4.72€ | 4.56€ | -3.4% |
-| QNT | trending | 4.60€ | 4.61€ | +0.2% |
-| TRUMP | trending | 4.52€ | 4.18€ | -7.5% |
-| NEAR | trending | 4.33€ | 4.30€ | -0.7% |
-| PEARL | trending | 4.35€ | 4.32€ | -0.7% |
-| PEPE | trending | 4.23€ | 4.21€ | -0.5% |
-| ONDO | trending | 4.23€ | 4.21€ | -0.5% |
+| PENGU | trending | 5.62€ | 4.91€ | -12.6% |
+| BTC | trending | 4.72€ | 4.57€ | -3.3% |
+| QNT | trending | 4.60€ | 4.71€ | +2.4% |
+| TRUMP | trending | 4.52€ | 4.15€ | -8.3% |
+| NEAR | trending | 4.33€ | 4.36€ | +0.6% |
+| PEARL | trending | 4.35€ | 4.37€ | +0.4% |
+| PEPE | trending | 4.23€ | 4.31€ | +2.0% |
+| ONDO | trending | 4.23€ | 4.27€ | +1.1% |
 
 ## Last 30 closed trades
 
