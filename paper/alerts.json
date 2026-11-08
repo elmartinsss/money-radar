@@ -1,13 +1,6 @@
 [
  {
   "t": 1793901635,
-  "title": "📉 NVDA -9.0% today",
-  "message": "Now $182.18 (prev close $200.13)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
-  "click": "https://finance.yahoo.com/quote/NVDA",
-  "priority": 4
- },
- {
-  "t": 1793901635,
   "title": "📉 TSLA -11.8% today",
   "message": "Now $339.61 (prev close $385.19)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
   "click": "https://finance.yahoo.com/quote/TSLA",
@@ -417,6 +410,13 @@
   "title": "🔥 Trending #7: Hyperliquid (HYPE)",
   "message": "Rank #11 · -1.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
   "click": "https://www.coingecko.com/en/coins/hyperliquid",
+  "priority": 2
+ },
+ {
+  "t": 1794159950,
+  "title": "🔥 Trending #1: Be Like José (JOSÉ)",
+  "message": "Rank #896 · +0.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/be-like-jose",
   "priority": 2
  }
 ]

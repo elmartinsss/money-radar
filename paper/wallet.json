@@ -12,7 +12,7 @@
    "eur": 5.5919,
    "paid": 5.62,
    "time": 1793584007.35454,
-   "last": 0.00640952,
+   "last": 0.00628475,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -32,7 +32,7 @@
    "eur": 4.6964,
    "paid": 4.72,
    "time": 1793607999.2227337,
-   "last": 75904,
+   "last": 75682,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +52,7 @@
    "eur": 4.577,
    "paid": 4.6,
    "time": 1793668917.1320481,
-   "last": 199.54,
+   "last": 199.11,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -92,7 +92,7 @@
    "eur": 4.30835,
    "paid": 4.33,
    "time": 1793936407.6101458,
-   "last": 3.72,
+   "last": 3.6,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -112,7 +112,7 @@
    "eur": 4.32825,
    "paid": 4.35,
    "time": 1794020880.8056674,
-   "last": 1.79,
+   "last": 1.75,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -132,7 +132,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847122,
-   "last": 5e-06,
+   "last": 5.03e-06,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -140,7 +140,7 @@
     "time": "night (UTC 0-6)"
    },
    "expected": null,
-   "peak": 5e-06
+   "peak": 5.03e-06
   },
   {
    "kind": "cg",
@@ -152,7 +152,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847365,
-   "last": 0.363247,
+   "last": 0.357468,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -667,12 +667,17 @@
    "t": 1794138825,
    "v": 85.03,
    "btc": 75907
+  },
+  {
+   "t": 1794159951,
+   "v": 84.63,
+   "btc": 75681
   }
  ],
  "mood": {
   "value": 28,
   "label": "Fear",
-  "t": 1794138823
+  "t": 1794159950
  },
  "learning": {
   "trending": {
@@ -687,7 +692,7 @@
   }
  },
  "pending": [],
- "updated": 1794138825,
+ "updated": 1794159951,
  "rewards": {
   "xp": 85.4,
   "level": "Paper trader",
@@ -965,6 +970,24 @@
     "t": 1794095610,
     "rule": "Minimum age",
     "reason": "too new (52h)"
+   },
+   {
+    "id": "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump",
+    "chain": "solana",
+    "symbol": "DESSA",
+    "price": 0.04224,
+    "t": 1794159951,
+    "rule": "Liquidity vs size",
+    "reason": "thin liquidity for its size (1.5% of market cap)"
+   },
+   {
+    "id": "AWaBBNoVuwQ22B8Y5nEtLne2uEfk8UaYEFws7vT7pump",
+    "chain": "solana",
+    "symbol": "ELYSION",
+    "price": 0.003629,
+    "t": 1794159951,
+    "rule": "Minimum age",
+    "reason": "too new (3h)"
    }
   ],
   "total_reward": -244.1,
