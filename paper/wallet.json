@@ -12,7 +12,7 @@
    "eur": 5.5919,
    "paid": 5.62,
    "time": 1793584007.35454,
-   "last": 0.00628475,
+   "last": 0.00628275,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -32,7 +32,7 @@
    "eur": 4.6964,
    "paid": 4.72,
    "time": 1793607999.2227337,
-   "last": 75682,
+   "last": 75699,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +52,7 @@
    "eur": 4.577,
    "paid": 4.6,
    "time": 1793668917.1320481,
-   "last": 199.11,
+   "last": 199.57,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -112,7 +112,7 @@
    "eur": 4.32825,
    "paid": 4.35,
    "time": 1794020880.8056674,
-   "last": 1.75,
+   "last": 1.72,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -132,7 +132,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847122,
-   "last": 5.03e-06,
+   "last": 5.04e-06,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -140,7 +140,7 @@
     "time": "night (UTC 0-6)"
    },
    "expected": null,
-   "peak": 5.03e-06
+   "peak": 5.04e-06
   },
   {
    "kind": "cg",
@@ -152,7 +152,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847365,
-   "last": 0.357468,
+   "last": 0.356789,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -471,7 +471,7 @@
  ],
  "started": 1793366521.920483,
  "btc_start": 77216,
- "last_report": "2026-11-07",
+ "last_report": "2026-11-08",
  "equity": [
   {
    "t": 1793366862,
@@ -672,12 +672,17 @@
    "t": 1794159951,
    "v": 84.63,
    "btc": 75681
+  },
+  {
+   "t": 1794173017,
+   "v": 84.57,
+   "btc": 75699
   }
  ],
  "mood": {
   "value": 28,
   "label": "Fear",
-  "t": 1794159950
+  "t": 1794173016
  },
  "learning": {
   "trending": {
@@ -692,7 +697,7 @@
   }
  },
  "pending": [],
- "updated": 1794159951,
+ "updated": 1794173017,
  "rewards": {
   "xp": 85.4,
   "level": "Paper trader",

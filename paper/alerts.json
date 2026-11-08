@@ -1,20 +1,6 @@
 [
  {
   "t": 1793901635,
-  "title": "📉 TSLA -11.8% today",
-  "message": "Now $339.61 (prev close $385.19)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
-  "click": "https://finance.yahoo.com/quote/TSLA",
-  "priority": 4
- },
- {
-  "t": 1793901635,
-  "title": "🔥 Trending #6: Hyperliquid (HYPE)",
-  "message": "Rank #11 · -7.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 50/100 Neutral 😐.",
-  "click": "https://www.coingecko.com/en/coins/hyperliquid",
-  "priority": 2
- },
- {
-  "t": 1793901635,
   "title": "🔥 Trending #7: Sui (SUI)",
   "message": "Rank #30 · -9.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 50/100 Neutral 😐.",
   "click": "https://www.coingecko.com/en/coins/sui",
@@ -417,6 +403,20 @@
   "title": "🔥 Trending #1: Be Like José (JOSÉ)",
   "message": "Rank #896 · +0.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
   "click": "https://www.coingecko.com/en/coins/be-like-jose",
+  "priority": 2
+ },
+ {
+  "t": 1794173016,
+  "title": "🔥 Trending #5: Zcash (ZEC)",
+  "message": "Rank #10 · -0.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/zcash",
+  "priority": 2
+ },
+ {
+  "t": 1794173016,
+  "title": "🔥 Trending #6: STONK (STONK)",
+  "message": "Rank #538 · -31.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/stonk-3",
   "priority": 2
  }
 ]
