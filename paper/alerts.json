@@ -1,61 +1,5 @@
 [
  {
-  "t": 1793846966,
-  "title": "📰 AppLovin Stock Surges As Earnings Beat Provides Much-Needed Boost - Investor's Business Daily",
-  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: earnings beat, surges · via news.google.com",
-  "click": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9oQTJzem9YaE5pc19kS0JHUk9ZQ2FIbWNqZVRtc1RRYmVHd1huU0lzZGlCZ0ZwN0tNMnhWbEY2Q3lmZF9hcXBYUjlFQThZeUtsUkRrWXd2bUpQMFpuUVFhMVVhdS04Z21XaDFmTUNrWXRGUjh2S19mV2Vadkc1YXM?oc=5",
-  "priority": 3
- },
- {
-  "t": 1793846966,
-  "title": "🔥 Trending #1: Official Trump (TRUMP)",
-  "message": "Rank #122 · -14.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 50/100 Neutral 😐.",
-  "click": "https://www.coingecko.com/en/coins/official-trump",
-  "priority": 2
- },
- {
-  "t": 1793846966,
-  "title": "🔥 Trending #2: Chainlink (LINK)",
-  "message": "Rank #16 · +6.4% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 50/100 Neutral 😐.",
-  "click": "https://www.coingecko.com/en/coins/chainlink",
-  "priority": 2
- },
- {
-  "t": 1793846966,
-  "title": "🔥 Trending #3: Bitcoin (BTC)",
-  "message": "Rank #1 · +5.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 50/100 Neutral 😐.",
-  "click": "https://www.coingecko.com/en/coins/bitcoin",
-  "priority": 2
- },
- {
-  "t": 1793846966,
-  "title": "🔥 Trending #4: NEAR Protocol (NEAR)",
-  "message": "Rank #21 · +8.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 50/100 Neutral 😐.",
-  "click": "https://www.coingecko.com/en/coins/near",
-  "priority": 2
- },
- {
-  "t": 1793846966,
-  "title": "🔥 Trending #5: Pudgy Penguins (PENGU)",
-  "message": "Rank #112 · +6.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 50/100 Neutral 😐.",
-  "click": "https://www.coingecko.com/en/coins/pudgy-penguins",
-  "priority": 2
- },
- {
-  "t": 1793846966,
-  "title": "🔥 Trending #6: Ethereum (ETH)",
-  "message": "Rank #2 · +7.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 50/100 Neutral 😐.",
-  "click": "https://www.coingecko.com/en/coins/ethereum",
-  "priority": 2
- },
- {
-  "t": 1793846966,
-  "title": "🔥 Trending #7: Monad (MON)",
-  "message": "Rank #165 · +4.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 50/100 Neutral 😐.",
-  "click": "https://www.coingecko.com/en/coins/monad",
-  "priority": 2
- },
- {
   "t": 1793873164,
   "title": "🔥 Trending #3: Injective (INJ)",
   "message": "Rank #83 · +8.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 50/100 Neutral 😐.",
@@ -417,6 +361,62 @@
   "title": "🔥 Trending #5: Aerodrome Finance (AERO)",
   "message": "Rank #169 · +1.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 25/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/aerodrome-finance",
+  "priority": 2
+ },
+ {
+  "t": 1794114191,
+  "title": "📰 IDOL Surges 30% in Volatile Rebound After KuCoin Listing Dip, Unlock Risks Loom - InteractiveCrypto",
+  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: listing, surges · via news.google.com",
+  "click": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPSmd1bVh6ZUlNSGRGMHJNaEVMdUhOMl9famgzYkwyQmpCdTQ4M1hFLWdQc3VoT2R6V1N0R0F2eXcxT0ZERTZGa1BlN0lVQmhJUEVPR0EyOEVNcVF0cnV5bHdVS18zNzR0azBFd2xUM2l2VTBGZTRGdFhiamlyYUdtTFZMVXN0THlHQ1lpUWR0anFFN3JSNm1qTmdMOEtnM0FWaDB2WnZrLUFjcjBNM20tMQ?oc=5",
+  "priority": 3
+ },
+ {
+  "t": 1794114191,
+  "title": "🔥 Trending #1: Bitcoin (BTC)",
+  "message": "Rank #1 · -0.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/bitcoin",
+  "priority": 2
+ },
+ {
+  "t": 1794114191,
+  "title": "🔥 Trending #2: Pepe (PEPE)",
+  "message": "Rank #45 · -1.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/pepe",
+  "priority": 2
+ },
+ {
+  "t": 1794114191,
+  "title": "🔥 Trending #3: Ondo (ONDO)",
+  "message": "Rank #53 · -2.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/ondo-finance",
+  "priority": 2
+ },
+ {
+  "t": 1794114191,
+  "title": "🔥 Trending #4: Aero (AERO)",
+  "message": "Rank #114 · -1.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/aero",
+  "priority": 2
+ },
+ {
+  "t": 1794114191,
+  "title": "🔥 Trending #5: Pudgy Penguins (PENGU)",
+  "message": "Rank #115 · -3.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/pudgy-penguins",
+  "priority": 2
+ },
+ {
+  "t": 1794114191,
+  "title": "🔥 Trending #6: Aerodrome Finance (AERO)",
+  "message": "Rank #174 · -1.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/aerodrome-finance",
+  "priority": 2
+ },
+ {
+  "t": 1794114191,
+  "title": "🔥 Trending #7: Kinetiq (KNTQ)",
+  "message": "Rank #198 · -0.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/kinetiq",
   "priority": 2
  }
 ]

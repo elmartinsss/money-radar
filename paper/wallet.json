@@ -1,27 +1,7 @@
 {
  "start_eur": 100,
- "cash": 52.51872923970817,
+ "cash": 49.37981523215407,
  "positions": [
-  {
-   "kind": "cg",
-   "id": "venice-token",
-   "chain": null,
-   "symbol": "VVV",
-   "signal": "trending",
-   "entry": 23.611519302331068,
-   "eur": 6.23865,
-   "paid": 6.27,
-   "time": 1793492936.4059505,
-   "last": 20.65,
-   "liq0": null,
-   "feats": {
-    "signal": "trending",
-    "mood": "fear",
-    "time": "night (UTC 0-6)"
-   },
-   "expected": null,
-   "peak": 24.46
-  },
   {
    "kind": "cg",
    "id": "pudgy-penguins",
@@ -32,7 +12,7 @@
    "eur": 5.5919,
    "paid": 5.62,
    "time": 1793584007.35454,
-   "last": 0.00639868,
+   "last": 0.00631586,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +32,7 @@
    "eur": 4.6964,
    "paid": 4.72,
    "time": 1793607999.2227337,
-   "last": 75810,
+   "last": 75788,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -72,7 +52,7 @@
    "eur": 4.577,
    "paid": 4.6,
    "time": 1793668917.1320481,
-   "last": 195.8,
+   "last": 195.18,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -92,7 +72,7 @@
    "eur": 4.4974,
    "paid": 4.52,
    "time": 1793846970.374277,
-   "last": 1.19,
+   "last": 1.18,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -112,7 +92,7 @@
    "eur": 4.30835,
    "paid": 4.33,
    "time": 1793936407.6101458,
-   "last": 3.73,
+   "last": 3.67,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -132,7 +112,7 @@
    "eur": 4.32825,
    "paid": 4.35,
    "time": 1794020880.8056674,
-   "last": 1.76,
+   "last": 1.77,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -141,6 +121,44 @@
    },
    "expected": null,
    "peak": 1.79
+  },
+  {
+   "kind": "cg",
+   "id": "pepe",
+   "chain": null,
+   "symbol": "PEPE",
+   "signal": "trending",
+   "entry": 4.877110167999952e-06,
+   "eur": 4.20885,
+   "paid": 4.23,
+   "time": 1794114194.1847122,
+   "last": 4.877110167999952e-06,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "night (UTC 0-6)"
+   },
+   "expected": null
+  },
+  {
+   "kind": "cg",
+   "id": "ondo-finance",
+   "chain": null,
+   "symbol": "ONDO",
+   "signal": "trending",
+   "entry": 0.3576737639362792,
+   "eur": 4.20885,
+   "paid": 4.23,
+   "time": 1794114194.1847365,
+   "last": 0.3576737639362792,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "night (UTC 0-6)"
+   },
+   "expected": null
   }
  ],
  "history": [
@@ -422,6 +440,31 @@
    "reason": "\ud83d\uded1 Stop loss (-39%)",
    "pnl_eur": -1.71,
    "pnl_pct": -39.2
+  },
+  {
+   "kind": "cg",
+   "id": "venice-token",
+   "chain": null,
+   "symbol": "VVV",
+   "signal": "trending",
+   "entry": 23.611519302331068,
+   "eur": 6.23865,
+   "paid": 6.27,
+   "time": 1793492936.4059505,
+   "last": 20.24,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "night (UTC 0-6)"
+   },
+   "expected": null,
+   "peak": 24.46,
+   "exit": 20.24,
+   "exit_time": 1794114194.1844373,
+   "reason": "\u23f0 Time's up (7 days)",
+   "pnl_eur": -0.95,
+   "pnl_pct": -15.1
   }
  ],
  "started": 1793366521.920483,
@@ -612,29 +655,34 @@
    "t": 1794095610,
    "v": 84.94,
    "btc": 75806
+  },
+  {
+   "t": 1794114194,
+   "v": 84.6,
+   "btc": 75788
   }
  ],
  "mood": {
-  "value": 25,
-  "label": "Extreme Fear",
-  "t": 1794095607
+  "value": 28,
+  "label": "Fear",
+  "t": 1794114191
  },
  "learning": {
   "trending": {
-   "n": 11,
+   "n": 12,
    "wins": 1,
-   "win_rate": 9,
-   "avg_pct": -20.8,
-   "shrunk_pct": -20.8,
-   "t": -3.85,
+   "win_rate": 8,
+   "avg_pct": -20.3,
+   "shrunk_pct": -20.3,
+   "t": -4.1,
    "mult": 1.0,
-   "status": "still learning (11/30 trades)"
+   "status": "still learning (12/30 trades)"
   }
  },
  "pending": [],
- "updated": 1794095610,
+ "updated": 1794114194,
  "rewards": {
-  "xp": 78.4,
+  "xp": 85.4,
   "level": "Paper trader",
   "medals": [
    {
@@ -650,19 +698,19 @@
     "t": 1793846970
    }
   ],
-  "confidence": -20.1,
+  "confidence": -19.1,
   "streak": 0,
   "best_streak": 1,
   "situations": {
    "signal=trending": {
-    "n": 11,
-    "sum": -229.0,
-    "sq": 7990.62
+    "n": 12,
+    "sum": -244.1,
+    "sq": 8218.63
    },
    "mood=fear": {
-    "n": 11,
-    "sum": -229.0,
-    "sq": 7990.62
+    "n": 12,
+    "sum": -244.1,
+    "sq": 8218.63
    },
    "time=morning (UTC 6-12)": {
     "n": 2,
@@ -680,9 +728,9 @@
     "sq": 2970.9199999999996
    },
    "time=night (UTC 0-6)": {
-    "n": 5,
-    "sum": -81.0,
-    "sq": 2527.2400000000002
+    "n": 6,
+    "sum": -96.1,
+    "sq": 2755.25
    }
   },
   "rules": {
@@ -702,15 +750,15 @@
     "examples": []
    },
    "Minimum age": {
-    "saves": 6,
+    "saves": 7,
     "missed": 1,
     "neutral": 1,
     "examples": [
-     "$tipr -100% (saved)",
      "$ANAKIN -100% (saved)",
      "$FEAR -100% (saved)",
      "$Wanted -100% (saved)",
-     "$COGE +201% (missed)"
+     "$COGE +201% (missed)",
+     "$HODL -100% (saved)"
     ]
    },
    "No chasing pumps": {
@@ -877,18 +925,22 @@
      "mood": "fear",
      "time": "night (UTC 0-6)"
     }
+   },
+   {
+    "t": 1794114194,
+    "symbol": "VVV",
+    "signal": "trending",
+    "reward": -15.1,
+    "reason": "\u23f0 Time's up (7 days)",
+    "lesson": "A loss inside the rules. Small losses are the price of finding winners.",
+    "situation": {
+     "signal": "trending",
+     "mood": "fear",
+     "time": "night (UTC 0-6)"
+    }
    }
   ],
   "pending_checks": [
-   {
-    "id": "DKtofLM6bhb54GQy5YFSWQjQmGiZqAkjzkQJ1LTopump",
-    "chain": "solana",
-    "symbol": "HODL",
-    "price": 0.003781,
-    "t": 1794020880,
-    "rule": "Minimum age",
-    "reason": "too new (4h)"
-   },
    {
     "id": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
     "chain": "solana",
@@ -908,8 +960,8 @@
     "reason": "too new (52h)"
    }
   ],
-  "total_reward": -229.0,
-  "trades": 11
+  "total_reward": -244.1,
+  "trades": 12
  },
  "activity": [
   {
@@ -1220,6 +1272,32 @@
    "signal": "trending",
    "reason": "3 losses in a row today, cooling down until tomorrow",
    "t": 1794083254
+  },
+  {
+   "type": "sell",
+   "symbol": "VVV",
+   "signal": "trending",
+   "eur": 5.32,
+   "pnl": -0.95,
+   "pct": -15.1,
+   "reason": "\u23f0 Time's up (7 days)",
+   "t": 1794114194
+  },
+  {
+   "type": "buy",
+   "symbol": "PEPE",
+   "signal": "trending",
+   "eur": 4.23,
+   "price": 4.877110167999952e-06,
+   "t": 1794114194
+  },
+  {
+   "type": "buy",
+   "symbol": "ONDO",
+   "signal": "trending",
+   "eur": 4.23,
+   "price": 0.3576737639362792,
+   "t": 1794114194
   }
  ],
  "trend": {
