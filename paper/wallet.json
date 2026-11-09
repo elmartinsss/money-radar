@@ -12,7 +12,7 @@
    "eur": 5.5919,
    "paid": 5.62,
    "time": 1793584007.35454,
-   "last": 0.00628275,
+   "last": 0.00625341,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -32,7 +32,7 @@
    "eur": 4.6964,
    "paid": 4.72,
    "time": 1793607999.2227337,
-   "last": 75699,
+   "last": 75375,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +52,7 @@
    "eur": 4.577,
    "paid": 4.6,
    "time": 1793668917.1320481,
-   "last": 199.57,
+   "last": 198.01,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -72,7 +72,7 @@
    "eur": 4.4974,
    "paid": 4.52,
    "time": 1793846970.374277,
-   "last": 1.17,
+   "last": 1.15,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -92,7 +92,7 @@
    "eur": 4.30835,
    "paid": 4.33,
    "time": 1793936407.6101458,
-   "last": 3.6,
+   "last": 3.65,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -112,7 +112,7 @@
    "eur": 4.32825,
    "paid": 4.35,
    "time": 1794020880.8056674,
-   "last": 1.72,
+   "last": 1.68,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -132,7 +132,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847122,
-   "last": 5.04e-06,
+   "last": 5.1e-06,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -140,7 +140,7 @@
     "time": "night (UTC 0-6)"
    },
    "expected": null,
-   "peak": 5.04e-06
+   "peak": 5.1e-06
   },
   {
    "kind": "cg",
@@ -152,7 +152,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847365,
-   "last": 0.356789,
+   "last": 0.356529,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -677,12 +677,17 @@
    "t": 1794173017,
    "v": 84.57,
    "btc": 75699
+  },
+  {
+   "t": 1794186530,
+   "v": 84.43,
+   "btc": 75338
   }
  ],
  "mood": {
-  "value": 28,
+  "value": 29,
   "label": "Fear",
-  "t": 1794173016
+  "t": 1794186527
  },
  "learning": {
   "trending": {
@@ -697,9 +702,9 @@
   }
  },
  "pending": [],
- "updated": 1794173017,
+ "updated": 1794186530,
  "rewards": {
-  "xp": 85.4,
+  "xp": 90.4,
   "level": "Paper trader",
   "medals": [
    {
@@ -713,6 +718,12 @@
     "title": "First win",
     "why": "Its first profitable trade: DACITYCOIN +8.4%.",
     "t": 1793846970
+   },
+   {
+    "key": "ten_saves",
+    "title": "Rug dodger",
+    "why": "10 rejected coins crashed afterwards.",
+    "t": 1794186530
    }
   ],
   "confidence": -19.1,
@@ -754,7 +765,7 @@
    "Rising this hour": {
     "saves": 1,
     "missed": 1,
-    "neutral": 6,
+    "neutral": 7,
     "examples": [
      "$DESSA +139% (missed)",
      "$DESSA -51% (saved)"
@@ -767,15 +778,15 @@
     "examples": []
    },
    "Minimum age": {
-    "saves": 7,
+    "saves": 8,
     "missed": 1,
     "neutral": 1,
     "examples": [
-     "$ANAKIN -100% (saved)",
      "$FEAR -100% (saved)",
      "$Wanted -100% (saved)",
      "$COGE +201% (missed)",
-     "$HODL -100% (saved)"
+     "$HODL -100% (saved)",
+     "$COGE -93% (saved)"
     ]
    },
    "No chasing pumps": {
@@ -958,24 +969,6 @@
    }
   ],
   "pending_checks": [
-   {
-    "id": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
-    "chain": "solana",
-    "symbol": "GATO",
-    "price": 0.01208,
-    "t": 1794095610,
-    "rule": "Rising this hour",
-    "reason": "not trending up this hour"
-   },
-   {
-    "id": "8UQdy5sHMVWUWSHeA5B3ZuuAVNumjSLPXdf19MXcpump",
-    "chain": "solana",
-    "symbol": "COGE",
-    "price": 0.004279,
-    "t": 1794095610,
-    "rule": "Minimum age",
-    "reason": "too new (52h)"
-   },
    {
     "id": "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump",
     "chain": "solana",
