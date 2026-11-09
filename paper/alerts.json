@@ -1,41 +1,6 @@
 [
  {
   "t": 1793936402,
-  "title": "🔥 Trending #1: Bitcoin (BTC)",
-  "message": "Rank #1 · -6.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/bitcoin",
-  "priority": 2
- },
- {
-  "t": 1793936402,
-  "title": "🔥 Trending #2: Pudgy Penguins (PENGU)",
-  "message": "Rank #113 · -10.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/pudgy-penguins",
-  "priority": 2
- },
- {
-  "t": 1793936402,
-  "title": "🔥 Trending #3: NEAR Protocol (NEAR)",
-  "message": "Rank #21 · -9.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/near",
-  "priority": 2
- },
- {
-  "t": 1793936402,
-  "title": "🔥 Trending #4: Lighter (LIT)",
-  "message": "Rank #78 · +0.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/lighter",
-  "priority": 2
- },
- {
-  "t": 1793936402,
-  "title": "🔥 Trending #5: Pearl (PEARL)",
-  "message": "Rank #94 · +0.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/pearl-2",
-  "priority": 2
- },
- {
-  "t": 1793936402,
   "title": "🔥 Trending #6: Ethereum (ETH)",
   "message": "Rank #2 · -8.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
   "click": "https://www.coingecko.com/en/coins/ethereum",
@@ -417,6 +382,41 @@
   "title": "🔥 Trending #7: Monero (XMR)",
   "message": "Rank #12 · -0.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 29/100 Fear 😐.",
   "click": "https://www.coingecko.com/en/coins/monero",
+  "priority": 2
+ },
+ {
+  "t": 1794211157,
+  "title": "🔥 Trending #2: Janction (JCT)",
+  "message": "Rank #271 · +168.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 29/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/janction",
+  "priority": 2
+ },
+ {
+  "t": 1794211157,
+  "title": "🔥 Trending #4: STONK (STONK)",
+  "message": "Rank #541 · -35.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 29/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/stonk-3",
+  "priority": 2
+ },
+ {
+  "t": 1794211157,
+  "title": "🔥 Trending #5: NEAR Protocol (NEAR)",
+  "message": "Rank #22 · -6.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 29/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/near",
+  "priority": 2
+ },
+ {
+  "t": 1794211157,
+  "title": "🔥 Trending #6: Monad (MON)",
+  "message": "Rank #170 · -5.4% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 29/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/monad",
+  "priority": 2
+ },
+ {
+  "t": 1794211157,
+  "title": "🔥 Trending #7: Pearl (PEARL)",
+  "message": "Rank #91 · -9.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 29/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/pearl-2",
   "priority": 2
  }
 ]

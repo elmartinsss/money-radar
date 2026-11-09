@@ -1,27 +1,7 @@
 {
  "start_eur": 100,
- "cash": 49.37981523215407,
+ "cash": 49.836692552529705,
  "positions": [
-  {
-   "kind": "cg",
-   "id": "pudgy-penguins",
-   "chain": null,
-   "symbol": "PENGU",
-   "signal": "trending",
-   "entry": 0.007301040700116832,
-   "eur": 5.5919,
-   "paid": 5.62,
-   "time": 1793584007.35454,
-   "last": 0.00625341,
-   "liq0": null,
-   "feats": {
-    "signal": "trending",
-    "mood": "fear",
-    "time": "night (UTC 0-6)"
-   },
-   "expected": null,
-   "peak": 0.00739092
-  },
   {
    "kind": "cg",
    "id": "bitcoin",
@@ -32,7 +12,7 @@
    "eur": 4.6964,
    "paid": 4.72,
    "time": 1793607999.2227337,
-   "last": 75375,
+   "last": 73769,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +32,7 @@
    "eur": 4.577,
    "paid": 4.6,
    "time": 1793668917.1320481,
-   "last": 198.01,
+   "last": 192.69,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -72,7 +52,7 @@
    "eur": 4.4974,
    "paid": 4.52,
    "time": 1793846970.374277,
-   "last": 1.15,
+   "last": 1.13,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -92,7 +72,7 @@
    "eur": 4.30835,
    "paid": 4.33,
    "time": 1793936407.6101458,
-   "last": 3.65,
+   "last": 3.47,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -112,7 +92,7 @@
    "eur": 4.32825,
    "paid": 4.35,
    "time": 1794020880.8056674,
-   "last": 1.68,
+   "last": 1.6,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -132,7 +112,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847122,
-   "last": 5.1e-06,
+   "last": 4.99e-06,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -152,7 +132,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847365,
-   "last": 0.356529,
+   "last": 0.346809,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -161,6 +141,25 @@
    },
    "expected": null,
    "peak": 0.363247
+  },
+  {
+   "kind": "cg",
+   "id": "janction",
+   "chain": null,
+   "symbol": "JCT",
+   "signal": "trending",
+   "entry": 0.008461806615226856,
+   "eur": 4.14915,
+   "paid": 4.17,
+   "time": 1794211159.6956904,
+   "last": 0.008461806615226856,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "morning (UTC 6-12)"
+   },
+   "expected": null
   }
  ],
  "history": [
@@ -467,6 +466,31 @@
    "reason": "\u23f0 Time's up (7 days)",
    "pnl_eur": -0.95,
    "pnl_pct": -15.1
+  },
+  {
+   "kind": "cg",
+   "id": "pudgy-penguins",
+   "chain": null,
+   "symbol": "PENGU",
+   "signal": "trending",
+   "entry": 0.007301040700116832,
+   "eur": 5.5919,
+   "paid": 5.62,
+   "time": 1793584007.35454,
+   "last": 0.00607142,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "night (UTC 0-6)"
+   },
+   "expected": null,
+   "peak": 0.00739092,
+   "exit": 0.00607142,
+   "exit_time": 1794211159.695367,
+   "reason": "\ud83d\uded1 Stop loss (-17%)",
+   "pnl_eur": -0.99,
+   "pnl_pct": -17.7
   }
  ],
  "started": 1793366521.920483,
@@ -682,29 +706,34 @@
    "t": 1794186530,
    "v": 84.43,
    "btc": 75338
+  },
+  {
+   "t": 1794211159,
+   "v": 83.34,
+   "btc": 73798
   }
  ],
  "mood": {
   "value": 29,
   "label": "Fear",
-  "t": 1794186527
+  "t": 1794211157
  },
  "learning": {
   "trending": {
-   "n": 12,
+   "n": 13,
    "wins": 1,
    "win_rate": 8,
-   "avg_pct": -20.3,
-   "shrunk_pct": -20.3,
-   "t": -4.1,
+   "avg_pct": -20.1,
+   "shrunk_pct": -20.1,
+   "t": -4.41,
    "mult": 1.0,
-   "status": "still learning (12/30 trades)"
+   "status": "still learning (13/30 trades)"
   }
  },
  "pending": [],
- "updated": 1794186530,
+ "updated": 1794211159,
  "rewards": {
-  "xp": 90.4,
+  "xp": 92.4,
   "level": "Paper trader",
   "medals": [
    {
@@ -726,19 +755,19 @@
     "t": 1794186530
    }
   ],
-  "confidence": -19.1,
+  "confidence": -18.82,
   "streak": 0,
   "best_streak": 1,
   "situations": {
    "signal=trending": {
-    "n": 12,
-    "sum": -244.1,
-    "sq": 8218.63
+    "n": 13,
+    "sum": -261.8,
+    "sq": 8531.919999999998
    },
    "mood=fear": {
-    "n": 12,
-    "sum": -244.1,
-    "sq": 8218.63
+    "n": 13,
+    "sum": -261.8,
+    "sq": 8531.919999999998
    },
    "time=morning (UTC 6-12)": {
     "n": 2,
@@ -756,9 +785,9 @@
     "sq": 2970.9199999999996
    },
    "time=night (UTC 0-6)": {
-    "n": 6,
-    "sum": -96.1,
-    "sq": 2755.25
+    "n": 7,
+    "sum": -113.8,
+    "sq": 3068.54
    }
   },
   "rules": {
@@ -966,6 +995,19 @@
      "mood": "fear",
      "time": "night (UTC 0-6)"
     }
+   },
+   {
+    "t": 1794211159,
+    "symbol": "PENGU",
+    "signal": "trending",
+    "reward": -17.7,
+    "reason": "\ud83d\uded1 Stop loss (-17%)",
+    "lesson": "A loss inside the rules. Small losses are the price of finding winners.",
+    "situation": {
+     "signal": "trending",
+     "mood": "fear",
+     "time": "night (UTC 0-6)"
+    }
    }
   ],
   "pending_checks": [
@@ -986,10 +1028,28 @@
     "t": 1794159951,
     "rule": "Minimum age",
     "reason": "too new (3h)"
+   },
+   {
+    "id": "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump",
+    "chain": "solana",
+    "symbol": "CBUCKS",
+    "price": 0.003662,
+    "t": 1794211159,
+    "rule": "Rising this hour",
+    "reason": "not trending up this hour"
+   },
+   {
+    "id": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
+    "chain": "solana",
+    "symbol": "GATO",
+    "price": 0.01257,
+    "t": 1794211159,
+    "rule": "Rising this hour",
+    "reason": "not trending up this hour"
    }
   ],
-  "total_reward": -244.1,
-  "trades": 12
+  "total_reward": -261.8,
+  "trades": 13
  },
  "activity": [
   {
@@ -1326,6 +1386,24 @@
    "eur": 4.23,
    "price": 0.3576737639362792,
    "t": 1794114194
+  },
+  {
+   "type": "sell",
+   "symbol": "PENGU",
+   "signal": "trending",
+   "eur": 4.63,
+   "pnl": -0.99,
+   "pct": -17.7,
+   "reason": "\ud83d\uded1 Stop loss (-17%)",
+   "t": 1794211159
+  },
+  {
+   "type": "buy",
+   "symbol": "JCT",
+   "signal": "trending",
+   "eur": 4.17,
+   "price": 0.008461806615226856,
+   "t": 1794211159
   }
  ],
  "trend": {
