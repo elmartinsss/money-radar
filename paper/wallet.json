@@ -1,27 +1,7 @@
 {
  "start_eur": 100,
- "cash": 49.836692552529705,
+ "cash": 52.819451269094515,
  "positions": [
-  {
-   "kind": "cg",
-   "id": "bitcoin",
-   "chain": null,
-   "symbol": "BTC",
-   "signal": "trending",
-   "entry": 78080.49125602424,
-   "eur": 4.6964,
-   "paid": 4.72,
-   "time": 1793607999.2227337,
-   "last": 73769,
-   "liq0": null,
-   "feats": {
-    "signal": "trending",
-    "mood": "fear",
-    "time": "morning (UTC 6-12)"
-   },
-   "expected": null,
-   "peak": 80750
-  },
   {
    "kind": "cg",
    "id": "quant-network",
@@ -32,7 +12,7 @@
    "eur": 4.577,
    "paid": 4.6,
    "time": 1793668917.1320481,
-   "last": 192.69,
+   "last": 196.83,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -72,7 +52,7 @@
    "eur": 4.30835,
    "paid": 4.33,
    "time": 1793936407.6101458,
-   "last": 3.47,
+   "last": 3.62,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -92,7 +72,7 @@
    "eur": 4.32825,
    "paid": 4.35,
    "time": 1794020880.8056674,
-   "last": 1.6,
+   "last": 1.54,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -112,7 +92,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847122,
-   "last": 4.99e-06,
+   "last": 5.17e-06,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -120,7 +100,7 @@
     "time": "night (UTC 0-6)"
    },
    "expected": null,
-   "peak": 5.1e-06
+   "peak": 5.17e-06
   },
   {
    "kind": "cg",
@@ -132,7 +112,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847365,
-   "last": 0.346809,
+   "last": 0.377969,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -140,7 +120,7 @@
     "time": "night (UTC 0-6)"
    },
    "expected": null,
-   "peak": 0.363247
+   "peak": 0.377969
   },
   {
    "kind": "cg",
@@ -149,15 +129,37 @@
    "symbol": "JCT",
    "signal": "trending",
    "entry": 0.008461806615226856,
-   "eur": 4.14915,
+   "eur": 2.074575,
    "paid": 4.17,
    "time": 1794211159.6956904,
-   "last": 0.008461806615226856,
+   "last": 0.01143313,
    "liq0": null,
    "feats": {
     "signal": "trending",
     "mood": "fear",
     "time": "morning (UTC 6-12)"
+   },
+   "expected": null,
+   "peak": 0.01143313,
+   "realized": 2.7890369414650746,
+   "halved": true
+  },
+  {
+   "kind": "cg",
+   "id": "dacity-coin-4",
+   "chain": null,
+   "symbol": "DACITY",
+   "signal": "trending",
+   "entry": 0.0210512977581702,
+   "eur": 4.24865,
+   "paid": 4.27,
+   "time": 1794249684.5871825,
+   "last": 0.0210512977581702,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "evening (UTC 18-24)"
    },
    "expected": null
   }
@@ -491,11 +493,36 @@
    "reason": "\ud83d\uded1 Stop loss (-17%)",
    "pnl_eur": -0.99,
    "pnl_pct": -17.7
+  },
+  {
+   "kind": "cg",
+   "id": "bitcoin",
+   "chain": null,
+   "symbol": "BTC",
+   "signal": "trending",
+   "entry": 78080.49125602424,
+   "eur": 4.6964,
+   "paid": 4.72,
+   "time": 1793607999.2227337,
+   "last": 74585,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "morning (UTC 6-12)"
+   },
+   "expected": null,
+   "peak": 80750,
+   "exit": 74585,
+   "exit_time": 1794249684.5868826,
+   "reason": "\u23f0 Time's up (7 days)",
+   "pnl_eur": -0.26,
+   "pnl_pct": -5.4
   }
  ],
  "started": 1793366521.920483,
  "btc_start": 77216,
- "last_report": "2026-11-08",
+ "last_report": "2026-11-09",
  "equity": [
   {
    "t": 1793366862,
@@ -711,29 +738,34 @@
    "t": 1794211159,
    "v": 83.34,
    "btc": 73798
+  },
+  {
+   "t": 1794249684,
+   "v": 85.43,
+   "btc": 74587
   }
  ],
  "mood": {
   "value": 29,
   "label": "Fear",
-  "t": 1794211157
+  "t": 1794249682
  },
  "learning": {
   "trending": {
-   "n": 13,
+   "n": 14,
    "wins": 1,
-   "win_rate": 8,
-   "avg_pct": -20.1,
-   "shrunk_pct": -20.1,
-   "t": -4.41,
+   "win_rate": 7,
+   "avg_pct": -19.1,
+   "shrunk_pct": -19.1,
+   "t": -4.38,
    "mult": 1.0,
-   "status": "still learning (13/30 trades)"
+   "status": "still learning (14/30 trades)"
   }
  },
  "pending": [],
- "updated": 1794211159,
+ "updated": 1794249684,
  "rewards": {
-  "xp": 92.4,
+  "xp": 99.4,
   "level": "Paper trader",
   "medals": [
    {
@@ -755,24 +787,24 @@
     "t": 1794186530
    }
   ],
-  "confidence": -18.82,
+  "confidence": -16.14,
   "streak": 0,
   "best_streak": 1,
   "situations": {
    "signal=trending": {
-    "n": 13,
-    "sum": -261.8,
-    "sq": 8531.919999999998
+    "n": 14,
+    "sum": -267.2,
+    "sq": 8561.079999999998
    },
    "mood=fear": {
-    "n": 13,
-    "sum": -261.8,
-    "sq": 8531.919999999998
+    "n": 14,
+    "sum": -267.2,
+    "sq": 8561.079999999998
    },
    "time=morning (UTC 6-12)": {
-    "n": 2,
-    "sum": -37.3,
-    "sq": 704.05
+    "n": 3,
+    "sum": -42.699999999999996,
+    "sq": 733.2099999999999
    },
    "time=afternoon (UTC 12-18)": {
     "n": 2,
@@ -803,19 +835,19 @@
    "Liquidity vs size": {
     "saves": 0,
     "missed": 0,
-    "neutral": 9,
+    "neutral": 10,
     "examples": []
    },
    "Minimum age": {
-    "saves": 8,
+    "saves": 9,
     "missed": 1,
     "neutral": 1,
     "examples": [
-     "$FEAR -100% (saved)",
      "$Wanted -100% (saved)",
      "$COGE +201% (missed)",
      "$HODL -100% (saved)",
-     "$COGE -93% (saved)"
+     "$COGE -93% (saved)",
+     "$ELYSION -100% (saved)"
     ]
    },
    "No chasing pumps": {
@@ -1008,27 +1040,22 @@
      "mood": "fear",
      "time": "night (UTC 0-6)"
     }
+   },
+   {
+    "t": 1794249684,
+    "symbol": "BTC",
+    "signal": "trending",
+    "reward": -5.4,
+    "reason": "\u23f0 Time's up (7 days)",
+    "lesson": "A loss inside the rules. Small losses are the price of finding winners.",
+    "situation": {
+     "signal": "trending",
+     "mood": "fear",
+     "time": "morning (UTC 6-12)"
+    }
    }
   ],
   "pending_checks": [
-   {
-    "id": "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump",
-    "chain": "solana",
-    "symbol": "DESSA",
-    "price": 0.04224,
-    "t": 1794159951,
-    "rule": "Liquidity vs size",
-    "reason": "thin liquidity for its size (1.5% of market cap)"
-   },
-   {
-    "id": "AWaBBNoVuwQ22B8Y5nEtLne2uEfk8UaYEFws7vT7pump",
-    "chain": "solana",
-    "symbol": "ELYSION",
-    "price": 0.003629,
-    "t": 1794159951,
-    "rule": "Minimum age",
-    "reason": "too new (3h)"
-   },
    {
     "id": "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump",
     "chain": "solana",
@@ -1048,8 +1075,8 @@
     "reason": "not trending up this hour"
    }
   ],
-  "total_reward": -261.8,
-  "trades": 13
+  "total_reward": -267.2,
+  "trades": 14
  },
  "activity": [
   {
@@ -1404,6 +1431,34 @@
    "eur": 4.17,
    "price": 0.008461806615226856,
    "t": 1794211159
+  },
+  {
+   "type": "sell",
+   "symbol": "BTC",
+   "signal": "trending",
+   "eur": 4.46,
+   "pnl": -0.26,
+   "pct": -5.4,
+   "reason": "\u23f0 Time's up (7 days)",
+   "t": 1794249684
+  },
+  {
+   "type": "sell",
+   "symbol": "JCT",
+   "signal": "trending",
+   "eur": 2.79,
+   "pnl": 0.7,
+   "pct": 33.8,
+   "reason": "\ud83d\udcb0 Sold half at profit, rest rides with a trailing stop",
+   "t": 1794249684
+  },
+  {
+   "type": "buy",
+   "symbol": "DACITY",
+   "signal": "trending",
+   "eur": 4.27,
+   "price": 0.0210512977581702,
+   "t": 1794249684
   }
  ],
  "trend": {
