@@ -1,28 +1,28 @@
 # 📝 Paper wallet (fake money)
 
-Started 2026-10-30 with **100€** · now **85.43€ (-14.6%)** · cash 52.82€
+Started 2026-10-30 with **100€** · now **85.93€ (-14.1%)** · cash 59.68€
 
-Closed trades: 14 · wins: 1
+Closed trades: 16 · wins: 2
 
-_Updated 2026-11-09 20:41 Vilnius time._
+_Updated 2026-11-10 03:46 Vilnius time._
 
 ## Open positions
 
 | Coin | Signal | Bought | Value now | Change |
 |---|---|---|---|---|
-| QNT | trending | 4.60€ | 4.65€ | +1.0% |
-| TRUMP | trending | 4.52€ | 4.01€ | -11.4% |
+| TRUMP | trending | 4.52€ | 3.93€ | -13.0% |
 | NEAR | trending | 4.33€ | 4.24€ | -2.1% |
-| PEARL | trending | 4.35€ | 3.76€ | -13.6% |
-| PEPE | trending | 4.23€ | 4.46€ | +5.5% |
-| ONDO | trending | 4.23€ | 4.45€ | +5.1% |
-| JCT | trending | 4.17€ | 2.80€ | -32.8% |
-| DACITY | trending | 4.27€ | 4.25€ | -0.5% |
+| PEARL | trending | 4.35€ | 3.95€ | -9.1% |
+| PEPE | trending | 4.23€ | 4.43€ | +4.7% |
+| ONDO | trending | 4.23€ | 4.39€ | +3.7% |
+| DACITY | trending | 4.27€ | 5.31€ | +24.5% |
 
 ## Last 30 closed trades
 
 | Coin | Signal | Result | Why |
 |---|---|---|---|
+| JCT | trending | +0.91€ (+21.8%) | 📉 Trailing stop (+11%, peak was +35%) |
+| QNT | trending | -0.04€ (-0.8%) | ⏰ Time's up (7 days) |
 | BTC | trending | -0.26€ (-5.4%) | ⏰ Time's up (7 days) |
 | PENGU | trending | -0.99€ (-17.7%) | 🛑 Stop loss (-17%) |
 | VVV | trending | -0.95€ (-15.1%) | ⏰ Time's up (7 days) |

@@ -1,27 +1,7 @@
 {
  "start_eur": 100,
- "cash": 52.819451269094515,
+ "cash": 59.67566214048239,
  "positions": [
-  {
-   "kind": "cg",
-   "id": "quant-network",
-   "chain": null,
-   "symbol": "QNT",
-   "signal": "trending",
-   "entry": 193.83522770650964,
-   "eur": 4.577,
-   "paid": 4.6,
-   "time": 1793668917.1320481,
-   "last": 196.83,
-   "liq0": null,
-   "feats": {
-    "signal": "trending",
-    "mood": "fear",
-    "time": "night (UTC 0-6)"
-   },
-   "expected": null,
-   "peak": 204.92
-  },
   {
    "kind": "cg",
    "id": "official-trump",
@@ -32,7 +12,7 @@
    "eur": 4.4974,
    "paid": 4.52,
    "time": 1793846970.374277,
-   "last": 1.13,
+   "last": 1.11,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -72,7 +52,7 @@
    "eur": 4.32825,
    "paid": 4.35,
    "time": 1794020880.8056674,
-   "last": 1.54,
+   "last": 1.62,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -92,7 +72,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847122,
-   "last": 5.17e-06,
+   "last": 5.13e-06,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -112,7 +92,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847365,
-   "last": 0.377969,
+   "last": 0.372856,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -124,28 +104,6 @@
   },
   {
    "kind": "cg",
-   "id": "janction",
-   "chain": null,
-   "symbol": "JCT",
-   "signal": "trending",
-   "entry": 0.008461806615226856,
-   "eur": 2.074575,
-   "paid": 4.17,
-   "time": 1794211159.6956904,
-   "last": 0.01143313,
-   "liq0": null,
-   "feats": {
-    "signal": "trending",
-    "mood": "fear",
-    "time": "morning (UTC 6-12)"
-   },
-   "expected": null,
-   "peak": 0.01143313,
-   "realized": 2.7890369414650746,
-   "halved": true
-  },
-  {
-   "kind": "cg",
    "id": "dacity-coin-4",
    "chain": null,
    "symbol": "DACITY",
@@ -154,14 +112,15 @@
    "eur": 4.24865,
    "paid": 4.27,
    "time": 1794249684.5871825,
-   "last": 0.0210512977581702,
+   "last": 0.02633312,
    "liq0": null,
    "feats": {
     "signal": "trending",
     "mood": "fear",
     "time": "evening (UTC 18-24)"
    },
-   "expected": null
+   "expected": null,
+   "peak": 0.02633312
   }
  ],
  "history": [
@@ -518,6 +477,58 @@
    "reason": "\u23f0 Time's up (7 days)",
    "pnl_eur": -0.26,
    "pnl_pct": -5.4
+  },
+  {
+   "kind": "cg",
+   "id": "quant-network",
+   "chain": null,
+   "symbol": "QNT",
+   "signal": "trending",
+   "entry": 193.83522770650964,
+   "eur": 4.577,
+   "paid": 4.6,
+   "time": 1793668917.1320481,
+   "last": 194.28,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "night (UTC 0-6)"
+   },
+   "expected": null,
+   "peak": 204.92,
+   "exit": 194.28,
+   "exit_time": 1794275206.6337702,
+   "reason": "\u23f0 Time's up (7 days)",
+   "pnl_eur": -0.04,
+   "pnl_pct": -0.8
+  },
+  {
+   "kind": "cg",
+   "id": "janction",
+   "chain": null,
+   "symbol": "JCT",
+   "signal": "trending",
+   "entry": 0.008461806615226856,
+   "eur": 2.074575,
+   "paid": 4.17,
+   "time": 1794211159.6956904,
+   "last": 0.00939417,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "morning (UTC 6-12)"
+   },
+   "expected": null,
+   "peak": 0.01143313,
+   "realized": 2.7890369414650746,
+   "halved": true,
+   "exit": 0.00939417,
+   "exit_time": 1794275206.6338127,
+   "reason": "\ud83d\udcc9 Trailing stop (+11%, peak was +35%)",
+   "pnl_eur": 0.91,
+   "pnl_pct": 21.8
   }
  ],
  "started": 1793366521.920483,
@@ -743,29 +754,42 @@
    "t": 1794249684,
    "v": 85.43,
    "btc": 74587
+  },
+  {
+   "t": 1794275206,
+   "v": 85.93,
+   "btc": 74945
   }
  ],
  "mood": {
-  "value": 29,
+  "value": 32,
   "label": "Fear",
-  "t": 1794249682
+  "t": 1794275203
  },
  "learning": {
   "trending": {
-   "n": 14,
-   "wins": 1,
-   "win_rate": 7,
-   "avg_pct": -19.1,
-   "shrunk_pct": -19.1,
-   "t": -4.38,
+   "n": 16,
+   "wins": 2,
+   "win_rate": 12,
+   "avg_pct": -15.4,
+   "shrunk_pct": -15.4,
+   "t": -3.29,
    "mult": 1.0,
-   "status": "still learning (14/30 trades)"
+   "status": "still learning (16/30 trades)"
   }
  },
- "pending": [],
- "updated": 1794249684,
+ "pending": [
+  {
+   "kind": "stock",
+   "id": "TSLA",
+   "symbol": "TSLA",
+   "signal": "momentum",
+   "seen": 1794275206.6340091
+  }
+ ],
+ "updated": 1794275206,
  "rewards": {
-  "xp": 99.4,
+  "xp": 133.2,
   "level": "Paper trader",
   "medals": [
    {
@@ -787,24 +811,24 @@
     "t": 1794186530
    }
   ],
-  "confidence": -16.14,
-  "streak": 0,
+  "confidence": -6.1,
+  "streak": 1,
   "best_streak": 1,
   "situations": {
    "signal=trending": {
-    "n": 14,
-    "sum": -267.2,
-    "sq": 8561.079999999998
+    "n": 16,
+    "sum": -246.2,
+    "sq": 9036.959999999997
    },
    "mood=fear": {
-    "n": 14,
-    "sum": -267.2,
-    "sq": 8561.079999999998
+    "n": 16,
+    "sum": -246.2,
+    "sq": 9036.959999999997
    },
    "time=morning (UTC 6-12)": {
-    "n": 3,
-    "sum": -42.699999999999996,
-    "sq": 733.2099999999999
+    "n": 4,
+    "sum": -20.899999999999995,
+    "sq": 1208.4499999999998
    },
    "time=afternoon (UTC 12-18)": {
     "n": 2,
@@ -817,9 +841,9 @@
     "sq": 2970.9199999999996
    },
    "time=night (UTC 0-6)": {
-    "n": 7,
-    "sum": -113.8,
-    "sq": 3068.54
+    "n": 8,
+    "sum": -114.6,
+    "sq": 3069.18
    }
   },
   "rules": {
@@ -1053,6 +1077,32 @@
      "mood": "fear",
      "time": "morning (UTC 6-12)"
     }
+   },
+   {
+    "t": 1794275206,
+    "symbol": "QNT",
+    "signal": "trending",
+    "reward": -0.8,
+    "reason": "\u23f0 Time's up (7 days)",
+    "lesson": "A loss inside the rules. Small losses are the price of finding winners.",
+    "situation": {
+     "signal": "trending",
+     "mood": "fear",
+     "time": "night (UTC 0-6)"
+    }
+   },
+   {
+    "t": 1794275206,
+    "symbol": "JCT",
+    "signal": "trending",
+    "reward": 21.8,
+    "reason": "\ud83d\udcc9 Trailing stop (+11%, peak was +35%)",
+    "lesson": "That one worked. Letting the winner run with a trailing stop paid off.",
+    "situation": {
+     "signal": "trending",
+     "mood": "fear",
+     "time": "morning (UTC 6-12)"
+    }
    }
   ],
   "pending_checks": [
@@ -1075,8 +1125,8 @@
     "reason": "not trending up this hour"
    }
   ],
-  "total_reward": -267.2,
-  "trades": 14
+  "total_reward": -246.2,
+  "trades": 16
  },
  "activity": [
   {
@@ -1459,6 +1509,47 @@
    "eur": 4.27,
    "price": 0.0210512977581702,
    "t": 1794249684
+  },
+  {
+   "type": "sell",
+   "symbol": "QNT",
+   "signal": "trending",
+   "eur": 4.56,
+   "pnl": -0.04,
+   "pct": -0.8,
+   "reason": "\u23f0 Time's up (7 days)",
+   "t": 1794275206
+  },
+  {
+   "type": "sell",
+   "symbol": "JCT",
+   "signal": "trending",
+   "eur": 5.08,
+   "pnl": 0.91,
+   "pct": 21.8,
+   "reason": "\ud83d\udcc9 Trailing stop (+11%, peak was +35%)",
+   "t": 1794275206
+  },
+  {
+   "type": "skip",
+   "symbol": "TSLA",
+   "signal": "momentum",
+   "reason": "big up-day: waiting a day, stocks often pull back after a jump",
+   "t": 1794275206
+  },
+  {
+   "type": "skip",
+   "symbol": "BTC",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.9%",
+   "t": 1794275206
+  },
+  {
+   "type": "skip",
+   "symbol": "AVAX",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.9%",
+   "t": 1794275206
   }
  ],
  "trend": {
