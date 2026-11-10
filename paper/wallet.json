@@ -1,6 +1,6 @@
 {
  "start_eur": 100,
- "cash": 63.229242164299166,
+ "cash": 66.6781354962695,
  "positions": [
   {
    "kind": "cg",
@@ -12,7 +12,7 @@
    "eur": 4.4974,
    "paid": 4.52,
    "time": 1793846970.374277,
-   "last": 1.14,
+   "last": 1.12,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -32,7 +32,7 @@
    "eur": 4.30835,
    "paid": 4.33,
    "time": 1793936407.6101458,
-   "last": 3.62,
+   "last": 3.48,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -44,26 +44,6 @@
   },
   {
    "kind": "cg",
-   "id": "pearl-2",
-   "chain": null,
-   "symbol": "PEARL",
-   "signal": "trending",
-   "entry": 1.7731439729701093,
-   "eur": 4.32825,
-   "paid": 4.35,
-   "time": 1794020880.8056674,
-   "last": 1.65,
-   "liq0": null,
-   "feats": {
-    "signal": "trending",
-    "mood": "fear",
-    "time": "night (UTC 0-6)"
-   },
-   "expected": null,
-   "peak": 1.79
-  },
-  {
-   "kind": "cg",
    "id": "pepe",
    "chain": null,
    "symbol": "PEPE",
@@ -72,7 +52,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847122,
-   "last": 5.32e-06,
+   "last": 5.18e-06,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -92,7 +72,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847365,
-   "last": 0.372064,
+   "last": 0.359378,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -534,6 +514,31 @@
    "reason": "\ud83d\udcc9 Trailing stop (-16%, peak was +25%)",
    "pnl_eur": -0.72,
    "pnl_pct": -16.8
+  },
+  {
+   "kind": "cg",
+   "id": "pearl-2",
+   "chain": null,
+   "symbol": "PEARL",
+   "signal": "trending",
+   "entry": 1.7731439729701093,
+   "eur": 4.32825,
+   "paid": 4.35,
+   "time": 1794020880.8056674,
+   "last": 1.42,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "night (UTC 0-6)"
+   },
+   "expected": null,
+   "peak": 1.79,
+   "exit": 1.42,
+   "exit_time": 1794329348.474563,
+   "reason": "\ud83d\uded1 Stop loss (-20%)",
+   "pnl_eur": -0.9,
+   "pnl_pct": -20.7
   }
  ],
  "started": 1793366521.920483,
@@ -769,23 +774,28 @@
    "t": 1794300744,
    "v": 84.51,
    "btc": 74555
+  },
+  {
+   "t": 1794329348,
+   "v": 83.42,
+   "btc": 72888
   }
  ],
  "mood": {
   "value": 32,
   "label": "Fear",
-  "t": 1794300741
+  "t": 1794329344
  },
  "learning": {
   "trending": {
-   "n": 17,
+   "n": 18,
    "wins": 2,
-   "win_rate": 12,
-   "avg_pct": -15.5,
-   "shrunk_pct": -15.5,
-   "t": -3.52,
+   "win_rate": 11,
+   "avg_pct": -15.8,
+   "shrunk_pct": -15.8,
+   "t": -3.8,
    "mult": 1.0,
-   "status": "still learning (17/30 trades)"
+   "status": "still learning (18/30 trades)"
   }
  },
  "pending": [
@@ -797,9 +807,9 @@
    "seen": 1794275206.6340091
   }
  ],
- "updated": 1794300744,
+ "updated": 1794329348,
  "rewards": {
-  "xp": 135.2,
+  "xp": 137.2,
   "level": "Paper trader",
   "medals": [
    {
@@ -821,19 +831,19 @@
     "t": 1794186530
    }
   ],
-  "confidence": -8.24,
+  "confidence": -10.73,
   "streak": 0,
   "best_streak": 1,
   "situations": {
    "signal=trending": {
-    "n": 17,
-    "sum": -263.0,
-    "sq": 9319.199999999997
+    "n": 18,
+    "sum": -283.7,
+    "sq": 9747.689999999997
    },
    "mood=fear": {
-    "n": 17,
-    "sum": -263.0,
-    "sq": 9319.199999999997
+    "n": 18,
+    "sum": -283.7,
+    "sq": 9747.689999999997
    },
    "time=morning (UTC 6-12)": {
     "n": 4,
@@ -851,9 +861,9 @@
     "sq": 3253.16
    },
    "time=night (UTC 0-6)": {
-    "n": 8,
-    "sum": -114.6,
-    "sq": 3069.18
+    "n": 9,
+    "sum": -135.29999999999998,
+    "sq": 3497.6699999999996
    }
   },
   "rules": {
@@ -1126,6 +1136,19 @@
      "mood": "fear",
      "time": "evening (UTC 18-24)"
     }
+   },
+   {
+    "t": 1794329348,
+    "symbol": "PEARL",
+    "signal": "trending",
+    "reward": -20.7,
+    "reason": "\ud83d\uded1 Stop loss (-20%)",
+    "lesson": "A loss inside the rules. Small losses are the price of finding winners.",
+    "situation": {
+     "signal": "trending",
+     "mood": "fear",
+     "time": "night (UTC 0-6)"
+    }
    }
   ],
   "pending_checks": [
@@ -1137,10 +1160,28 @@
     "t": 1794300744,
     "rule": "Rising this hour",
     "reason": "not trending up this hour"
+   },
+   {
+    "id": "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump",
+    "chain": "solana",
+    "symbol": "CBUCKS",
+    "price": 0.004767,
+    "t": 1794329348,
+    "rule": "Rising this hour",
+    "reason": "not trending up this hour"
+   },
+   {
+    "id": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
+    "chain": "solana",
+    "symbol": "GATO",
+    "price": 0.007377,
+    "t": 1794329348,
+    "rule": "Rising this hour",
+    "reason": "not trending up this hour"
    }
   ],
-  "total_reward": -263.0,
-  "trades": 17
+  "total_reward": -283.7,
+  "trades": 18
  },
  "activity": [
   {
@@ -1588,6 +1629,23 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -15.5%",
    "t": 1794300744
+  },
+  {
+   "type": "sell",
+   "symbol": "PEARL",
+   "signal": "trending",
+   "eur": 3.45,
+   "pnl": -0.9,
+   "pct": -20.7,
+   "reason": "\ud83d\uded1 Stop loss (-20%)",
+   "t": 1794329348
+  },
+  {
+   "type": "skip",
+   "symbol": "SI",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.8%",
+   "t": 1794329348
   }
  ],
  "trend": {
