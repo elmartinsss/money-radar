@@ -1,6 +1,6 @@
 {
  "start_eur": 100,
- "cash": 66.6781354962695,
+ "cash": 62.48813549626951,
  "positions": [
   {
    "kind": "cg",
@@ -12,7 +12,7 @@
    "eur": 4.4974,
    "paid": 4.52,
    "time": 1793846970.374277,
-   "last": 1.12,
+   "last": 1.13,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -32,7 +32,7 @@
    "eur": 4.30835,
    "paid": 4.33,
    "time": 1793936407.6101458,
-   "last": 3.48,
+   "last": 3.59,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +52,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847122,
-   "last": 5.18e-06,
+   "last": 5.24e-06,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -72,7 +72,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847365,
-   "last": 0.359378,
+   "last": 0.367251,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -81,6 +81,25 @@
    },
    "expected": null,
    "peak": 0.377969
+  },
+  {
+   "kind": "stock",
+   "id": "TSLA",
+   "chain": null,
+   "symbol": "TSLA",
+   "signal": "momentum",
+   "entry": 379.78,
+   "eur": 4.16905,
+   "paid": 4.19,
+   "time": 1794348212.2190492,
+   "last": 379.78,
+   "liq0": null,
+   "feats": {
+    "signal": "momentum",
+    "mood": "fear",
+    "time": "evening (UTC 18-24)"
+   },
+   "expected": -15.8
   }
  ],
  "history": [
@@ -779,12 +798,17 @@
    "t": 1794329348,
    "v": 83.42,
    "btc": 72888
+  },
+  {
+   "t": 1794348212,
+   "v": 83.71,
+   "btc": 73801
   }
  ],
  "mood": {
   "value": 32,
   "label": "Fear",
-  "t": 1794329344
+  "t": 1794348208
  },
  "learning": {
   "trending": {
@@ -798,16 +822,8 @@
    "status": "still learning (18/30 trades)"
   }
  },
- "pending": [
-  {
-   "kind": "stock",
-   "id": "TSLA",
-   "symbol": "TSLA",
-   "signal": "momentum",
-   "seen": 1794275206.6340091
-  }
- ],
- "updated": 1794329348,
+ "pending": [],
+ "updated": 1794348212,
  "rewards": {
   "xp": 137.2,
   "level": "Paper trader",
@@ -1646,12 +1662,31 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -15.8%",
    "t": 1794329348
+  },
+  {
+   "type": "skip",
+   "symbol": "ZEC",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.8%",
+   "t": 1794348212
+  },
+  {
+   "type": "buy",
+   "symbol": "TSLA",
+   "signal": "momentum",
+   "eur": 4.19,
+   "price": 379.78,
+   "t": 1794348212
   }
  ],
  "trend": {
   "ethereum": {
    "day": "2026-11-05",
    "up": false
+  },
+  "TSLA": {
+   "day": "2026-11-11",
+   "up": true
   }
  }
 }
