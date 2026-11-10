@@ -1,6 +1,6 @@
 {
  "start_eur": 100,
- "cash": 59.67566214048239,
+ "cash": 63.229242164299166,
  "positions": [
   {
    "kind": "cg",
@@ -12,7 +12,7 @@
    "eur": 4.4974,
    "paid": 4.52,
    "time": 1793846970.374277,
-   "last": 1.11,
+   "last": 1.14,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +52,7 @@
    "eur": 4.32825,
    "paid": 4.35,
    "time": 1794020880.8056674,
-   "last": 1.62,
+   "last": 1.65,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -72,7 +72,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847122,
-   "last": 5.13e-06,
+   "last": 5.32e-06,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -80,7 +80,7 @@
     "time": "night (UTC 0-6)"
    },
    "expected": null,
-   "peak": 5.17e-06
+   "peak": 5.32e-06
   },
   {
    "kind": "cg",
@@ -92,7 +92,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847365,
-   "last": 0.372856,
+   "last": 0.372064,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -101,26 +101,6 @@
    },
    "expected": null,
    "peak": 0.377969
-  },
-  {
-   "kind": "cg",
-   "id": "dacity-coin-4",
-   "chain": null,
-   "symbol": "DACITY",
-   "signal": "trending",
-   "entry": 0.0210512977581702,
-   "eur": 4.24865,
-   "paid": 4.27,
-   "time": 1794249684.5871825,
-   "last": 0.02633312,
-   "liq0": null,
-   "feats": {
-    "signal": "trending",
-    "mood": "fear",
-    "time": "evening (UTC 18-24)"
-   },
-   "expected": null,
-   "peak": 0.02633312
   }
  ],
  "history": [
@@ -529,6 +509,31 @@
    "reason": "\ud83d\udcc9 Trailing stop (+11%, peak was +35%)",
    "pnl_eur": 0.91,
    "pnl_pct": 21.8
+  },
+  {
+   "kind": "cg",
+   "id": "dacity-coin-4",
+   "chain": null,
+   "symbol": "DACITY",
+   "signal": "trending",
+   "entry": 0.0210512977581702,
+   "eur": 4.24865,
+   "paid": 4.27,
+   "time": 1794249684.5871825,
+   "last": 0.01769583,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "evening (UTC 18-24)"
+   },
+   "expected": null,
+   "peak": 0.02633312,
+   "exit": 0.01769583,
+   "exit_time": 1794300744.37092,
+   "reason": "\ud83d\udcc9 Trailing stop (-16%, peak was +25%)",
+   "pnl_eur": -0.72,
+   "pnl_pct": -16.8
   }
  ],
  "started": 1793366521.920483,
@@ -759,23 +764,28 @@
    "t": 1794275206,
    "v": 85.93,
    "btc": 74945
+  },
+  {
+   "t": 1794300744,
+   "v": 84.51,
+   "btc": 74555
   }
  ],
  "mood": {
   "value": 32,
   "label": "Fear",
-  "t": 1794275203
+  "t": 1794300741
  },
  "learning": {
   "trending": {
-   "n": 16,
+   "n": 17,
    "wins": 2,
    "win_rate": 12,
-   "avg_pct": -15.4,
-   "shrunk_pct": -15.4,
-   "t": -3.29,
+   "avg_pct": -15.5,
+   "shrunk_pct": -15.5,
+   "t": -3.52,
    "mult": 1.0,
-   "status": "still learning (16/30 trades)"
+   "status": "still learning (17/30 trades)"
   }
  },
  "pending": [
@@ -787,9 +797,9 @@
    "seen": 1794275206.6340091
   }
  ],
- "updated": 1794275206,
+ "updated": 1794300744,
  "rewards": {
-  "xp": 133.2,
+  "xp": 135.2,
   "level": "Paper trader",
   "medals": [
    {
@@ -811,19 +821,19 @@
     "t": 1794186530
    }
   ],
-  "confidence": -6.1,
-  "streak": 1,
+  "confidence": -8.24,
+  "streak": 0,
   "best_streak": 1,
   "situations": {
    "signal=trending": {
-    "n": 16,
-    "sum": -246.2,
-    "sq": 9036.959999999997
+    "n": 17,
+    "sum": -263.0,
+    "sq": 9319.199999999997
    },
    "mood=fear": {
-    "n": 16,
-    "sum": -246.2,
-    "sq": 9036.959999999997
+    "n": 17,
+    "sum": -263.0,
+    "sq": 9319.199999999997
    },
    "time=morning (UTC 6-12)": {
     "n": 4,
@@ -836,9 +846,9 @@
     "sq": 1788.4099999999999
    },
    "time=evening (UTC 18-24)": {
-    "n": 2,
-    "sum": -57.8,
-    "sq": 2970.9199999999996
+    "n": 3,
+    "sum": -74.6,
+    "sq": 3253.16
    },
    "time=night (UTC 0-6)": {
     "n": 8,
@@ -850,7 +860,7 @@
    "Rising this hour": {
     "saves": 1,
     "missed": 1,
-    "neutral": 7,
+    "neutral": 9,
     "examples": [
      "$DESSA +139% (missed)",
      "$DESSA -51% (saved)"
@@ -1103,30 +1113,34 @@
      "mood": "fear",
      "time": "morning (UTC 6-12)"
     }
+   },
+   {
+    "t": 1794300744,
+    "symbol": "DACITY",
+    "signal": "trending",
+    "reward": -16.8,
+    "reason": "\ud83d\udcc9 Trailing stop (-16%, peak was +25%)",
+    "lesson": "A loss inside the rules. Small losses are the price of finding winners.",
+    "situation": {
+     "signal": "trending",
+     "mood": "fear",
+     "time": "evening (UTC 18-24)"
+    }
    }
   ],
   "pending_checks": [
    {
-    "id": "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump",
+    "id": "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump",
     "chain": "solana",
-    "symbol": "CBUCKS",
-    "price": 0.003662,
-    "t": 1794211159,
-    "rule": "Rising this hour",
-    "reason": "not trending up this hour"
-   },
-   {
-    "id": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
-    "chain": "solana",
-    "symbol": "GATO",
-    "price": 0.01257,
-    "t": 1794211159,
+    "symbol": "DESSA",
+    "price": 0.01878,
+    "t": 1794300744,
     "rule": "Rising this hour",
     "reason": "not trending up this hour"
    }
   ],
-  "total_reward": -246.2,
-  "trades": 16
+  "total_reward": -263.0,
+  "trades": 17
  },
  "activity": [
   {
@@ -1550,6 +1564,30 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -14.9%",
    "t": 1794275206
+  },
+  {
+   "type": "sell",
+   "symbol": "DACITY",
+   "signal": "trending",
+   "eur": 3.55,
+   "pnl": -0.72,
+   "pct": -16.8,
+   "reason": "\ud83d\udcc9 Trailing stop (-16%, peak was +25%)",
+   "t": 1794300744
+  },
+  {
+   "type": "skip",
+   "symbol": "ETH",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.5%",
+   "t": 1794300744
+  },
+  {
+   "type": "skip",
+   "symbol": "INIT",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.5%",
+   "t": 1794300744
   }
  ],
  "trend": {
