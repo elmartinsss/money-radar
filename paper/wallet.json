@@ -32,7 +32,7 @@
    "eur": 4.30835,
    "paid": 4.33,
    "time": 1793936407.6101458,
-   "last": 3.59,
+   "last": 3.67,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +52,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847122,
-   "last": 5.24e-06,
+   "last": 5.46e-06,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -60,7 +60,7 @@
     "time": "night (UTC 0-6)"
    },
    "expected": null,
-   "peak": 5.32e-06
+   "peak": 5.46e-06
   },
   {
    "kind": "cg",
@@ -72,7 +72,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847365,
-   "last": 0.367251,
+   "last": 0.372128,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -99,7 +99,8 @@
     "mood": "fear",
     "time": "evening (UTC 18-24)"
    },
-   "expected": -15.8
+   "expected": -15.8,
+   "peak": 379.78
   }
  ],
  "history": [
@@ -803,12 +804,17 @@
    "t": 1794348212,
    "v": 83.71,
    "btc": 73801
+  },
+  {
+   "t": 1794362059,
+   "v": 84.05,
+   "btc": 73690
   }
  ],
  "mood": {
-  "value": 32,
+  "value": 29,
   "label": "Fear",
-  "t": 1794348208
+  "t": 1794362055
  },
  "learning": {
   "trending": {
@@ -823,7 +829,7 @@
   }
  },
  "pending": [],
- "updated": 1794348212,
+ "updated": 1794362059,
  "rewards": {
   "xp": 137.2,
   "level": "Paper trader",
@@ -1194,6 +1200,15 @@
     "t": 1794329348,
     "rule": "Rising this hour",
     "reason": "not trending up this hour"
+   },
+   {
+    "id": "8yLBuP74RnFmjSRS8BGFebvyoTo8uiEjPB71h3Zgpump",
+    "chain": "solana",
+    "symbol": "NIHAO",
+    "price": 0.004347,
+    "t": 1794362058,
+    "rule": "Minimum age",
+    "reason": "too new (2h)"
    }
   ],
   "total_reward": -283.7,
@@ -1677,6 +1692,27 @@
    "eur": 4.19,
    "price": 379.78,
    "t": 1794348212
+  },
+  {
+   "type": "skip",
+   "symbol": "ZEC",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.4%",
+   "t": 1794362059
+  },
+  {
+   "type": "skip",
+   "symbol": "BTC",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.4%",
+   "t": 1794362059
+  },
+  {
+   "type": "skip",
+   "symbol": "PENGU",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.4%",
+   "t": 1794362059
   }
  ],
  "trend": {
