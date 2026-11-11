@@ -12,7 +12,7 @@
    "eur": 4.4974,
    "paid": 4.52,
    "time": 1793846970.374277,
-   "last": 1.13,
+   "last": 1.12,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -32,7 +32,7 @@
    "eur": 4.30835,
    "paid": 4.33,
    "time": 1793936407.6101458,
-   "last": 3.67,
+   "last": 3.58,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +52,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847122,
-   "last": 5.46e-06,
+   "last": 5.03e-06,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -72,7 +72,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847365,
-   "last": 0.372128,
+   "last": 0.367739,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -809,12 +809,17 @@
    "t": 1794362059,
    "v": 84.05,
    "btc": 73690
+  },
+  {
+   "t": 1794387746,
+   "v": 83.49,
+   "btc": 73651
   }
  ],
  "mood": {
   "value": 29,
   "label": "Fear",
-  "t": 1794362055
+  "t": 1794387743
  },
  "learning": {
   "trending": {
@@ -829,9 +834,9 @@
   }
  },
  "pending": [],
- "updated": 1794362059,
+ "updated": 1794387746,
  "rewards": {
-  "xp": 137.2,
+  "xp": 142.2,
   "level": "Paper trader",
   "medals": [
    {
@@ -890,12 +895,13 @@
   },
   "rules": {
    "Rising this hour": {
-    "saves": 1,
+    "saves": 2,
     "missed": 1,
     "neutral": 9,
     "examples": [
      "$DESSA +139% (missed)",
-     "$DESSA -51% (saved)"
+     "$DESSA -51% (saved)",
+     "$DESSA -52% (saved)"
     ]
    },
    "Liquidity vs size": {
@@ -1174,15 +1180,6 @@
    }
   ],
   "pending_checks": [
-   {
-    "id": "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump",
-    "chain": "solana",
-    "symbol": "DESSA",
-    "price": 0.01878,
-    "t": 1794300744,
-    "rule": "Rising this hour",
-    "reason": "not trending up this hour"
-   },
    {
     "id": "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump",
     "chain": "solana",

@@ -1,47 +1,5 @@
 [
  {
-  "t": 1794114191,
-  "title": "🔥 Trending #2: Pepe (PEPE)",
-  "message": "Rank #45 · -1.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/pepe",
-  "priority": 2
- },
- {
-  "t": 1794114191,
-  "title": "🔥 Trending #3: Ondo (ONDO)",
-  "message": "Rank #53 · -2.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/ondo-finance",
-  "priority": 2
- },
- {
-  "t": 1794114191,
-  "title": "🔥 Trending #4: Aero (AERO)",
-  "message": "Rank #114 · -1.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/aero",
-  "priority": 2
- },
- {
-  "t": 1794114191,
-  "title": "🔥 Trending #5: Pudgy Penguins (PENGU)",
-  "message": "Rank #115 · -3.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/pudgy-penguins",
-  "priority": 2
- },
- {
-  "t": 1794114191,
-  "title": "🔥 Trending #6: Aerodrome Finance (AERO)",
-  "message": "Rank #174 · -1.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/aerodrome-finance",
-  "priority": 2
- },
- {
-  "t": 1794114191,
-  "title": "🔥 Trending #7: Kinetiq (KNTQ)",
-  "message": "Rank #198 · -0.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/kinetiq",
-  "priority": 2
- },
- {
   "t": 1794138823,
   "title": "🔥 Trending #1: WASTED (WASTED)",
   "message": "Rank #779 · +54.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
@@ -417,6 +375,48 @@
   "title": "🔥 Trending #7: Lighter (LIT)",
   "message": "Rank #77 · +10.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 29/100 Fear 😐.",
   "click": "https://www.coingecko.com/en/coins/lighter",
+  "priority": 2
+ },
+ {
+  "t": 1794387743,
+  "title": "📰 Bitcoin Exchange Binance Announces Listing of Two New Trading Pairs on its Futures Platform - Cryptonews.net",
+  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: listing, binance · via news.google.com",
+  "click": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5ORll3UFQ0ZU90NjVwTGFUYnhiekQxOUJGUkM1QmR2REhPcU16WTBlbGdRc09vaUtycVBwSHpNMjhyYWJPOVBPWENCRm9kM3lsQk14bHdGRQ?oc=5",
+  "priority": 3
+ },
+ {
+  "t": 1794387743,
+  "title": "📰 CoreWeave Surges Over 17% as Earnings Beat Sparks Buying Frenzy, Bulls Face Strong $60 Resistance - TradingKey",
+  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: earnings beat, surges · via news.google.com",
+  "click": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQNkZZQkg1dFJEXzdMTjVfeTBGRzB3bGNuRS1RWVpPVHctYWwxNndsRDNHaDExMUk0Y0N2U1IwUmxIaG81MGZrUEt4UG5aWXIxLWlHVUhDNHJHX1FyUUpFQ21nM3BqaGJ5X0tpNFByX1dQX2h1NFJwQmZXcnNFTVBJN1dwZ3lFZXhoTEhoMmNDeGU2bjViZHM0M1hqbzVvUnFmZWl1Tmd6QjN3VnZuNEYyREJB?oc=5",
+  "priority": 3
+ },
+ {
+  "t": 1794387743,
+  "title": "🔥 Trending #4: Ethereum (ETH)",
+  "message": "Rank #2 · -2.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 29/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/ethereum",
+  "priority": 2
+ },
+ {
+  "t": 1794387743,
+  "title": "🔥 Trending #5: Pi Network (PI)",
+  "message": "Rank #79 · +3.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 29/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/pi-network",
+  "priority": 2
+ },
+ {
+  "t": 1794387743,
+  "title": "🔥 Trending #6: Quantus (QTC)",
+  "message": "Rank #824 · +6.4% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 29/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/quantus",
+  "priority": 2
+ },
+ {
+  "t": 1794387743,
+  "title": "🔥 Trending #7: Monad (MON)",
+  "message": "Rank #165 · -2.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 29/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/monad",
   "priority": 2
  }
 ]
