@@ -1,26 +1,5 @@
 [
  {
-  "t": 1794138823,
-  "title": "🔥 Trending #7: Hyperliquid (HYPE)",
-  "message": "Rank #11 · -1.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/hyperliquid",
-  "priority": 2
- },
- {
-  "t": 1794159950,
-  "title": "🔥 Trending #1: Be Like José (JOSÉ)",
-  "message": "Rank #896 · +0.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/be-like-jose",
-  "priority": 2
- },
- {
-  "t": 1794173016,
-  "title": "🔥 Trending #5: Zcash (ZEC)",
-  "message": "Rank #10 · -0.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/zcash",
-  "priority": 2
- },
- {
   "t": 1794173016,
   "title": "🔥 Trending #6: STONK (STONK)",
   "message": "Rank #538 · -31.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
@@ -417,6 +396,27 @@
   "title": "🔥 Trending #7: Aero (AERO)",
   "message": "Rank #118 · +4.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 29/100 Fear 😐.",
   "click": "https://www.coingecko.com/en/coins/aero",
+  "priority": 2
+ },
+ {
+  "t": 1794439606,
+  "title": "🔥 Trending #4: Pearl (PEARL)",
+  "message": "Rank #92 · +5.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 29/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/pearl-2",
+  "priority": 2
+ },
+ {
+  "t": 1794439606,
+  "title": "🔥 Trending #5: Solana (SOL)",
+  "message": "Rank #7 · -0.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 29/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/solana",
+  "priority": 2
+ },
+ {
+  "t": 1794439606,
+  "title": "🔥 Trending #7: Collector Crypt (CARDS)",
+  "message": "Rank #184 · -14.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 29/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/collector-crypt",
   "priority": 2
  }
 ]
