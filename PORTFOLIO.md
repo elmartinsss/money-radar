@@ -1,25 +1,25 @@
 # 📝 Paper wallet (fake money)
 
-Started 2026-10-30 with **100€** · now **82.96€ (-17.0%)** · cash 62.49€
+Started 2026-10-30 with **100€** · now **83.06€ (-16.9%)** · cash 66.47€
 
-Closed trades: 18 · wins: 2
+Closed trades: 19 · wins: 2
 
-_Updated 2026-11-12 01:26 Vilnius time._
+_Updated 2026-11-12 06:05 Vilnius time._
 
 ## Open positions
 
 | Coin | Signal | Bought | Value now | Change |
 |---|---|---|---|---|
-| TRUMP | trending | 4.52€ | 3.93€ | -13.0% |
-| NEAR | trending | 4.33€ | 4.15€ | -4.2% |
-| PEPE | trending | 4.23€ | 3.93€ | -7.2% |
-| ONDO | trending | 4.23€ | 4.18€ | -1.2% |
+| NEAR | trending | 4.33€ | 4.16€ | -4.0% |
+| PEPE | trending | 4.23€ | 3.94€ | -6.8% |
+| ONDO | trending | 4.23€ | 4.19€ | -0.9% |
 | TSLA | momentum | 4.19€ | 4.29€ | +2.4% |
 
 ## Last 30 closed trades
 
 | Coin | Signal | Result | Why |
 |---|---|---|---|
+| TRUMP | trending | -0.54€ (-11.8%) | ⏰ Time's up (7 days) |
 | PEARL | trending | -0.90€ (-20.7%) | 🛑 Stop loss (-20%) |
 | DACITY | trending | -0.72€ (-16.8%) | 📉 Trailing stop (-16%, peak was +25%) |
 | JCT | trending | +0.91€ (+21.8%) | 📉 Trailing stop (+11%, peak was +35%) |

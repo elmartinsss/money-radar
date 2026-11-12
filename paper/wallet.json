@@ -1,27 +1,7 @@
 {
  "start_eur": 100,
- "cash": 62.48813549626951,
+ "cash": 66.47311710027371,
  "positions": [
-  {
-   "kind": "cg",
-   "id": "official-trump",
-   "chain": null,
-   "symbol": "TRUMP",
-   "signal": "trending",
-   "entry": 1.2689272354278742,
-   "eur": 4.4974,
-   "paid": 4.52,
-   "time": 1793846970.374277,
-   "last": 1.11,
-   "liq0": null,
-   "feats": {
-    "signal": "trending",
-    "mood": "neutral",
-    "time": "night (UTC 0-6)"
-   },
-   "expected": null,
-   "peak": 1.27
-  },
   {
    "kind": "cg",
    "id": "near",
@@ -32,7 +12,7 @@
    "eur": 4.30835,
    "paid": 4.33,
    "time": 1793936407.6101458,
-   "last": 3.54,
+   "last": 3.55,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +32,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847122,
-   "last": 4.55e-06,
+   "last": 4.57e-06,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -72,7 +52,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847365,
-   "last": 0.355123,
+   "last": 0.356112,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -559,6 +539,31 @@
    "reason": "\ud83d\uded1 Stop loss (-20%)",
    "pnl_eur": -0.9,
    "pnl_pct": -20.7
+  },
+  {
+   "kind": "cg",
+   "id": "official-trump",
+   "chain": null,
+   "symbol": "TRUMP",
+   "signal": "trending",
+   "entry": 1.2689272354278742,
+   "eur": 4.4974,
+   "paid": 4.52,
+   "time": 1793846970.374277,
+   "last": 1.13,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "neutral",
+    "time": "night (UTC 0-6)"
+   },
+   "expected": null,
+   "peak": 1.27,
+   "exit": 1.13,
+   "exit_time": 1794456341.3187673,
+   "reason": "\u23f0 Time's up (7 days)",
+   "pnl_eur": -0.54,
+   "pnl_pct": -11.8
   }
  ],
  "started": 1793366521.920483,
@@ -824,29 +829,34 @@
    "t": 1794439609,
    "v": 82.96,
    "btc": 73581
+  },
+  {
+   "t": 1794456341,
+   "v": 83.06,
+   "btc": 73751
   }
  ],
  "mood": {
-  "value": 29,
+  "value": 28,
   "label": "Fear",
-  "t": 1794439606
+  "t": 1794456337
  },
  "learning": {
   "trending": {
-   "n": 18,
+   "n": 19,
    "wins": 2,
    "win_rate": 11,
-   "avg_pct": -15.8,
-   "shrunk_pct": -15.8,
-   "t": -3.8,
+   "avg_pct": -15.6,
+   "shrunk_pct": -15.6,
+   "t": -3.95,
    "mult": 1.0,
-   "status": "still learning (18/30 trades)"
+   "status": "still learning (19/30 trades)"
   }
  },
  "pending": [],
- "updated": 1794439609,
+ "updated": 1794456341,
  "rewards": {
-  "xp": 142.2,
+  "xp": 149.2,
   "level": "Paper trader",
   "medals": [
    {
@@ -868,14 +878,14 @@
     "t": 1794186530
    }
   ],
-  "confidence": -10.73,
+  "confidence": -10.94,
   "streak": 0,
   "best_streak": 1,
   "situations": {
    "signal=trending": {
-    "n": 18,
-    "sum": -283.7,
-    "sq": 9747.689999999997
+    "n": 19,
+    "sum": -295.5,
+    "sq": 9886.929999999997
    },
    "mood=fear": {
     "n": 18,
@@ -898,9 +908,14 @@
     "sq": 3253.16
    },
    "time=night (UTC 0-6)": {
-    "n": 9,
-    "sum": -135.29999999999998,
-    "sq": 3497.6699999999996
+    "n": 10,
+    "sum": -147.1,
+    "sq": 3636.91
+   },
+   "mood=neutral": {
+    "n": 1,
+    "sum": -11.8,
+    "sq": 139.24
    }
   },
   "rules": {
@@ -921,15 +936,15 @@
     "examples": []
    },
    "Minimum age": {
-    "saves": 9,
+    "saves": 10,
     "missed": 1,
     "neutral": 1,
     "examples": [
-     "$Wanted -100% (saved)",
      "$COGE +201% (missed)",
      "$HODL -100% (saved)",
      "$COGE -93% (saved)",
-     "$ELYSION -100% (saved)"
+     "$ELYSION -100% (saved)",
+     "$NIHAO -100% (saved)"
     ]
    },
    "No chasing pumps": {
@@ -1187,18 +1202,22 @@
      "mood": "fear",
      "time": "night (UTC 0-6)"
     }
+   },
+   {
+    "t": 1794456341,
+    "symbol": "TRUMP",
+    "signal": "trending",
+    "reward": -11.8,
+    "reason": "\u23f0 Time's up (7 days)",
+    "lesson": "A loss inside the rules. Small losses are the price of finding winners.",
+    "situation": {
+     "signal": "trending",
+     "mood": "neutral",
+     "time": "night (UTC 0-6)"
+    }
    }
   ],
   "pending_checks": [
-   {
-    "id": "8yLBuP74RnFmjSRS8BGFebvyoTo8uiEjPB71h3Zgpump",
-    "chain": "solana",
-    "symbol": "NIHAO",
-    "price": 0.004347,
-    "t": 1794362058,
-    "rule": "Minimum age",
-    "reason": "too new (2h)"
-   },
    {
     "id": "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump",
     "chain": "solana",
@@ -1218,8 +1237,8 @@
     "reason": "not trending up this hour"
    }
   ],
-  "total_reward": -283.7,
-  "trades": 18
+  "total_reward": -295.5,
+  "trades": 19
  },
  "activity": [
   {
@@ -1727,6 +1746,37 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -15.8%",
    "t": 1794416647
+  },
+  {
+   "type": "sell",
+   "symbol": "TRUMP",
+   "signal": "trending",
+   "eur": 3.98,
+   "pnl": -0.54,
+   "pct": -11.8,
+   "reason": "\u23f0 Time's up (7 days)",
+   "t": 1794456341
+  },
+  {
+   "type": "skip",
+   "symbol": "ZIG",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (mood: fear), expecting -15.3%",
+   "t": 1794456341
+  },
+  {
+   "type": "skip",
+   "symbol": "BTC",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (mood: fear), expecting -15.3%",
+   "t": 1794456341
+  },
+  {
+   "type": "skip",
+   "symbol": "KNTQ",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (mood: fear), expecting -15.3%",
+   "t": 1794456341
   }
  ],
  "trend": {
