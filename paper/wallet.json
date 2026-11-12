@@ -12,7 +12,7 @@
    "eur": 4.30835,
    "paid": 4.33,
    "time": 1793936407.6101458,
-   "last": 3.44,
+   "last": 3.42,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -32,7 +32,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847122,
-   "last": 4.38e-06,
+   "last": 4.49e-06,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +52,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847365,
-   "last": 0.349065,
+   "last": 0.351383,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -72,7 +72,7 @@
    "eur": 4.16905,
    "paid": 4.19,
    "time": 1794348212.2190492,
-   "last": 390.84,
+   "last": 398.94,
    "liq0": null,
    "feats": {
     "signal": "momentum",
@@ -80,7 +80,7 @@
     "time": "evening (UTC 18-24)"
    },
    "expected": -15.8,
-   "peak": 393.059
+   "peak": 398.94
   }
  ],
  "history": [
@@ -568,7 +568,7 @@
  ],
  "started": 1793366521.920483,
  "btc_start": 77216,
- "last_report": "2026-11-09",
+ "last_report": "2026-11-12",
  "equity": [
   {
    "t": 1793366862,
@@ -839,12 +839,17 @@
    "t": 1794487211,
    "v": 82.68,
    "btc": 72901
+  },
+  {
+   "t": 1794515344,
+   "v": 82.87,
+   "btc": 71466
   }
  ],
  "mood": {
   "value": 28,
   "label": "Fear",
-  "t": 1794487207
+  "t": 1794515343
  },
  "learning": {
   "trending": {
@@ -859,7 +864,7 @@
   }
  },
  "pending": [],
- "updated": 1794487211,
+ "updated": 1794515344,
  "rewards": {
   "xp": 149.2,
   "level": "Paper trader",
@@ -1240,6 +1245,24 @@
     "t": 1794439609,
     "rule": "Rising this hour",
     "reason": "not trending up this hour"
+   },
+   {
+    "id": "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump",
+    "chain": "solana",
+    "symbol": "DESSA",
+    "price": 0.005761,
+    "t": 1794515344,
+    "rule": "Rising this hour",
+    "reason": "not trending up this hour"
+   },
+   {
+    "id": "KMifrkYmDdAKtVXAVBEPEQxJ7qP2iLgUcfZjUZipump",
+    "chain": "solana",
+    "symbol": "RAMBO",
+    "price": 0.0126,
+    "t": 1794515344,
+    "rule": "Minimum holders",
+    "reason": "already pumped 151% (you'd be buying from early holders)"
    }
   ],
   "total_reward": -295.5,
@@ -1789,6 +1812,20 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (mood: fear), expecting -15.7%",
    "t": 1794487211
+  },
+  {
+   "type": "skip",
+   "symbol": "MIHAO",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (mood: fear), expecting -15.7%",
+   "t": 1794515344
+  },
+  {
+   "type": "skip",
+   "symbol": "DACITYCOIN",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (mood: fear), expecting -15.7%",
+   "t": 1794515344
   }
  ],
  "trend": {
