@@ -1,18 +1,18 @@
 # 📝 Paper wallet (fake money)
 
-Started 2026-10-30 with **100€** · now **83.06€ (-16.9%)** · cash 66.47€
+Started 2026-10-30 with **100€** · now **82.68€ (-17.3%)** · cash 66.47€
 
 Closed trades: 19 · wins: 2
 
-_Updated 2026-11-12 06:05 Vilnius time._
+_Updated 2026-11-12 14:40 Vilnius time._
 
 ## Open positions
 
 | Coin | Signal | Bought | Value now | Change |
 |---|---|---|---|---|
-| NEAR | trending | 4.33€ | 4.16€ | -4.0% |
-| PEPE | trending | 4.23€ | 3.94€ | -6.8% |
-| ONDO | trending | 4.23€ | 4.19€ | -0.9% |
+| NEAR | trending | 4.33€ | 4.03€ | -6.9% |
+| PEPE | trending | 4.23€ | 3.78€ | -10.6% |
+| ONDO | trending | 4.23€ | 4.11€ | -2.9% |
 | TSLA | momentum | 4.19€ | 4.29€ | +2.4% |
 
 ## Last 30 closed trades

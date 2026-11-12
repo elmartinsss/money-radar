@@ -1,26 +1,5 @@
 [
  {
-  "t": 1794186527,
-  "title": "🔥 Trending #7: Monero (XMR)",
-  "message": "Rank #12 · -0.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 29/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/monero",
-  "priority": 2
- },
- {
-  "t": 1794211157,
-  "title": "🔥 Trending #2: Janction (JCT)",
-  "message": "Rank #271 · +168.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 29/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/janction",
-  "priority": 2
- },
- {
-  "t": 1794211157,
-  "title": "🔥 Trending #4: STONK (STONK)",
-  "message": "Rank #541 · -35.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 29/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/stonk-3",
-  "priority": 2
- },
- {
   "t": 1794211157,
   "title": "🔥 Trending #5: NEAR Protocol (NEAR)",
   "message": "Rank #22 · -6.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 29/100 Fear 😐.",
@@ -417,6 +396,27 @@
   "title": "🔥 Trending #7: Ondo (ONDO)",
   "message": "Rank #51 · -4.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
   "click": "https://www.coingecko.com/en/coins/ondo-finance",
+  "priority": 2
+ },
+ {
+  "t": 1794487207,
+  "title": "🔥 Trending #1: Seppuku (SEPPUKU)",
+  "message": "Rank #834 · +4.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/seppuku",
+  "priority": 2
+ },
+ {
+  "t": 1794487207,
+  "title": "🔥 Trending #5: Pudgy Penguins (PENGU)",
+  "message": "Rank #115 · -3.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/pudgy-penguins",
+  "priority": 2
+ },
+ {
+  "t": 1794487207,
+  "title": "🔥 Trending #6: Hyperliquid (HYPE)",
+  "message": "Rank #10 · -2.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
+  "click": "https://www.coingecko.com/en/coins/hyperliquid",
   "priority": 2
  }
 ]

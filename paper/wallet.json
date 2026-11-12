@@ -12,7 +12,7 @@
    "eur": 4.30835,
    "paid": 4.33,
    "time": 1793936407.6101458,
-   "last": 3.55,
+   "last": 3.44,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -32,7 +32,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847122,
-   "last": 4.57e-06,
+   "last": 4.38e-06,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +52,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847365,
-   "last": 0.356112,
+   "last": 0.349065,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -834,12 +834,17 @@
    "t": 1794456341,
    "v": 83.06,
    "btc": 73751
+  },
+  {
+   "t": 1794487211,
+   "v": 82.68,
+   "btc": 72901
   }
  ],
  "mood": {
   "value": 28,
   "label": "Fear",
-  "t": 1794456337
+  "t": 1794487207
  },
  "learning": {
   "trending": {
@@ -854,7 +859,7 @@
   }
  },
  "pending": [],
- "updated": 1794456341,
+ "updated": 1794487211,
  "rewards": {
   "xp": 149.2,
   "level": "Paper trader",
@@ -1777,6 +1782,13 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (mood: fear), expecting -15.3%",
    "t": 1794456341
+  },
+  {
+   "type": "skip",
+   "symbol": "SEPPUKU",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (mood: fear), expecting -15.7%",
+   "t": 1794487211
   }
  ],
  "trend": {
