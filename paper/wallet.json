@@ -12,7 +12,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847122,
-   "last": 4.49e-06,
+   "last": 4.44e-06,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -32,7 +32,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847365,
-   "last": 0.342579,
+   "last": 0.33993,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +52,7 @@
    "eur": 4.16905,
    "paid": 4.19,
    "time": 1794348212.2190492,
-   "last": 397.45,
+   "last": 388.02,
    "liq0": null,
    "feats": {
     "signal": "momentum",
@@ -859,12 +859,17 @@
    "t": 1794559298,
    "v": 82.86,
    "btc": 68765
+  },
+  {
+   "t": 1794588362,
+   "v": 82.68,
+   "btc": 68675
   }
  ],
  "mood": {
   "value": 20,
   "label": "Extreme Fear",
-  "t": 1794559295
+  "t": 1794588360
  },
  "learning": {
   "trending": {
@@ -879,7 +884,7 @@
   }
  },
  "pending": [],
- "updated": 1794559298,
+ "updated": 1794588362,
  "rewards": {
   "xp": 151.2,
   "level": "Chart reader",
@@ -1286,6 +1291,15 @@
     "symbol": "GATO",
     "price": 0.005164,
     "t": 1794559297,
+    "rule": "Rising this hour",
+    "reason": "not trending up this hour"
+   },
+   {
+    "id": "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump",
+    "chain": "solana",
+    "symbol": "CBUCKS",
+    "price": 0.003296,
+    "t": 1794588362,
     "rule": "Rising this hour",
     "reason": "not trending up this hour"
    }
@@ -1896,6 +1910,20 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
    "t": 1794559297
+  },
+  {
+   "type": "skip",
+   "symbol": "MIHAO",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1794588362
+  },
+  {
+   "type": "skip",
+   "symbol": "SEPPUKU",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1794588362
   }
  ],
  "trend": {

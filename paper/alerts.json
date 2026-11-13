@@ -1,40 +1,5 @@
 [
  {
-  "t": 1794275203,
-  "title": "🔥 Trending #5: Pudgy Penguins (PENGU)",
-  "message": "Rank #116 · +1.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 32/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/pudgy-penguins",
-  "priority": 2
- },
- {
-  "t": 1794275203,
-  "title": "🔥 Trending #6: Pearl (PEARL)",
-  "message": "Rank #92 · -2.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 32/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/pearl-2",
-  "priority": 2
- },
- {
-  "t": 1794275203,
-  "title": "🔥 Trending #7: Aero (AERO)",
-  "message": "Rank #117 · -3.4% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 32/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/aero",
-  "priority": 2
- },
- {
-  "t": 1794300741,
-  "title": "🔥 Trending #2: Ethereum (ETH)",
-  "message": "Rank #2 · -0.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 32/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/ethereum",
-  "priority": 2
- },
- {
-  "t": 1794300741,
-  "title": "🔥 Trending #3: Initia (INIT)",
-  "message": "Rank #457 · +50.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 32/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/initia",
-  "priority": 2
- },
- {
   "t": 1794300741,
   "title": "🔥 Trending #5: Janction (JCT)",
   "message": "Rank #346 · -26.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 32/100 Fear 😐.",
@@ -417,6 +382,41 @@
   "title": "🔥 Trending #6: NEAR Protocol (NEAR)",
   "message": "Rank #21 · +1.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 20/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/near",
+  "priority": 2
+ },
+ {
+  "t": 1794588360,
+  "title": "📰 Cineverse stock soars 16% on earnings beat despite revenue miss - Yahoo Finance",
+  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: earnings beat, soars · via news.google.com",
+  "click": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOcGFvWENnNnQ4Sk9penJQdzRFTGxNMms0QjNyMElnVWJIYnVsR3lGd2Z2Z05temc0OGdyZjVySl9OZ1BzZVktNThBQy1fVHNFMVhqekQwZGg5N2VGRDFQckFTLUZYbHFmTkFIS2pzOVNhdXhzdUJYYzhrY1NPdTBGOW1LeGlNSE5ZVDRPVEM3eFJkNmlUNHduSldtb1NxYmc?oc=5",
+  "priority": 3
+ },
+ {
+  "t": 1794588360,
+  "title": "📰 Cerebras stock soars about 16% in extended trading on earnings beat and Microsoft deal - Quartz",
+  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: earnings beat, soars · via news.google.com",
+  "click": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBxQWtyblJqNDJLNjUyNFoxV2RLTEJXc0Nka2xKa09FX3VPT2V3cHUzeWFKUlE2MzZiRzRaQkttRWtwS1p6amo5Q3hFN2VDcDZWYnYxMWlPdUpRc2k4VEdtdVV2UnhQYXh5UVBSY21iYmN6TWc?oc=5",
+  "priority": 3
+ },
+ {
+  "t": 1794588360,
+  "title": "📰 Snail surges 20% on strong third quarter earnings beat - Yahoo Finance Singapore",
+  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: earnings beat, surges · via news.google.com",
+  "click": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQVmZRbV9rQy1MbzdVSG1ybEUzbE1qVUVsVE1FR1JhdzZMVjF2Z3Z1YWJ5bU11NldoYUYzQ09uMmVKY2wyYjNrSzJqbzZvSkJaeGYycXF4Z2lfRG8wUE1NNFVWY1BlVWl2QnFCeVZlSUJCaGZFcmdOcWd3UUlUTWo1QnlYYw?oc=5",
+  "priority": 3
+ },
+ {
+  "t": 1794588360,
+  "title": "🔥 Trending #1: ni hao cat (MIHAO)",
+  "message": "Rank #827 · +12.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 20/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/ni-hao-cat",
+  "priority": 2
+ },
+ {
+  "t": 1794588360,
+  "title": "🔥 Trending #2: Seppuku (SEPPUKU)",
+  "message": "Rank #802 · +1.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 20/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/seppuku",
   "priority": 2
  }
 ]
