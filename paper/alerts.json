@@ -1,61 +1,5 @@
 [
  {
-  "t": 1794249682,
-  "title": "🔥 Trending #1: Dacity Coin (DACITY)",
-  "message": "Rank #796 · -7.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 29/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/dacity-coin-4",
-  "priority": 2
- },
- {
-  "t": 1794249682,
-  "title": "🔥 Trending #2: Avalanche (AVAX)",
-  "message": "Rank #26 · +4.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 29/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/avalanche-2",
-  "priority": 2
- },
- {
-  "t": 1794249682,
-  "title": "🔥 Trending #3: Kinetiq (KNTQ)",
-  "message": "Rank #239 · -18.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 29/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/kinetiq",
-  "priority": 2
- },
- {
-  "t": 1794249682,
-  "title": "🔥 Trending #6: Ondo (ONDO)",
-  "message": "Rank #49 · +4.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 29/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/ondo-finance",
-  "priority": 2
- },
- {
-  "t": 1794249682,
-  "title": "🔥 Trending #7: Solana (SOL)",
-  "message": "Rank #7 · -3.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 29/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/solana",
-  "priority": 2
- },
- {
-  "t": 1794275203,
-  "title": "🚀 TSLA +10.0% today",
-  "message": "Now $378.05 (prev close $343.69)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
-  "click": "https://finance.yahoo.com/quote/TSLA",
-  "priority": 4
- },
- {
-  "t": 1794275203,
-  "title": "📰 Securitize pushes into $6 trillion asset-backed finance market with River One acquisition",
-  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: acquisition, buyback · via coindesk.com",
-  "click": "https://www.coindesk.com/business/2026/11/09/securitize-pushes-into-usd6-trillion-asset-backed-finance-market-with-river-one-acquisition",
-  "priority": 3
- },
- {
-  "t": 1794275203,
-  "title": "📰 Sanmina soars on earnings beat and strong guidance - Yahoo Finance",
-  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: earnings beat, soars · via news.google.com",
-  "click": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPYUVsQmxLUWRoOFpEU2tIU0t5SERicW1jMGppVFQzV2xfRjJxZkpiMmsySjhDSy1idkZaZ2xON1d5RmFER3JWWnotaDg2U3VydlZ4c21WcThacUxISkZYMzVOeGtlQWdRSUtoRVFsVkZsTzlHZEktR1hTUkFDdFdDUHBaTC1faDU3S2RZZl9pT05aaFJWd096SzRneEtHYjBt?oc=5",
-  "priority": 3
- },
- {
   "t": 1794275203,
   "title": "🔥 Trending #1: Dacity Coin (DACITY)",
   "message": "Rank #713 · +118.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 32/100 Fear 😐.",
@@ -417,6 +361,62 @@
   "title": "🔥 Trending #6: Pearl (PEARL)",
   "message": "Rank #101 · -8.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
   "click": "https://www.coingecko.com/en/coins/pearl-2",
+  "priority": 2
+ },
+ {
+  "t": 1794533211,
+  "title": "📰 Cerebras Stock: Earnings Beat and New Microsoft Partnership - Barron's",
+  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: earnings beat, partnership · via news.google.com",
+  "click": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5GV3pHZXI5bHdjSjFjc2JBMEF0UGNGZTBYVUgzZzZ6Smd0dGhTdUdyYzd2QzVYbnBrUkRweWhSWW9OQ1ZWVWotWXlBbHFob05kWUtqSmVwOEhZXzh6azBFZ0haOTh3eXYzazZ3SFluUDRWRW5FYi1EY0FtOA?oc=5",
+  "priority": 3
+ },
+ {
+  "t": 1794533211,
+  "title": "🔥 Trending #1: ni hao cat (MIHAO)",
+  "message": "Rank #955 · -3.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 20/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/ni-hao-cat-2",
+  "priority": 2
+ },
+ {
+  "t": 1794533211,
+  "title": "🔥 Trending #2: AudaCity (DACITYCOIN)",
+  "message": "Rank #886 · +13.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 20/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/audacity-4",
+  "priority": 2
+ },
+ {
+  "t": 1794533211,
+  "title": "🔥 Trending #3: Bitcoin (BTC)",
+  "message": "Rank #1 · -4.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 20/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/bitcoin",
+  "priority": 2
+ },
+ {
+  "t": 1794533211,
+  "title": "🔥 Trending #4: Pearl (PEARL)",
+  "message": "Rank #100 · -8.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 20/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/pearl-2",
+  "priority": 2
+ },
+ {
+  "t": 1794533211,
+  "title": "🔥 Trending #5: XRP (XRP)",
+  "message": "Rank #6 · -2.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 20/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/ripple",
+  "priority": 2
+ },
+ {
+  "t": 1794533211,
+  "title": "🔥 Trending #6: Solana (SOL)",
+  "message": "Rank #7 · -2.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 20/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/solana",
+  "priority": 2
+ },
+ {
+  "t": 1794533211,
+  "title": "🔥 Trending #7: Pudgy Penguins (PENGU)",
+  "message": "Rank #115 · -0.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 20/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/pudgy-penguins",
   "priority": 2
  }
 ]

@@ -12,7 +12,7 @@
    "eur": 4.30835,
    "paid": 4.33,
    "time": 1793936407.6101458,
-   "last": 3.42,
+   "last": 3.43,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -32,7 +32,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847122,
-   "last": 4.49e-06,
+   "last": 4.55e-06,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +52,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847365,
-   "last": 0.351383,
+   "last": 0.351937,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -72,7 +72,7 @@
    "eur": 4.16905,
    "paid": 4.19,
    "time": 1794348212.2190492,
-   "last": 398.94,
+   "last": 397.45,
    "liq0": null,
    "feats": {
     "signal": "momentum",
@@ -844,12 +844,17 @@
    "t": 1794515344,
    "v": 82.87,
    "btc": 71466
+  },
+  {
+   "t": 1794533213,
+   "v": 82.92,
+   "btc": 70936
   }
  ],
  "mood": {
-  "value": 28,
-  "label": "Fear",
-  "t": 1794515343
+  "value": 20,
+  "label": "Extreme Fear",
+  "t": 1794533211
  },
  "learning": {
   "trending": {
@@ -864,7 +869,7 @@
   }
  },
  "pending": [],
- "updated": 1794515344,
+ "updated": 1794533213,
  "rewards": {
   "xp": 149.2,
   "level": "Paper trader",
@@ -932,7 +937,7 @@
    "Rising this hour": {
     "saves": 2,
     "missed": 1,
-    "neutral": 11,
+    "neutral": 12,
     "examples": [
      "$DESSA +139% (missed)",
      "$DESSA -51% (saved)",
@@ -975,6 +980,12 @@
     "saves": 0,
     "missed": 0,
     "neutral": 3,
+    "examples": []
+   },
+   "Top-10 wallet limit": {
+    "saves": 0,
+    "missed": 0,
+    "neutral": 1,
     "examples": []
    }
   },
@@ -1228,24 +1239,6 @@
    }
   ],
   "pending_checks": [
-   {
-    "id": "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump",
-    "chain": "solana",
-    "symbol": "CBUCKS",
-    "price": 0.004274,
-    "t": 1794439609,
-    "rule": "Top-10 wallet limit",
-    "reason": "top 10 wallets hold 35%"
-   },
-   {
-    "id": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
-    "chain": "solana",
-    "symbol": "GATO",
-    "price": 0.006056,
-    "t": 1794439609,
-    "rule": "Rising this hour",
-    "reason": "not trending up this hour"
-   },
    {
     "id": "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump",
     "chain": "solana",
@@ -1826,6 +1819,34 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (mood: fear), expecting -15.7%",
    "t": 1794515344
+  },
+  {
+   "type": "skip",
+   "symbol": "BTC",
+   "signal": "fear_dip",
+   "reason": "below its 50-day average (downtrend), not buying",
+   "t": 1794533213
+  },
+  {
+   "type": "skip",
+   "symbol": "MIHAO",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.1%",
+   "t": 1794533213
+  },
+  {
+   "type": "skip",
+   "symbol": "DACITYCOIN",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.1%",
+   "t": 1794533213
+  },
+  {
+   "type": "skip",
+   "symbol": "BTC",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.1%",
+   "t": 1794533213
   }
  ],
  "trend": {
@@ -1836,6 +1857,10 @@
   "TSLA": {
    "day": "2026-11-11",
    "up": true
+  },
+  "bitcoin": {
+   "day": "2026-11-13",
+   "up": false
   }
  }
 }
