@@ -12,7 +12,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847122,
-   "last": 4.44e-06,
+   "last": 4.38e-06,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -32,7 +32,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847365,
-   "last": 0.33993,
+   "last": 0.337489,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +52,7 @@
    "eur": 4.16905,
    "paid": 4.19,
    "time": 1794348212.2190492,
-   "last": 388.02,
+   "last": 390.22,
    "liq0": null,
    "feats": {
     "signal": "momentum",
@@ -864,12 +864,17 @@
    "t": 1794588362,
    "v": 82.68,
    "btc": 68675
+  },
+  {
+   "t": 1794608117,
+   "v": 82.62,
+   "btc": 68195
   }
  ],
  "mood": {
   "value": 20,
   "label": "Extreme Fear",
-  "t": 1794588360
+  "t": 1794608110
  },
  "learning": {
   "trending": {
@@ -884,7 +889,7 @@
   }
  },
  "pending": [],
- "updated": 1794588362,
+ "updated": 1794608117,
  "rewards": {
   "xp": 151.2,
   "level": "Chart reader",
@@ -952,7 +957,7 @@
    "Rising this hour": {
     "saves": 2,
     "missed": 1,
-    "neutral": 12,
+    "neutral": 13,
     "examples": [
      "$DESSA +139% (missed)",
      "$DESSA -51% (saved)",
@@ -986,7 +991,7 @@
    "Minimum holders": {
     "saves": 1,
     "missed": 0,
-    "neutral": 0,
+    "neutral": 1,
     "examples": [
      "$Anakin -62% (saved)"
     ]
@@ -1268,24 +1273,6 @@
   ],
   "pending_checks": [
    {
-    "id": "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump",
-    "chain": "solana",
-    "symbol": "DESSA",
-    "price": 0.005761,
-    "t": 1794515344,
-    "rule": "Rising this hour",
-    "reason": "not trending up this hour"
-   },
-   {
-    "id": "KMifrkYmDdAKtVXAVBEPEQxJ7qP2iLgUcfZjUZipump",
-    "chain": "solana",
-    "symbol": "RAMBO",
-    "price": 0.0126,
-    "t": 1794515344,
-    "rule": "Minimum holders",
-    "reason": "already pumped 151% (you'd be buying from early holders)"
-   },
-   {
     "id": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
     "chain": "solana",
     "symbol": "GATO",
@@ -1302,6 +1289,15 @@
     "t": 1794588362,
     "rule": "Rising this hour",
     "reason": "not trending up this hour"
+   },
+   {
+    "id": "HWya5CpQiQWLnJfJVRDF9o8AHaUPnPMRa3vfQRczpump",
+    "chain": "solana",
+    "symbol": "AMC",
+    "price": 0.004626,
+    "t": 1794608114,
+    "rule": "Minimum age",
+    "reason": "too new (4h)"
    }
   ],
   "total_reward": -300.5,
@@ -1924,6 +1920,13 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
    "t": 1794588362
+  },
+  {
+   "type": "skip",
+   "symbol": "BTC",
+   "signal": "fear_dip",
+   "reason": "below its 50-day average (downtrend), not buying",
+   "t": 1794608117
   }
  ],
  "trend": {
@@ -1936,7 +1939,7 @@
    "up": true
   },
   "bitcoin": {
-   "day": "2026-11-13",
+   "day": "2026-11-14",
    "up": false
   }
  }
