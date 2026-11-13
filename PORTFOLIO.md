@@ -1,24 +1,24 @@
 # 📝 Paper wallet (fake money)
 
-Started 2026-10-30 with **100€** · now **82.92€ (-17.1%)** · cash 66.47€
+Started 2026-10-30 with **100€** · now **82.86€ (-17.1%)** · cash 70.59€
 
-Closed trades: 19 · wins: 2
+Closed trades: 20 · wins: 2
 
-_Updated 2026-11-13 03:26 Vilnius time._
+_Updated 2026-11-13 10:41 Vilnius time._
 
 ## Open positions
 
 | Coin | Signal | Bought | Value now | Change |
 |---|---|---|---|---|
-| NEAR | trending | 4.33€ | 4.02€ | -7.2% |
-| PEPE | trending | 4.23€ | 3.93€ | -7.2% |
-| ONDO | trending | 4.23€ | 4.14€ | -2.1% |
+| PEPE | trending | 4.23€ | 3.87€ | -8.4% |
+| ONDO | trending | 4.23€ | 4.03€ | -4.7% |
 | TSLA | momentum | 4.19€ | 4.36€ | +4.1% |
 
 ## Last 30 closed trades
 
 | Coin | Signal | Result | Why |
 |---|---|---|---|
+| NEAR | trending | -0.22€ (-5.0%) | ⏰ Time's up (7 days) |
 | TRUMP | trending | -0.54€ (-11.8%) | ⏰ Time's up (7 days) |
 | PEARL | trending | -0.90€ (-20.7%) | 🛑 Stop loss (-20%) |
 | DACITY | trending | -0.72€ (-16.8%) | 📉 Trailing stop (-16%, peak was +25%) |

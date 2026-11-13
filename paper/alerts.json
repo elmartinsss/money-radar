@@ -1,34 +1,6 @@
 [
  {
   "t": 1794275203,
-  "title": "🔥 Trending #1: Dacity Coin (DACITY)",
-  "message": "Rank #713 · +118.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 32/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/dacity-coin-4",
-  "priority": 2
- },
- {
-  "t": 1794275203,
-  "title": "🔥 Trending #2: Bitcoin (BTC)",
-  "message": "Rank #1 · +0.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 32/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/bitcoin",
-  "priority": 2
- },
- {
-  "t": 1794275203,
-  "title": "🔥 Trending #3: Avalanche (AVAX)",
-  "message": "Rank #26 · +9.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 32/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/avalanche-2",
-  "priority": 2
- },
- {
-  "t": 1794275203,
-  "title": "🔥 Trending #4: Kinetiq (KNTQ)",
-  "message": "Rank #217 · -0.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 32/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/kinetiq",
-  "priority": 2
- },
- {
-  "t": 1794275203,
   "title": "🔥 Trending #5: Pudgy Penguins (PENGU)",
   "message": "Rank #116 · +1.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 32/100 Fear 😐.",
   "click": "https://www.coingecko.com/en/coins/pudgy-penguins",
@@ -417,6 +389,34 @@
   "title": "🔥 Trending #7: Pudgy Penguins (PENGU)",
   "message": "Rank #115 · -0.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 20/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/pudgy-penguins",
+  "priority": 2
+ },
+ {
+  "t": 1794559295,
+  "title": "🔥 Trending #2: Ethereum (ETH)",
+  "message": "Rank #2 · -5.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 20/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/ethereum",
+  "priority": 2
+ },
+ {
+  "t": 1794559295,
+  "title": "🔥 Trending #4: Hyperliquid (HYPE)",
+  "message": "Rank #10 · +0.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 20/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/hyperliquid",
+  "priority": 2
+ },
+ {
+  "t": 1794559295,
+  "title": "🔥 Trending #5: Lighter (LIT)",
+  "message": "Rank #80 · +0.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 20/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/lighter",
+  "priority": 2
+ },
+ {
+  "t": 1794559295,
+  "title": "🔥 Trending #6: NEAR Protocol (NEAR)",
+  "message": "Rank #21 · +1.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 20/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/near",
   "priority": 2
  }
 ]

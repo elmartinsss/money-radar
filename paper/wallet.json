@@ -1,27 +1,7 @@
 {
  "start_eur": 100,
- "cash": 66.47311710027371,
+ "cash": 70.58754751795895,
  "positions": [
-  {
-   "kind": "cg",
-   "id": "near",
-   "chain": null,
-   "symbol": "NEAR",
-   "signal": "trending",
-   "entry": 3.677892584464572,
-   "eur": 4.30835,
-   "paid": 4.33,
-   "time": 1793936407.6101458,
-   "last": 3.43,
-   "liq0": null,
-   "feats": {
-    "signal": "trending",
-    "mood": "fear",
-    "time": "night (UTC 0-6)"
-   },
-   "expected": null,
-   "peak": 3.78
-  },
   {
    "kind": "cg",
    "id": "pepe",
@@ -32,7 +12,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847122,
-   "last": 4.55e-06,
+   "last": 4.49e-06,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -52,7 +32,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847365,
-   "last": 0.351937,
+   "last": 0.342579,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -564,6 +544,31 @@
    "reason": "\u23f0 Time's up (7 days)",
    "pnl_eur": -0.54,
    "pnl_pct": -11.8
+  },
+  {
+   "kind": "cg",
+   "id": "near",
+   "chain": null,
+   "symbol": "NEAR",
+   "signal": "trending",
+   "entry": 3.677892584464572,
+   "eur": 4.30835,
+   "paid": 4.33,
+   "time": 1793936407.6101458,
+   "last": 3.53,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "night (UTC 0-6)"
+   },
+   "expected": null,
+   "peak": 3.78,
+   "exit": 3.53,
+   "exit_time": 1794559297.9481952,
+   "reason": "\u23f0 Time's up (7 days)",
+   "pnl_eur": -0.22,
+   "pnl_pct": -5.0
   }
  ],
  "started": 1793366521.920483,
@@ -849,30 +854,35 @@
    "t": 1794533213,
    "v": 82.92,
    "btc": 70936
+  },
+  {
+   "t": 1794559298,
+   "v": 82.86,
+   "btc": 68765
   }
  ],
  "mood": {
   "value": 20,
   "label": "Extreme Fear",
-  "t": 1794533211
+  "t": 1794559295
  },
  "learning": {
   "trending": {
-   "n": 19,
+   "n": 20,
    "wins": 2,
-   "win_rate": 11,
-   "avg_pct": -15.6,
-   "shrunk_pct": -15.6,
-   "t": -3.95,
+   "win_rate": 10,
+   "avg_pct": -15.0,
+   "shrunk_pct": -15.0,
+   "t": -3.99,
    "mult": 1.0,
-   "status": "still learning (19/30 trades)"
+   "status": "still learning (20/30 trades)"
   }
  },
  "pending": [],
- "updated": 1794533213,
+ "updated": 1794559298,
  "rewards": {
-  "xp": 149.2,
-  "level": "Paper trader",
+  "xp": 151.2,
+  "level": "Chart reader",
   "medals": [
    {
     "key": "first_save",
@@ -893,19 +903,19 @@
     "t": 1794186530
    }
   ],
-  "confidence": -10.94,
+  "confidence": -9.75,
   "streak": 0,
   "best_streak": 1,
   "situations": {
    "signal=trending": {
-    "n": 19,
-    "sum": -295.5,
-    "sq": 9886.929999999997
+    "n": 20,
+    "sum": -300.5,
+    "sq": 9911.929999999997
    },
    "mood=fear": {
-    "n": 18,
-    "sum": -283.7,
-    "sq": 9747.689999999997
+    "n": 19,
+    "sum": -288.7,
+    "sq": 9772.689999999997
    },
    "time=morning (UTC 6-12)": {
     "n": 4,
@@ -923,9 +933,9 @@
     "sq": 3253.16
    },
    "time=night (UTC 0-6)": {
-    "n": 10,
-    "sum": -147.1,
-    "sq": 3636.91
+    "n": 11,
+    "sum": -152.1,
+    "sq": 3661.91
    },
    "mood=neutral": {
     "n": 1,
@@ -1236,6 +1246,19 @@
      "mood": "neutral",
      "time": "night (UTC 0-6)"
     }
+   },
+   {
+    "t": 1794559297,
+    "symbol": "NEAR",
+    "signal": "trending",
+    "reward": -5.0,
+    "reason": "\u23f0 Time's up (7 days)",
+    "lesson": "A loss inside the rules. Small losses are the price of finding winners.",
+    "situation": {
+     "signal": "trending",
+     "mood": "fear",
+     "time": "night (UTC 0-6)"
+    }
    }
   ],
   "pending_checks": [
@@ -1256,10 +1279,19 @@
     "t": 1794515344,
     "rule": "Minimum holders",
     "reason": "already pumped 151% (you'd be buying from early holders)"
+   },
+   {
+    "id": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
+    "chain": "solana",
+    "symbol": "GATO",
+    "price": 0.005164,
+    "t": 1794559297,
+    "rule": "Rising this hour",
+    "reason": "not trending up this hour"
    }
   ],
-  "total_reward": -295.5,
-  "trades": 19
+  "total_reward": -300.5,
+  "trades": 20
  },
  "activity": [
   {
@@ -1847,6 +1879,23 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -15.1%",
    "t": 1794533213
+  },
+  {
+   "type": "sell",
+   "symbol": "NEAR",
+   "signal": "trending",
+   "eur": 4.11,
+   "pnl": -0.22,
+   "pct": -5.0,
+   "reason": "\u23f0 Time's up (7 days)",
+   "t": 1794559297
+  },
+  {
+   "type": "skip",
+   "symbol": "ETH",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1794559297
   }
  ],
  "trend": {
