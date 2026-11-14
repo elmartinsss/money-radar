@@ -1,27 +1,7 @@
 {
  "start_eur": 100,
- "cash": 70.58754751795895,
+ "cash": 74.06514238526033,
  "positions": [
-  {
-   "kind": "cg",
-   "id": "pepe",
-   "chain": null,
-   "symbol": "PEPE",
-   "signal": "trending",
-   "entry": 4.877110167999952e-06,
-   "eur": 4.20885,
-   "paid": 4.23,
-   "time": 1794114194.1847122,
-   "last": 4.27e-06,
-   "liq0": null,
-   "feats": {
-    "signal": "trending",
-    "mood": "fear",
-    "time": "night (UTC 0-6)"
-   },
-   "expected": null,
-   "peak": 5.46e-06
-  },
   {
    "kind": "cg",
    "id": "ondo-finance",
@@ -32,7 +12,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847365,
-   "last": 0.328102,
+   "last": 0.314604,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -569,6 +549,31 @@
    "reason": "\u23f0 Time's up (7 days)",
    "pnl_eur": -0.22,
    "pnl_pct": -5.0
+  },
+  {
+   "kind": "cg",
+   "id": "pepe",
+   "chain": null,
+   "symbol": "PEPE",
+   "signal": "trending",
+   "entry": 4.877110167999952e-06,
+   "eur": 4.20885,
+   "paid": 4.23,
+   "time": 1794114194.1847122,
+   "last": 4.05e-06,
+   "liq0": null,
+   "feats": {
+    "signal": "trending",
+    "mood": "fear",
+    "time": "night (UTC 0-6)"
+   },
+   "expected": null,
+   "peak": 5.46e-06,
+   "exit": 4.05e-06,
+   "exit_time": 1794671837.4844503,
+   "reason": "\ud83d\uded1 Stop loss (-17%)",
+   "pnl_eur": -0.75,
+   "pnl_pct": -17.8
   }
  ],
  "started": 1793366521.920483,
@@ -879,29 +884,34 @@
    "t": 1794648183,
    "v": 82.42,
    "btc": 67078
+  },
+  {
+   "t": 1794671837,
+   "v": 82.05,
+   "btc": 65637
   }
  ],
  "mood": {
   "value": 13,
   "label": "Extreme Fear",
-  "t": 1794648181
+  "t": 1794671835
  },
  "learning": {
   "trending": {
-   "n": 20,
+   "n": 21,
    "wins": 2,
    "win_rate": 10,
-   "avg_pct": -15.0,
-   "shrunk_pct": -15.0,
-   "t": -3.99,
+   "avg_pct": -15.2,
+   "shrunk_pct": -15.2,
+   "t": -4.23,
    "mult": 1.0,
-   "status": "still learning (20/30 trades)"
+   "status": "still learning (21/30 trades)"
   }
  },
  "pending": [],
- "updated": 1794648183,
+ "updated": 1794671837,
  "rewards": {
-  "xp": 151.2,
+  "xp": 153.2,
   "level": "Chart reader",
   "medals": [
    {
@@ -923,19 +933,19 @@
     "t": 1794186530
    }
   ],
-  "confidence": -9.75,
+  "confidence": -11.36,
   "streak": 0,
   "best_streak": 1,
   "situations": {
    "signal=trending": {
-    "n": 20,
-    "sum": -300.5,
-    "sq": 9911.929999999997
+    "n": 21,
+    "sum": -318.3,
+    "sq": 10228.769999999997
    },
    "mood=fear": {
-    "n": 19,
-    "sum": -288.7,
-    "sq": 9772.689999999997
+    "n": 20,
+    "sum": -306.5,
+    "sq": 10089.529999999997
    },
    "time=morning (UTC 6-12)": {
     "n": 4,
@@ -953,9 +963,9 @@
     "sq": 3253.16
    },
    "time=night (UTC 0-6)": {
-    "n": 11,
-    "sum": -152.1,
-    "sq": 3661.91
+    "n": 12,
+    "sum": -169.9,
+    "sq": 3978.75
    },
    "mood=neutral": {
     "n": 1,
@@ -1280,6 +1290,19 @@
      "mood": "fear",
      "time": "night (UTC 0-6)"
     }
+   },
+   {
+    "t": 1794671837,
+    "symbol": "PEPE",
+    "signal": "trending",
+    "reward": -17.8,
+    "reason": "\ud83d\uded1 Stop loss (-17%)",
+    "lesson": "A loss inside the rules. Small losses are the price of finding winners.",
+    "situation": {
+     "signal": "trending",
+     "mood": "fear",
+     "time": "night (UTC 0-6)"
+    }
    }
   ],
   "pending_checks": [
@@ -1300,10 +1323,19 @@
     "t": 1794608114,
     "rule": "Minimum age",
     "reason": "too new (4h)"
+   },
+   {
+    "id": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
+    "chain": "solana",
+    "symbol": "GATO",
+    "price": 0.00692,
+    "t": 1794671837,
+    "rule": "Liquidity vs size",
+    "reason": "thin liquidity for its size (4.0% of market cap)"
    }
   ],
-  "total_reward": -300.5,
-  "trades": 20
+  "total_reward": -318.3,
+  "trades": 21
  },
  "activity": [
   {
@@ -1964,6 +1996,23 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
    "t": 1794648183
+  },
+  {
+   "type": "sell",
+   "symbol": "PEPE",
+   "signal": "trending",
+   "eur": 3.48,
+   "pnl": -0.75,
+   "pct": -17.8,
+   "reason": "\ud83d\uded1 Stop loss (-17%)",
+   "t": 1794671837
+  },
+  {
+   "type": "skip",
+   "symbol": "KAVA",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.2%",
+   "t": 1794671837
   }
  ],
  "trend": {

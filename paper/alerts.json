@@ -1,33 +1,5 @@
 [
  {
-  "t": 1794362055,
-  "title": "🔥 Trending #6: XRP (XRP)",
-  "message": "Rank #6 · -3.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 29/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/ripple",
-  "priority": 2
- },
- {
-  "t": 1794362055,
-  "title": "🔥 Trending #7: Lighter (LIT)",
-  "message": "Rank #77 · +10.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 29/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/lighter",
-  "priority": 2
- },
- {
-  "t": 1794387743,
-  "title": "📰 Bitcoin Exchange Binance Announces Listing of Two New Trading Pairs on its Futures Platform - Cryptonews.net",
-  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: listing, binance · via news.google.com",
-  "click": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5ORll3UFQ0ZU90NjVwTGFUYnhiekQxOUJGUkM1QmR2REhPcU16WTBlbGdRc09vaUtycVBwSHpNMjhyYWJPOVBPWENCRm9kM3lsQk14bHdGRQ?oc=5",
-  "priority": 3
- },
- {
-  "t": 1794387743,
-  "title": "📰 CoreWeave Surges Over 17% as Earnings Beat Sparks Buying Frenzy, Bulls Face Strong $60 Resistance - TradingKey",
-  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: earnings beat, surges · via news.google.com",
-  "click": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQNkZZQkg1dFJEXzdMTjVfeTBGRzB3bGNuRS1RWVpPVHctYWwxNndsRDNHaDExMUk0Y0N2U1IwUmxIaG81MGZrUEt4UG5aWXIxLWlHVUhDNHJHX1FyUUpFQ21nM3BqaGJ5X0tpNFByX1dQX2h1NFJwQmZXcnNFTVBJN1dwZ3lFZXhoTEhoMmNDeGU2bjViZHM0M1hqbzVvUnFmZWl1Tmd6QjN3VnZuNEYyREJB?oc=5",
-  "priority": 3
- },
- {
   "t": 1794387743,
   "title": "🔥 Trending #4: Ethereum (ETH)",
   "message": "Rank #2 · -2.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 29/100 Fear 😐.",
@@ -417,6 +389,34 @@
   "title": "🔥 Trending #6: Pepe (PEPE)",
   "message": "Rank #46 · -4.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/pepe",
+  "priority": 2
+ },
+ {
+  "t": 1794671835,
+  "title": "📉 Solana -7.5% in 24h",
+  "message": "Now $73.73\nRisk: 🟢 big coin, real move. Find out WHY before doing anything.",
+  "click": "https://www.coingecko.com/en/coins/solana",
+  "priority": 4
+ },
+ {
+  "t": 1794671835,
+  "title": "🔥 Trending #2: Kava (KAVA)",
+  "message": "Rank #457 · -42.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/kava",
+  "priority": 2
+ },
+ {
+  "t": 1794671835,
+  "title": "🔥 Trending #4: Ethereum (ETH)",
+  "message": "Rank #2 · -4.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/ethereum",
+  "priority": 2
+ },
+ {
+  "t": 1794671835,
+  "title": "🔥 Trending #7: XRP (XRP)",
+  "message": "Rank #6 · -4.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/ripple",
   "priority": 2
  }
 ]
