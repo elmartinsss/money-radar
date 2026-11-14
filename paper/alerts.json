@@ -1,27 +1,6 @@
 [
  {
   "t": 1794387743,
-  "title": "🔥 Trending #4: Ethereum (ETH)",
-  "message": "Rank #2 · -2.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 29/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/ethereum",
-  "priority": 2
- },
- {
-  "t": 1794387743,
-  "title": "🔥 Trending #5: Pi Network (PI)",
-  "message": "Rank #79 · +3.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 29/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/pi-network",
-  "priority": 2
- },
- {
-  "t": 1794387743,
-  "title": "🔥 Trending #6: Quantus (QTC)",
-  "message": "Rank #824 · +6.4% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 29/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/quantus",
-  "priority": 2
- },
- {
-  "t": 1794387743,
   "title": "🔥 Trending #7: Monad (MON)",
   "message": "Rank #165 · -2.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 29/100 Fear 😐.",
   "click": "https://www.coingecko.com/en/coins/monad",
@@ -417,6 +396,27 @@
   "title": "🔥 Trending #7: XRP (XRP)",
   "message": "Rank #6 · -4.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/ripple",
+  "priority": 2
+ },
+ {
+  "t": 1794688623,
+  "title": "🔥 Trending #1: ni hao cat (MIHAO)",
+  "message": "Rank #700 · +23.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/ni-hao-cat",
+  "priority": 2
+ },
+ {
+  "t": 1794688623,
+  "title": "🔥 Trending #5: Uniswap (UNI)",
+  "message": "Rank #31 · -16.4% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/uniswap",
+  "priority": 2
+ },
+ {
+  "t": 1794688623,
+  "title": "🔥 Trending #6: Zcash (ZEC)",
+  "message": "Rank #11 · -12.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/zcash",
   "priority": 2
  }
 ]
