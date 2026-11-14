@@ -12,7 +12,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847122,
-   "last": 4.25e-06,
+   "last": 4.27e-06,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -32,7 +32,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847365,
-   "last": 0.329247,
+   "last": 0.328102,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -874,12 +874,17 @@
    "t": 1794623504,
    "v": 82.41,
    "btc": 67052
+  },
+  {
+   "t": 1794648183,
+   "v": 82.42,
+   "btc": 67078
   }
  ],
  "mood": {
   "value": 13,
   "label": "Extreme Fear",
-  "t": 1794623502
+  "t": 1794648181
  },
  "learning": {
   "trending": {
@@ -894,7 +899,7 @@
   }
  },
  "pending": [],
- "updated": 1794623504,
+ "updated": 1794648183,
  "rewards": {
   "xp": 151.2,
   "level": "Chart reader",
@@ -961,12 +966,13 @@
   "rules": {
    "Rising this hour": {
     "saves": 2,
-    "missed": 1,
+    "missed": 2,
     "neutral": 13,
     "examples": [
      "$DESSA +139% (missed)",
      "$DESSA -51% (saved)",
-     "$DESSA -52% (saved)"
+     "$DESSA -52% (saved)",
+     "$GATO +58% (missed)"
     ]
    },
    "Liquidity vs size": {
@@ -1277,15 +1283,6 @@
    }
   ],
   "pending_checks": [
-   {
-    "id": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
-    "chain": "solana",
-    "symbol": "GATO",
-    "price": 0.005164,
-    "t": 1794559297,
-    "rule": "Rising this hour",
-    "reason": "not trending up this hour"
-   },
    {
     "id": "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump",
     "chain": "solana",
@@ -1953,6 +1950,20 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -14.4%",
    "t": 1794623504
+  },
+  {
+   "type": "skip",
+   "symbol": "TAO",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1794648183
+  },
+  {
+   "type": "skip",
+   "symbol": "AKE",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1794648183
   }
  ],
  "trend": {

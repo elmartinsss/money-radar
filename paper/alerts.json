@@ -1,27 +1,6 @@
 [
  {
   "t": 1794362055,
-  "title": "🔥 Trending #3: Pudgy Penguins (PENGU)",
-  "message": "Rank #116 · +0.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 29/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/pudgy-penguins",
-  "priority": 2
- },
- {
-  "t": 1794362055,
-  "title": "🔥 Trending #4: Kinetiq (KNTQ)",
-  "message": "Rank #255 · -18.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 29/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/kinetiq",
-  "priority": 2
- },
- {
-  "t": 1794362055,
-  "title": "🔥 Trending #5: Hyperliquid (HYPE)",
-  "message": "Rank #11 · -3.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 29/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/hyperliquid",
-  "priority": 2
- },
- {
-  "t": 1794362055,
   "title": "🔥 Trending #6: XRP (XRP)",
   "message": "Rank #6 · -3.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 29/100 Fear 😐.",
   "click": "https://www.coingecko.com/en/coins/ripple",
@@ -417,6 +396,27 @@
   "title": "🔥 Trending #7: Pudgy Penguins (PENGU)",
   "message": "Rank #115 · -3.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/pudgy-penguins",
+  "priority": 2
+ },
+ {
+  "t": 1794648181,
+  "title": "🔥 Trending #2: Bittensor (TAO)",
+  "message": "Rank #38 · -1.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/bittensor",
+  "priority": 2
+ },
+ {
+  "t": 1794648181,
+  "title": "🔥 Trending #3: Akedo (AKE)",
+  "message": "Rank #120 · +163.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/akedo",
+  "priority": 2
+ },
+ {
+  "t": 1794648181,
+  "title": "🔥 Trending #6: Pepe (PEPE)",
+  "message": "Rank #46 · -4.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/pepe",
   "priority": 2
  }
 ]
