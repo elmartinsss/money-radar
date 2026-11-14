@@ -12,7 +12,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847122,
-   "last": 4.38e-06,
+   "last": 4.25e-06,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -32,7 +32,7 @@
    "eur": 4.20885,
    "paid": 4.23,
    "time": 1794114194.1847365,
-   "last": 0.337489,
+   "last": 0.329247,
    "liq0": null,
    "feats": {
     "signal": "trending",
@@ -869,12 +869,17 @@
    "t": 1794608117,
    "v": 82.62,
    "btc": 68195
+  },
+  {
+   "t": 1794623504,
+   "v": 82.41,
+   "btc": 67052
   }
  ],
  "mood": {
-  "value": 20,
+  "value": 13,
   "label": "Extreme Fear",
-  "t": 1794608110
+  "t": 1794623502
  },
  "learning": {
   "trending": {
@@ -889,7 +894,7 @@
   }
  },
  "pending": [],
- "updated": 1794608117,
+ "updated": 1794623504,
  "rewards": {
   "xp": 151.2,
   "level": "Chart reader",
@@ -1927,6 +1932,27 @@
    "signal": "fear_dip",
    "reason": "below its 50-day average (downtrend), not buying",
    "t": 1794608117
+  },
+  {
+   "type": "skip",
+   "symbol": "PEARL",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.4%",
+   "t": 1794623504
+  },
+  {
+   "type": "skip",
+   "symbol": "BTC",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.4%",
+   "t": 1794623504
+  },
+  {
+   "type": "skip",
+   "symbol": "SOL",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.4%",
+   "t": 1794623504
   }
  ],
  "trend": {
