@@ -1,33 +1,5 @@
 [
  {
-  "t": 1794456337,
-  "title": "🔥 Trending #6: Solana (SOL)",
-  "message": "Rank #7 · -0.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/solana",
-  "priority": 2
- },
- {
-  "t": 1794456337,
-  "title": "🔥 Trending #7: Ondo (ONDO)",
-  "message": "Rank #51 · -4.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/ondo-finance",
-  "priority": 2
- },
- {
-  "t": 1794487207,
-  "title": "🔥 Trending #1: Seppuku (SEPPUKU)",
-  "message": "Rank #834 · +4.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/seppuku",
-  "priority": 2
- },
- {
-  "t": 1794487207,
-  "title": "🔥 Trending #5: Pudgy Penguins (PENGU)",
-  "message": "Rank #115 · -3.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/pudgy-penguins",
-  "priority": 2
- },
- {
   "t": 1794487207,
   "title": "🔥 Trending #6: Hyperliquid (HYPE)",
   "message": "Rank #10 · -2.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
@@ -417,6 +389,34 @@
   "title": "🔥 Trending #7: Pump.fun (PUMP)",
   "message": "Rank #57 · -13.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/pump-fun",
+  "priority": 2
+ },
+ {
+  "t": 1794753301,
+  "title": "🔥 Trending #1: Gato The Cat (GATO)",
+  "message": "Rank #905 · +11.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/gato-the-cat",
+  "priority": 2
+ },
+ {
+  "t": 1794753301,
+  "title": "🔥 Trending #2: Identity.md (IMD)",
+  "message": "Rank #869 · +24.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/identity-md",
+  "priority": 2
+ },
+ {
+  "t": 1794753301,
+  "title": "🔥 Trending #4: Pudgy Penguins (PENGU)",
+  "message": "Rank #123 · -8.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/pudgy-penguins",
+  "priority": 2
+ },
+ {
+  "t": 1794753301,
+  "title": "🔥 Trending #7: NEAR Protocol (NEAR)",
+  "message": "Rank #23 · -2.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/near",
   "priority": 2
  }
 ]
