@@ -899,12 +899,17 @@
    "t": 1794688627,
    "v": 81.86,
    "btc": 65390
+  },
+  {
+   "t": 1794701951,
+   "v": 81.86,
+   "btc": 64387
   }
  ],
  "mood": {
-  "value": 13,
+  "value": 10,
   "label": "Extreme Fear",
-  "t": 1794688623
+  "t": 1794701950
  },
  "learning": {
   "trending": {
@@ -919,9 +924,9 @@
   }
  },
  "pending": [],
- "updated": 1794688627,
+ "updated": 1794701951,
  "rewards": {
-  "xp": 155.2,
+  "xp": 160.2,
   "level": "Chart reader",
   "medals": [
    {
@@ -1002,15 +1007,15 @@
     "examples": []
    },
    "Minimum age": {
-    "saves": 10,
+    "saves": 11,
     "missed": 1,
     "neutral": 1,
     "examples": [
-     "$COGE +201% (missed)",
      "$HODL -100% (saved)",
      "$COGE -93% (saved)",
      "$ELYSION -100% (saved)",
-     "$NIHAO -100% (saved)"
+     "$NIHAO -100% (saved)",
+     "$AMC -100% (saved)"
     ]
    },
    "No chasing pumps": {
@@ -1329,15 +1334,6 @@
    }
   ],
   "pending_checks": [
-   {
-    "id": "HWya5CpQiQWLnJfJVRDF9o8AHaUPnPMRa3vfQRczpump",
-    "chain": "solana",
-    "symbol": "AMC",
-    "price": 0.004626,
-    "t": 1794608114,
-    "rule": "Minimum age",
-    "reason": "too new (4h)"
-   },
    {
     "id": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
     "chain": "solana",
@@ -2044,6 +2040,34 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -15.2%",
    "t": 1794688627
+  },
+  {
+   "type": "skip",
+   "symbol": "BTC",
+   "signal": "fear_dip",
+   "reason": "below its 50-day average (downtrend), not buying",
+   "t": 1794701951
+  },
+  {
+   "type": "skip",
+   "symbol": "BTC",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.7%",
+   "t": 1794701951
+  },
+  {
+   "type": "skip",
+   "symbol": "SOL",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.7%",
+   "t": 1794701951
+  },
+  {
+   "type": "skip",
+   "symbol": "HYPE",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.7%",
+   "t": 1794701951
   }
  ],
  "trend": {
@@ -2056,7 +2080,7 @@
    "up": true
   },
   "bitcoin": {
-   "day": "2026-11-14",
+   "day": "2026-11-15",
    "up": false
   }
  }

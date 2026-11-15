@@ -4,7 +4,7 @@ Started 2026-10-30 with **100€** · now **81.86€ (-18.1%)** · cash 77.58€
 
 Closed trades: 22 · wins: 2
 
-_Updated 2026-11-14 22:37 Vilnius time._
+_Updated 2026-11-15 02:19 Vilnius time._
 
 ## Open positions
 
