@@ -583,7 +583,7 @@
  ],
  "started": 1793366521.920483,
  "btc_start": 77216,
- "last_report": "2026-11-14",
+ "last_report": "2026-11-15",
  "equity": [
   {
    "t": 1793366862,
@@ -914,12 +914,17 @@
    "t": 1794753303,
    "v": 81.86,
    "btc": 64853
+  },
+  {
+   "t": 1794772600,
+   "v": 81.86,
+   "btc": 64953
   }
  ],
  "mood": {
   "value": 10,
   "label": "Extreme Fear",
-  "t": 1794753301
+  "t": 1794772597
  },
  "learning": {
   "trending": {
@@ -934,7 +939,7 @@
   }
  },
  "pending": [],
- "updated": 1794753303,
+ "updated": 1794772600,
  "rewards": {
   "xp": 160.2,
   "level": "Chart reader",
@@ -1013,7 +1018,7 @@
    "Liquidity vs size": {
     "saves": 0,
     "missed": 0,
-    "neutral": 10,
+    "neutral": 11,
     "examples": []
    },
    "Minimum age": {
@@ -1345,13 +1350,13 @@
   ],
   "pending_checks": [
    {
-    "id": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
+    "id": "FL3LnVeZTtn7uvcpytRLyAYsqUJtznskjdE4p1HSpump",
     "chain": "solana",
-    "symbol": "GATO",
-    "price": 0.00692,
-    "t": 1794671837,
-    "rule": "Liquidity vs size",
-    "reason": "thin liquidity for its size (4.0% of market cap)"
+    "symbol": "UM",
+    "price": 0.001436,
+    "t": 1794772599,
+    "rule": "Minimum age",
+    "reason": "too new (20h)"
    }
   ],
   "total_reward": -335.2,
@@ -2099,6 +2104,20 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -15.2%",
    "t": 1794753303
+  },
+  {
+   "type": "skip",
+   "symbol": "MACCA",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.2%",
+   "t": 1794772599
+  },
+  {
+   "type": "skip",
+   "symbol": "MIHAO",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.2%",
+   "t": 1794772599
   }
  ],
  "trend": {

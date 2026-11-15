@@ -1,26 +1,5 @@
 [
  {
-  "t": 1794487207,
-  "title": "🔥 Trending #6: Hyperliquid (HYPE)",
-  "message": "Rank #10 · -2.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/hyperliquid",
-  "priority": 2
- },
- {
-  "t": 1794515343,
-  "title": "🔥 Trending #2: ni hao cat (MIHAO)",
-  "message": "Rank #836 · +206.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/ni-hao-cat",
-  "priority": 2
- },
- {
-  "t": 1794515343,
-  "title": "🔥 Trending #3: AudaCity (DACITYCOIN)",
-  "message": "Rank #823 · +22.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/audacity-4",
-  "priority": 2
- },
- {
   "t": 1794515343,
   "title": "🔥 Trending #4: Rocco (ROCCO)",
   "message": "Rank #887 · +16.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
@@ -417,6 +396,27 @@
   "title": "🔥 Trending #7: NEAR Protocol (NEAR)",
   "message": "Rank #23 · -2.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/near",
+  "priority": 2
+ },
+ {
+  "t": 1794772597,
+  "title": "🔥 Trending #1: Macca the Gator (MACCA)",
+  "message": "Rank #910 · +320.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/macca-the-gator-2",
+  "priority": 2
+ },
+ {
+  "t": 1794772597,
+  "title": "🔥 Trending #2: ni hao cat (MIHAO)",
+  "message": "Rank #840 · -40.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/ni-hao-cat",
+  "priority": 2
+ },
+ {
+  "t": 1794772597,
+  "title": "🔥 Trending #4: AudaCity (DACITYCOIN)",
+  "message": "Rank #919 · +80.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/audacity-4",
   "priority": 2
  }
 ]
