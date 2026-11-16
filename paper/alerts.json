@@ -1,20 +1,6 @@
 [
  {
   "t": 1794559295,
-  "title": "🔥 Trending #4: Hyperliquid (HYPE)",
-  "message": "Rank #10 · +0.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 20/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/hyperliquid",
-  "priority": 2
- },
- {
-  "t": 1794559295,
-  "title": "🔥 Trending #5: Lighter (LIT)",
-  "message": "Rank #80 · +0.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 20/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/lighter",
-  "priority": 2
- },
- {
-  "t": 1794559295,
   "title": "🔥 Trending #6: NEAR Protocol (NEAR)",
   "message": "Rank #21 · +1.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 20/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/near",
@@ -417,6 +403,20 @@
   "title": "🔥 Trending #7: Hyperliquid (HYPE)",
   "message": "Rank #10 · -0.4% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/hyperliquid",
+  "priority": 2
+ },
+ {
+  "t": 1794872668,
+  "title": "🔥 Trending #1: Backpack (BP)",
+  "message": "Rank #131 · +35.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/backpack",
+  "priority": 2
+ },
+ {
+  "t": 1794872668,
+  "title": "🔥 Trending #4: Sui (SUI)",
+  "message": "Rank #32 · -2.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/sui",
   "priority": 2
  }
 ]

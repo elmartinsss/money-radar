@@ -12,7 +12,7 @@
    "eur": 4.16905,
    "paid": 4.19,
    "time": 1794348212.2190492,
-   "last": 377.33,
+   "last": 379.74,
    "liq0": null,
    "feats": {
     "signal": "momentum",
@@ -934,12 +934,17 @@
    "t": 1794841563,
    "v": 81.72,
    "btc": 64891
+  },
+  {
+   "t": 1794872669,
+   "v": 81.75,
+   "btc": null
   }
  ],
  "mood": {
   "value": 10,
   "label": "Extreme Fear",
-  "t": 1794841561
+  "t": 1794872668
  },
  "learning": {
   "trending": {
@@ -954,9 +959,9 @@
   }
  },
  "pending": [],
- "updated": 1794841563,
+ "updated": 1794872669,
  "rewards": {
-  "xp": 160.2,
+  "xp": 165.2,
   "level": "Chart reader",
   "medals": [
    {
@@ -1037,15 +1042,15 @@
     "examples": []
    },
    "Minimum age": {
-    "saves": 11,
+    "saves": 12,
     "missed": 1,
     "neutral": 1,
     "examples": [
-     "$HODL -100% (saved)",
      "$COGE -93% (saved)",
      "$ELYSION -100% (saved)",
      "$NIHAO -100% (saved)",
-     "$AMC -100% (saved)"
+     "$AMC -100% (saved)",
+     "$UM -100% (saved)"
     ]
    },
    "No chasing pumps": {
@@ -1364,15 +1369,6 @@
    }
   ],
   "pending_checks": [
-   {
-    "id": "FL3LnVeZTtn7uvcpytRLyAYsqUJtznskjdE4p1HSpump",
-    "chain": "solana",
-    "symbol": "UM",
-    "price": 0.001436,
-    "t": 1794772599,
-    "rule": "Minimum age",
-    "reason": "too new (20h)"
-   },
    {
     "id": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
     "chain": "solana",
@@ -2227,6 +2223,13 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -15.2%",
    "t": 1794841563
+  },
+  {
+   "type": "skip",
+   "symbol": "BP",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.2%",
+   "t": 1794872669
   }
  ],
  "trend": {
