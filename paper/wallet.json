@@ -12,7 +12,7 @@
    "eur": 4.16905,
    "paid": 4.19,
    "time": 1794348212.2190492,
-   "last": 390.22,
+   "last": 377.33,
    "liq0": null,
    "feats": {
     "signal": "momentum",
@@ -929,12 +929,17 @@
    "t": 1794808391,
    "v": 81.86,
    "btc": 64506
+  },
+  {
+   "t": 1794841563,
+   "v": 81.72,
+   "btc": 64891
   }
  ],
  "mood": {
   "value": 10,
   "label": "Extreme Fear",
-  "t": 1794808389
+  "t": 1794841561
  },
  "learning": {
   "trending": {
@@ -949,7 +954,7 @@
   }
  },
  "pending": [],
- "updated": 1794808391,
+ "updated": 1794841563,
  "rewards": {
   "xp": 160.2,
   "level": "Chart reader",
@@ -1403,6 +1408,15 @@
     "t": 1794808391,
     "rule": "Liquidity vs size",
     "reason": "thin liquidity for its size (3.2% of market cap)"
+   },
+   {
+    "id": "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump",
+    "chain": "solana",
+    "symbol": "CBUCKS",
+    "price": 0.005777,
+    "t": 1794841563,
+    "rule": "Liquidity vs size",
+    "reason": "thin liquidity for its size (4.9% of market cap)"
    }
   ],
   "total_reward": -335.2,
@@ -2192,6 +2206,27 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -14.7%",
    "t": 1794808391
+  },
+  {
+   "type": "skip",
+   "symbol": "MACCA",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.2%",
+   "t": 1794841563
+  },
+  {
+   "type": "skip",
+   "symbol": "LIT",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.2%",
+   "t": 1794841563
+  },
+  {
+   "type": "skip",
+   "symbol": "GATO",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.2%",
+   "t": 1794841563
   }
  ],
  "trend": {

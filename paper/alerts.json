@@ -1,40 +1,5 @@
 [
  {
-  "t": 1794533211,
-  "title": "🔥 Trending #4: Pearl (PEARL)",
-  "message": "Rank #100 · -8.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 20/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/pearl-2",
-  "priority": 2
- },
- {
-  "t": 1794533211,
-  "title": "🔥 Trending #5: XRP (XRP)",
-  "message": "Rank #6 · -2.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 20/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/ripple",
-  "priority": 2
- },
- {
-  "t": 1794533211,
-  "title": "🔥 Trending #6: Solana (SOL)",
-  "message": "Rank #7 · -2.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 20/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/solana",
-  "priority": 2
- },
- {
-  "t": 1794533211,
-  "title": "🔥 Trending #7: Pudgy Penguins (PENGU)",
-  "message": "Rank #115 · -0.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 20/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/pudgy-penguins",
-  "priority": 2
- },
- {
-  "t": 1794559295,
-  "title": "🔥 Trending #2: Ethereum (ETH)",
-  "message": "Rank #2 · -5.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 20/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/ethereum",
-  "priority": 2
- },
- {
   "t": 1794559295,
   "title": "🔥 Trending #4: Hyperliquid (HYPE)",
   "message": "Rank #10 · +0.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 20/100 Extreme Fear 🥶.",
@@ -417,6 +382,41 @@
   "title": "🔥 Trending #7: Aster (ASTER)",
   "message": "Rank #56 · +4.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/aster-2",
+  "priority": 2
+ },
+ {
+  "t": 1794841561,
+  "title": "🔥 Trending #1: Macca the Gator (MACCA)",
+  "message": "Rank #821 · +58.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/macca-the-gator-2",
+  "priority": 2
+ },
+ {
+  "t": 1794841561,
+  "title": "🔥 Trending #2: Lighter (LIT)",
+  "message": "Rank #86 · -8.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/lighter",
+  "priority": 2
+ },
+ {
+  "t": 1794841561,
+  "title": "🔥 Trending #3: Gato The Cat (GATO)",
+  "message": "Rank #831 · +8.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/gato-the-cat",
+  "priority": 2
+ },
+ {
+  "t": 1794841561,
+  "title": "🔥 Trending #6: Solana (SOL)",
+  "message": "Rank #7 · +0.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/solana",
+  "priority": 2
+ },
+ {
+  "t": 1794841561,
+  "title": "🔥 Trending #7: Hyperliquid (HYPE)",
+  "message": "Rank #10 · -0.4% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/hyperliquid",
   "priority": 2
  }
 ]
