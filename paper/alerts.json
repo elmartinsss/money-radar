@@ -1,54 +1,5 @@
 [
  {
-  "t": 1794515343,
-  "title": "🔥 Trending #4: Rocco (ROCCO)",
-  "message": "Rank #887 · +16.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/rocco",
-  "priority": 2
- },
- {
-  "t": 1794515343,
-  "title": "🔥 Trending #5: NEAR Protocol (NEAR)",
-  "message": "Rank #22 · -8.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/near",
-  "priority": 2
- },
- {
-  "t": 1794515343,
-  "title": "🔥 Trending #6: Pearl (PEARL)",
-  "message": "Rank #101 · -8.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 28/100 Fear 😐.",
-  "click": "https://www.coingecko.com/en/coins/pearl-2",
-  "priority": 2
- },
- {
-  "t": 1794533211,
-  "title": "📰 Cerebras Stock: Earnings Beat and New Microsoft Partnership - Barron's",
-  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: earnings beat, partnership · via news.google.com",
-  "click": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5GV3pHZXI5bHdjSjFjc2JBMEF0UGNGZTBYVUgzZzZ6Smd0dGhTdUdyYzd2QzVYbnBrUkRweWhSWW9OQ1ZWVWotWXlBbHFob05kWUtqSmVwOEhZXzh6azBFZ0haOTh3eXYzazZ3SFluUDRWRW5FYi1EY0FtOA?oc=5",
-  "priority": 3
- },
- {
-  "t": 1794533211,
-  "title": "🔥 Trending #1: ni hao cat (MIHAO)",
-  "message": "Rank #955 · -3.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 20/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/ni-hao-cat-2",
-  "priority": 2
- },
- {
-  "t": 1794533211,
-  "title": "🔥 Trending #2: AudaCity (DACITYCOIN)",
-  "message": "Rank #886 · +13.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 20/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/audacity-4",
-  "priority": 2
- },
- {
-  "t": 1794533211,
-  "title": "🔥 Trending #3: Bitcoin (BTC)",
-  "message": "Rank #1 · -4.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 20/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/bitcoin",
-  "priority": 2
- },
- {
   "t": 1794533211,
   "title": "🔥 Trending #4: Pearl (PEARL)",
   "message": "Rank #100 · -8.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 20/100 Extreme Fear 🥶.",
@@ -417,6 +368,55 @@
   "title": "🔥 Trending #4: AudaCity (DACITYCOIN)",
   "message": "Rank #919 · +80.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/audacity-4",
+  "priority": 2
+ },
+ {
+  "t": 1794808389,
+  "title": "🔥 Trending #1: Venice Token (VVV)",
+  "message": "Rank #69 · +1.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/venice-token",
+  "priority": 2
+ },
+ {
+  "t": 1794808389,
+  "title": "🔥 Trending #2: Pudgy Penguins (PENGU)",
+  "message": "Rank #122 · -0.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/pudgy-penguins",
+  "priority": 2
+ },
+ {
+  "t": 1794808389,
+  "title": "🔥 Trending #3: Zcash (ZEC)",
+  "message": "Rank #11 · -2.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/zcash",
+  "priority": 2
+ },
+ {
+  "t": 1794808389,
+  "title": "🔥 Trending #4: Bitcoin (BTC)",
+  "message": "Rank #1 · -0.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/bitcoin",
+  "priority": 2
+ },
+ {
+  "t": 1794808389,
+  "title": "🔥 Trending #5: Seeker (SKR)",
+  "message": "Rank #275 · +30.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/seeker",
+  "priority": 2
+ },
+ {
+  "t": 1794808389,
+  "title": "🔥 Trending #6: Pearl (PEARL)",
+  "message": "Rank #89 · +5.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/pearl-2",
+  "priority": 2
+ },
+ {
+  "t": 1794808389,
+  "title": "🔥 Trending #7: Aster (ASTER)",
+  "message": "Rank #56 · +4.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/aster-2",
   "priority": 2
  }
 ]

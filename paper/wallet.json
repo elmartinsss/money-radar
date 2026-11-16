@@ -924,12 +924,17 @@
    "t": 1794786891,
    "v": 81.86,
    "btc": 65220
+  },
+  {
+   "t": 1794808391,
+   "v": 81.86,
+   "btc": 64506
   }
  ],
  "mood": {
   "value": 10,
   "label": "Extreme Fear",
-  "t": 1794786889
+  "t": 1794808389
  },
  "learning": {
   "trending": {
@@ -944,7 +949,7 @@
   }
  },
  "pending": [],
- "updated": 1794786891,
+ "updated": 1794808391,
  "rewards": {
   "xp": 160.2,
   "level": "Chart reader",
@@ -1380,6 +1385,24 @@
     "t": 1794786891,
     "rule": "Minimum age",
     "reason": "too new (8h)"
+   },
+   {
+    "id": "GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump",
+    "chain": "solana",
+    "symbol": "WASTED",
+    "price": 0.003991,
+    "t": 1794808391,
+    "rule": "Hype names",
+    "reason": "hype name"
+   },
+   {
+    "id": "8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump",
+    "chain": "solana",
+    "symbol": "BLOB",
+    "price": 0.006462,
+    "t": 1794808391,
+    "rule": "Liquidity vs size",
+    "reason": "thin liquidity for its size (3.2% of market cap)"
    }
   ],
   "total_reward": -335.2,
@@ -2148,6 +2171,27 @@
    "signal": "fear_dip",
    "reason": "below its 50-day average (downtrend), not buying",
    "t": 1794786891
+  },
+  {
+   "type": "skip",
+   "symbol": "VVV",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.7%",
+   "t": 1794808391
+  },
+  {
+   "type": "skip",
+   "symbol": "PENGU",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.7%",
+   "t": 1794808391
+  },
+  {
+   "type": "skip",
+   "symbol": "ZEC",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.7%",
+   "t": 1794808391
   }
  ],
  "trend": {
