@@ -939,12 +939,17 @@
    "t": 1794872669,
    "v": 81.75,
    "btc": null
+  },
+  {
+   "t": 1794892614,
+   "v": 81.75,
+   "btc": 64757
   }
  ],
  "mood": {
-  "value": 10,
+  "value": 12,
   "label": "Extreme Fear",
-  "t": 1794872668
+  "t": 1794892611
  },
  "learning": {
   "trending": {
@@ -959,7 +964,7 @@
   }
  },
  "pending": [],
- "updated": 1794872669,
+ "updated": 1794892614,
  "rewards": {
   "xp": 165.2,
   "level": "Chart reader",
@@ -1038,13 +1043,13 @@
    "Liquidity vs size": {
     "saves": 0,
     "missed": 0,
-    "neutral": 11,
+    "neutral": 12,
     "examples": []
    },
    "Minimum age": {
     "saves": 12,
     "missed": 1,
-    "neutral": 1,
+    "neutral": 2,
     "examples": [
      "$COGE -93% (saved)",
      "$ELYSION -100% (saved)",
@@ -1369,24 +1374,6 @@
    }
   ],
   "pending_checks": [
-   {
-    "id": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
-    "chain": "solana",
-    "symbol": "GATO",
-    "price": 0.007458,
-    "t": 1794786891,
-    "rule": "Liquidity vs size",
-    "reason": "thin liquidity for its size (3.8% of market cap)"
-   },
-   {
-    "id": "4B8CdHPZ8ng1CtMP2Jk2W8wGAwJ5nJnap1deVsz2pump",
-    "chain": "solana",
-    "symbol": "BUTTHOLE",
-    "price": 0.0004787,
-    "t": 1794786891,
-    "rule": "Minimum age",
-    "reason": "too new (8h)"
-   },
    {
     "id": "GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump",
     "chain": "solana",
@@ -2230,6 +2217,34 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -15.2%",
    "t": 1794872669
+  },
+  {
+   "type": "skip",
+   "symbol": "BTC",
+   "signal": "fear_dip",
+   "reason": "below its 50-day average (downtrend), not buying",
+   "t": 1794892614
+  },
+  {
+   "type": "skip",
+   "symbol": "BP",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.7%",
+   "t": 1794892614
+  },
+  {
+   "type": "skip",
+   "symbol": "BTC",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.7%",
+   "t": 1794892614
+  },
+  {
+   "type": "skip",
+   "symbol": "LIT",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.7%",
+   "t": 1794892614
   }
  ],
  "trend": {
@@ -2242,7 +2257,7 @@
    "up": true
   },
   "bitcoin": {
-   "day": "2026-11-16",
+   "day": "2026-11-17",
    "up": false
   }
  }
