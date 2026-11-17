@@ -12,7 +12,7 @@
    "eur": 4.16905,
    "paid": 4.19,
    "time": 1794348212.2190492,
-   "last": 379.74,
+   "last": 381.175,
    "liq0": null,
    "feats": {
     "signal": "momentum",
@@ -944,12 +944,17 @@
    "t": 1794892614,
    "v": 81.75,
    "btc": 64757
+  },
+  {
+   "t": 1794926517,
+   "v": 81.76,
+   "btc": 65161
   }
  ],
  "mood": {
   "value": 12,
   "label": "Extreme Fear",
-  "t": 1794892611
+  "t": 1794926514
  },
  "learning": {
   "trending": {
@@ -964,7 +969,7 @@
   }
  },
  "pending": [],
- "updated": 1794892614,
+ "updated": 1794926517,
  "rewards": {
   "xp": 165.2,
   "level": "Chart reader",
@@ -1042,9 +1047,11 @@
    },
    "Liquidity vs size": {
     "saves": 0,
-    "missed": 0,
+    "missed": 1,
     "neutral": 12,
-    "examples": []
+    "examples": [
+     "$BLOB +105% (missed)"
+    ]
    },
    "Minimum age": {
     "saves": 12,
@@ -1079,6 +1086,12 @@
     "examples": []
    },
    "Top-10 wallet limit": {
+    "saves": 0,
+    "missed": 0,
+    "neutral": 1,
+    "examples": []
+   },
+   "Hype names": {
     "saves": 0,
     "missed": 0,
     "neutral": 1,
@@ -1375,24 +1388,6 @@
   ],
   "pending_checks": [
    {
-    "id": "GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump",
-    "chain": "solana",
-    "symbol": "WASTED",
-    "price": 0.003991,
-    "t": 1794808391,
-    "rule": "Hype names",
-    "reason": "hype name"
-   },
-   {
-    "id": "8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump",
-    "chain": "solana",
-    "symbol": "BLOB",
-    "price": 0.006462,
-    "t": 1794808391,
-    "rule": "Liquidity vs size",
-    "reason": "thin liquidity for its size (3.2% of market cap)"
-   },
-   {
     "id": "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump",
     "chain": "solana",
     "symbol": "CBUCKS",
@@ -1400,6 +1395,15 @@
     "t": 1794841563,
     "rule": "Liquidity vs size",
     "reason": "thin liquidity for its size (4.9% of market cap)"
+   },
+   {
+    "id": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
+    "chain": "solana",
+    "symbol": "GATO",
+    "price": 0.005765,
+    "t": 1794926517,
+    "rule": "Rising this hour",
+    "reason": "not trending up this hour"
    }
   ],
   "total_reward": -335.2,
@@ -2245,6 +2249,20 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -14.7%",
    "t": 1794892614
+  },
+  {
+   "type": "skip",
+   "symbol": "GATO",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.2%",
+   "t": 1794926517
+  },
+  {
+   "type": "skip",
+   "symbol": "PEARL",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.2%",
+   "t": 1794926517
   }
  ],
  "trend": {

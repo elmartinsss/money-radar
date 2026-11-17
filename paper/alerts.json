@@ -1,40 +1,5 @@
 [
  {
-  "t": 1794608110,
-  "title": "🔥 Trending #4: Akedo (AKE)",
-  "message": "Rank #137 · +349.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 20/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/akedo",
-  "priority": 2
- },
- {
-  "t": 1794623502,
-  "title": "📰 Stock Market Today, Nov. 13: Nu Holdings Surges on Record Q3 Earnings Beat Driven by Strong Revenue - Yahoo Finance",
-  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: earnings beat, surges · via news.google.com",
-  "click": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPMFRtN25QbXZRWklxazJjRTloeS1qRElPZkpjMUJxNXZObERNTnVvN3RxVEg5Q1AyZklsX3BETEtNbzF2UTRjSVFZWXZ6UUxBUkpGZkJHci10LXNjRlNYdk8xSGZJRVZPTU94R0Y5N0ZGbnJjNDZ2dlVqcm1xRWVJVTIzSDBLTVNGeWFGdDJNTTNGNmlq?oc=5",
-  "priority": 3
- },
- {
-  "t": 1794623502,
-  "title": "🔥 Trending #1: Pearl (PEARL)",
-  "message": "Rank #90 · +13.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/pearl-2",
-  "priority": 2
- },
- {
-  "t": 1794623502,
-  "title": "🔥 Trending #2: Bitcoin (BTC)",
-  "message": "Rank #1 · -4.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/bitcoin",
-  "priority": 2
- },
- {
-  "t": 1794623502,
-  "title": "🔥 Trending #3: Solana (SOL)",
-  "message": "Rank #7 · -6.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/solana",
-  "priority": 2
- },
- {
   "t": 1794623502,
   "title": "🔥 Trending #4: NEAR Protocol (NEAR)",
   "message": "Rank #22 · -1.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
@@ -417,6 +382,41 @@
   "title": "🔥 Trending #7: Hyperliquid (HYPE)",
   "message": "Rank #10 · +6.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/hyperliquid",
+  "priority": 2
+ },
+ {
+  "t": 1794926514,
+  "title": "📰 Binance Holds 84% of Anthropic Pre-IPO Perps Open Interest Ahead of Nasdaq Listing: Kaiko - The Crypto Times",
+  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: listing, binance · via news.google.com",
+  "click": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOYnYybnB4VmVLTzJVejZOcGRwQW9pYk0xTjYwRktpdEpkc2gyR2NBUXdGWkoxNUZMaFQxdW5HZ0Nyd3hmajZZS3lxbzFwYmtVaElBZlkwWUx2M0RjRVQyM3M5MUtBVDR2VUFjTnlncXpOLXJzYW5sYjhfYnRrNG1XekVpUkhLdTIyWENxSUdyWHhhM0lIWjJyT19tY0ZyTXpRcU4yWkpVTnVIM29ETmJCM05kc0hQNlh0eHluN0hmRnp1NUQ3?oc=5",
+  "priority": 3
+ },
+ {
+  "t": 1794926514,
+  "title": "🔥 Trending #1: Gato The Cat (GATO)",
+  "message": "Rank #868 · -16.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/gato-the-cat",
+  "priority": 2
+ },
+ {
+  "t": 1794926514,
+  "title": "🔥 Trending #3: Pearl (PEARL)",
+  "message": "Rank #89 · +5.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/pearl-2",
+  "priority": 2
+ },
+ {
+  "t": 1794926514,
+  "title": "🔥 Trending #6: Pudgy Penguins (PENGU)",
+  "message": "Rank #127 · -6.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/pudgy-penguins",
+  "priority": 2
+ },
+ {
+  "t": 1794926514,
+  "title": "🔥 Trending #7: Injective (INJ)",
+  "message": "Rank #81 · +7.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/injective-protocol",
   "priority": 2
  }
 ]
