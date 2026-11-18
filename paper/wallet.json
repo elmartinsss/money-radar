@@ -958,12 +958,17 @@
    "t": 1794955266,
    "v": 81.73,
    "btc": 64711
+  },
+  {
+   "t": 1794974052,
+   "v": 81.73,
+   "btc": 64494
   }
  ],
  "mood": {
-  "value": 12,
+  "value": 11,
   "label": "Extreme Fear",
-  "t": 1794955263
+  "t": 1794974049
  },
  "learning": {
   "trending": {
@@ -988,7 +993,7 @@
   }
  },
  "pending": [],
- "updated": 1794955266,
+ "updated": 1794974052,
  "rewards": {
   "xp": 167.2,
   "level": "Chart reader",
@@ -2315,6 +2320,27 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
    "t": 1794955266
+  },
+  {
+   "type": "skip",
+   "symbol": "BREV",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.9%",
+   "t": 1794974052
+  },
+  {
+   "type": "skip",
+   "symbol": "NEAR",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.9%",
+   "t": 1794974052
+  },
+  {
+   "type": "skip",
+   "symbol": "BTC",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.9%",
+   "t": 1794974052
   }
  ],
  "trend": {

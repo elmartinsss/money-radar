@@ -1,54 +1,5 @@
 [
  {
-  "t": 1794648181,
-  "title": "🔥 Trending #2: Bittensor (TAO)",
-  "message": "Rank #38 · -1.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/bittensor",
-  "priority": 2
- },
- {
-  "t": 1794648181,
-  "title": "🔥 Trending #3: Akedo (AKE)",
-  "message": "Rank #120 · +163.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/akedo",
-  "priority": 2
- },
- {
-  "t": 1794648181,
-  "title": "🔥 Trending #6: Pepe (PEPE)",
-  "message": "Rank #46 · -4.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/pepe",
-  "priority": 2
- },
- {
-  "t": 1794671835,
-  "title": "📉 Solana -7.5% in 24h",
-  "message": "Now $73.73\nRisk: 🟢 big coin, real move. Find out WHY before doing anything.",
-  "click": "https://www.coingecko.com/en/coins/solana",
-  "priority": 4
- },
- {
-  "t": 1794671835,
-  "title": "🔥 Trending #2: Kava (KAVA)",
-  "message": "Rank #457 · -42.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/kava",
-  "priority": 2
- },
- {
-  "t": 1794671835,
-  "title": "🔥 Trending #4: Ethereum (ETH)",
-  "message": "Rank #2 · -4.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/ethereum",
-  "priority": 2
- },
- {
-  "t": 1794671835,
-  "title": "🔥 Trending #7: XRP (XRP)",
-  "message": "Rank #6 · -4.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/ripple",
-  "priority": 2
- },
- {
   "t": 1794688623,
   "title": "🔥 Trending #1: ni hao cat (MIHAO)",
   "message": "Rank #700 · +23.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
@@ -416,6 +367,55 @@
   "t": 1794955263,
   "title": "🔥 Trending #7: Venice Token (VVV)",
   "message": "Rank #67 · +1.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/venice-token",
+  "priority": 2
+ },
+ {
+  "t": 1794974049,
+  "title": "🔥 Trending #1: Brevis (BREV)",
+  "message": "Rank #622 · +97.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/brevis",
+  "priority": 2
+ },
+ {
+  "t": 1794974049,
+  "title": "🔥 Trending #2: NEAR Protocol (NEAR)",
+  "message": "Rank #21 · +4.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/near",
+  "priority": 2
+ },
+ {
+  "t": 1794974049,
+  "title": "🔥 Trending #3: Bitcoin (BTC)",
+  "message": "Rank #1 · -0.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/bitcoin",
+  "priority": 2
+ },
+ {
+  "t": 1794974049,
+  "title": "🔥 Trending #4: Backpack (BP)",
+  "message": "Rank #141 · +0.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/backpack",
+  "priority": 2
+ },
+ {
+  "t": 1794974049,
+  "title": "🔥 Trending #5: Pearl (PEARL)",
+  "message": "Rank #86 · +13.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/pearl-2",
+  "priority": 2
+ },
+ {
+  "t": 1794974049,
+  "title": "🔥 Trending #6: Solana (SOL)",
+  "message": "Rank #7 · +3.4% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/solana",
+  "priority": 2
+ },
+ {
+  "t": 1794974049,
+  "title": "🔥 Trending #7: Venice Token (VVV)",
+  "message": "Rank #67 · -0.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/venice-token",
   "priority": 2
  }
