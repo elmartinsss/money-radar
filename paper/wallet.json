@@ -587,7 +587,7 @@
  ],
  "started": 1793366521.920483,
  "btc_start": 77216,
- "last_report": "2026-11-15",
+ "last_report": "2026-11-18",
  "equity": [
   {
    "t": 1793366862,
@@ -968,12 +968,17 @@
    "t": 1795006145,
    "v": 81.73,
    "btc": 63998
+  },
+  {
+   "t": 1795035543,
+   "v": 81.73,
+   "btc": 62513
   }
  ],
  "mood": {
   "value": 11,
   "label": "Extreme Fear",
-  "t": 1795006143
+  "t": 1795035540
  },
  "learning": {
   "trending": {
@@ -998,7 +1003,7 @@
   }
  },
  "pending": [],
- "updated": 1795006145,
+ "updated": 1795035543,
  "rewards": {
   "xp": 167.2,
   "level": "Chart reader",
@@ -1071,7 +1076,7 @@
    "Rising this hour": {
     "saves": 2,
     "missed": 2,
-    "neutral": 14,
+    "neutral": 15,
     "examples": [
      "$DESSA +139% (missed)",
      "$DESSA -51% (saved)",
@@ -1434,15 +1439,6 @@
    }
   ],
   "pending_checks": [
-   {
-    "id": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
-    "chain": "solana",
-    "symbol": "GATO",
-    "price": 0.005765,
-    "t": 1794926517,
-    "rule": "Rising this hour",
-    "reason": "not trending up this hour"
-   },
    {
     "id": "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump",
     "chain": "solana",
@@ -2369,6 +2365,34 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
    "t": 1795006145
+  },
+  {
+   "type": "skip",
+   "symbol": "GATO",
+   "signal": "memecoin",
+   "reason": "I remember losing in situations like this (similar trades), expecting -14.6%",
+   "t": 1795035543
+  },
+  {
+   "type": "skip",
+   "symbol": "WASTED",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1795035543
+  },
+  {
+   "type": "skip",
+   "symbol": "WSTAR",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1795035543
+  },
+  {
+   "type": "skip",
+   "symbol": "LUCIA",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1795035543
   }
  ],
  "trend": {
