@@ -1,40 +1,5 @@
 [
  {
-  "t": 1794688623,
-  "title": "🔥 Trending #1: ni hao cat (MIHAO)",
-  "message": "Rank #700 · +23.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/ni-hao-cat",
-  "priority": 2
- },
- {
-  "t": 1794688623,
-  "title": "🔥 Trending #5: Uniswap (UNI)",
-  "message": "Rank #31 · -16.4% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/uniswap",
-  "priority": 2
- },
- {
-  "t": 1794688623,
-  "title": "🔥 Trending #6: Zcash (ZEC)",
-  "message": "Rank #11 · -12.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/zcash",
-  "priority": 2
- },
- {
-  "t": 1794701950,
-  "title": "📉 Ethereum -8.3% in 24h",
-  "message": "Now $1,771.58\nRisk: 🟢 big coin, real move. Find out WHY before doing anything.",
-  "click": "https://www.coingecko.com/en/coins/ethereum",
-  "priority": 4
- },
- {
-  "t": 1794701950,
-  "title": "📉 Solana -10.0% in 24h",
-  "message": "Now $70.49\nRisk: 🟢 big coin, real move. Find out WHY before doing anything.",
-  "click": "https://www.coingecko.com/en/coins/solana",
-  "priority": 4
- },
- {
   "t": 1794701950,
   "title": "🔥 Trending #1: Bitcoin (BTC)",
   "message": "Rank #1 · -6.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
@@ -417,6 +382,41 @@
   "title": "🔥 Trending #7: Venice Token (VVV)",
   "message": "Rank #67 · -0.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/venice-token",
+  "priority": 2
+ },
+ {
+  "t": 1795006143,
+  "title": "🔥 Trending #2: Pudgy Penguins (PENGU)",
+  "message": "Rank #126 · -0.4% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/pudgy-penguins",
+  "priority": 2
+ },
+ {
+  "t": 1795006143,
+  "title": "🔥 Trending #3: Momentum (MMT)",
+  "message": "Rank #387 · +111.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/momentum-3",
+  "priority": 2
+ },
+ {
+  "t": 1795006143,
+  "title": "🔥 Trending #5: Arbitrum (ARB)",
+  "message": "Rank #72 · -2.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/arbitrum",
+  "priority": 2
+ },
+ {
+  "t": 1795006143,
+  "title": "🔥 Trending #6: Hyperliquid (HYPE)",
+  "message": "Rank #10 · -0.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/hyperliquid",
+  "priority": 2
+ },
+ {
+  "t": 1795006143,
+  "title": "🔥 Trending #7: Beldex (BDX)",
+  "message": "Rank #94 · -4.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/beldex",
   "priority": 2
  }
 ]
