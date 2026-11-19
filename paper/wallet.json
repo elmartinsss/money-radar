@@ -978,12 +978,17 @@
    "t": 1795055376,
    "v": 81.73,
    "btc": 62793
+  },
+  {
+   "t": 1795084995,
+   "v": 81.73,
+   "btc": 63769
   }
  ],
  "mood": {
   "value": 10,
   "label": "Extreme Fear",
-  "t": 1795055373
+  "t": 1795084993
  },
  "learning": {
   "trending": {
@@ -1008,7 +1013,7 @@
   }
  },
  "pending": [],
- "updated": 1795055376,
+ "updated": 1795084995,
  "rewards": {
   "xp": 167.2,
   "level": "Chart reader",
@@ -1461,22 +1466,21 @@
     "t": 1795055376,
     "rule": "Minimum age",
     "reason": "too new (0h)"
+   },
+   {
+    "id": "ejrz94zR4A2ScS8LdvRaQih2xUxaE2ydreqUNKmpump",
+    "chain": "solana",
+    "symbol": "ANTS",
+    "price": 0.01367,
+    "t": 1795084995,
+    "rule": "Wash-trading check",
+    "reason": "volume way bigger than liquidity (often bots/wash trading)"
    }
   ],
   "total_reward": -336.09999999999997,
   "trades": 23
  },
  "activity": [
-  {
-   "type": "sell",
-   "symbol": "AIN",
-   "signal": "trending",
-   "eur": 5.56,
-   "pnl": -1.1,
-   "pct": -16.6,
-   "reason": "\ud83d\uded1 Stop loss (-16%)",
-   "t": 1793454795
-  },
   {
    "type": "buy",
    "symbol": "SI",
@@ -2402,6 +2406,13 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -14.9%",
    "t": 1795055376
+  },
+  {
+   "type": "skip",
+   "symbol": "WASTED",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1795084995
   }
  ],
  "trend": {

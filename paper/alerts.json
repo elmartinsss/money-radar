@@ -1,40 +1,5 @@
 [
  {
-  "t": 1794772597,
-  "title": "🔥 Trending #1: Macca the Gator (MACCA)",
-  "message": "Rank #910 · +320.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/macca-the-gator-2",
-  "priority": 2
- },
- {
-  "t": 1794772597,
-  "title": "🔥 Trending #2: ni hao cat (MIHAO)",
-  "message": "Rank #840 · -40.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/ni-hao-cat",
-  "priority": 2
- },
- {
-  "t": 1794772597,
-  "title": "🔥 Trending #4: AudaCity (DACITYCOIN)",
-  "message": "Rank #919 · +80.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/audacity-4",
-  "priority": 2
- },
- {
-  "t": 1794808389,
-  "title": "🔥 Trending #1: Venice Token (VVV)",
-  "message": "Rank #69 · +1.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/venice-token",
-  "priority": 2
- },
- {
-  "t": 1794808389,
-  "title": "🔥 Trending #2: Pudgy Penguins (PENGU)",
-  "message": "Rank #122 · -0.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/pudgy-penguins",
-  "priority": 2
- },
- {
   "t": 1794808389,
   "title": "🔥 Trending #3: Zcash (ZEC)",
   "message": "Rank #11 · -2.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
@@ -417,6 +382,41 @@
   "title": "🔥 Trending #7: Ethereum (ETH)",
   "message": "Rank #2 · -1.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/ethereum",
+  "priority": 2
+ },
+ {
+  "t": 1795084993,
+  "title": "🔥 Trending #1: WASTED (WASTED)",
+  "message": "Rank #866 · +0.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/wasted-4",
+  "priority": 2
+ },
+ {
+  "t": 1795084993,
+  "title": "🔥 Trending #4: Pudgy Penguins (PENGU)",
+  "message": "Rank #125 · +0.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/pudgy-penguins",
+  "priority": 2
+ },
+ {
+  "t": 1795084993,
+  "title": "🔥 Trending #5: Solana (SOL)",
+  "message": "Rank #7 · -0.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/solana",
+  "priority": 2
+ },
+ {
+  "t": 1795084993,
+  "title": "🔥 Trending #6: Terra Luna Classic (LUNC)",
+  "message": "Rank #139 · +21.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/terra-luna",
+  "priority": 2
+ },
+ {
+  "t": 1795084993,
+  "title": "🔥 Trending #7: Bittensor (TAO)",
+  "message": "Rank #38 · +0.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/bittensor",
   "priority": 2
  }
 ]
