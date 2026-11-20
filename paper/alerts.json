@@ -1,40 +1,5 @@
 [
  {
-  "t": 1794872668,
-  "title": "🔥 Trending #4: Sui (SUI)",
-  "message": "Rank #32 · -2.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/sui",
-  "priority": 2
- },
- {
-  "t": 1794892611,
-  "title": "🔥 Trending #1: Backpack (BP)",
-  "message": "Rank #141 · +20.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/backpack",
-  "priority": 2
- },
- {
-  "t": 1794892611,
-  "title": "🔥 Trending #2: Bitcoin (BTC)",
-  "message": "Rank #1 · +0.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/bitcoin",
-  "priority": 2
- },
- {
-  "t": 1794892611,
-  "title": "🔥 Trending #3: Lighter (LIT)",
-  "message": "Rank #79 · +12.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/lighter",
-  "priority": 2
- },
- {
-  "t": 1794892611,
-  "title": "🔥 Trending #4: Kaspa (KAS)",
-  "message": "Rank #80 · +1.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/kaspa",
-  "priority": 2
- },
- {
   "t": 1794892611,
   "title": "🔥 Trending #5: Chainlink (LINK)",
   "message": "Rank #17 · +0.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
@@ -417,6 +382,41 @@
   "title": "🔥 Trending #7: Pudgy Penguins (PENGU)",
   "message": "Rank #128 · -2.4% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/pudgy-penguins",
+  "priority": 2
+ },
+ {
+  "t": 1795164458,
+  "title": "🐸 Memecoin with real volume: $GATO",
+  "message": "Liq $172.4k · Vol24h $695.5k · MC $2.5M\n1h +22.82% · 24h +28.29% · age 2084h\nRugcheck: top 10 hold 18%, 28231 holders, pool 100% locked\nRisk: 🔴 gambling. Passed the safety filters, but it's a paid promo and most memecoins still go to 0.\nMarket mood: 12/100 Extreme Fear 🥶.",
+  "click": "https://dexscreener.com/solana/5e3dxlxgwmtdcoka51wyyakttjfzbwqcoyuhbui5gt2m",
+  "priority": 3
+ },
+ {
+  "t": 1795164458,
+  "title": "🔥 Trending #4: Collector Crypt (CARDS)",
+  "message": "Rank #193 · -1.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/collector-crypt",
+  "priority": 2
+ },
+ {
+  "t": 1795164458,
+  "title": "🔥 Trending #5: Monero (XMR)",
+  "message": "Rank #12 · -3.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/monero",
+  "priority": 2
+ },
+ {
+  "t": 1795164458,
+  "title": "🔥 Trending #6: Monad (MON)",
+  "message": "Rank #178 · -3.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/monad",
+  "priority": 2
+ },
+ {
+  "t": 1795164458,
+  "title": "🔥 Trending #7: Sky (SKY)",
+  "message": "Rank #67 · -7.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/sky",
   "priority": 2
  }
 ]
