@@ -988,12 +988,17 @@
    "t": 1795115514,
    "v": 81.73,
    "btc": 62713
+  },
+  {
+   "t": 1795137584,
+   "v": 81.73,
+   "btc": 62397
   }
  ],
  "mood": {
-  "value": 10,
+  "value": 12,
   "label": "Extreme Fear",
-  "t": 1795115512
+  "t": 1795137582
  },
  "learning": {
   "trending": {
@@ -1018,7 +1023,7 @@
   }
  },
  "pending": [],
- "updated": 1795115514,
+ "updated": 1795137584,
  "rewards": {
   "xp": 167.2,
   "level": "Chart reader",
@@ -1486,42 +1491,6 @@
   "trades": 23
  },
  "activity": [
-  {
-   "type": "sell",
-   "symbol": "SP",
-   "signal": "trending",
-   "eur": 4.51,
-   "pnl": 1.49,
-   "pct": 49.4,
-   "reason": "\ud83d\udcb0 Sold half at profit, rest rides with a trailing stop",
-   "t": 1793492936
-  },
-  {
-   "type": "buy",
-   "symbol": "VVV",
-   "signal": "trending",
-   "eur": 6.27,
-   "price": 23.611519302331068,
-   "t": 1793492936
-  },
-  {
-   "type": "sell",
-   "symbol": "SP",
-   "signal": "trending",
-   "eur": 5.29,
-   "pnl": -0.75,
-   "pct": -12.5,
-   "reason": "\ud83d\udcc9 Trailing stop (-74%, peak was +51%)",
-   "t": 1793515546
-  },
-  {
-   "type": "buy",
-   "symbol": "DACITYCOIN",
-   "signal": "trending",
-   "eur": 5.65,
-   "price": 0.018059180187037484,
-   "t": 1793572128
-  },
   {
    "type": "buy",
    "symbol": "PENGU",
@@ -2416,6 +2385,34 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
    "t": 1795115514
+  },
+  {
+   "type": "skip",
+   "symbol": "BTC",
+   "signal": "fear_dip",
+   "reason": "below its 50-day average (downtrend), not buying",
+   "t": 1795137584
+  },
+  {
+   "type": "skip",
+   "symbol": "BTC",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.9%",
+   "t": 1795137584
+  },
+  {
+   "type": "skip",
+   "symbol": "NEAR",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.9%",
+   "t": 1795137584
+  },
+  {
+   "type": "skip",
+   "symbol": "ETH",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.9%",
+   "t": 1795137584
   }
  ],
  "trend": {
@@ -2428,7 +2425,7 @@
    "up": true
   },
   "bitcoin": {
-   "day": "2026-11-19",
+   "day": "2026-11-20",
    "up": false
   }
  }
