@@ -1003,6 +1003,11 @@
    "t": 1795195349,
    "v": 81.73,
    "btc": 59277
+  },
+  {
+   "t": 1795216545,
+   "v": 81.73,
+   "btc": 59079
   }
  ],
  "mood": {
@@ -1033,7 +1038,7 @@
   }
  },
  "pending": [],
- "updated": 1795195349,
+ "updated": 1795216545,
  "rewards": {
   "xp": 172.2,
   "level": "Chart reader",
@@ -1105,13 +1110,14 @@
   "rules": {
    "Rising this hour": {
     "saves": 2,
-    "missed": 2,
+    "missed": 3,
     "neutral": 16,
     "examples": [
      "$DESSA +139% (missed)",
      "$DESSA -51% (saved)",
      "$DESSA -52% (saved)",
-     "$GATO +58% (missed)"
+     "$GATO +58% (missed)",
+     "$GATO +59% (missed)"
     ]
    },
    "Liquidity vs size": {
@@ -1476,17 +1482,7 @@
     }
    }
   ],
-  "pending_checks": [
-   {
-    "id": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
-    "chain": "solana",
-    "symbol": "GATO",
-    "price": 0.002095,
-    "t": 1795115514,
-    "rule": "Rising this hour",
-    "reason": "not trending up this hour"
-   }
-  ],
+  "pending_checks": [],
   "total_reward": -336.09999999999997,
   "trades": 23
  },
