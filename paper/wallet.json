@@ -998,12 +998,17 @@
    "t": 1795164462,
    "v": 81.73,
    "btc": 61868
+  },
+  {
+   "t": 1795195349,
+   "v": 81.73,
+   "btc": 59277
   }
  ],
  "mood": {
   "value": 12,
   "label": "Extreme Fear",
-  "t": 1795164458
+  "t": 1795195346
  },
  "learning": {
   "trending": {
@@ -1028,9 +1033,9 @@
   }
  },
  "pending": [],
- "updated": 1795164462,
+ "updated": 1795195349,
  "rewards": {
-  "xp": 167.2,
+  "xp": 172.2,
   "level": "Chart reader",
   "medals": [
    {
@@ -1160,6 +1165,14 @@
     "missed": 0,
     "neutral": 1,
     "examples": []
+   },
+   "Wash-trading check": {
+    "saves": 1,
+    "missed": 0,
+    "neutral": 0,
+    "examples": [
+     "$ANTS -66% (saved)"
+    ]
    }
   },
   "journal": [
@@ -1465,15 +1478,6 @@
   ],
   "pending_checks": [
    {
-    "id": "ejrz94zR4A2ScS8LdvRaQih2xUxaE2ydreqUNKmpump",
-    "chain": "solana",
-    "symbol": "ANTS",
-    "price": 0.01367,
-    "t": 1795084995,
-    "rule": "Wash-trading check",
-    "reason": "volume way bigger than liquidity (often bots/wash trading)"
-   },
-   {
     "id": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
     "chain": "solana",
     "symbol": "GATO",
@@ -1487,24 +1491,6 @@
   "trades": 23
  },
  "activity": [
-  {
-   "type": "sell",
-   "symbol": "SI",
-   "signal": "trending",
-   "eur": 3.6,
-   "pnl": -2.44,
-   "pct": -40.4,
-   "reason": "\ud83d\uded1 Stop loss (-40%)",
-   "t": 1793607999
-  },
-  {
-   "type": "buy",
-   "symbol": "BTC",
-   "signal": "trending",
-   "eur": 4.72,
-   "price": 78080.49125602424,
-   "t": 1793607999
-  },
   {
    "type": "sell",
    "symbol": "Q",
@@ -2408,6 +2394,20 @@
    "signal": "memecoin",
    "reason": "I remember losing in situations like this (similar trades), expecting -14.6%",
    "t": 1795164462
+  },
+  {
+   "type": "skip",
+   "symbol": "WASTED",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1795195349
+  },
+  {
+   "type": "skip",
+   "symbol": "TRUMP",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1795195349
   }
  ],
  "trend": {
