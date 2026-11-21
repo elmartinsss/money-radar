@@ -1013,12 +1013,17 @@
    "t": 1795233835,
    "v": 81.73,
    "btc": 56660
+  },
+  {
+   "t": 1795264462,
+   "v": 81.73,
+   "btc": 58427
   }
  ],
  "mood": {
   "value": 12,
   "label": "Extreme Fear",
-  "t": 1795233833
+  "t": 1795264460
  },
  "learning": {
   "trending": {
@@ -1043,7 +1048,7 @@
   }
  },
  "pending": [],
- "updated": 1795233835,
+ "updated": 1795264462,
  "rewards": {
   "xp": 172.2,
   "level": "Chart reader",
@@ -1502,14 +1507,6 @@
   "trades": 23
  },
  "activity": [
-  {
-   "type": "buy",
-   "symbol": "SNOWMOON",
-   "signal": "trending",
-   "eur": 4.64,
-   "price": 0.02143005850764426,
-   "t": 1793742803
-  },
   {
    "type": "sell",
    "symbol": "SNOWMOON",
@@ -2412,6 +2409,13 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -14.9%",
    "t": 1795233835
+  },
+  {
+   "type": "skip",
+   "symbol": "WASTED",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1795264462
   }
  ],
  "trend": {
