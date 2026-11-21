@@ -1023,12 +1023,17 @@
    "t": 1795290439,
    "v": 81.73,
    "btc": 60297
+  },
+  {
+   "t": 1795305508,
+   "v": 81.73,
+   "btc": 60185
   }
  ],
  "mood": {
   "value": 12,
   "label": "Extreme Fear",
-  "t": 1795290437
+  "t": 1795305505
  },
  "learning": {
   "trending": {
@@ -1053,7 +1058,7 @@
   }
  },
  "pending": [],
- "updated": 1795290439,
+ "updated": 1795305508,
  "rewards": {
   "xp": 172.2,
   "level": "Chart reader",
@@ -1512,33 +1517,6 @@
   "trades": 23
  },
  "activity": [
-  {
-   "type": "sell",
-   "symbol": "DACITYCOIN",
-   "signal": "trending",
-   "eur": 2.97,
-   "pnl": 0.74,
-   "pct": 33.0,
-   "reason": "\ud83d\udcb0 Sold half at profit, rest rides with a trailing stop",
-   "t": 1793812066
-  },
-  {
-   "type": "sell",
-   "symbol": "DACITYCOIN",
-   "signal": "trending",
-   "eur": 4.83,
-   "pnl": 0.37,
-   "pct": 8.4,
-   "reason": "\ud83d\udcc9 Trailing stop (-15%, peak was +64%)",
-   "t": 1793846970
-  },
-  {
-   "type": "skip",
-   "symbol": "ETHEREUM",
-   "signal": "momentum",
-   "reason": "below its 50-day average (downtrend), not buying",
-   "t": 1793846970
-  },
   {
    "type": "buy",
    "symbol": "TRUMP",
@@ -2417,6 +2395,27 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
    "t": 1795290439
+  },
+  {
+   "type": "skip",
+   "symbol": "BTC",
+   "signal": "fear_dip",
+   "reason": "below its 50-day average (downtrend), not buying",
+   "t": 1795305508
+  },
+  {
+   "type": "skip",
+   "symbol": "VVV",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1795305508
+  },
+  {
+   "type": "skip",
+   "symbol": "PENGU",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1795305508
   }
  ],
  "trend": {
@@ -2429,7 +2428,7 @@
    "up": true
   },
   "bitcoin": {
-   "day": "2026-11-21",
+   "day": "2026-11-22",
    "up": false
   }
  }

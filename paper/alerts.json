@@ -1,33 +1,5 @@
 [
  {
-  "t": 1795035540,
-  "title": "🔥 Trending #4: Official Trump (TRUMP)",
-  "message": "Rank #135 · -1.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/official-trump",
-  "priority": 2
- },
- {
-  "t": 1795055373,
-  "title": "🐸 Memecoin with real volume: $GATO",
-  "message": "Liq $212.9k · Vol24h $1.4M · MC $3.9M\n1h +3.42% · 24h -33.33% · age 2054h\nRugcheck: top 10 hold 17%, 28127 holders, pool 100% locked\nRisk: 🔴 gambling. Passed the safety filters, but it's a paid promo and most memecoins still go to 0.\nMarket mood: 10/100 Extreme Fear 🥶.",
-  "click": "https://dexscreener.com/solana/5e3dxlxgwmtdcoka51wyyakttjfzbwqcoyuhbui5gt2m",
-  "priority": 3
- },
- {
-  "t": 1795055373,
-  "title": "🔥 Trending #1: Pearl (PEARL)",
-  "message": "Rank #77 · +16.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/pearl-2",
-  "priority": 2
- },
- {
-  "t": 1795055373,
-  "title": "🔥 Trending #2: Bitcoin (BTC)",
-  "message": "Rank #1 · -2.4% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/bitcoin",
-  "priority": 2
- },
- {
   "t": 1795055373,
   "title": "🔥 Trending #3: Canton (CC)",
   "message": "Rank #25 · -0.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
@@ -417,6 +389,34 @@
   "title": "🔥 Trending #6: Backpack (BP)",
   "message": "Rank #149 · +10.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/backpack",
+  "priority": 2
+ },
+ {
+  "t": 1795305505,
+  "title": "🔥 Trending #1: Venice Token (VVV)",
+  "message": "Rank #59 · +20.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/venice-token",
+  "priority": 2
+ },
+ {
+  "t": 1795305505,
+  "title": "🔥 Trending #3: Pudgy Penguins (PENGU)",
+  "message": "Rank #130 · -1.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/pudgy-penguins",
+  "priority": 2
+ },
+ {
+  "t": 1795305505,
+  "title": "🔥 Trending #5: Derive (DRV)",
+  "message": "Rank #114 · +35.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/derive",
+  "priority": 2
+ },
+ {
+  "t": 1795305505,
+  "title": "🔥 Trending #7: Dogecoin (DOGE)",
+  "message": "Rank #13 · +1.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/dogecoin",
   "priority": 2
  }
 ]
