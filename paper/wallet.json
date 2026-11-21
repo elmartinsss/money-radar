@@ -1008,12 +1008,17 @@
    "t": 1795216545,
    "v": 81.73,
    "btc": 59079
+  },
+  {
+   "t": 1795233835,
+   "v": 81.73,
+   "btc": 56660
   }
  ],
  "mood": {
   "value": 12,
   "label": "Extreme Fear",
-  "t": 1795195346
+  "t": 1795233833
  },
  "learning": {
   "trending": {
@@ -1038,7 +1043,7 @@
   }
  },
  "pending": [],
- "updated": 1795216545,
+ "updated": 1795233835,
  "rewards": {
   "xp": 172.2,
   "level": "Chart reader",
@@ -1482,46 +1487,21 @@
     }
    }
   ],
-  "pending_checks": [],
+  "pending_checks": [
+   {
+    "id": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
+    "chain": "solana",
+    "symbol": "GATO",
+    "price": 0.002782,
+    "t": 1795233835,
+    "rule": "Rising this hour",
+    "reason": "not trending up this hour"
+   }
+  ],
   "total_reward": -336.09999999999997,
   "trades": 23
  },
  "activity": [
-  {
-   "type": "sell",
-   "symbol": "Q",
-   "signal": "trending",
-   "eur": 5.28,
-   "pnl": -1.38,
-   "pct": -20.7,
-   "reason": "\ud83d\uded1 Stop loss (-20%)",
-   "t": 1793645230
-  },
-  {
-   "type": "skip",
-   "symbol": "SI",
-   "signal": "trending",
-   "reason": "down -3.82\u20ac today, cooling down until tomorrow",
-   "t": 1793645230
-  },
-  {
-   "type": "buy",
-   "symbol": "QNT",
-   "signal": "trending",
-   "eur": 4.6,
-   "price": 193.83522770650964,
-   "t": 1793668917
-  },
-  {
-   "type": "sell",
-   "symbol": "DACITYCOIN",
-   "signal": "trending",
-   "eur": 5.46,
-   "pnl": -0.19,
-   "pct": -3.4,
-   "reason": "\ud83d\udcc9 Trailing stop (-2%, peak was +27%)",
-   "t": 1793742803
-  },
   {
    "type": "buy",
    "symbol": "SNOWMOON",
@@ -2404,6 +2384,34 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
    "t": 1795195349
+  },
+  {
+   "type": "skip",
+   "symbol": "BTC",
+   "signal": "fear_dip",
+   "reason": "below its 50-day average (downtrend), not buying",
+   "t": 1795233835
+  },
+  {
+   "type": "skip",
+   "symbol": "BTC",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.9%",
+   "t": 1795233835
+  },
+  {
+   "type": "skip",
+   "symbol": "CHUNKEE",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.9%",
+   "t": 1795233835
+  },
+  {
+   "type": "skip",
+   "symbol": "SOL",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.9%",
+   "t": 1795233835
   }
  ],
  "trend": {
@@ -2416,7 +2424,7 @@
    "up": true
   },
   "bitcoin": {
-   "day": "2026-11-20",
+   "day": "2026-11-21",
    "up": false
   }
  }
