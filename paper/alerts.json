@@ -1,34 +1,6 @@
 [
  {
   "t": 1795035540,
-  "title": "📰 Target (NYSE:TGT) Stock Surges After Earnings Beat as Sales Jump 7.1% and Guidance Rises - Stocks Down Under",
-  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: earnings beat, surges · via news.google.com",
-  "click": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5zMk9iNElrZ296YVdrbFdpeC1mWFNnSEVuUUs3Q0gxTmp0b0xWTjVMUWVpclFNWVh0SHVuM1JYOFlRUkFDWF9zQm1wZDZYSEh3dTI2Nmtod3R2QXF2c0Frd2l6ZERQLXhMQ3g4Y2xqR0NlQWduV3VwWWo4ZGk?oc=5",
-  "priority": 3
- },
- {
-  "t": 1795035540,
-  "title": "🔥 Trending #1: WASTED (WASTED)",
-  "message": "Rank #894 · +0.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/wasted-4",
-  "priority": 2
- },
- {
-  "t": 1795035540,
-  "title": "🔥 Trending #2: Wanted Star (WSTAR)",
-  "message": "Rank #944 · +0.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/wanted-star",
-  "priority": 2
- },
- {
-  "t": 1795035540,
-  "title": "🔥 Trending #3: Lucia (LUCIA)",
-  "message": "Rank #962 · +0.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/lucia-2",
-  "priority": 2
- },
- {
-  "t": 1795035540,
   "title": "🔥 Trending #4: Official Trump (TRUMP)",
   "message": "Rank #135 · -1.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/official-trump",
@@ -417,6 +389,34 @@
   "title": "🔥 Trending #7: Monad (MON)",
   "message": "Rank #178 · -7.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/monad",
+  "priority": 2
+ },
+ {
+  "t": 1795290437,
+  "title": "🔥 Trending #1: PIPI (PIPI)",
+  "message": "Rank #843 · +666.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/pipi-2",
+  "priority": 2
+ },
+ {
+  "t": 1795290437,
+  "title": "🔥 Trending #3: Zcash (ZEC)",
+  "message": "Rank #11 · +2.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/zcash",
+  "priority": 2
+ },
+ {
+  "t": 1795290437,
+  "title": "🔥 Trending #4: Wanted Star (WSTAR)",
+  "message": "Rank #722 · +4075.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/wanted-star",
+  "priority": 2
+ },
+ {
+  "t": 1795290437,
+  "title": "🔥 Trending #6: Backpack (BP)",
+  "message": "Rank #149 · +10.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/backpack",
   "priority": 2
  }
 ]

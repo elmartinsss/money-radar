@@ -587,7 +587,7 @@
  ],
  "started": 1793366521.920483,
  "btc_start": 77216,
- "last_report": "2026-11-19",
+ "last_report": "2026-11-21",
  "equity": [
   {
    "t": 1793366862,
@@ -1018,12 +1018,17 @@
    "t": 1795264462,
    "v": 81.73,
    "btc": 58427
+  },
+  {
+   "t": 1795290439,
+   "v": 81.73,
+   "btc": 60297
   }
  ],
  "mood": {
   "value": 12,
   "label": "Extreme Fear",
-  "t": 1795264460
+  "t": 1795290437
  },
  "learning": {
   "trending": {
@@ -1048,7 +1053,7 @@
   }
  },
  "pending": [],
- "updated": 1795264462,
+ "updated": 1795290439,
  "rewards": {
   "xp": 172.2,
   "level": "Chart reader",
@@ -1507,24 +1512,6 @@
   "trades": 23
  },
  "activity": [
-  {
-   "type": "sell",
-   "symbol": "SNOWMOON",
-   "signal": "trending",
-   "eur": 2.12,
-   "pnl": -2.52,
-   "pct": -54.4,
-   "reason": "\ud83d\uded1 Stop loss (-54%)",
-   "t": 1793757502
-  },
-  {
-   "type": "buy",
-   "symbol": "DACITYCOIN",
-   "signal": "trending",
-   "eur": 4.46,
-   "price": 0.015294177143235357,
-   "t": 1793757502
-  },
   {
    "type": "sell",
    "symbol": "DACITYCOIN",
@@ -2416,6 +2403,20 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
    "t": 1795264462
+  },
+  {
+   "type": "skip",
+   "symbol": "PIPI",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1795290439
+  },
+  {
+   "type": "skip",
+   "symbol": "ZEC",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1795290439
   }
  ],
  "trend": {
