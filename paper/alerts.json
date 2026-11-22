@@ -1,26 +1,5 @@
 [
  {
-  "t": 1795115512,
-  "title": "🔥 Trending #3: Lucia (LUCIA)",
-  "message": "Rank #820 · +23.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/lucia-2",
-  "priority": 2
- },
- {
-  "t": 1795115512,
-  "title": "🔥 Trending #5: Sky (SKY)",
-  "message": "Rank #69 · -18.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/sky",
-  "priority": 2
- },
- {
-  "t": 1795137582,
-  "title": "🔥 Trending #1: Bitcoin (BTC)",
-  "message": "Rank #1 · -0.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/bitcoin",
-  "priority": 2
- },
- {
   "t": 1795137582,
   "title": "🔥 Trending #2: NEAR Protocol (NEAR)",
   "message": "Rank #22 · -2.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
@@ -417,6 +396,27 @@
   "title": "🔥 Trending #7: Pieverse (PIEVERSE)",
   "message": "Rank #68 · +23.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/pieverse",
+  "priority": 2
+ },
+ {
+  "t": 1795380997,
+  "title": "🐸 Memecoin with real volume: $DESSA",
+  "message": "Liq $161.1k · Vol24h $1.4M · MC $3.1M\n1h +4% · 24h +15.74% · age 656h\nRugcheck: top 10 hold 2%, 70678 holders, pool 100% locked\nRisk: 🔴 gambling. Passed the safety filters, but it's a paid promo and most memecoins still go to 0.\nMarket mood: 11/100 Extreme Fear 🥶.",
+  "click": "https://dexscreener.com/solana/dextcer4k9dwbxtmu8znvvwgevvmvhmb183pf2xxzwvh",
+  "priority": 3
+ },
+ {
+  "t": 1795380997,
+  "title": "🔥 Trending #1: Wanted Star (WSTAR)",
+  "message": "Rank #895 · -32.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/wanted-star",
+  "priority": 2
+ },
+ {
+  "t": 1795380997,
+  "title": "🔥 Trending #2: Popo The Turtle (POPO)",
+  "message": "Rank #753 · +30.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/popo-the-turtle",
   "priority": 2
  }
 ]

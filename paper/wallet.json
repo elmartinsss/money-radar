@@ -587,7 +587,7 @@
  ],
  "started": 1793366521.920483,
  "btc_start": 77216,
- "last_report": "2026-11-21",
+ "last_report": "2026-11-22",
  "equity": [
   {
    "t": 1793366862,
@@ -1038,12 +1038,17 @@
    "t": 1795359178,
    "v": 81.73,
    "btc": 60807
+  },
+  {
+   "t": 1795381000,
+   "v": 81.73,
+   "btc": 60864
   }
  ],
  "mood": {
   "value": 11,
   "label": "Extreme Fear",
-  "t": 1795359176
+  "t": 1795380997
  },
  "learning": {
   "trending": {
@@ -1068,7 +1073,7 @@
   }
  },
  "pending": [],
- "updated": 1795359178,
+ "updated": 1795381000,
  "rewards": {
   "xp": 172.2,
   "level": "Chart reader",
@@ -1536,34 +1541,6 @@
   "trades": 23
  },
  "activity": [
-  {
-   "type": "sell",
-   "symbol": "HYPE",
-   "signal": "trending",
-   "eur": 5.9,
-   "pnl": -0.77,
-   "pct": -11.6,
-   "reason": "\u23f0 Time's up (7 days)",
-   "t": 1794020880
-  },
-  {
-   "type": "sell",
-   "symbol": "MON",
-   "signal": "trending",
-   "eur": 5.69,
-   "pnl": -0.98,
-   "pct": -14.8,
-   "reason": "\u23f0 Time's up (7 days)",
-   "t": 1794020880
-  },
-  {
-   "type": "buy",
-   "symbol": "COGE",
-   "signal": "trending",
-   "eur": 4.35,
-   "price": 0.016360633574066644,
-   "t": 1794020880
-  },
   {
    "type": "buy",
    "symbol": "PEARL",
@@ -2430,6 +2407,27 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
    "t": 1795359178
+  },
+  {
+   "type": "skip",
+   "symbol": "DESSA",
+   "signal": "memecoin",
+   "reason": "I remember losing in situations like this (similar trades), expecting -14.6%",
+   "t": 1795381000
+  },
+  {
+   "type": "skip",
+   "symbol": "WSTAR",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1795381000
+  },
+  {
+   "type": "skip",
+   "symbol": "POPO",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1795381000
   }
  ],
  "trend": {
