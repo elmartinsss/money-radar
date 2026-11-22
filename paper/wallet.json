@@ -1033,12 +1033,17 @@
    "t": 1795329142,
    "v": 81.73,
    "btc": 58955
+  },
+  {
+   "t": 1795359178,
+   "v": 81.73,
+   "btc": 60807
   }
  ],
  "mood": {
   "value": 11,
   "label": "Extreme Fear",
-  "t": 1795329139
+  "t": 1795359176
  },
  "learning": {
   "trending": {
@@ -1063,7 +1068,7 @@
   }
  },
  "pending": [],
- "updated": 1795329142,
+ "updated": 1795359178,
  "rewards": {
   "xp": 172.2,
   "level": "Chart reader",
@@ -1507,19 +1512,30 @@
     }
    }
   ],
-  "pending_checks": [],
+  "pending_checks": [
+   {
+    "id": "8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump",
+    "chain": "solana",
+    "symbol": "BLOB",
+    "price": 0.01552,
+    "t": 1795359178,
+    "rule": "Minimum holders",
+    "reason": "already pumped 155% (you'd be buying from early holders)"
+   },
+   {
+    "id": "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump",
+    "chain": "solana",
+    "symbol": "DESSA",
+    "price": 0.003115,
+    "t": 1795359178,
+    "rule": "Rising this hour",
+    "reason": "not trending up this hour"
+   }
+  ],
   "total_reward": -336.09999999999997,
   "trades": 23
  },
  "activity": [
-  {
-   "type": "buy",
-   "symbol": "NEAR",
-   "signal": "trending",
-   "eur": 4.33,
-   "price": 3.677892584464572,
-   "t": 1793936407
-  },
   {
    "type": "sell",
    "symbol": "HYPE",
@@ -2407,6 +2423,13 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
    "t": 1795329142
+  },
+  {
+   "type": "skip",
+   "symbol": "DRV",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1795359178
   }
  ],
  "trend": {

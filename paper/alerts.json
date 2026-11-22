@@ -1,20 +1,6 @@
 [
  {
   "t": 1795115512,
-  "title": "📰 Palo Alto Networks (NASDAQ:PANW) Stock Surges After Earnings Beat and $4.5 Billion AI Deal - Stocks Down Under",
-  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: earnings beat, surges · via news.google.com",
-  "click": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9XbjBZZ0x5Wk54b0U3QUNCT0FhVHBtMnFtM1N5M1VpdW9hMUwzNlJnOUlONTd0TWNaTVlKTHJiOTJJamJHOENESnVkNlc4cWF6bllyWnpPejZkX0lROGdwSW5Rb29jeXRFcEVGQlZBeVc3b1lVRzVhSU9Zd1lyUG8?oc=5",
-  "priority": 3
- },
- {
-  "t": 1795115512,
-  "title": "🔥 Trending #2: Official Trump (TRUMP)",
-  "message": "Rank #134 · +1.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/official-trump",
-  "priority": 2
- },
- {
-  "t": 1795115512,
   "title": "🔥 Trending #3: Lucia (LUCIA)",
   "message": "Rank #820 · +23.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/lucia-2",
@@ -417,6 +403,20 @@
   "title": "🔥 Trending #7: Akedo (AKE)",
   "message": "Rank #326 · -44.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/akedo",
+  "priority": 2
+ },
+ {
+  "t": 1795359176,
+  "title": "🔥 Trending #3: Derive (DRV)",
+  "message": "Rank #108 · +20.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/derive",
+  "priority": 2
+ },
+ {
+  "t": 1795359176,
+  "title": "🔥 Trending #7: Pieverse (PIEVERSE)",
+  "message": "Rank #68 · +23.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/pieverse",
   "priority": 2
  }
 ]
