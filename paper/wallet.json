@@ -1043,12 +1043,17 @@
    "t": 1795381000,
    "v": 81.73,
    "btc": 60864
+  },
+  {
+   "t": 1795397546,
+   "v": 81.73,
+   "btc": 60995
   }
  ],
  "mood": {
   "value": 11,
   "label": "Extreme Fear",
-  "t": 1795380997
+  "t": 1795397544
  },
  "learning": {
   "trending": {
@@ -1073,7 +1078,7 @@
   }
  },
  "pending": [],
- "updated": 1795381000,
+ "updated": 1795397546,
  "rewards": {
   "xp": 172.2,
   "level": "Chart reader",
@@ -1535,44 +1540,21 @@
     "t": 1795359178,
     "rule": "Rising this hour",
     "reason": "not trending up this hour"
+   },
+   {
+    "id": "E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump",
+    "chain": "solana",
+    "symbol": "MINELIUS",
+    "price": 0.008131,
+    "t": 1795397546,
+    "rule": "Minimum age",
+    "reason": "too new (4h)"
    }
   ],
   "total_reward": -336.09999999999997,
   "trades": 23
  },
  "activity": [
-  {
-   "type": "buy",
-   "symbol": "PEARL",
-   "signal": "trending",
-   "eur": 4.35,
-   "price": 1.7731439729701093,
-   "t": 1794020880
-  },
-  {
-   "type": "sell",
-   "symbol": "COGE",
-   "signal": "trending",
-   "eur": 2.64,
-   "pnl": -1.71,
-   "pct": -39.2,
-   "reason": "\ud83d\uded1 Stop loss (-39%)",
-   "t": 1794068970
-  },
-  {
-   "type": "skip",
-   "symbol": "REBOOT",
-   "signal": "trending",
-   "reason": "3 losses in a row today, cooling down until tomorrow",
-   "t": 1794068970
-  },
-  {
-   "type": "skip",
-   "symbol": "KNTQ",
-   "signal": "trending",
-   "reason": "3 losses in a row today, cooling down until tomorrow",
-   "t": 1794068970
-  },
   {
    "type": "skip",
    "symbol": "PEPE",
@@ -2428,6 +2410,34 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
    "t": 1795381000
+  },
+  {
+   "type": "skip",
+   "symbol": "BTC",
+   "signal": "fear_dip",
+   "reason": "below its 50-day average (downtrend), not buying",
+   "t": 1795397546
+  },
+  {
+   "type": "skip",
+   "symbol": "VVV",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.9%",
+   "t": 1795397546
+  },
+  {
+   "type": "skip",
+   "symbol": "PEARL",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.9%",
+   "t": 1795397546
+  },
+  {
+   "type": "skip",
+   "symbol": "HYPE",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.9%",
+   "t": 1795397546
   }
  ],
  "trend": {
@@ -2440,7 +2450,7 @@
    "up": true
   },
   "bitcoin": {
-   "day": "2026-11-22",
+   "day": "2026-11-23",
    "up": false
   }
  }
