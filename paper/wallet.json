@@ -1048,12 +1048,17 @@
    "t": 1795397546,
    "v": 81.73,
    "btc": 60995
+  },
+  {
+   "t": 1795427058,
+   "v": 81.73,
+   "btc": 61520
   }
  ],
  "mood": {
   "value": 11,
   "label": "Extreme Fear",
-  "t": 1795397544
+  "t": 1795427056
  },
  "learning": {
   "trending": {
@@ -1078,7 +1083,7 @@
   }
  },
  "pending": [],
- "updated": 1795397546,
+ "updated": 1795427058,
  "rewards": {
   "xp": 172.2,
   "level": "Chart reader",
@@ -1555,23 +1560,6 @@
   "trades": 23
  },
  "activity": [
-  {
-   "type": "skip",
-   "symbol": "PEPE",
-   "signal": "trending",
-   "reason": "3 losses in a row today, cooling down until tomorrow",
-   "t": 1794083254
-  },
-  {
-   "type": "sell",
-   "symbol": "VVV",
-   "signal": "trending",
-   "eur": 5.32,
-   "pnl": -0.95,
-   "pct": -15.1,
-   "reason": "\u23f0 Time's up (7 days)",
-   "t": 1794114194
-  },
   {
    "type": "buy",
    "symbol": "PEPE",
@@ -2438,6 +2426,20 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -14.9%",
    "t": 1795397546
+  },
+  {
+   "type": "skip",
+   "symbol": "MINELIUS",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1795427058
+  },
+  {
+   "type": "skip",
+   "symbol": "PENGU",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1795427058
   }
  ],
  "trend": {

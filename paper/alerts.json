@@ -1,33 +1,5 @@
 [
  {
-  "t": 1795164458,
-  "title": "🔥 Trending #6: Monad (MON)",
-  "message": "Rank #178 · -3.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/monad",
-  "priority": 2
- },
- {
-  "t": 1795164458,
-  "title": "🔥 Trending #7: Sky (SKY)",
-  "message": "Rank #67 · -7.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/sky",
-  "priority": 2
- },
- {
-  "t": 1795195346,
-  "title": "📉 Ethereum -7.1% in 24h",
-  "message": "Now $1,631.35\nRisk: 🟢 big coin, real move. Find out WHY before doing anything.",
-  "click": "https://www.coingecko.com/en/coins/ethereum",
-  "priority": 4
- },
- {
-  "t": 1795195346,
-  "title": "📉 NVDA -7.4% today",
-  "message": "Now $135.16 (prev close $145.98)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
-  "click": "https://finance.yahoo.com/quote/NVDA",
-  "priority": 4
- },
- {
   "t": 1795195346,
   "title": "🔥 Trending #1: WASTED (WASTED)",
   "message": "Rank #777 · -1.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
@@ -417,6 +389,34 @@
   "title": "🔥 Trending #7: Derive (DRV)",
   "message": "Rank #108 · +9.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/derive",
+  "priority": 2
+ },
+ {
+  "t": 1795427056,
+  "title": "📰 VVV Surges 23.7% on HTX Listing, AI Narrative, Hayes Target - CoinMarketCap",
+  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: listing, surges · via news.google.com",
+  "click": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1kQXFEUFBtd2ZjZElXcXpNNFBaN0FpX0tEQ3JMMnkyZGZEaDFtd1JLOW5NcFRFNDJsMk5ycjhnU3FPNTk0RnRVLWpEcHZ3bE1SSktiSWZlRldPTjBTZGNSWVlmVi1zOXUwUEhzMG9raTc?oc=5",
+  "priority": 3
+ },
+ {
+  "t": 1795427056,
+  "title": "🔥 Trending #1: Minelius (MINELIUS)",
+  "message": "Rank #830 · +0.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/minelius",
+  "priority": 2
+ },
+ {
+  "t": 1795427056,
+  "title": "🔥 Trending #2: Pudgy Penguins (PENGU)",
+  "message": "Rank #129 · +1.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/pudgy-penguins",
+  "priority": 2
+ },
+ {
+  "t": 1795427056,
+  "title": "🔥 Trending #7: Official Trump (TRUMP)",
+  "message": "Rank #136 · +0.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/official-trump",
   "priority": 2
  }
 ]
