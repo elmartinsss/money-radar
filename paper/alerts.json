@@ -1,20 +1,6 @@
 [
  {
   "t": 1795195346,
-  "title": "🔥 Trending #1: WASTED (WASTED)",
-  "message": "Rank #777 · -1.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/wasted-4",
-  "priority": 2
- },
- {
-  "t": 1795195346,
-  "title": "🔥 Trending #2: Official Trump (TRUMP)",
-  "message": "Rank #138 · -12.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/official-trump",
-  "priority": 2
- },
- {
-  "t": 1795195346,
   "title": "🔥 Trending #4: Lucia (LUCIA)",
   "message": "Rank #850 · -14.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/lucia-2",
@@ -418,5 +404,19 @@
   "message": "Rank #136 · +0.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/official-trump",
   "priority": 2
+ },
+ {
+  "t": 1795470238,
+  "title": "🚀 NVDA +31.5% today",
+  "message": "Now $165.05 (prev close $125.53)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
+  "click": "https://finance.yahoo.com/quote/NVDA",
+  "priority": 4
+ },
+ {
+  "t": 1795470238,
+  "title": "🚀 TSLA +11.5% today",
+  "message": "Now $385.46 (prev close $345.82)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
+  "click": "https://finance.yahoo.com/quote/TSLA",
+  "priority": 4
  }
 ]

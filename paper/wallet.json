@@ -587,7 +587,7 @@
  ],
  "started": 1793366521.920483,
  "btc_start": 77216,
- "last_report": "2026-11-22",
+ "last_report": "2026-11-23",
  "equity": [
   {
    "t": 1793366862,
@@ -1053,12 +1053,17 @@
    "t": 1795427058,
    "v": 81.73,
    "btc": 61520
+  },
+  {
+   "t": 1795470241,
+   "v": 81.73,
+   "btc": 61287
   }
  ],
  "mood": {
   "value": 11,
   "label": "Extreme Fear",
-  "t": 1795427056
+  "t": 1795470238
  },
  "learning": {
   "trending": {
@@ -1082,10 +1087,25 @@
    "status": "still learning (1/30 trades)"
   }
  },
- "pending": [],
- "updated": 1795427058,
+ "pending": [
+  {
+   "kind": "stock",
+   "id": "NVDA",
+   "symbol": "NVDA",
+   "signal": "momentum",
+   "seen": 1795470241.8984563
+  },
+  {
+   "kind": "stock",
+   "id": "TSLA",
+   "symbol": "TSLA",
+   "signal": "momentum",
+   "seen": 1795470241.8984668
+  }
+ ],
+ "updated": 1795470241,
  "rewards": {
-  "xp": 172.2,
+  "xp": 177.2,
   "level": "Chart reader",
   "medals": [
    {
@@ -1156,7 +1176,7 @@
    "Rising this hour": {
     "saves": 2,
     "missed": 3,
-    "neutral": 17,
+    "neutral": 18,
     "examples": [
      "$DESSA +139% (missed)",
      "$DESSA -51% (saved)",
@@ -1192,11 +1212,12 @@
     "examples": []
    },
    "Minimum holders": {
-    "saves": 1,
+    "saves": 2,
     "missed": 0,
     "neutral": 1,
     "examples": [
-     "$Anakin -62% (saved)"
+     "$Anakin -62% (saved)",
+     "$BLOB -55% (saved)"
     ]
    },
    "Buyers vs sellers": {
@@ -1529,24 +1550,6 @@
   ],
   "pending_checks": [
    {
-    "id": "8s11PkgQt4ZzdZ7oo84hK5t9HG1EvdgAjcg4W7Lpump",
-    "chain": "solana",
-    "symbol": "BLOB",
-    "price": 0.01552,
-    "t": 1795359178,
-    "rule": "Minimum holders",
-    "reason": "already pumped 155% (you'd be buying from early holders)"
-   },
-   {
-    "id": "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump",
-    "chain": "solana",
-    "symbol": "DESSA",
-    "price": 0.003115,
-    "t": 1795359178,
-    "rule": "Rising this hour",
-    "reason": "not trending up this hour"
-   },
-   {
     "id": "E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump",
     "chain": "solana",
     "symbol": "MINELIUS",
@@ -1554,28 +1557,30 @@
     "t": 1795397546,
     "rule": "Minimum age",
     "reason": "too new (4h)"
+   },
+   {
+    "id": "B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump",
+    "chain": "solana",
+    "symbol": "FIONA",
+    "price": 0.002618,
+    "t": 1795470241,
+    "rule": "Rising this hour",
+    "reason": "not trending up this hour"
+   },
+   {
+    "id": "PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump",
+    "chain": "solana",
+    "symbol": "BRUH",
+    "price": 0.008124,
+    "t": 1795470241,
+    "rule": "Rising this hour",
+    "reason": "not trending up this hour"
    }
   ],
   "total_reward": -336.09999999999997,
   "trades": 23
  },
  "activity": [
-  {
-   "type": "buy",
-   "symbol": "PEPE",
-   "signal": "trending",
-   "eur": 4.23,
-   "price": 4.877110167999952e-06,
-   "t": 1794114194
-  },
-  {
-   "type": "buy",
-   "symbol": "ONDO",
-   "signal": "trending",
-   "eur": 4.23,
-   "price": 0.3576737639362792,
-   "t": 1794114194
-  },
   {
    "type": "sell",
    "symbol": "PENGU",
@@ -2440,6 +2445,20 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
    "t": 1795427058
+  },
+  {
+   "type": "skip",
+   "symbol": "NVDA",
+   "signal": "momentum",
+   "reason": "big up-day: waiting a day, stocks often pull back after a jump",
+   "t": 1795470241
+  },
+  {
+   "type": "skip",
+   "symbol": "TSLA",
+   "signal": "momentum",
+   "reason": "big up-day: waiting a day, stocks often pull back after a jump",
+   "t": 1795470241
   }
  ],
  "trend": {
