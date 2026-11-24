@@ -1063,12 +1063,17 @@
    "t": 1795498586,
    "v": 81.73,
    "btc": 60624
+  },
+  {
+   "t": 1795537632,
+   "v": 81.73,
+   "btc": 59754
   }
  ],
  "mood": {
   "value": 11,
   "label": "Extreme Fear",
-  "t": 1795498585
+  "t": 1795537629
  },
  "learning": {
   "trending": {
@@ -1108,7 +1113,7 @@
    "seen": 1795470241.8984668
   }
  ],
- "updated": 1795498586,
+ "updated": 1795537632,
  "rewards": {
   "xp": 182.2,
   "level": "Chart reader",
@@ -1577,24 +1582,6 @@
   "trades": 23
  },
  "activity": [
-  {
-   "type": "buy",
-   "symbol": "DACITY",
-   "signal": "trending",
-   "eur": 4.27,
-   "price": 0.0210512977581702,
-   "t": 1794249684
-  },
-  {
-   "type": "sell",
-   "symbol": "QNT",
-   "signal": "trending",
-   "eur": 4.56,
-   "pnl": -0.04,
-   "pct": -0.8,
-   "reason": "\u23f0 Time's up (7 days)",
-   "t": 1794275206
-  },
   {
    "type": "sell",
    "symbol": "JCT",
@@ -2445,6 +2432,20 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -14.9%",
    "t": 1795498586
+  },
+  {
+   "type": "skip",
+   "symbol": "VAR",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1795537632
+  },
+  {
+   "type": "skip",
+   "symbol": "PEI",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1795537632
   }
  ],
  "trend": {
