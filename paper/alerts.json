@@ -1,68 +1,5 @@
 [
  {
-  "t": 1795195346,
-  "title": "🔥 Trending #4: Lucia (LUCIA)",
-  "message": "Rank #850 · -14.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/lucia-2",
-  "priority": 2
- },
- {
-  "t": 1795195346,
-  "title": "🔥 Trending #5: Chunkee The Manatee (CHUNKEE)",
-  "message": "Rank #942 · +73.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/chunkee-the-manatee",
-  "priority": 2
- },
- {
-  "t": 1795195346,
-  "title": "🔥 Trending #7: Hyperliquid (HYPE)",
-  "message": "Rank #10 · -8.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/hyperliquid",
-  "priority": 2
- },
- {
-  "t": 1795216542,
-  "title": "📉 TSLA -7.6% today",
-  "message": "Now $345.82 (prev close $374.41)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
-  "click": "https://finance.yahoo.com/quote/TSLA",
-  "priority": 4
- },
- {
-  "t": 1795216542,
-  "title": "🔥 Trending #6: Lighter (LIT)",
-  "message": "Rank #89 · -15.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.",
-  "click": "https://www.coingecko.com/en/coins/lighter",
-  "priority": 2
- },
- {
-  "t": 1795233833,
-  "title": "📉 Bitcoin -8.5% in 24h",
-  "message": "Now $56,651\nRisk: 🟢 big coin, real move. Find out WHY before doing anything.",
-  "click": "https://www.coingecko.com/en/coins/bitcoin",
-  "priority": 4
- },
- {
-  "t": 1795233833,
-  "title": "📉 Ethereum -9.7% in 24h",
-  "message": "Now $1,569.28\nRisk: 🟢 big coin, real move. Find out WHY before doing anything.",
-  "click": "https://www.coingecko.com/en/coins/ethereum",
-  "priority": 4
- },
- {
-  "t": 1795233833,
-  "title": "📉 Solana -8.9% in 24h",
-  "message": "Now $66.25\nRisk: 🟢 big coin, real move. Find out WHY before doing anything.",
-  "click": "https://www.coingecko.com/en/coins/solana",
-  "priority": 4
- },
- {
-  "t": 1795233833,
-  "title": "📉 NVDA -14.0% today",
-  "message": "Now $125.53 (prev close $145.98)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
-  "click": "https://finance.yahoo.com/quote/NVDA",
-  "priority": 4
- },
- {
   "t": 1795233833,
   "title": "📉 TSLA -7.6% today",
   "message": "Now $345.82 (prev close $374.41)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
@@ -418,5 +355,68 @@
   "message": "Now $385.46 (prev close $345.82)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
   "click": "https://finance.yahoo.com/quote/TSLA",
   "priority": 4
+ },
+ {
+  "t": 1795498585,
+  "title": "🚀 NVDA +31.5% today",
+  "message": "Now $165.05 (prev close $125.53)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
+  "click": "https://finance.yahoo.com/quote/NVDA",
+  "priority": 4
+ },
+ {
+  "t": 1795498585,
+  "title": "🚀 TSLA +11.5% today",
+  "message": "Now $385.46 (prev close $345.82)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
+  "click": "https://finance.yahoo.com/quote/TSLA",
+  "priority": 4
+ },
+ {
+  "t": 1795498585,
+  "title": "🔥 Trending #1: Pudgy Penguins (PENGU)",
+  "message": "Rank #127 · +4.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/pudgy-penguins",
+  "priority": 2
+ },
+ {
+  "t": 1795498585,
+  "title": "🔥 Trending #2: Monad (MON)",
+  "message": "Rank #175 · +8.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/monad",
+  "priority": 2
+ },
+ {
+  "t": 1795498585,
+  "title": "🔥 Trending #3: Bitcoin (BTC)",
+  "message": "Rank #1 · -1.4% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/bitcoin",
+  "priority": 2
+ },
+ {
+  "t": 1795498585,
+  "title": "🔥 Trending #4: Venice Token (VVV)",
+  "message": "Rank #60 · -0.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/venice-token",
+  "priority": 2
+ },
+ {
+  "t": 1795498585,
+  "title": "🔥 Trending #5: Pearl (PEARL)",
+  "message": "Rank #74 · +7.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/pearl-2",
+  "priority": 2
+ },
+ {
+  "t": 1795498585,
+  "title": "🔥 Trending #6: Injective (INJ)",
+  "message": "Rank #89 · +0.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/injective-protocol",
+  "priority": 2
+ },
+ {
+  "t": 1795498585,
+  "title": "🔥 Trending #7: Sahara AI (SAHARA)",
+  "message": "Rank #608 · +24.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/sahara-ai",
+  "priority": 2
  }
 ]

@@ -1058,12 +1058,17 @@
    "t": 1795470241,
    "v": 81.73,
    "btc": 61287
+  },
+  {
+   "t": 1795498586,
+   "v": 81.73,
+   "btc": 60624
   }
  ],
  "mood": {
   "value": 11,
   "label": "Extreme Fear",
-  "t": 1795470238
+  "t": 1795498585
  },
  "learning": {
   "trending": {
@@ -1103,9 +1108,9 @@
    "seen": 1795470241.8984668
   }
  ],
- "updated": 1795470241,
+ "updated": 1795498586,
  "rewards": {
-  "xp": 177.2,
+  "xp": 182.2,
   "level": "Chart reader",
   "medals": [
    {
@@ -1194,15 +1199,15 @@
     ]
    },
    "Minimum age": {
-    "saves": 12,
+    "saves": 13,
     "missed": 1,
     "neutral": 3,
     "examples": [
-     "$COGE -93% (saved)",
      "$ELYSION -100% (saved)",
      "$NIHAO -100% (saved)",
      "$AMC -100% (saved)",
-     "$UM -100% (saved)"
+     "$UM -100% (saved)",
+     "$MINELIUS -100% (saved)"
     ]
    },
    "No chasing pumps": {
@@ -1550,15 +1555,6 @@
   ],
   "pending_checks": [
    {
-    "id": "E9rWKjVhHMxQkxfREr7Li8Yy46rVcWiWHoKVQAe9pump",
-    "chain": "solana",
-    "symbol": "MINELIUS",
-    "price": 0.008131,
-    "t": 1795397546,
-    "rule": "Minimum age",
-    "reason": "too new (4h)"
-   },
-   {
     "id": "B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump",
     "chain": "solana",
     "symbol": "FIONA",
@@ -1581,44 +1577,6 @@
   "trades": 23
  },
  "activity": [
-  {
-   "type": "sell",
-   "symbol": "PENGU",
-   "signal": "trending",
-   "eur": 4.63,
-   "pnl": -0.99,
-   "pct": -17.7,
-   "reason": "\ud83d\uded1 Stop loss (-17%)",
-   "t": 1794211159
-  },
-  {
-   "type": "buy",
-   "symbol": "JCT",
-   "signal": "trending",
-   "eur": 4.17,
-   "price": 0.008461806615226856,
-   "t": 1794211159
-  },
-  {
-   "type": "sell",
-   "symbol": "BTC",
-   "signal": "trending",
-   "eur": 4.46,
-   "pnl": -0.26,
-   "pct": -5.4,
-   "reason": "\u23f0 Time's up (7 days)",
-   "t": 1794249684
-  },
-  {
-   "type": "sell",
-   "symbol": "JCT",
-   "signal": "trending",
-   "eur": 2.79,
-   "pnl": 0.7,
-   "pct": 33.8,
-   "reason": "\ud83d\udcb0 Sold half at profit, rest rides with a trailing stop",
-   "t": 1794249684
-  },
   {
    "type": "buy",
    "symbol": "DACITY",
@@ -2459,6 +2417,34 @@
    "signal": "momentum",
    "reason": "big up-day: waiting a day, stocks often pull back after a jump",
    "t": 1795470241
+  },
+  {
+   "type": "skip",
+   "symbol": "BTC",
+   "signal": "fear_dip",
+   "reason": "below its 50-day average (downtrend), not buying",
+   "t": 1795498586
+  },
+  {
+   "type": "skip",
+   "symbol": "PENGU",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.9%",
+   "t": 1795498586
+  },
+  {
+   "type": "skip",
+   "symbol": "MON",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.9%",
+   "t": 1795498586
+  },
+  {
+   "type": "skip",
+   "symbol": "BTC",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.9%",
+   "t": 1795498586
   }
  ],
  "trend": {
@@ -2471,7 +2457,7 @@
    "up": true
   },
   "bitcoin": {
-   "day": "2026-11-23",
+   "day": "2026-11-24",
    "up": false
   }
  }
