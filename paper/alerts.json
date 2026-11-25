@@ -1,82 +1,5 @@
 [
  {
-  "t": 1795233833,
-  "title": "🔥 Trending #6: NEAR Protocol (NEAR)",
-  "message": "Rank #23 · -13.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/near",
-  "priority": 2
- },
- {
-  "t": 1795233833,
-  "title": "🔥 Trending #7: XRP (XRP)",
-  "message": "Rank #6 · -8.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/ripple",
-  "priority": 2
- },
- {
-  "t": 1795264460,
-  "title": "🔥 Trending #1: WASTED (WASTED)",
-  "message": "Rank #779 · -7.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/wasted-4",
-  "priority": 2
- },
- {
-  "t": 1795264460,
-  "title": "🔥 Trending #4: Bittensor (TAO)",
-  "message": "Rank #38 · -1.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/bittensor",
-  "priority": 2
- },
- {
-  "t": 1795264460,
-  "title": "🔥 Trending #5: Sui (SUI)",
-  "message": "Rank #32 · -7.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/sui",
-  "priority": 2
- },
- {
-  "t": 1795264460,
-  "title": "🔥 Trending #6: Pearl (PEARL)",
-  "message": "Rank #83 · -13.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/pearl-2",
-  "priority": 2
- },
- {
-  "t": 1795264460,
-  "title": "🔥 Trending #7: Monad (MON)",
-  "message": "Rank #178 · -7.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/monad",
-  "priority": 2
- },
- {
-  "t": 1795290437,
-  "title": "🔥 Trending #1: PIPI (PIPI)",
-  "message": "Rank #843 · +666.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/pipi-2",
-  "priority": 2
- },
- {
-  "t": 1795290437,
-  "title": "🔥 Trending #3: Zcash (ZEC)",
-  "message": "Rank #11 · +2.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/zcash",
-  "priority": 2
- },
- {
-  "t": 1795290437,
-  "title": "🔥 Trending #4: Wanted Star (WSTAR)",
-  "message": "Rank #722 · +4075.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/wanted-star",
-  "priority": 2
- },
- {
-  "t": 1795290437,
-  "title": "🔥 Trending #6: Backpack (BP)",
-  "message": "Rank #149 · +10.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/backpack",
-  "priority": 2
- },
- {
   "t": 1795305505,
   "title": "🔥 Trending #1: Venice Token (VVV)",
   "message": "Rank #59 · +20.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
@@ -417,6 +340,83 @@
   "title": "🔥 Trending #6: Zcash (ZEC)",
   "message": "Rank #11 · -16.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/zcash",
+  "priority": 2
+ },
+ {
+  "t": 1795568412,
+  "title": "🚀 NVDA +23.8% today",
+  "message": "Now $155.38 (prev close $125.53)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
+  "click": "https://finance.yahoo.com/quote/NVDA",
+  "priority": 4
+ },
+ {
+  "t": 1795568412,
+  "title": "🚀 TSLA +11.2% today",
+  "message": "Now $384.68 (prev close $345.82)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
+  "click": "https://finance.yahoo.com/quote/TSLA",
+  "priority": 4
+ },
+ {
+  "t": 1795568412,
+  "title": "📰 Dell earnings beat on AI strength, company authorizes $25 billion buyback - CNBC",
+  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: earnings beat, buyback · via news.google.com",
+  "click": "https://news.google.com/rss/articles/CBMic0FVX3lxTE0zMHE5bDhwdEJfa19fcjIxendtcFRoNDQ4OUJRcjlYdVVjN3R4cEZKSVRFTk16VDBPQW1NZXZGRk1yb0FOTm8zSEJUVDQyNU94RUFWaGVuRVZiRWNDajZGOWtPVnYyR1Z0QXl6M3RFcmFUOFnSAXhBVV95cUxOQjBwdGtodEVkTHJEcnZEMzVmRjVPM056UXpSeWtQZnRMQzUyb0p2VWFjeWNEVTZiVW94R1NUZ21zQjVvbVdZRGJ0c0ZrQW5uU2lmcHhpU2wwWEUzTTNpSjUxMU0xc1VmZDNNNU9MSDNJcFNxallNWXM?oc=5",
+  "priority": 3
+ },
+ {
+  "t": 1795568412,
+  "title": "📰 Best Buy (NYSE:BBY) Stock Surges After Earnings Beat as Holiday Sales Outlook Improves - Stocks Down Under",
+  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: earnings beat, surges · via news.google.com",
+  "click": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5ZTTNCVnVOLTduOWRjcXE2RzVyMy1oSmFNSjdqbXdJUURFQU1mZFFCSV9MejQwN05xci1MWUFfdG9FOWNCSmxyaF9oSWRQVnoyVHdlN3BHam5GbWN1TlhvLWt5Qy1ZTEdQOVlOQ09RYmJieTJmN1lQWjlKRnlUNGc?oc=5",
+  "priority": 3
+ },
+ {
+  "t": 1795568412,
+  "title": "🔥 Trending #1: Canton (CC)",
+  "message": "Rank #25 · -5.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/canton-network",
+  "priority": 2
+ },
+ {
+  "t": 1795568412,
+  "title": "🔥 Trending #2: Monad (MON)",
+  "message": "Rank #221 · -18.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/monad",
+  "priority": 2
+ },
+ {
+  "t": 1795568412,
+  "title": "🔥 Trending #3: Pudgy Penguins (PENGU)",
+  "message": "Rank #129 · -5.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/pudgy-penguins",
+  "priority": 2
+ },
+ {
+  "t": 1795568412,
+  "title": "🔥 Trending #4: Pearl (PEARL)",
+  "message": "Rank #73 · -6.4% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/pearl-2",
+  "priority": 2
+ },
+ {
+  "t": 1795568412,
+  "title": "🔥 Trending #5: Solana (SOL)",
+  "message": "Rank #7 · -3.4% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/solana",
+  "priority": 2
+ },
+ {
+  "t": 1795568412,
+  "title": "🔥 Trending #6: Bitcoin (BTC)",
+  "message": "Rank #1 · -2.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/bitcoin",
+  "priority": 2
+ },
+ {
+  "t": 1795568412,
+  "title": "🔥 Trending #7: XRP (XRP)",
+  "message": "Rank #6 · -2.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/ripple",
   "priority": 2
  }
 ]

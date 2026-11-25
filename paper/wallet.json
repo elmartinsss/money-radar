@@ -1,7 +1,27 @@
 {
  "start_eur": 100,
- "cash": 81.73181690135056,
- "positions": [],
+ "cash": 77.64181690135055,
+ "positions": [
+  {
+   "kind": "stock",
+   "id": "TSLA",
+   "chain": null,
+   "symbol": "TSLA",
+   "signal": "momentum",
+   "entry": 384.68,
+   "eur": 4.06955,
+   "paid": 4.09,
+   "time": 1795568420.470124,
+   "last": 384.68,
+   "liq0": null,
+   "feats": {
+    "signal": "momentum",
+    "mood": "extreme fear",
+    "time": "night (UTC 0-6)"
+   },
+   "expected": -14.5
+  }
+ ],
  "history": [
   {
    "kind": "cg",
@@ -1068,12 +1088,17 @@
    "t": 1795537632,
    "v": 81.73,
    "btc": 59754
+  },
+  {
+   "t": 1795568420,
+   "v": 81.71,
+   "btc": 59547
   }
  ],
  "mood": {
-  "value": 11,
+  "value": 13,
   "label": "Extreme Fear",
-  "t": 1795537629
+  "t": 1795568412
  },
  "learning": {
   "trending": {
@@ -1103,17 +1128,17 @@
    "id": "NVDA",
    "symbol": "NVDA",
    "signal": "momentum",
-   "seen": 1795470241.8984563
+   "seen": 1795568420.12262
   },
   {
    "kind": "stock",
    "id": "TSLA",
    "symbol": "TSLA",
    "signal": "momentum",
-   "seen": 1795470241.8984668
+   "seen": 1795568420.1226277
   }
  ],
- "updated": 1795537632,
+ "updated": 1795568420,
  "rewards": {
   "xp": 182.2,
   "level": "Chart reader",
@@ -1186,7 +1211,7 @@
    "Rising this hour": {
     "saves": 2,
     "missed": 3,
-    "neutral": 18,
+    "neutral": 20,
     "examples": [
      "$DESSA +139% (missed)",
      "$DESSA -51% (saved)",
@@ -1558,95 +1583,11 @@
     }
    }
   ],
-  "pending_checks": [
-   {
-    "id": "B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump",
-    "chain": "solana",
-    "symbol": "FIONA",
-    "price": 0.002618,
-    "t": 1795470241,
-    "rule": "Rising this hour",
-    "reason": "not trending up this hour"
-   },
-   {
-    "id": "PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump",
-    "chain": "solana",
-    "symbol": "BRUH",
-    "price": 0.008124,
-    "t": 1795470241,
-    "rule": "Rising this hour",
-    "reason": "not trending up this hour"
-   }
-  ],
+  "pending_checks": [],
   "total_reward": -336.09999999999997,
   "trades": 23
  },
  "activity": [
-  {
-   "type": "sell",
-   "symbol": "JCT",
-   "signal": "trending",
-   "eur": 5.08,
-   "pnl": 0.91,
-   "pct": 21.8,
-   "reason": "\ud83d\udcc9 Trailing stop (+11%, peak was +35%)",
-   "t": 1794275206
-  },
-  {
-   "type": "skip",
-   "symbol": "TSLA",
-   "signal": "momentum",
-   "reason": "big up-day: waiting a day, stocks often pull back after a jump",
-   "t": 1794275206
-  },
-  {
-   "type": "skip",
-   "symbol": "BTC",
-   "signal": "trending",
-   "reason": "I remember losing in situations like this (signal: trending), expecting -14.9%",
-   "t": 1794275206
-  },
-  {
-   "type": "skip",
-   "symbol": "AVAX",
-   "signal": "trending",
-   "reason": "I remember losing in situations like this (signal: trending), expecting -14.9%",
-   "t": 1794275206
-  },
-  {
-   "type": "sell",
-   "symbol": "DACITY",
-   "signal": "trending",
-   "eur": 3.55,
-   "pnl": -0.72,
-   "pct": -16.8,
-   "reason": "\ud83d\udcc9 Trailing stop (-16%, peak was +25%)",
-   "t": 1794300744
-  },
-  {
-   "type": "skip",
-   "symbol": "ETH",
-   "signal": "trending",
-   "reason": "I remember losing in situations like this (signal: trending), expecting -15.5%",
-   "t": 1794300744
-  },
-  {
-   "type": "skip",
-   "symbol": "INIT",
-   "signal": "trending",
-   "reason": "I remember losing in situations like this (signal: trending), expecting -15.5%",
-   "t": 1794300744
-  },
-  {
-   "type": "sell",
-   "symbol": "PEARL",
-   "signal": "trending",
-   "eur": 3.45,
-   "pnl": -0.9,
-   "pct": -20.7,
-   "reason": "\ud83d\uded1 Stop loss (-20%)",
-   "t": 1794329348
-  },
   {
    "type": "skip",
    "symbol": "SI",
@@ -2446,6 +2387,63 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
    "t": 1795537632
+  },
+  {
+   "type": "skip",
+   "symbol": "BTC",
+   "signal": "fear_dip",
+   "reason": "below its 50-day average (downtrend), not buying",
+   "t": 1795568420
+  },
+  {
+   "type": "skip",
+   "symbol": "NVDA",
+   "signal": "momentum",
+   "reason": "big up-day: waiting a day, stocks often pull back after a jump",
+   "t": 1795568420
+  },
+  {
+   "type": "skip",
+   "symbol": "TSLA",
+   "signal": "momentum",
+   "reason": "big up-day: waiting a day, stocks often pull back after a jump",
+   "t": 1795568420
+  },
+  {
+   "type": "skip",
+   "symbol": "CC",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.9%",
+   "t": 1795568420
+  },
+  {
+   "type": "skip",
+   "symbol": "MON",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.9%",
+   "t": 1795568420
+  },
+  {
+   "type": "skip",
+   "symbol": "PENGU",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.9%",
+   "t": 1795568420
+  },
+  {
+   "type": "skip",
+   "symbol": "NVDA",
+   "signal": "momentum",
+   "reason": "below its 50-day average (downtrend), not buying",
+   "t": 1795568420
+  },
+  {
+   "type": "buy",
+   "symbol": "TSLA",
+   "signal": "momentum",
+   "eur": 4.09,
+   "price": 384.68,
+   "t": 1795568420
   }
  ],
  "trend": {
@@ -2454,11 +2452,15 @@
    "up": false
   },
   "TSLA": {
-   "day": "2026-11-11",
+   "day": "2026-11-25",
    "up": true
   },
   "bitcoin": {
-   "day": "2026-11-24",
+   "day": "2026-11-25",
+   "up": false
+  },
+  "NVDA": {
+   "day": "2026-11-25",
    "up": false
   }
  }
