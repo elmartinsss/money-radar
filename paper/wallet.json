@@ -19,7 +19,8 @@
     "mood": "extreme fear",
     "time": "night (UTC 0-6)"
    },
-   "expected": -14.5
+   "expected": -14.5,
+   "peak": 384.68
   }
  ],
  "history": [
@@ -1093,12 +1094,17 @@
    "t": 1795568420,
    "v": 81.71,
    "btc": 59547
+  },
+  {
+   "t": 1795599948,
+   "v": 81.71,
+   "btc": 58820
   }
  ],
  "mood": {
   "value": 13,
   "label": "Extreme Fear",
-  "t": 1795568412
+  "t": 1795599945
  },
  "learning": {
   "trending": {
@@ -1138,7 +1144,7 @@
    "seen": 1795568420.1226277
   }
  ],
- "updated": 1795568420,
+ "updated": 1795599948,
  "rewards": {
   "xp": 182.2,
   "level": "Chart reader",
@@ -1588,20 +1594,6 @@
   "trades": 23
  },
  "activity": [
-  {
-   "type": "skip",
-   "symbol": "SI",
-   "signal": "trending",
-   "reason": "I remember losing in situations like this (signal: trending), expecting -15.8%",
-   "t": 1794329348
-  },
-  {
-   "type": "skip",
-   "symbol": "ZEC",
-   "signal": "trending",
-   "reason": "I remember losing in situations like this (signal: trending), expecting -15.8%",
-   "t": 1794348212
-  },
   {
    "type": "buy",
    "symbol": "TSLA",
@@ -2444,6 +2436,20 @@
    "eur": 4.09,
    "price": 384.68,
    "t": 1795568420
+  },
+  {
+   "type": "skip",
+   "symbol": "BIGTIME",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1795599948
+  },
+  {
+   "type": "skip",
+   "symbol": "HYPE",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1795599948
   }
  ],
  "trend": {
