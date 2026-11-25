@@ -1,34 +1,6 @@
 [
  {
   "t": 1795329139,
-  "title": "📉 NVDA -14.0% today",
-  "message": "Now $125.53 (prev close $145.98)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
-  "click": "https://finance.yahoo.com/quote/NVDA",
-  "priority": 4
- },
- {
-  "t": 1795329139,
-  "title": "📉 TSLA -7.6% today",
-  "message": "Now $345.82 (prev close $374.41)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
-  "click": "https://finance.yahoo.com/quote/TSLA",
-  "priority": 4
- },
- {
-  "t": 1795329139,
-  "title": "📰 Mantle (MNT) Surges 3.61% on GMO Coin Listing and RWA Narrative - CoinMarketCap",
-  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: listing, surges · via news.google.com",
-  "click": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBpbHRzZzNhMFZSX29VS3Q2cUVPdEVGWkdWbVZzblBFV0NNcWdpNVU0b1ZtRm15a1FSdlV4TnF5OUwxTmNYdmpnTlVObUIydzNHZVNWWEhENW9leG9zNkxIdzhTY1BZcU9pVmVPMDlyczA?oc=5",
-  "priority": 3
- },
- {
-  "t": 1795329139,
-  "title": "🔥 Trending #1: Official Trump (TRUMP)",
-  "message": "Rank #134 · +10.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/official-trump",
-  "priority": 2
- },
- {
-  "t": 1795329139,
   "title": "🔥 Trending #2: Bitcoin (BTC)",
   "message": "Rank #1 · +5.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/bitcoin",
@@ -417,6 +389,34 @@
   "title": "🔥 Trending #7: Ethereum (ETH)",
   "message": "Rank #2 · -2.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/ethereum",
+  "priority": 2
+ },
+ {
+  "t": 1795635468,
+  "title": "🐸 Memecoin with real volume: $FIONA",
+  "message": "Liq $180.8k · Vol24h $1.3M · MC $2.7M\n1h +14.2% · 24h -9.83% · age 143h\nRugcheck: top 10 hold 13%, 24460 holders, pool 100% locked\nRisk: 🔴 gambling. Passed the safety filters, but it's a paid promo and most memecoins still go to 0.\nMarket mood: 13/100 Extreme Fear 🥶.",
+  "click": "https://dexscreener.com/solana/djbltx1hrgzzrjgj7cwtx6sn3d7tbliytkgwombuwtvb",
+  "priority": 3
+ },
+ {
+  "t": 1795635468,
+  "title": "🔥 Trending #1: Pepe Intelligence (PEI)",
+  "message": "Rank #808 · -12.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/pepe-intelligence",
+  "priority": 2
+ },
+ {
+  "t": 1795635468,
+  "title": "🔥 Trending #2: Non-Playable Shiba (NPS)",
+  "message": "Rank #876 · +373.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/non-playable-shiba",
+  "priority": 2
+ },
+ {
+  "t": 1795635468,
+  "title": "🔥 Trending #3: Variational X (VAR)",
+  "message": "Rank #938 · -17.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 13/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/variational-x",
   "priority": 2
  }
 ]

@@ -12,7 +12,7 @@
    "eur": 4.06955,
    "paid": 4.09,
    "time": 1795568420.470124,
-   "last": 384.68,
+   "last": 383.07,
    "liq0": null,
    "feats": {
     "signal": "momentum",
@@ -608,7 +608,7 @@
  ],
  "started": 1793366521.920483,
  "btc_start": 77216,
- "last_report": "2026-11-23",
+ "last_report": "2026-11-25",
  "equity": [
   {
    "t": 1793366862,
@@ -1099,12 +1099,17 @@
    "t": 1795599948,
    "v": 81.71,
    "btc": 58820
+  },
+  {
+   "t": 1795635470,
+   "v": 81.69,
+   "btc": 60070
   }
  ],
  "mood": {
   "value": 13,
   "label": "Extreme Fear",
-  "t": 1795599945
+  "t": 1795635468
  },
  "learning": {
   "trending": {
@@ -1144,7 +1149,7 @@
    "seen": 1795568420.1226277
   }
  ],
- "updated": 1795599948,
+ "updated": 1795635470,
  "rewards": {
   "xp": 182.2,
   "level": "Chart reader",
@@ -1589,40 +1594,21 @@
     }
    }
   ],
-  "pending_checks": [],
+  "pending_checks": [
+   {
+    "id": "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump",
+    "chain": "solana",
+    "symbol": "CBUCKS",
+    "price": 0.005912,
+    "t": 1795635470,
+    "rule": "Liquidity vs size",
+    "reason": "thin liquidity for its size (4.9% of market cap)"
+   }
+  ],
   "total_reward": -336.09999999999997,
   "trades": 23
  },
  "activity": [
-  {
-   "type": "buy",
-   "symbol": "TSLA",
-   "signal": "momentum",
-   "eur": 4.19,
-   "price": 379.78,
-   "t": 1794348212
-  },
-  {
-   "type": "skip",
-   "symbol": "ZEC",
-   "signal": "trending",
-   "reason": "I remember losing in situations like this (signal: trending), expecting -15.4%",
-   "t": 1794362059
-  },
-  {
-   "type": "skip",
-   "symbol": "BTC",
-   "signal": "trending",
-   "reason": "I remember losing in situations like this (signal: trending), expecting -15.4%",
-   "t": 1794362059
-  },
-  {
-   "type": "skip",
-   "symbol": "PENGU",
-   "signal": "trending",
-   "reason": "I remember losing in situations like this (signal: trending), expecting -15.4%",
-   "t": 1794362059
-  },
   {
    "type": "skip",
    "symbol": "ZIG",
@@ -2450,6 +2436,34 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
    "t": 1795599948
+  },
+  {
+   "type": "skip",
+   "symbol": "FIONA",
+   "signal": "memecoin",
+   "reason": "I remember losing in situations like this (similar trades), expecting -14.6%",
+   "t": 1795635470
+  },
+  {
+   "type": "skip",
+   "symbol": "PEI",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1795635470
+  },
+  {
+   "type": "skip",
+   "symbol": "NPS",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1795635470
+  },
+  {
+   "type": "skip",
+   "symbol": "VAR",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1795635470
   }
  ],
  "trend": {
