@@ -1,33 +1,5 @@
 [
  {
-  "t": 1795359176,
-  "title": "🔥 Trending #7: Pieverse (PIEVERSE)",
-  "message": "Rank #68 · +23.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/pieverse",
-  "priority": 2
- },
- {
-  "t": 1795380997,
-  "title": "🐸 Memecoin with real volume: $DESSA",
-  "message": "Liq $161.1k · Vol24h $1.4M · MC $3.1M\n1h +4% · 24h +15.74% · age 656h\nRugcheck: top 10 hold 2%, 70678 holders, pool 100% locked\nRisk: 🔴 gambling. Passed the safety filters, but it's a paid promo and most memecoins still go to 0.\nMarket mood: 11/100 Extreme Fear 🥶.",
-  "click": "https://dexscreener.com/solana/dextcer4k9dwbxtmu8znvvwgevvmvhmb183pf2xxzwvh",
-  "priority": 3
- },
- {
-  "t": 1795380997,
-  "title": "🔥 Trending #1: Wanted Star (WSTAR)",
-  "message": "Rank #895 · -32.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/wanted-star",
-  "priority": 2
- },
- {
-  "t": 1795380997,
-  "title": "🔥 Trending #2: Popo The Turtle (POPO)",
-  "message": "Rank #753 · +30.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/popo-the-turtle",
-  "priority": 2
- },
- {
   "t": 1795397544,
   "title": "📉 NVDA -14.0% today",
   "message": "Now $125.53 (prev close $145.98)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
@@ -417,6 +389,34 @@
   "title": "🔥 Trending #7: Lighter (LIT)",
   "message": "Rank #89 · +6.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/lighter",
+  "priority": 2
+ },
+ {
+  "t": 1795692386,
+  "title": "🔥 Trending #1: Commander Vrax (VRAX)",
+  "message": "Rank #952 · +0.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/commander-vrax-4",
+  "priority": 2
+ },
+ {
+  "t": 1795692386,
+  "title": "🔥 Trending #2: Non-Playable Shiba (NPS)",
+  "message": "Rank #894 · -3.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/non-playable-shiba",
+  "priority": 2
+ },
+ {
+  "t": 1795692386,
+  "title": "🔥 Trending #3: Zylo Ecosystem (ZYLO)",
+  "message": "Rank #735 · +17.7% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/zylo-ecosystem",
+  "priority": 2
+ },
+ {
+  "t": 1795692386,
+  "title": "🔥 Trending #7: Chainlink (LINK)",
+  "message": "Rank #16 · +6.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/chainlink",
   "priority": 2
  }
 ]

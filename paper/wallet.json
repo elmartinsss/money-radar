@@ -1109,12 +1109,17 @@
    "t": 1795660100,
    "v": 81.66,
    "btc": 60930
+  },
+  {
+   "t": 1795692388,
+   "v": 81.66,
+   "btc": 60618
   }
  ],
  "mood": {
   "value": 11,
   "label": "Extreme Fear",
-  "t": 1795660095
+  "t": 1795692386
  },
  "learning": {
   "trending": {
@@ -1139,7 +1144,7 @@
   }
  },
  "pending": [],
- "updated": 1795660100,
+ "updated": 1795692388,
  "rewards": {
   "xp": 182.2,
   "level": "Chart reader",
@@ -1602,33 +1607,21 @@
     "t": 1795660099,
     "rule": "Buyers vs sellers",
     "reason": "more sellers than buyers (0.7x)"
+   },
+   {
+    "id": "Fo2HAwr7ZAUM2bSZ7MWSi16e3aWGpbw5MsUDYCttpump",
+    "chain": "solana",
+    "symbol": "PUMPCHAN",
+    "price": 0.007731,
+    "t": 1795692388,
+    "rule": "Minimum age",
+    "reason": "too new (10h)"
    }
   ],
   "total_reward": -336.09999999999997,
   "trades": 23
  },
  "activity": [
-  {
-   "type": "skip",
-   "symbol": "SEPPUKU",
-   "signal": "trending",
-   "reason": "I remember losing in situations like this (mood: fear), expecting -15.7%",
-   "t": 1794487211
-  },
-  {
-   "type": "skip",
-   "symbol": "MIHAO",
-   "signal": "trending",
-   "reason": "I remember losing in situations like this (mood: fear), expecting -15.7%",
-   "t": 1794515344
-  },
-  {
-   "type": "skip",
-   "symbol": "DACITYCOIN",
-   "signal": "trending",
-   "reason": "I remember losing in situations like this (mood: fear), expecting -15.7%",
-   "t": 1794515344
-  },
   {
    "type": "skip",
    "symbol": "BTC",
@@ -2460,6 +2453,27 @@
    "signal": "momentum",
    "reason": "below its 50-day average (downtrend), not buying",
    "t": 1795660100
+  },
+  {
+   "type": "skip",
+   "symbol": "VRAX",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1795692388
+  },
+  {
+   "type": "skip",
+   "symbol": "NPS",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1795692388
+  },
+  {
+   "type": "skip",
+   "symbol": "ZYLO",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1795692388
   }
  ],
  "trend": {
