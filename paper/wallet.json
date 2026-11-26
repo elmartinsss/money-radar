@@ -12,7 +12,7 @@
    "eur": 4.06955,
    "paid": 4.09,
    "time": 1795568420.470124,
-   "last": 383.07,
+   "last": 380.14,
    "liq0": null,
    "feats": {
     "signal": "momentum",
@@ -1104,12 +1104,17 @@
    "t": 1795635470,
    "v": 81.69,
    "btc": 60070
+  },
+  {
+   "t": 1795660100,
+   "v": 81.66,
+   "btc": 60930
   }
  ],
  "mood": {
-  "value": 13,
+  "value": 11,
   "label": "Extreme Fear",
-  "t": 1795635468
+  "t": 1795660095
  },
  "learning": {
   "trending": {
@@ -1133,23 +1138,8 @@
    "status": "still learning (1/30 trades)"
   }
  },
- "pending": [
-  {
-   "kind": "stock",
-   "id": "NVDA",
-   "symbol": "NVDA",
-   "signal": "momentum",
-   "seen": 1795568420.12262
-  },
-  {
-   "kind": "stock",
-   "id": "TSLA",
-   "symbol": "TSLA",
-   "signal": "momentum",
-   "seen": 1795568420.1226277
-  }
- ],
- "updated": 1795635470,
+ "pending": [],
+ "updated": 1795660100,
  "rewards": {
   "xp": 182.2,
   "level": "Chart reader",
@@ -1603,50 +1593,21 @@
     "t": 1795635470,
     "rule": "Liquidity vs size",
     "reason": "thin liquidity for its size (4.9% of market cap)"
+   },
+   {
+    "id": "B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump",
+    "chain": "solana",
+    "symbol": "FIONA",
+    "price": 0.002174,
+    "t": 1795660099,
+    "rule": "Buyers vs sellers",
+    "reason": "more sellers than buyers (0.7x)"
    }
   ],
   "total_reward": -336.09999999999997,
   "trades": 23
  },
  "activity": [
-  {
-   "type": "skip",
-   "symbol": "ZIG",
-   "signal": "trending",
-   "reason": "I remember losing in situations like this (signal: trending), expecting -15.8%",
-   "t": 1794416647
-  },
-  {
-   "type": "sell",
-   "symbol": "TRUMP",
-   "signal": "trending",
-   "eur": 3.98,
-   "pnl": -0.54,
-   "pct": -11.8,
-   "reason": "\u23f0 Time's up (7 days)",
-   "t": 1794456341
-  },
-  {
-   "type": "skip",
-   "symbol": "ZIG",
-   "signal": "trending",
-   "reason": "I remember losing in situations like this (mood: fear), expecting -15.3%",
-   "t": 1794456341
-  },
-  {
-   "type": "skip",
-   "symbol": "BTC",
-   "signal": "trending",
-   "reason": "I remember losing in situations like this (mood: fear), expecting -15.3%",
-   "t": 1794456341
-  },
-  {
-   "type": "skip",
-   "symbol": "KNTQ",
-   "signal": "trending",
-   "reason": "I remember losing in situations like this (mood: fear), expecting -15.3%",
-   "t": 1794456341
-  },
   {
    "type": "skip",
    "symbol": "SEPPUKU",
@@ -2464,6 +2425,41 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
    "t": 1795635470
+  },
+  {
+   "type": "skip",
+   "symbol": "BTC",
+   "signal": "fear_dip",
+   "reason": "below its 50-day average (downtrend), not buying",
+   "t": 1795660099
+  },
+  {
+   "type": "skip",
+   "symbol": "VVV",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.9%",
+   "t": 1795660099
+  },
+  {
+   "type": "skip",
+   "symbol": "PEARL",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.9%",
+   "t": 1795660099
+  },
+  {
+   "type": "skip",
+   "symbol": "PENGU",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.9%",
+   "t": 1795660099
+  },
+  {
+   "type": "skip",
+   "symbol": "NVDA",
+   "signal": "momentum",
+   "reason": "below its 50-day average (downtrend), not buying",
+   "t": 1795660100
   }
  ],
  "trend": {
@@ -2476,11 +2472,11 @@
    "up": true
   },
   "bitcoin": {
-   "day": "2026-11-25",
+   "day": "2026-11-26",
    "up": false
   },
   "NVDA": {
-   "day": "2026-11-25",
+   "day": "2026-11-26",
    "up": false
   }
  }
