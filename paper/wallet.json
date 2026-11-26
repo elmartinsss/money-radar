@@ -608,7 +608,7 @@
  ],
  "started": 1793366521.920483,
  "btc_start": 77216,
- "last_report": "2026-11-25",
+ "last_report": "2026-11-26",
  "equity": [
   {
    "t": 1793366862,
@@ -1114,12 +1114,17 @@
    "t": 1795692388,
    "v": 81.66,
    "btc": 60618
+  },
+  {
+   "t": 1795724914,
+   "v": 81.66,
+   "btc": 60624
   }
  ],
  "mood": {
   "value": 11,
   "label": "Extreme Fear",
-  "t": 1795692386
+  "t": 1795724912
  },
  "learning": {
   "trending": {
@@ -1144,7 +1149,7 @@
   }
  },
  "pending": [],
- "updated": 1795692388,
+ "updated": 1795724914,
  "rewards": {
   "xp": 182.2,
   "level": "Chart reader",
@@ -1229,7 +1234,7 @@
    "Liquidity vs size": {
     "saves": 0,
     "missed": 1,
-    "neutral": 13,
+    "neutral": 14,
     "examples": [
      "$BLOB +105% (missed)"
     ]
@@ -1591,15 +1596,6 @@
   ],
   "pending_checks": [
    {
-    "id": "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump",
-    "chain": "solana",
-    "symbol": "CBUCKS",
-    "price": 0.005912,
-    "t": 1795635470,
-    "rule": "Liquidity vs size",
-    "reason": "thin liquidity for its size (4.9% of market cap)"
-   },
-   {
     "id": "B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump",
     "chain": "solana",
     "symbol": "FIONA",
@@ -1616,19 +1612,21 @@
     "t": 1795692388,
     "rule": "Minimum age",
     "reason": "too new (10h)"
+   },
+   {
+    "id": "PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump",
+    "chain": "solana",
+    "symbol": "BRUH",
+    "price": 0.008098,
+    "t": 1795724914,
+    "rule": "Rising this hour",
+    "reason": "not trending up this hour"
    }
   ],
   "total_reward": -336.09999999999997,
   "trades": 23
  },
  "activity": [
-  {
-   "type": "skip",
-   "symbol": "BTC",
-   "signal": "fear_dip",
-   "reason": "below its 50-day average (downtrend), not buying",
-   "t": 1794533213
-  },
   {
    "type": "skip",
    "symbol": "MIHAO",
@@ -2474,6 +2472,13 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
    "t": 1795692388
+  },
+  {
+   "type": "skip",
+   "symbol": "HYPE",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1795724914
   }
  ],
  "trend": {

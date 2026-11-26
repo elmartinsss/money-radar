@@ -1,27 +1,6 @@
 [
  {
   "t": 1795397544,
-  "title": "📉 NVDA -14.0% today",
-  "message": "Now $125.53 (prev close $145.98)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
-  "click": "https://finance.yahoo.com/quote/NVDA",
-  "priority": 4
- },
- {
-  "t": 1795397544,
-  "title": "📉 TSLA -7.6% today",
-  "message": "Now $345.82 (prev close $374.41)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
-  "click": "https://finance.yahoo.com/quote/TSLA",
-  "priority": 4
- },
- {
-  "t": 1795397544,
-  "title": "🔥 Trending #1: Venice Token (VVV)",
-  "message": "Rank #57 · +6.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/venice-token",
-  "priority": 2
- },
- {
-  "t": 1795397544,
   "title": "🔥 Trending #2: Pearl (PEARL)",
   "message": "Rank #76 · +7.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/pearl-2",
@@ -417,6 +396,27 @@
   "title": "🔥 Trending #7: Chainlink (LINK)",
   "message": "Rank #16 · +6.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/chainlink",
+  "priority": 2
+ },
+ {
+  "t": 1795724912,
+  "title": "🔥 Trending #3: Hyperliquid (HYPE)",
+  "message": "Rank #10 · +1.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/hyperliquid",
+  "priority": 2
+ },
+ {
+  "t": 1795724912,
+  "title": "🔥 Trending #4: Monero (XMR)",
+  "message": "Rank #13 · -13.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/monero",
+  "priority": 2
+ },
+ {
+  "t": 1795724912,
+  "title": "🔥 Trending #7: Terra Luna Classic (LUNC)",
+  "message": "Rank #139 · +3.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/terra-luna",
   "priority": 2
  }
 ]
