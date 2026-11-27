@@ -12,7 +12,7 @@
    "eur": 4.06955,
    "paid": 4.09,
    "time": 1795568420.470124,
-   "last": 380.14,
+   "last": 400.0,
    "liq0": null,
    "feats": {
     "signal": "momentum",
@@ -20,7 +20,7 @@
     "time": "night (UTC 0-6)"
    },
    "expected": -14.5,
-   "peak": 384.68
+   "peak": 400.0
   }
  ],
  "history": [
@@ -608,7 +608,7 @@
  ],
  "started": 1793366521.920483,
  "btc_start": 77216,
- "last_report": "2026-11-26",
+ "last_report": "2026-11-27",
  "equity": [
   {
    "t": 1793366862,
@@ -1129,12 +1129,17 @@
    "t": 1795783393,
    "v": 81.66,
    "btc": 61491
+  },
+  {
+   "t": 1795815634,
+   "v": 81.87,
+   "btc": 59803
   }
  ],
  "mood": {
   "value": 12,
   "label": "Extreme Fear",
-  "t": 1795783391
+  "t": 1795815631
  },
  "learning": {
   "trending": {
@@ -1159,9 +1164,9 @@
   }
  },
  "pending": [],
- "updated": 1795783393,
+ "updated": 1795815634,
  "rewards": {
-  "xp": 182.2,
+  "xp": 187.2,
   "level": "Chart reader",
   "medals": [
    {
@@ -1230,15 +1235,15 @@
   },
   "rules": {
    "Rising this hour": {
-    "saves": 2,
+    "saves": 3,
     "missed": 3,
     "neutral": 20,
     "examples": [
-     "$DESSA +139% (missed)",
      "$DESSA -51% (saved)",
      "$DESSA -52% (saved)",
      "$GATO +58% (missed)",
-     "$GATO +59% (missed)"
+     "$GATO +59% (missed)",
+     "$BRUH -44% (saved)"
     ]
    },
    "Liquidity vs size": {
@@ -1606,15 +1611,6 @@
   ],
   "pending_checks": [
    {
-    "id": "PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump",
-    "chain": "solana",
-    "symbol": "BRUH",
-    "price": 0.008098,
-    "t": 1795724914,
-    "rule": "Rising this hour",
-    "reason": "not trending up this hour"
-   },
-   {
     "id": "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump",
     "chain": "solana",
     "symbol": "CBUCKS",
@@ -1628,20 +1624,6 @@
   "trades": 23
  },
  "activity": [
-  {
-   "type": "skip",
-   "symbol": "MIHAO",
-   "signal": "trending",
-   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
-   "t": 1794588362
-  },
-  {
-   "type": "skip",
-   "symbol": "SEPPUKU",
-   "signal": "trending",
-   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
-   "t": 1794588362
-  },
   {
    "type": "skip",
    "symbol": "BTC",
@@ -2477,6 +2459,20 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
    "t": 1795783393
+  },
+  {
+   "type": "skip",
+   "symbol": "JOB",
+   "signal": "memecoin",
+   "reason": "I remember losing in situations like this (similar trades), expecting -14.6%",
+   "t": 1795815634
+  },
+  {
+   "type": "skip",
+   "symbol": "PUMPCHAN",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1795815634
   }
  ],
  "trend": {

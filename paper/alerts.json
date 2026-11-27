@@ -1,26 +1,5 @@
 [
  {
-  "t": 1795470238,
-  "title": "🚀 TSLA +11.5% today",
-  "message": "Now $385.46 (prev close $345.82)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
-  "click": "https://finance.yahoo.com/quote/TSLA",
-  "priority": 4
- },
- {
-  "t": 1795498585,
-  "title": "🚀 NVDA +31.5% today",
-  "message": "Now $165.05 (prev close $125.53)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
-  "click": "https://finance.yahoo.com/quote/NVDA",
-  "priority": 4
- },
- {
-  "t": 1795498585,
-  "title": "🚀 TSLA +11.5% today",
-  "message": "Now $385.46 (prev close $345.82)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
-  "click": "https://finance.yahoo.com/quote/TSLA",
-  "priority": 4
- },
- {
   "t": 1795498585,
   "title": "🔥 Trending #1: Pudgy Penguins (PENGU)",
   "message": "Rank #127 · +4.9% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
@@ -417,6 +396,27 @@
   "title": "🔥 Trending #7: Sui (SUI)",
   "message": "Rank #31 · +3.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/sui",
+  "priority": 2
+ },
+ {
+  "t": 1795815631,
+  "title": "🐸 Memecoin with real volume: $JOB",
+  "message": "Liq $156.9k · Vol24h $438.8k · MC $2.1M\n1h +3.27% · 24h +31.6% · age 746h\nRugcheck: top 10 hold 7%, 7597 holders, pool 100% locked\nRisk: 🔴 gambling. Passed the safety filters, but it's a paid promo and most memecoins still go to 0.\nMarket mood: 12/100 Extreme Fear 🥶.",
+  "click": "https://dexscreener.com/solana/hauvbmnthcfmg9srxmvz1gaxnpu955hkpdsasc2cx4c8",
+  "priority": 3
+ },
+ {
+  "t": 1795815631,
+  "title": "🔥 Trending #3: PumpChan (PUMPCHAN)",
+  "message": "Rank #861 · +0.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/pumpchan",
+  "priority": 2
+ },
+ {
+  "t": 1795815631,
+  "title": "🔥 Trending #6: Hyperliquid (HYPE)",
+  "message": "Rank #10 · +1.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/hyperliquid",
   "priority": 2
  }
 ]
