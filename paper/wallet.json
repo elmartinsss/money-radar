@@ -1119,12 +1119,17 @@
    "t": 1795724914,
    "v": 81.66,
    "btc": 60624
+  },
+  {
+   "t": 1795749142,
+   "v": 81.66,
+   "btc": 61534
   }
  ],
  "mood": {
-  "value": 11,
+  "value": 12,
   "label": "Extreme Fear",
-  "t": 1795724912
+  "t": 1795749140
  },
  "learning": {
   "trending": {
@@ -1149,7 +1154,7 @@
   }
  },
  "pending": [],
- "updated": 1795724914,
+ "updated": 1795749142,
  "rewards": {
   "xp": 182.2,
   "level": "Chart reader",
@@ -1269,7 +1274,7 @@
    "Buyers vs sellers": {
     "saves": 0,
     "missed": 0,
-    "neutral": 3,
+    "neutral": 4,
     "examples": []
    },
    "Top-10 wallet limit": {
@@ -1596,15 +1601,6 @@
   ],
   "pending_checks": [
    {
-    "id": "B34nXKzCgsJb9ChLuSHPRpXLE3WFSWyeT8Cqkzzmpump",
-    "chain": "solana",
-    "symbol": "FIONA",
-    "price": 0.002174,
-    "t": 1795660099,
-    "rule": "Buyers vs sellers",
-    "reason": "more sellers than buyers (0.7x)"
-   },
-   {
     "id": "Fo2HAwr7ZAUM2bSZ7MWSi16e3aWGpbw5MsUDYCttpump",
     "chain": "solana",
     "symbol": "PUMPCHAN",
@@ -1627,37 +1623,6 @@
   "trades": 23
  },
  "activity": [
-  {
-   "type": "skip",
-   "symbol": "MIHAO",
-   "signal": "trending",
-   "reason": "I remember losing in situations like this (signal: trending), expecting -15.1%",
-   "t": 1794533213
-  },
-  {
-   "type": "skip",
-   "symbol": "DACITYCOIN",
-   "signal": "trending",
-   "reason": "I remember losing in situations like this (signal: trending), expecting -15.1%",
-   "t": 1794533213
-  },
-  {
-   "type": "skip",
-   "symbol": "BTC",
-   "signal": "trending",
-   "reason": "I remember losing in situations like this (signal: trending), expecting -15.1%",
-   "t": 1794533213
-  },
-  {
-   "type": "sell",
-   "symbol": "NEAR",
-   "signal": "trending",
-   "eur": 4.11,
-   "pnl": -0.22,
-   "pct": -5.0,
-   "reason": "\u23f0 Time's up (7 days)",
-   "t": 1794559297
-  },
   {
    "type": "skip",
    "symbol": "ETH",
@@ -2479,6 +2444,34 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
    "t": 1795724914
+  },
+  {
+   "type": "skip",
+   "symbol": "BTC",
+   "signal": "fear_dip",
+   "reason": "below its 50-day average (downtrend), not buying",
+   "t": 1795749142
+  },
+  {
+   "type": "skip",
+   "symbol": "BTC",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.9%",
+   "t": 1795749142
+  },
+  {
+   "type": "skip",
+   "symbol": "PENGU",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.9%",
+   "t": 1795749142
+  },
+  {
+   "type": "skip",
+   "symbol": "PEJAK",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -14.9%",
+   "t": 1795749142
   }
  ],
  "trend": {
@@ -2491,7 +2484,7 @@
    "up": true
   },
   "bitcoin": {
-   "day": "2026-11-26",
+   "day": "2026-11-27",
    "up": false
   },
   "NVDA": {
