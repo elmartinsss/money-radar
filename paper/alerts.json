@@ -1,33 +1,5 @@
 [
  {
-  "t": 1795427056,
-  "title": "🔥 Trending #1: Minelius (MINELIUS)",
-  "message": "Rank #830 · +0.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/minelius",
-  "priority": 2
- },
- {
-  "t": 1795427056,
-  "title": "🔥 Trending #2: Pudgy Penguins (PENGU)",
-  "message": "Rank #129 · +1.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/pudgy-penguins",
-  "priority": 2
- },
- {
-  "t": 1795427056,
-  "title": "🔥 Trending #7: Official Trump (TRUMP)",
-  "message": "Rank #136 · +0.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/official-trump",
-  "priority": 2
- },
- {
-  "t": 1795470238,
-  "title": "🚀 NVDA +31.5% today",
-  "message": "Now $165.05 (prev close $125.53)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
-  "click": "https://finance.yahoo.com/quote/NVDA",
-  "priority": 4
- },
- {
   "t": 1795470238,
   "title": "🚀 TSLA +11.5% today",
   "message": "Now $385.46 (prev close $345.82)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
@@ -417,6 +389,34 @@
   "title": "🔥 Trending #7: Zylo Ecosystem (ZYLO)",
   "message": "Rank #726 · +11.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/zylo-ecosystem",
+  "priority": 2
+ },
+ {
+  "t": 1795783391,
+  "title": "📰 Binance job listing points to potential expansion into on-chain IPOs - Crypto News",
+  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: listing, binance · via news.google.com",
+  "click": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOUC1pN1VoeG00ZjNVOXl0T3g3czdjekRITXpNakhzWkVIZkVBb0hYZkhMaF9ld2dpQUNIejB6TDA2NGp0b3pLczc3M3NwYk9KMG5QaTZPeEVGcWgtYS1rX0czOFByQjFEUkc3WmRpSzYteS1oaFRvMGhOeE9Xd3VQdVpubTd2b200WTd0aEg4Vk1HNHc?oc=5",
+  "priority": 3
+ },
+ {
+  "t": 1795783391,
+  "title": "🔥 Trending #2: Portal (PORTAL)",
+  "message": "Rank #718 · +90.6% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/portal-2",
+  "priority": 2
+ },
+ {
+  "t": 1795783391,
+  "title": "🔥 Trending #5: Pons (PONS)",
+  "message": "Rank #307 · +27.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/pons",
+  "priority": 2
+ },
+ {
+  "t": 1795783391,
+  "title": "🔥 Trending #7: Sui (SUI)",
+  "message": "Rank #31 · +3.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 12/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/sui",
   "priority": 2
  }
 ]

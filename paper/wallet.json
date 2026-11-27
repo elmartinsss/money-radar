@@ -1124,12 +1124,17 @@
    "t": 1795749142,
    "v": 81.66,
    "btc": 61534
+  },
+  {
+   "t": 1795783393,
+   "v": 81.66,
+   "btc": 61491
   }
  ],
  "mood": {
   "value": 12,
   "label": "Extreme Fear",
-  "t": 1795749140
+  "t": 1795783391
  },
  "learning": {
   "trending": {
@@ -1154,7 +1159,7 @@
   }
  },
  "pending": [],
- "updated": 1795749142,
+ "updated": 1795783393,
  "rewards": {
   "xp": 182.2,
   "level": "Chart reader",
@@ -1246,14 +1251,14 @@
    },
    "Minimum age": {
     "saves": 13,
-    "missed": 1,
+    "missed": 2,
     "neutral": 3,
     "examples": [
-     "$ELYSION -100% (saved)",
      "$NIHAO -100% (saved)",
      "$AMC -100% (saved)",
      "$UM -100% (saved)",
-     "$MINELIUS -100% (saved)"
+     "$MINELIUS -100% (saved)",
+     "$PUMPCHAN +53% (missed)"
     ]
    },
    "No chasing pumps": {
@@ -1601,20 +1606,20 @@
   ],
   "pending_checks": [
    {
-    "id": "Fo2HAwr7ZAUM2bSZ7MWSi16e3aWGpbw5MsUDYCttpump",
-    "chain": "solana",
-    "symbol": "PUMPCHAN",
-    "price": 0.007731,
-    "t": 1795692388,
-    "rule": "Minimum age",
-    "reason": "too new (10h)"
-   },
-   {
     "id": "PgFtGGquvnv2zEkjG2N2QPvBTBrafuExGYEqahRpump",
     "chain": "solana",
     "symbol": "BRUH",
     "price": 0.008098,
     "t": 1795724914,
+    "rule": "Rising this hour",
+    "reason": "not trending up this hour"
+   },
+   {
+    "id": "DtcicPCKTKeAh7TDEzTym3hXeoHAoMiBdYJhMYxZpump",
+    "chain": "solana",
+    "symbol": "CBUCKS",
+    "price": 0.007405,
+    "t": 1795783392,
     "rule": "Rising this hour",
     "reason": "not trending up this hour"
    }
@@ -1623,13 +1628,6 @@
   "trades": 23
  },
  "activity": [
-  {
-   "type": "skip",
-   "symbol": "ETH",
-   "signal": "trending",
-   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
-   "t": 1794559297
-  },
   {
    "type": "skip",
    "symbol": "MIHAO",
@@ -2472,6 +2470,13 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -14.9%",
    "t": 1795749142
+  },
+  {
+   "type": "skip",
+   "symbol": "PORTAL",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1795783393
   }
  ],
  "trend": {
