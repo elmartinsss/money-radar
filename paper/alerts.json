@@ -1,61 +1,5 @@
 [
  {
-  "t": 1795537629,
-  "title": "📉 Solana -8.0% in 24h",
-  "message": "Now $69.22\nRisk: 🟢 big coin, real move. Find out WHY before doing anything.",
-  "click": "https://www.coingecko.com/en/coins/solana",
-  "priority": 4
- },
- {
-  "t": 1795537629,
-  "title": "📉 NVDA -7.9% today",
-  "message": "Now $152.07 (prev close $165.05)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
-  "click": "https://finance.yahoo.com/quote/NVDA",
-  "priority": 4
- },
- {
-  "t": 1795537629,
-  "title": "📰 Cogent Biosciences stock surges on FDA approval of EKITNA - Investing.com",
-  "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: fda approval, surges · via news.google.com",
-  "click": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNZ1owdFpBaFdJNDM0c3QzQzhNMW10dTVWd0RfVkF3ZlVhbEE3NEx1Q2tQcXdHanptY1NUWmV4MFdoenM2RnUwbV9zbmZrWk9NUVhXbmQwMkhTY2JQU0lqWkFhQnV5S3oyR0x2T2FjOGRacVRyRXYzcG1jMjN6R2lHM0h3N2diY2hkVkc0VHFOazZhRDhkbnhENEFUT2d2ZjhSYV9CcVJLNmVLaXBqSFdLeFBvNmI?oc=5",
-  "priority": 3
- },
- {
-  "t": 1795537629,
-  "title": "🔥 Trending #1: Variational X (VAR)",
-  "message": "Rank #928 · +657.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/variational-x",
-  "priority": 2
- },
- {
-  "t": 1795537629,
-  "title": "🔥 Trending #2: Pepe Intelligence (PEI)",
-  "message": "Rank #801 · +18.0% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/pepe-intelligence",
-  "priority": 2
- },
- {
-  "t": 1795537629,
-  "title": "🔥 Trending #6: Zcash (ZEC)",
-  "message": "Rank #11 · -16.1% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 11/100 Extreme Fear 🥶.",
-  "click": "https://www.coingecko.com/en/coins/zcash",
-  "priority": 2
- },
- {
-  "t": 1795568412,
-  "title": "🚀 NVDA +23.8% today",
-  "message": "Now $155.38 (prev close $125.53)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
-  "click": "https://finance.yahoo.com/quote/NVDA",
-  "priority": 4
- },
- {
-  "t": 1795568412,
-  "title": "🚀 TSLA +11.2% today",
-  "message": "Now $384.68 (prev close $345.82)\nRisk: 🟢 big stock, real move. Check the news for the reason.",
-  "click": "https://finance.yahoo.com/quote/TSLA",
-  "priority": 4
- },
- {
   "t": 1795568412,
   "title": "📰 Dell earnings beat on AI strength, company authorizes $25 billion buyback - CNBC",
   "message": "Risk: 🟢 news from a known outlet. Read before acting.\nMatched: earnings beat, buyback · via news.google.com",
@@ -417,6 +361,62 @@
   "title": "🔥 Trending #7: Zcash (ZEC)",
   "message": "Rank #11 · -0.3% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
   "click": "https://www.coingecko.com/en/coins/zcash",
+  "priority": 2
+ },
+ {
+  "t": 1795868397,
+  "title": "🐸 Memecoin with real volume: $JOB",
+  "message": "Liq $198.1k · Vol24h $809.9k · MC $3.3M\n1h +5.87% · 24h +86.36% · age 761h\nRugcheck: top 10 hold 7%, 7716 holders, pool 100% locked\nRisk: 🔴 gambling. Passed the safety filters, but it's a paid promo and most memecoins still go to 0.\nMarket mood: 10/100 Extreme Fear 🥶.",
+  "click": "https://dexscreener.com/solana/hauvbmnthcfmg9srxmvz1gaxnpu955hkpdsasc2cx4c8",
+  "priority": 3
+ },
+ {
+  "t": 1795868397,
+  "title": "🔥 Trending #1: World Liberty Financial (WLFI)",
+  "message": "Rank #87 · -52.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/world-liberty-financial",
+  "priority": 2
+ },
+ {
+  "t": 1795868397,
+  "title": "🔥 Trending #2: USD1 (USD1)",
+  "message": "Rank #32 · -0.2% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/usd1-wlfi",
+  "priority": 2
+ },
+ {
+  "t": 1795868397,
+  "title": "🔥 Trending #3: Pudgy Penguins (PENGU)",
+  "message": "Rank #130 · -4.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/pudgy-penguins",
+  "priority": 2
+ },
+ {
+  "t": 1795868397,
+  "title": "🔥 Trending #4: PumpChan (PUMPCHAN)",
+  "message": "Rank #797 · +50.5% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/pumpchan",
+  "priority": 2
+ },
+ {
+  "t": 1795868397,
+  "title": "🔥 Trending #5: Zylo Ecosystem (ZYLO)",
+  "message": "Rank #715 · +0.4% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/zylo-ecosystem",
+  "priority": 2
+ },
+ {
+  "t": 1795868397,
+  "title": "🔥 Trending #6: Official Trump (TRUMP)",
+  "message": "Rank #147 · -13.4% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/official-trump",
+  "priority": 2
+ },
+ {
+  "t": 1795868397,
+  "title": "🔥 Trending #7: Bitway (BTW)",
+  "message": "Rank #36 · +52.8% 24h\nRisk: 🟡 trending = lots of people searching it. Usually late to the move.\nMarket mood: 10/100 Extreme Fear 🥶.",
+  "click": "https://www.coingecko.com/en/coins/bitway",
   "priority": 2
  }
 ]

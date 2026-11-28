@@ -1139,12 +1139,17 @@
    "t": 1795836825,
    "v": 81.87,
    "btc": 59896
+  },
+  {
+   "t": 1795868401,
+   "v": 81.87,
+   "btc": 59301
   }
  ],
  "mood": {
   "value": 10,
   "label": "Extreme Fear",
-  "t": 1795836822
+  "t": 1795868397
  },
  "learning": {
   "trending": {
@@ -1169,7 +1174,7 @@
   }
  },
  "pending": [],
- "updated": 1795836825,
+ "updated": 1795868401,
  "rewards": {
   "xp": 187.2,
   "level": "Chart reader",
@@ -1638,37 +1643,6 @@
   "trades": 23
  },
  "activity": [
-  {
-   "type": "skip",
-   "symbol": "TAO",
-   "signal": "trending",
-   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
-   "t": 1794648183
-  },
-  {
-   "type": "skip",
-   "symbol": "AKE",
-   "signal": "trending",
-   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
-   "t": 1794648183
-  },
-  {
-   "type": "sell",
-   "symbol": "PEPE",
-   "signal": "trending",
-   "eur": 3.48,
-   "pnl": -0.75,
-   "pct": -17.8,
-   "reason": "\ud83d\uded1 Stop loss (-17%)",
-   "t": 1794671837
-  },
-  {
-   "type": "skip",
-   "symbol": "KAVA",
-   "signal": "trending",
-   "reason": "I remember losing in situations like this (signal: trending), expecting -15.2%",
-   "t": 1794671837
-  },
   {
    "type": "sell",
    "symbol": "ONDO",
@@ -2487,6 +2461,34 @@
    "signal": "trending",
    "reason": "I remember losing in situations like this (signal: trending), expecting -14.9%",
    "t": 1795836825
+  },
+  {
+   "type": "skip",
+   "symbol": "JOB",
+   "signal": "memecoin",
+   "reason": "I remember losing in situations like this (similar trades), expecting -14.6%",
+   "t": 1795868401
+  },
+  {
+   "type": "skip",
+   "symbol": "WLFI",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1795868401
+  },
+  {
+   "type": "skip",
+   "symbol": "USD1",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1795868401
+  },
+  {
+   "type": "skip",
+   "symbol": "PENGU",
+   "signal": "trending",
+   "reason": "I remember losing in situations like this (signal: trending), expecting -15.0%",
+   "t": 1795868401
   }
  ],
  "trend": {
